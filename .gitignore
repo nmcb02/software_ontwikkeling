@@ -50,3 +50,8 @@ release
 *.su
 *.idb
 *.pdb
+
+# Other files/folders
+build
+venv
+.vscode
