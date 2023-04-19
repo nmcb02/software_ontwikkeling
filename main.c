@@ -15,8 +15,5 @@
  * 
  * @return: Nothing
 ****/
-void main()
-{
-    int x = 4;
-    printf(x);
-}
+void test()
+{}
