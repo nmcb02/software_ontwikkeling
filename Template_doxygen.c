@@ -15,3 +15,5 @@
  * 
  * @return: Nothing
 ****/
+void test()
+{}
