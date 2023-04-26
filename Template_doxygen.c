@@ -15,8 +15,8 @@
 #include "test.h"
 
 //#define-statements
-#define ERROR 69                // Defines en typedefs worden gegeven in caps
-                                // Pointer-typedefs houden dezelfde naam, maar beginnen met hoofdletter 'P' ( typedef PERSON *PPERSON;)
+#define ERROR 69                // Defines and typedefs should all be in caps
+                                // Pointer-typedefs have to be the same name, but with a capital 'P'( typedef PERSON *PPERSON;)
 //external vars 
 extern int test_1;
 
@@ -36,13 +36,13 @@ void Template(void);
  * 
  * @return: Nothing
 *******************************************************/
-void Template(void)                 // Comments worden gegeven op een afstand van een statement en beschrijft wat er in ene statement wordt gedaan
-{                                   // Acolades boven en onder op deze manier
-    int x;                          // De code tussen accolades heeft standaard een insprong van 4 spaties/1 tab
+void Template(void)                 // Comments are to be geven at a appropiate distance and should discribe the statement
+{                                   // Braces at the top and bottem of a function and statement should be like this
+    int x;                          // Code between braces should have a indent of 4 spaces/1 tab
     x = ERROR;
-    if(x == ERROR)                  // Statements met enkele uitvoeringen zonder accolades
+    if(x == ERROR)                  // Statements with single execusions are used WITHOUT braces
         printf("x is %d", x);
-}                                   // Accolades boven en onder op deze manier
+}                                   // Braces at the top and bottem of a function and statement should be like this
 
 /******************************************************
  * Function: Main
