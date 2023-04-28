@@ -36,13 +36,13 @@ void Template(void);
  * 
  * @return: Nothing
 *******************************************************/
-void Template(void)                 // Comments are to be geven at a appropiate distance and should discribe the statement
+void Template(void)                 // Comments are to be given at an appropiate distance and should discribe the statement
 {                                   // Braces at the top and bottem of a function and statement should be like this
     int x;                          // Code between braces should have a indent of 4 spaces/1 tab
     x = ERROR;
     if(x == ERROR)                  // Statements with single execusions are used WITHOUT braces
         printf("x is %d", x);
-}                                   // Braces at the top and bottem of a function and statement should be like this
+}                                   // Braces at the top and bottom of a function and statement should be like this
 
 /******************************************************
  * Function: Main
@@ -55,5 +55,5 @@ void Template(void)                 // Comments are to be geven at a appropiate 
 ******************************************************/
 void main()
 {
-    Template();
+    Template();                     // Calls function
 }
