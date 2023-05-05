@@ -27,6 +27,9 @@
 //external vars
 
 //global vars
+uint8_t data;
+uint8_t save[8];
+uint8_t i=0;
 
 /*******************************************************
  * Function: main
@@ -55,19 +58,26 @@ int main(void)
 		}
 	}
 
-	UART_sendChar('g');		// g wordt niet geprint???
-	UART_sendChar('o');
-	UART_sendChar('e');
-	UART_sendChar('d');
-	UART_sendChar('\n');
-	UART_sendChar('!');
+//	UART_sendChar('g');
+//	UART_sendChar('o');
+//	UART_sendChar('e');
+//	UART_sendChar('d');
+//	UART_sendChar('\n');
+//	UART_sendChar('!');
 
 //	UART_sendString("goed!");
 
 
   while(1)		// Infinite loop
   {
-//	  uint8_t data = UART_getChar();
+	  data = UART_getChar();
+	  if(data != 0)
+	  {
+		  save[i] = data;
+		  i++;
+		  if(data == ' ')
+			  i = 0;
+	  }
 //	  UART_sendChar(data);
 
 //	  UART_sendChar('g');

@@ -59,17 +59,18 @@ void UART2_config(void)
 
 	// 4. Setting the word length
 	USART2->CR1 |= (0<<12); 	// Setting the 12th bit to '0' for word length of 8 bits
-//	USART2->CR1 |= (0<<15);
+
 
 	// 5. selecting BAUD rate for UART
 	// The formula is as followed: BAUD = fck/(8*(2-OVER8)*USARTDIV)
 	// OVER8 is for the oversampling, which is not used. So to calculate the BAUD, the peripheral clock frequency is divided by 16 times the USARTDIV
 	// The USARTDIV is a number which can be coded in the BRR register.
 	// So if a BAUD of 115200 is chosen it means the calculation is as followed: fck/(8*2*115200)=USARTDIV
-	// So for the necessary value: 82000000/(8*2*115200)=45,57291667 Refer to the manual for the Mantissa and Fraction values.
-	// Mantissa = 45,57291667=45=0x2D	Fraction = 0,57291667*16 = 9,166=9=0x9	USARTDIV=0x2D9
-//	USART2->BRR = 0x2D9;
-	USART2->BRR = 0x16C;
+	// So for the necessary value: 42000000/(8*2*115200)=22,7864583333 Refer to the manual for the Mantissa and Fraction values.
+	// Mantissa = 22,7864583333=22=0x16		Fraction = 0,7864583333*16 = 12,5833=12=0xC		USARTDIV=0x16C
+
+	USART2->BRR = 0x16C;		// Calculated value
+
 	// 6. Enabling Tx and Rx
 	USART2->CR1 |= (1<<3);		// Enables Tx for UART
 	USART2->CR1 |= (1<<2);		// Enables Rx for UART
@@ -86,8 +87,9 @@ void UART2_config(void)
 *******************************************************/
 void UART_sendChar(uint8_t c)
 {
+	while(!(USART2->SR & (1<<7)));		// Waits for the TXE bit to be low so that the previous, to be send, data is shifted into transmit register. When this is done new data can be send
+
 	USART2->DR = c;						// Data to be send is written to a register which transmits to the connected UART terminal
-	while (!(USART2->SR & (1<<6))); 	// Wait for TC (transmit complete) to SET. This indicates that the data has been transmitted
 }
 
 /*******************************************************
