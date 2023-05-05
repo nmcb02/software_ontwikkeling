@@ -58,33 +58,40 @@ int main(void)
 		}
 	}
 
-//	UART_sendChar('g');
-//	UART_sendChar('o');
-//	UART_sendChar('e');
-//	UART_sendChar('d');
-//	UART_sendChar('\n');
-//	UART_sendChar('!');
+/*	UART testing
 
-//	UART_sendString("goed!");
+	UART_sendChar('g');
+	UART_sendChar('o');
+	UART_sendChar('e');
+	UART_sendChar('d');
+	UART_sendChar('\n');
+	UART_sendChar('!');
 
+	UART_sendString("goed!");
+*/
 
   while(1)		// Infinite loop
   {
-	  data = UART_getChar();
-	  if(data != 0)
+	  data = UART_getChar();	// Stores received data in variable
+	  if(data != 0)				// If data is received
 	  {
-		  save[i] = data;
+		  save[i] = data;		// Stores received data for later usage and better readability
 		  i++;
-		  if(data == ' ')
+		  if(data == ' ')		// still testing // When a space is found start anew for data receiving
 			  i = 0;
 	  }
-//	  UART_sendChar(data);
 
-//	  UART_sendChar('g');
-//  	  UART_sendChar('o');
-//	  UART_sendChar('e');
-//	  UART_sendChar('d');
-//	  UART_sendChar('!');
+/*	  UART testing in loop
+
+	  UART_sendChar(data);
+
+	  UART_sendChar('g');
+ 	  UART_sendChar('o');
+	  UART_sendChar('e');
+	  UART_sendChar('d');
+	  UART_sendChar('!');
+*/
+
 
   }
 }
