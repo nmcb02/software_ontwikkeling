@@ -16,11 +16,13 @@
 *********************************************************/
 
 //#include <library-header>
-#include "main.h"
-#include "stm32_ub_vga_screen.h"
 #include <math.h>
+#include <stdio.h>
+#include <string.h>
 
 //#include "user-header"
+#include "main.h"
+#include "stm32_ub_vga_screen.h"
 
 //#define-statements
 
@@ -28,7 +30,8 @@
 
 //global vars
 uint8_t data;
-uint8_t save[8];
+char save[100];
+char save2[100];
 uint8_t i=0;
 
 /*******************************************************
@@ -75,10 +78,20 @@ int main(void)
 	  data = UART_getChar();	// Stores received data in variable
 	  if(data != 0)				// If data is received
 	  {
+		  if(data == '\r' || data == ' ')
+			  continue;
+		  if(data == '\n')		// When a LN is found start anew for data receiving
+		  {
+			  i = 0;
+//			  strcpy(save2,save);				// doesnt copy zeros?
+			  memset(save, 0, sizeof(save));
+			  continue;
+		  }
+
+
 		  save[i] = data;		// Stores received data for later usage and better readability
 		  i++;
-		  if(data == ' ')		// still testing // When a space is found start anew for data receiving
-			  i = 0;
+
 	  }
 
 /*	  UART testing in loop

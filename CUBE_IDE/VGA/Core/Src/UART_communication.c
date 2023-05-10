@@ -18,6 +18,10 @@
 #include "main.h"
 
 //#define-statements
+typedef struct UART_Communication
+{
+	uint8_t receive[100];
+}UART, *PUART;
 
 //external vars
 
