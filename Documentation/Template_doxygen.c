@@ -8,23 +8,14 @@
  * @version: 1.0
 *********************************************************/
 
-//#include <library-header>
-#include <stdio.h>
-
 //#include "user-header"
-#include "test.h"
+#include "Template_doxygen.h"   // Corresponding user header file
 
-//#define-statements
-#define ERROR 69                // Defines and typedefs should all be in caps
-                                // Pointer-typedefs have to be the same name, but with a capital 'P'( typedef PERSON *PPERSON;)
-//external vars 
-extern int test_1;
+//struct declaration
+TEST str;
 
 //global vars
 int test_2;
-
-//user functies 
-void Template(void);
 
 /*******************************************************
  * Function: Template
