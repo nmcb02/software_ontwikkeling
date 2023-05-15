@@ -1,28 +1,27 @@
-/*********************************************************
- * @file: main.c
+/*****************************************************//**
+ * @file 	main.c
  *
- * @brief: The file that gets executed and is used for operating
- * 		   a screen via VGA with external functions.<br>
+ * @brief 	The file that gets executed and is used for operating
+ * 		  	a screen via VGA with external functions.
  *
- * 		   **Extra infromation:**
- * 		   # CPU      : STM32F4
- * 		   # IDE      : CooCox CoIDE 1.7.x
- * 		   # Module   : CMSIS_BOOT, M4_CMSIS_CORE
- * 		   # Function : VGA_core DMA LIB 320x240, 8bit color
+ * 		   	**Extra infromation:**
+ * 		  	-# CPU      : STM32F4
+ * 		   	-# IDE      : CooCox CoIDE 1.7.x
+ * 		   	-# Module   : CMSIS_BOOT, M4_CMSIS_CORE
+ * 		   	-# Function : VGA_core DMA LIB 320x240, 8bit color
  *
- * @authors: UB, J.F van der Bent, Skip Wijtman
- * @date: 3-5-2023
- * @version: 1.0 (Updates with every SWD branch)
+ * @authors UB, J.F van der Bent, Skip Wijtman
+ * @date 	3-5-2023
+ * @version 1.0 (Updates with every SWD branch)
 *********************************************************/
 
 //#include <library-header>
 #include <math.h>
-#include <stdio.h>
-#include <string.h>
 
 //#include "user-header"
 #include "main.h"
 #include "stm32_ub_vga_screen.h"
+#include "UART_communication.h"
 
 //#define-statements
 
@@ -75,6 +74,8 @@ int main(void)
 
   while(1)		// Infinite loop
   {
+	  /****OLD TESTING SHIT**************
+
 	  data = UART_getChar();	// Stores received data in variable
 	  if(data != 0)				// If data is received
 	  {
@@ -91,9 +92,8 @@ int main(void)
 
 		  save[i] = data;		// Stores received data for later usage and better readability
 		  i++;
-
 	  }
-
+	  ************************************/
 /*	  UART testing in loop
 
 	  UART_sendChar(data);
@@ -104,6 +104,14 @@ int main(void)
 	  UART_sendChar('d');
 	  UART_sendChar('!');
 */
+
+	  // DIT NOG EVEN TESTEN SKIPPPPPPPPP
+	  UART test;
+	  uint8_t arr[100];
+
+	  test = UART_receiver();
+
+	  strcpy(arr, test.receive);
 
 
   }

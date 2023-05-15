@@ -9,29 +9,18 @@
  *
  * @authors: Skip Wijtman
  * @date: 3-5-2023
- * @version: 1.0 (Updates with every SWD branch)
+ * @version: 1.1 (Updates with every SWD branch)
 *********************************************************/
 
-//#include <library-header>
-
 //#include "user-header"
+#include "UART_communication.h"
 #include "main.h"
 
-//#define-statements
-typedef struct UART_Communication
-{
-	uint8_t receive[100];
-}UART, *PUART;
+//struct declaration
 
-//external vars
 
 //global vars
 
-//user functies
-void UART2_config(void);
-void UART_sendChar(uint8_t c);
-void UART_sendString(char *string);
-uint8_t UART_getChar(void);
 
 /*******************************************************
  * Function: UART2_config
@@ -126,4 +115,32 @@ uint8_t UART_getChar(void)
 	while (!(USART2->SR & (1<<5)));  // wait for RXNE bit to set, this indicates that something was received via UART
 	temp = USART2->DR;  // Read the data. This clears the RXNE also
 	return temp;
+}
+
+UART UART_receiver(void)
+{
+	UART data;
+	uint8_t temp=0;
+	char i;
+
+	memset(data.receive, 0, sizeof(data.receive));		// Empties the receive array
+
+	while(1)
+	{
+		temp = UART_getChar();
+
+		 if(temp == '\r' || temp == ' ')	// Skip CR and space ASCII symbols
+			 continue;
+
+		 if(temp == '\n')		// When a LN is found start anew for data receiving
+		 {
+			 i = 0;
+			 break;
+		 }
+
+		 data.receive[i] = temp;	// Stores received data in array
+		 i++;
+	}
+
+	return data;
 }
