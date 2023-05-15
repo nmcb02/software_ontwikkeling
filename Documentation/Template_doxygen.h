@@ -1,11 +1,11 @@
-/*********************************************************
- * @file: Template_doxygen.c
+/*******************************************************//**
+ * @file    Template_doxygen.c
  * 
- * @brief: A test file for doxygen documentation
+ * @brief   A test file for doxygen documentation
  * 
- * @authors: Skip Wijtman
- * @date: 19-4-2023
- * @version: 1.0
+ * @authors Skip Wijtman
+ * @date    19-4-2023
+ * @version 1.0
 *********************************************************/
 
 //#include <library-header>

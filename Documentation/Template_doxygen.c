@@ -1,11 +1,11 @@
-/*********************************************************
- * @file: Template_doxygen.c
+/*******************************************************//**
+ * @file    Template_doxygen.c
  * 
- * @brief: A test file for doxygen documentation
+ * @brief   A test file for doxygen documentation
  * 
- * @authors: Skip Wijtman
- * @date: 19-4-2023
- * @version: 1.0
+ * @authors Skip Wijtman
+ * @date    19-4-2023
+ * @version 1.0
 *********************************************************/
 
 //#include "user-header"
@@ -17,15 +17,13 @@ TEST str;
 //global vars
 int test_2;
 
-/*******************************************************
- * Function: Template
+/*****************************************************//**
+ * @brief   Template function that points out how a 
+ *          function header should look.
  * 
- * @brief: Template function that points out how a 
- *         function header should look.
+ * @param   Nothing
  * 
- * @param: Nothing
- * 
- * @return: Nothing
+ * @return  Nothing
 *******************************************************/
 void Template(void)                 // Comments are to be given at an appropiate distance and should discribe the statement
 {                                   // Braces at the top and bottem of a function and statement should be like this
@@ -35,14 +33,12 @@ void Template(void)                 // Comments are to be given at an appropiate
         printf("x is %d", x);
 }                                   // Braces at the top and bottom of a function and statement should be like this
 
-/******************************************************
- * Function: Main
+/****************************************************//**
+ * @brief   main header
  * 
- * @brief: main header
+ * @param   Nothing
  * 
- * @param: Nothing
- * 
- * @return: Nothing
+ * @return  Nothing
 ******************************************************/
 void main()
 {
