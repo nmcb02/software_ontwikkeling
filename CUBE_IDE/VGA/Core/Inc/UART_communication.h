@@ -1,4 +1,4 @@
-/*********************************************************
+/*******************************************************//**
  * @file: UART_communication.h
  *
  * @brief: This file contains the functions which are used
@@ -19,18 +19,18 @@
 //#include other "user-header"
 
 
-//struct definition
-typedef struct UART_Communication
-{
-	uint8_t receive[100];
-	uint8_t buffer[100];	// misschien de receive functie als struct maken zodatde functie de data van de struct meteen kan mee geven en dus de gehele array met het ingelezen bericht.
-}UART, *PUART;
-
 //#define-statements
-
+#define LINE_STORAGE 100
 
 //external vars
 
+
+//struct definition
+typedef struct UART_Communication
+{
+	uint8_t receive[LINE_STORAGE];
+	uint8_t buffer[LINE_STORAGE];	
+}UART, *PUART;
 
 //user functies
 void UART2_config(void);
