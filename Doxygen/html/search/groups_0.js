@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cmsis_0',['CMSIS',['../group___c_m_s_i_s.html',1,'']]]
+  ['advanced_2dcontrol_20timers_20_28tim1_20and_20tim8_29_20specific_20features_0',['Advanced-control timers (TIM1 and TIM8) specific features',['../group___t_i_m___group4.html',1,'']]]
 ];
