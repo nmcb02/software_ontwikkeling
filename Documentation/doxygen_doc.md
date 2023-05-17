@@ -21,7 +21,7 @@ During the installation you can click on next after each step, nothing should re
 
 After installing, you should now be able to open the doxywizard application.
 
-1. First the working directory should be selected (should be your repositort directory)
+1. First the working directory should be selected (should be your repository directory)
 2. After this under the tab wizard, write project name, synopsis, etc.
 3. Now the source code folder should be selected in the same tab as before (folder where your main is located)
 4. Lastly the folder for generating doxygen documentation (this can be a folder called "Doxygen" in your repository)
