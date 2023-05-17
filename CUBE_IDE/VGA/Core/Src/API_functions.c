@@ -109,7 +109,7 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 }
 
 /*****************************************************//**
- * @brief   This function gives the user the ability to draw lines on a VGA screen
+ * @brief   This function gives the user the ability to draw a rectangle on a VGA screen
  *
  * @param   x_1 Starting point coördinate of x
  * @param   y_1 Starting point coördinate of y

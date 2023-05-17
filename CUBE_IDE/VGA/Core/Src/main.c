@@ -48,7 +48,11 @@ int main(void)
 	UB_VGA_Screen_Init(); 	// Init VGA-Screen
 
 	UB_VGA_FillScreen(VGA_COL_WHITE);
+
+/*	RECTANGLE drawing test
+
 	API_draw_rectangle(10, 10, 200, 100, VGA_COL_RED, 0);
+*/
 
 /*  LINE drawing test
 
