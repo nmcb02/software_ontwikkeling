@@ -26,7 +26,7 @@ int test_2;
  * @return  Nothing
 *******************************************************/
 void Template(void)                 // Comments are to be given at an appropiate distance and should discribe the statement
-{                                   // Braces at the top and bottem of a function and statement should be like this
+{                                   // Braces at the top and bott0m of a function and statement should be like this
     int x;                          // Code between braces should have a indent of 4 spaces/1 tab
     x = ERROR;
     if(x == ERROR)                  // Statements with single execusions are used WITHOUT braces
