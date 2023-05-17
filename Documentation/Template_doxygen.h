@@ -26,5 +26,5 @@ typedef struct test
 //external vars 
 extern int test_1;
 
-//prototype user functies 
+//prototype user functions
 void Template(void);
