@@ -34,6 +34,7 @@ char save2[100];
 uint8_t arr[100];
 uint8_t i=0;
 int x = 0;
+unsigned char j;
 /*****************************************************//**
  * @brief	Program start.
  *
@@ -59,64 +60,16 @@ int main(void)
 		}
 	}
 
-/*	UART testing
-
-	UART_sendChar('g');
-	UART_sendChar('o');
-	UART_sendChar('e');
-	UART_sendChar('d');
-	UART_sendChar('\n');
-	UART_sendChar('!');
-
-	UART_sendString("goed!");
-*/
-
   while(1)		// Infinite loop
   {
-	  /****OLD TESTING SHIT**************
-
-	  data = UART_getChar();	// Stores received data in variable
-	  if(data != 0)				// If data is received
-	  {
-		  if(data == '\r' || data == ' ')
-			  continue;
-		  if(data == '\n')		// When a LN is found start anew for data receiving
-		  {
-			  i = 0;
-//			  strcpy(save2,save);				// doesnt copy zeros?
-			  memset(save, 0, sizeof(save));
-			  continue;
-		  }
-
-
-		  save[i] = data;		// Stores received data for later usage and better readability
-		  i++;
-	  }
-	  ************************************/
-/*	  UART testing in loop
-
-	  UART_sendChar(data);
-
-	  UART_sendChar('g');
- 	  UART_sendChar('o');
-	  UART_sendChar('e');
-	  UART_sendChar('d');
-	  UART_sendChar('!');
-*/
 
 	  // DIT NOG EVEN TESTEN SKIPPPPPPPPP
 	  UART test;
 
-
-//	  if(USART2->SR & (1<<5))
 	  test = UART_receiver();
 
-//	  for(unsigned char j = 0; j<sizeof(LINE_STORAGE); j++)
-//	  {
-//		  arr[j] = test.receive[j];
-//	  }
-	  strcpy(arr, test.receive);
-
+	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
+		  arr[j] = test.receive[j];
 
 	  x = sizeof(test.receive);
 

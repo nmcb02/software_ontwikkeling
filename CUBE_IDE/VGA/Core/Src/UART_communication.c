@@ -133,19 +133,16 @@ UART UART_receiver(void)
 {
 	UART data;
 	uint8_t temp=0;
-	uint8_t i;
+	uint8_t i = 0;
 
-//	memset(data.receive, 0, LINE_STORAGE);		// Empties the receive array
-//	for(unsigned char j = 0; j<sizeof(LINE_STORAGE); j++)
-//	{
-//		data.receive[j] = 0;
-//	}
+	for(unsigned char j = 0; j<LINE_STORAGE; j++)		// Empties the array
+		data.receive[j] = 0;
 
 	while(1)
 	{
 		temp = UART_getChar();
 
-		 if(temp == '\r' || temp == ' ' || temp == '\0')	// Skip CR and space ASCII symbols
+		 if(temp == '\r' || temp == ' ')	// Skip CR and space ASCII symbols, space is still used in sentaces
 			 continue;
 
 		 if(temp == '\n' || temp == NO_DATA)		// When a LN is found start anew for data receiving
@@ -157,6 +154,5 @@ UART UART_receiver(void)
 		 data.receive[i] = temp;	// Stores received data in array
 		 i++;
 	}
-
 	return data;
 }
