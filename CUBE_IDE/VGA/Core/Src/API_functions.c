@@ -1,15 +1,26 @@
-/*
- * API_functions.c
+/*******************************************************//**
+ * @file    API_functions.c
  *
- *  Created on: May 17, 2023
- *      Author: naomi
- */
-
+ * @brief  	All API functions are created in this file
+ *
+ * @authors Naomi Born
+ * @date    17-05-2023
+ * @version 1.0
+*********************************************************/
 #include "API_functions.h"
 
-#define sgn(x) ((x<0)?-1:((x>0)?1:0)) // macro to return the sign of a number
-
-
+/*****************************************************//**
+ * @brief   This function gives the user the ability to draw lines on a VGA screen
+ *
+ * @param   x_1 Starting point coördinate of x
+ * @param   x_2 Ending point coördinate of x
+ * @param   y_1 Starting point coördinate of y
+ * @param   y_2 Ending point coördinate of y
+ * @param   color Color of the line
+ * @param   weight Width of the line
+ *
+ * @return  Error code if error occurs
+*******************************************************/
 int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 {
 	int dx, dy, sdx, sdy, dxabs, dyabs, x, y, px, py;
