@@ -10,11 +10,14 @@
 #ifndef INC_API_FUNCTIONS_H_
 #define INC_API_FUNCTIONS_H_
 
+//#include <library-header>
 #include <stdio.h>
 #include <stdlib.h>
 
+//#include other "user-header"
 #include "stm32_ub_vga_screen.h"
 
+//#define-statements
 #define sgn(x) ((x<0)?-1:((x>0)?1:0)) // macro to return the sign of a number
 
 // prototype user functions
