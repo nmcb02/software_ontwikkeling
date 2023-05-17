@@ -18,6 +18,7 @@
 //#include <library-header>
 #include "main.h"
 #include "stm32_ub_vga_screen.h"
+#include "API_functions.h"
 #include <math.h>
 
 //#include "user-header"
@@ -46,17 +47,9 @@ int main(void)
 	UART2_config();			// Init UART
 	UB_VGA_Screen_Init(); 	// Init VGA-Screen
 
-	UB_VGA_FillScreen(VGA_COL_BLUE);
+	UB_VGA_FillScreen(VGA_COL_WHITE);
 
-	for(short x=160; x<(160+10); x++)
-	{
-		UB_VGA_SetPixel(x, 120, VGA_COL_BLACK);
-
-		for(short y=120; y<(120+10); y++)
-		{
-			UB_VGA_SetPixel(160, y, VGA_COL_GREEN);
-		}
-	}
+	API_draw_line(160, 120, 200, 190, 0, 10, 0);
 
 /*	UART testing
 
@@ -70,16 +63,16 @@ int main(void)
 	UART_sendString("goed!");
 */
 
-  while(1)		// Infinite loop
-  {
-	  data = UART_getChar();	// Stores received data in variable
-	  if(data != 0)				// If data is received
-	  {
-		  save[i] = data;		// Stores received data for later usage and better readability
-		  i++;
-		  if(data == ' ')		// still testing // When a space is found start anew for data receiving
-			  i = 0;
-	  }
+//  while(1)		// Infinite loop
+//  {
+//	  data = UART_getChar();	// Stores received data in variable
+//	  if(data != 0)				// If data is received
+//	  {
+//		  save[i] = data;		// Stores received data for later usage and better readability
+//		  i++;
+//		  if(data == ' ')		// still testing // When a space is found start anew for data receiving
+//			  i = 0;
+//	  }
 
 /*	  UART testing in loop
 
@@ -93,6 +86,6 @@ int main(void)
 */
 
 
-  }
+//  }
 }
 
