@@ -30,8 +30,29 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight, int
 	px = x_1;
 	py = y_1;
 
+	if (dy == 0)	// Horizontal line
+	{
+		for (short y = y_1; y <= y_1 + weight; y++)
+		{
+			for(short x = x_1; x <= x_2; x++)
+			{
+				UB_VGA_SetPixel(x, y, VGA_COL_BLUE);
+			}
+		}
+	}
 
-	if (dxabs>=dyabs)	// Delta x is bigger than delta y
+	else if (dx == 0) //vertical line
+	{
+		for (short x = x_1; x <= x_1 + weight; x++)
+		{
+			for(short y = y_1; y <= y_2; y++)
+			{
+				UB_VGA_SetPixel(x, y, VGA_COL_GREEN);
+			}
+		}
+	}
+
+	else if (dxabs>=dyabs)	// Delta x is bigger than delta y
 	{
 		for (int i = 0; i < dxabs; i++) // Loop for a line < delta x
 		{
@@ -44,7 +65,7 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight, int
 			}
 
 			px += sdx;
-			UB_VGA_SetPixel(px, py, VGA_COL_GREEN);
+			UB_VGA_SetPixel(px, py, VGA_COL_BLACK);
 		}
 	}
 
@@ -60,16 +81,10 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight, int
 				px += sdx;
 			}
 			py += sdy;
-			UB_VGA_SetPixel(px, py, VGA_COL_GREEN);
+			UB_VGA_SetPixel(px, py, VGA_COL_RED);
 		}
 	}
-//		for (short y = y_1; y <= y_1 + weight; y++)
-//		{
-//			for(short x = x_1; x <= x_2; x++)
-//			{
-//				UB_VGA_SetPixel(x, y, VGA_COL_GREEN);
-//			}
-//		}
+
 
 	return 1;
 }

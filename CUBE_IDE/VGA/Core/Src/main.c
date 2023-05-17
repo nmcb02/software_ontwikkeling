@@ -49,8 +49,10 @@ int main(void)
 
 	UB_VGA_FillScreen(VGA_COL_WHITE);
 
-	API_draw_line(160, 120, 200, 190, 0, 10, 0);
-
+	API_draw_line(10, 10, 50, 10, 0, 10, 0);
+	API_draw_line(50, 30, 50, 60, 0, 10, 0);
+	API_draw_line(110, 10, 140, 60, 0, 10, 0);
+	API_draw_line(110, 60, 140, 10, 0, 10, 0);
 /*	UART testing
 
 	UART_sendChar('g');
