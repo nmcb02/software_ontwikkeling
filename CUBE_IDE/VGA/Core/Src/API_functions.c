@@ -25,37 +25,37 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 {
 	int dx, dy, sdx, sdy, dxabs, dyabs, x, y, px, py;
 
-	dx = x_2 - x_1;	//calculate deltas of x and y
+	dx = x_2 - x_1;	// Calculate deltas of x and y
 	dy = y_2 - y_1;
 
-	dxabs = abs(dx); // absolute val so no negative values exist
+	dxabs = abs(dx); // Absolute val so no negative values exist
 	dyabs = abs(dy);
 
 	sdx = sgn(dx);
 	sdy = sgn(dy);
 
-	x = dyabs>>1; // bit shift to right aka dyabs/2
-	y = dxabs>>1; // bit shift to right aka dxabs/2
+	x = dyabs>>1; // Bit shift to right aka dyabs/2
+	y = dxabs>>1; // Bit shift to right aka dxabs/2
 
 	px = x_1;
 	py = y_1;
 
 	if (dy == 0)	// Horizontal line
 	{
-		for (short y = y_1; y <= y_1 + weight; y++)
+		for (int y = y_1; y <= y_1 + weight; y++)
 		{
-			for(short x = x_1; x <= x_2; x++)
+			for(int x = x_1; x <= x_2; x++)
 			{
 				UB_VGA_SetPixel(x, y, color);
 			}
 		}
 	}
 
-	else if (dx == 0) //vertical line
+	else if (dx == 0) // vertical line
 	{
-		for (short x = x_1; x <= x_1 + weight; x++)
+		for (int x = x_1; x <= x_1 + weight; x++)
 		{
-			for(short y = y_1; y <= y_2; y++)
+			for(int y = y_1; y <= y_2; y++)
 			{
 				UB_VGA_SetPixel(x, y, color);
 			}

@@ -49,10 +49,10 @@ int main(void)
 
 	UB_VGA_FillScreen(VGA_COL_WHITE);
 
-	API_draw_line(1, 1, 100, 100, VGA_COL_GREEN, 4);
-//	API_draw_line(50, 30, 50, 60, VGA_COL_GREEN, 10);
-//	API_draw_line(110, 10, 140, 60, VGA_COL_GREEN, 5);
-//	API_draw_line(110, 60, 140, 10, VGA_COL_GREEN, 5);
+	API_draw_line(10, 30, 50, 30, VGA_COL_GREEN, 10);
+	API_draw_line(50, 30, 50, 60, VGA_COL_GREEN, 10);
+	API_draw_line(110, 10, 140, 60, VGA_COL_GREEN, 5);
+	API_draw_line(110, 60, 140, 10, VGA_COL_GREEN, 5);
 /*	UART testing
 
 	UART_sendChar('g');
