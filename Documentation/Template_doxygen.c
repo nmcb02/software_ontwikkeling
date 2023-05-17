@@ -25,7 +25,7 @@ int test_2;
  * 
  * @return  Nothing
 *******************************************************/
-void Template(void)                 // Comments are to be given at an appropiate distance and should discribe the statement
+void Template(void)                 // Comments are to be given at an appropriate distance and should discribe the statement
 {                                   // Braces at the top and bottom of a function and statement should be like this
     int x;                          // Code between braces should have an indent of 4 spaces/1 tab
     x = ERROR;
