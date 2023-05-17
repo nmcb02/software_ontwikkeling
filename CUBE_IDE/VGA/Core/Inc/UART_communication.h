@@ -20,7 +20,8 @@
 
 
 //#define-statements
-#define LINE_STORAGE 100
+#define LINE_STORAGE 	100
+#define NO_DATA			69
 
 //external vars
 

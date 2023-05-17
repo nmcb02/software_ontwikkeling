@@ -31,14 +31,15 @@
 uint8_t data;
 char save[100];
 char save2[100];
+uint8_t arr[100];
 uint8_t i=0;
-
+int x = 0;
 /*****************************************************//**
- * @brief: Program start.
+ * @brief	Program start.
  *
- * @param: Nothing
+ * @param	Nothing
  *
- * @return: integer val
+ * @return	integer val
 *******************************************************/
 int main(void)
 {
@@ -105,11 +106,14 @@ int main(void)
 
 	  // DIT NOG EVEN TESTEN SKIPPPPPPPPP
 	  UART test;
-	  uint8_t arr[100];
 
-	  test = UART_receiver();
+
+//	  if(USART2->SR & (1<<5))
+		  test = UART_receiver();
 
 	  strcpy(arr, test.receive);
+
+	  x = sizeof(test.receive);
 
 
   }

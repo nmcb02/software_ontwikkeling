@@ -64,6 +64,10 @@ void UART2_config(void)
 	// 6. Enabling Tx and Rx
 	USART2->CR1 |= (1<<3);		// Enables Tx for UART
 	USART2->CR1 |= (1<<2);		// Enables Rx for UART
+
+	// TESTING //
+	// 7. Enable receive interrupt
+	USART2->CR1 |= (1<<5);
 }
 
 /*****************************************************//**
@@ -101,9 +105,19 @@ void UART_sendString(char *string)
 *******************************************************/
 uint8_t UART_getChar(void)
 {
-	uint8_t temp;
+	uint8_t temp = NO_DATA;
+	unsigned int i = 0;
 
-	while (!(USART2->SR & (1<<5)));  // wait for RXNE bit to set, this indicates that something was received via UART
+	while(!(USART2->SR & (1<<5)))		// wait for RXNE bit to set, this indicates that something was received via UART
+		{
+			if(i==4000000)
+			{
+				i = 0;
+				temp = NO_DATA;
+				return temp;
+			}
+			i++;
+		}
 	temp = USART2->DR;  // Read the data. This clears the RXNE also
 	return temp;
 }
@@ -119,18 +133,18 @@ UART UART_receiver(void)
 {
 	UART data;
 	uint8_t temp=0;
-	char i;
+	uint8_t i;
 
-	memset(data.receive, 0, sizeof(data.receive));		// Empties the receive array
+//	memset(data.receive, 0, sizeof(data.receive));		// Empties the receive array
 
 	while(1)
 	{
 		temp = UART_getChar();
 
-		 if(temp == '\r' || temp == ' ')	// Skip CR and space ASCII symbols
+		 if(temp == '\r' || temp == ' ' || temp == '\0')	// Skip CR and space ASCII symbols
 			 continue;
 
-		 if(temp == '\n')		// When a LN is found start anew for data receiving
+		 if(temp == '\n' || temp == NO_DATA)		// When a LN is found start anew for data receiving
 		 {
 			 i = 0;
 			 break;
