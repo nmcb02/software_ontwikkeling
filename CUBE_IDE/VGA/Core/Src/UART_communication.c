@@ -135,7 +135,11 @@ UART UART_receiver(void)
 	uint8_t temp=0;
 	uint8_t i;
 
-//	memset(data.receive, 0, sizeof(data.receive));		// Empties the receive array
+//	memset(data.receive, 0, LINE_STORAGE);		// Empties the receive array
+//	for(unsigned char j = 0; j<sizeof(LINE_STORAGE); j++)
+//	{
+//		data.receive[j] = 0;
+//	}
 
 	while(1)
 	{

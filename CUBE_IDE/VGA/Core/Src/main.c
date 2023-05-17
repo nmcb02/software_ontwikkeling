@@ -109,12 +109,16 @@ int main(void)
 
 
 //	  if(USART2->SR & (1<<5))
-		  test = UART_receiver();
+	  test = UART_receiver();
 
+//	  for(unsigned char j = 0; j<sizeof(LINE_STORAGE); j++)
+//	  {
+//		  arr[j] = test.receive[j];
+//	  }
 	  strcpy(arr, test.receive);
 
-	  x = sizeof(test.receive);
 
+	  x = sizeof(test.receive);
 
   }
 }
