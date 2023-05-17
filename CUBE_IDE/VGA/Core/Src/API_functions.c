@@ -6,12 +6,11 @@
  */
 
 #include "API_functions.h"
-#include "stm32_ub_vga_screen.h"
-
 
 #define sgn(x) ((x<0)?-1:((x>0)?1:0)) // macro to return the sign of a number
 
-int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight, int reserved)
+
+int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 {
 	int dx, dy, sdx, sdy, dxabs, dyabs, x, y, px, py;
 
@@ -36,7 +35,7 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight, int
 		{
 			for(short x = x_1; x <= x_2; x++)
 			{
-				UB_VGA_SetPixel(x, y, VGA_COL_BLUE);
+				UB_VGA_SetPixel(x, y, color);
 			}
 		}
 	}
@@ -47,45 +46,53 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight, int
 		{
 			for(short y = y_1; y <= y_2; y++)
 			{
-				UB_VGA_SetPixel(x, y, VGA_COL_GREEN);
+				UB_VGA_SetPixel(x, y, color);
 			}
 		}
 	}
 
 	else if (dxabs>=dyabs)	// Delta x is bigger than delta y
 	{
-		for (int i = 0; i < dxabs; i++) // Loop for a line < delta x
+		for(int j = 0; j < weight; j++)
 		{
-			y += dyabs;
-
-			if (y >= dxabs)
+			for (int i = 0; i < dxabs; i++) // Loop for a line < delta x
 			{
-				y -= dxabs;
-				py += sdy;
-			}
+				y += dyabs;
 
-			px += sdx;
-			UB_VGA_SetPixel(px, py, VGA_COL_BLACK);
+				if (y >= dxabs)
+				{
+					y -= dxabs;
+					py += sdy;
+				}
+
+				px += sdx;
+				UB_VGA_SetPixel(px+j, py, color);
+			}
+			px = x_1;
+			py = y_1;
 		}
 	}
 
 	else
 	{
-		for (int i = 0; i < dyabs; i++) // Loop for a line < delta x
+		for(int j = 0; j < weight; j++)
 		{
-			x += dxabs;
-
-			if (x >= dyabs)
+			for (int i = 0; i < dyabs; i++) // Loop for a line < delta x
 			{
-				x -= dyabs;
-				px += sdx;
+				x += dxabs;
+
+				if (x >= dyabs)
+				{
+					x -= dyabs;
+					px += sdx;
+				}
+				py += sdy;
+				UB_VGA_SetPixel(px+j, py, color);
 			}
-			py += sdy;
-			UB_VGA_SetPixel(px, py, VGA_COL_RED);
+			px = x_1;
+			py = y_1;
 		}
 	}
-
-
-	return 1;
+	return 0;
 }
 
