@@ -5,7 +5,7 @@
  *
  * @authors Naomi Born
  * @date    17-05-2023
- * @version 1.0
+ * @version 1.1
 *********************************************************/
 //#include other "user-header"
 #include "API_functions.h"
@@ -108,6 +108,18 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 	return 0;
 }
 
+/*****************************************************//**
+ * @brief   This function gives the user the ability to draw lines on a VGA screen
+ *
+ * @param   x_1 Starting point coördinate of x
+ * @param   y_1 Starting point coördinate of y
+ * @param   width Width of the rectangle max. 320
+ * @param   height Height of the rectangle max. 240
+ * @param   color Color of the rectangle/borders
+ * @param   filled 1 is filled rectangle 0 is just borders
+ *
+ * @return  Error code if error occurs
+*******************************************************/
 int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int filled)
 {
 	int x_2, y_2;
@@ -115,7 +127,7 @@ int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int 
 	x_2 = x_1 + width;
 	y_2 = y_1 + height;
 
-	if (filled)
+	if (filled)	//Drawing a filled rectangle
 	{
 		for (int y = y_1; y <= y_2; y++)
 		{
@@ -134,7 +146,7 @@ int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int 
 		for (int y = y_1; y <= y_2; y++)	// Draw left line
 			UB_VGA_SetPixel(x_1, y, color);
 
-		for (int y = y_1; y <= y_2; y++)			// Draw right line
+		for (int y = y_1; y <= y_2; y++)	// Draw right line
 			UB_VGA_SetPixel(x_2, y, color);
 
 		for (int x = x_1; x <= x_2; x++)	// Draw bottom line
