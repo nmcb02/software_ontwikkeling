@@ -63,7 +63,6 @@ int main(void)
   while(1)		// Infinite loop
   {
 
-	  // DIT NOG EVEN TESTEN SKIPPPPPPPPP
 	  UART test;
 
 	  test = UART_receiver();
@@ -71,7 +70,6 @@ int main(void)
 	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
 		  arr[j] = test.receive[j];
 
-	  x = sizeof(test.receive);
 
   }
 }
