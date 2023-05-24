@@ -31,7 +31,7 @@
 uint8_t data;
 uint8_t save[8];
 uint8_t i=0;
-
+int some = 1;
 /*******************************************************
  * Function: main
  *
@@ -47,8 +47,7 @@ int main(void)
 	UART2_config();			// Init UART
 	UB_VGA_Screen_Init(); 	// Init VGA-Screen
 
-	while(1)
-	{
+
 //		UB_VGA_FillScreen(VGA_COL_WHITE);
 
 /*  LINE drawing test */
@@ -58,8 +57,18 @@ int main(void)
 //	API_draw_line(110, 10, 140, 60, VGA_COL_GREEN, 5);
 //	API_draw_line(110, 60, 140, 10, VGA_COL_GREEN, 5);
 
-		API_clearscreen(VGA_COL_RED);
+
+	while (some == 1)
+	{
+		UB_VGA_FillScreen(VGA_COL_BLACK);
+		API_draw_line(100, 120, 200, 120, VGA_COL_MAGENTA, 4);
+		some = 0;
 	}
+
+	while (!some)
+		API_clearscreen(VGA_COL_WHITE);
+
+
 /*	UART testing
 
 	UART_sendChar('g');
