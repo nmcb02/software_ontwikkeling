@@ -15,18 +15,25 @@
 
 
 //#include other "user-header"
+#include "UART_communication.h"
 
 
 //struct definition
 
 
 //#define-statements
+enum ERROR
+{
+	NO_ERR = 0,
+	COMMAND_ERR
+};
 
 
 //external vars
 
 
 //prototype user functions
+int Parser(UART data);
 
 
 #endif /* INC_LOGIC_LAYER_H_ */

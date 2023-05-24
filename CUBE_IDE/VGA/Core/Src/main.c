@@ -23,6 +23,7 @@
 #include "main.h"
 #include "stm32_ub_vga_screen.h"
 #include "UART_communication.h"
+#include "logic_layer.h"
 
 //#define-statements
 
@@ -83,12 +84,23 @@ int main(void)
 //	  }
 
 	  UART test;
+//
+//	  test = UART_receiver();
+//
+//	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
+//		  arr[j] = test.receive[j];
 
-	  test = UART_receiver();
 
-	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
-		  arr[j] = test.receive[j];
+	  test.receive[0] = 't';
+	  test.receive[1] = 'e';
+	  test.receive[2] = 'k';
+	  test.receive[3] = 's';
+	  test.receive[4] = 't';
+	  test.receive[5] = ',';
+	  test.receive[6] = '0';
+	  test.receive[7] = ',';
 
+	  int val = Parser(test);
 
 //  }
 }
