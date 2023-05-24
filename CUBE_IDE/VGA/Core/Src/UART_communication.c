@@ -3,8 +3,8 @@
  *
  * @brief	In this file UART is used to make communication
  * 	       	possible between the STM32F4 board and a computer.
- * 	       	With this code massages can be received an sent.
- * 	       	This code is made with the assistance of a online
+ * 	       	With this code messages can be received and sent.
+ * 	       	This code is made with the assistance of an online
  * 	       	guide from 'Controllerstech'.
  *
  * @authors	Skip Wijtman

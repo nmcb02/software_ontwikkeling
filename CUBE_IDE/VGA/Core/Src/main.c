@@ -16,6 +16,7 @@
 *********************************************************/
 
 //#include <library-header>
+#include "API_functions.h"
 #include <math.h>
 
 //#include "user-header"
@@ -48,20 +49,38 @@ int main(void)
 	UART2_config();			// Init UART
 	UB_VGA_Screen_Init(); 	// Init VGA-Screen
 
-	UB_VGA_FillScreen(VGA_COL_BLUE);
+	UB_VGA_FillScreen(VGA_COL_WHITE);
 
-	for(short x=160; x<(160+10); x++)
-	{
-		UB_VGA_SetPixel(x, 120, VGA_COL_BLACK);
+/*  LINE drawing test
 
-		for(short y=120; y<(120+10); y++)
-		{
-			UB_VGA_SetPixel(160, y, VGA_COL_GREEN);
-		}
-	}
+	API_draw_line(10, 30, 50, 30, VGA_COL_GREEN, 10);
+	API_draw_line(50, 30, 50, 60, VGA_COL_GREEN, 10);
+	API_draw_line(110, 10, 140, 60, VGA_COL_GREEN, 5);
+	API_draw_line(110, 60, 140, 10, VGA_COL_GREEN, 5);
+*/
 
-  while(1)		// Infinite loop
-  {
+/*	UART testing
+
+	UART_sendChar('g');
+	UART_sendChar('o');
+	UART_sendChar('e');
+	UART_sendChar('d');
+	UART_sendChar('\n');
+	UART_sendChar('!');
+
+	UART_sendString("goed!");
+*/
+
+//  while(1)		// Infinite loop
+//  {
+//	  data = UART_getChar();	// Stores received data in variable
+//	  if(data != 0)				// If data is received
+//	  {
+//		  save[i] = data;		// Stores received data for later usage and better readability
+//		  i++;
+//		  if(data == ' ')		// still testing // When a space is found start anew for data receiving
+//			  i = 0;
+//	  }
 
 	  UART test;
 
@@ -71,6 +90,6 @@ int main(void)
 		  arr[j] = test.receive[j];
 
 
-  }
+//  }
 }
 
