@@ -343,9 +343,10 @@ var searchData=
   ['apb2lpenr_340',['APB2LPENR',['../struct_r_c_c___type_def.html#aba51c57f9506e14a6f5983526c78943b',1,'RCC_TypeDef']]],
   ['apb2rstr_341',['APB2RSTR',['../struct_r_c_c___type_def.html#ab2c5389c9ff4ac188cd498b8f7170968',1,'RCC_TypeDef']]],
   ['api_5fdraw_5fline_342',['API_draw_line',['../_a_p_i__functions_8h.html#a5762291bd9ba0b7c55877a82192975c9',1,'API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight):&#160;API_functions.c'],['../_a_p_i__functions_8c.html#a5762291bd9ba0b7c55877a82192975c9',1,'API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight):&#160;API_functions.c']]],
-  ['api_5ffunctions_2ec_343',['API_functions.c',['../_a_p_i__functions_8c.html',1,'']]],
-  ['api_5ffunctions_2eh_344',['API_functions.h',['../_a_p_i__functions_8h.html',1,'']]],
-  ['apsr_5ftype_345',['APSR_Type',['../union_a_p_s_r___type.html',1,'']]],
-  ['arg_346',['ARG',['../struct_s_d_i_o___type_def.html#a07d4e63efcbde252c667e64a8d818aa9',1,'SDIO_TypeDef']]],
-  ['arr_347',['ARR',['../struct_t_i_m___type_def.html#af17f19bb4aeea3cc14fa73dfa7772cb8',1,'TIM_TypeDef']]]
+  ['api_5fdraw_5frectangle_343',['API_draw_rectangle',['../_a_p_i__functions_8h.html#a0587bfc121fd81d7f77001ded7166d4f',1,'API_draw_rectangle(int x, int y, int width, int height, int color, int filled):&#160;API_functions.c'],['../_a_p_i__functions_8c.html#a873d84dd7c5f171783799bcd36ac7688',1,'API_draw_rectangle(int x_1, int y_1, int width, int height, int color, int filled):&#160;API_functions.c']]],
+  ['api_5ffunctions_2ec_344',['API_functions.c',['../_a_p_i__functions_8c.html',1,'']]],
+  ['api_5ffunctions_2eh_345',['API_functions.h',['../_a_p_i__functions_8h.html',1,'']]],
+  ['apsr_5ftype_346',['APSR_Type',['../union_a_p_s_r___type.html',1,'']]],
+  ['arg_347',['ARG',['../struct_s_d_i_o___type_def.html#a07d4e63efcbde252c667e64a8d818aa9',1,'SDIO_TypeDef']]],
+  ['arr_348',['ARR',['../struct_t_i_m___type_def.html#af17f19bb4aeea3cc14fa73dfa7772cb8',1,'TIM_TypeDef']]]
 ];
