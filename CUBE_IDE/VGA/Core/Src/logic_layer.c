@@ -1,10 +1,10 @@
 /*******************************************************//**
  * @file    Template_doxygen.c
  *
- * @brief   Here commands will be processed and executed
+ * @brief   A test file for doxygen documentation
  *
  * @authors Skip Wijtman
- * @date    24-5-2023
+ * @date    24-4-2023
  * @version 1.0
 *********************************************************/
 

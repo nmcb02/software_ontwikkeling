@@ -110,7 +110,7 @@ uint8_t UART_getChar(void)
 
 	while(!(USART2->SR & (1<<5)))		// wait for RXNE bit to set, this indicates that something was received via UART
 		{
-			if(i==4000000)
+			if(i==WAIT_FOR_DATA)
 			{
 				i = 0;
 				temp = NO_DATA;
