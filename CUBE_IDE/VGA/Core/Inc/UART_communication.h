@@ -32,6 +32,7 @@ typedef struct UART_Communication
 {
 	uint8_t receive[LINE_STORAGE];
 	uint8_t buffer[LINE_STORAGE];	
+	int 	err_code;
 }UART, *PUART;
 
 //user functies

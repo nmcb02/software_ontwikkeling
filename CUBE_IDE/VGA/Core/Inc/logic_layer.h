@@ -28,12 +28,19 @@ enum ERROR
 	COMMAND_ERR
 };
 
+#define LINE_LEN 		5
+#define RECTANGLE_LEN 	10
+#define CLEAR_LEN 		12
+#define TEXT_LEN 		6
+#define BITMAP_LEN 		7
 
 //external vars
 
 
 //prototype user functions
-int Parser(UART data);
+int parse_cmd(UART data);
+int draw_options(char cmd, UART data);
+void number_converter(char tracker, char ASCII);
 
 
 #endif /* INC_LOGIC_LAYER_H_ */

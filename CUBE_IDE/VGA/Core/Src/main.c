@@ -37,6 +37,7 @@ uint8_t arr[100];
 uint8_t i=0;
 int x = 0;
 unsigned char j;
+int val = 0;
 /*****************************************************//**
  * @brief	Program start.
  *
@@ -72,8 +73,8 @@ int main(void)
 	UART_sendString("goed!");
 */
 
-//  while(1)		// Infinite loop
-//  {
+  while(1)		// Infinite loop
+  {
 //	  data = UART_getChar();	// Stores received data in variable
 //	  if(data != 0)				// If data is received
 //	  {
@@ -84,24 +85,19 @@ int main(void)
 //	  }
 
 	  UART test;
-//
-//	  test = UART_receiver();
-//
-//	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
-//		  arr[j] = test.receive[j];
+
+	  test = UART_receiver();
+
+	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
+		  arr[j] = test.receive[j];
 
 
-	  test.receive[0] = 't';
-	  test.receive[1] = 'e';
-	  test.receive[2] = 'k';
-	  test.receive[3] = 's';
-	  test.receive[4] = 't';
-	  test.receive[5] = ',';
-	  test.receive[6] = '0';
-	  test.receive[7] = ',';
+	  if(test.receive[0] != 0)		// When data received, parse
+		  val = parse_cmd(test);
 
-	  int val = Parser(test);
+	  else
+		  val = NO_DATA;
 
-//  }
+  }
 }
 
