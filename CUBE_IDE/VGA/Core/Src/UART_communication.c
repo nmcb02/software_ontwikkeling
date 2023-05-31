@@ -9,7 +9,7 @@
  *
  * @authors	Skip Wijtman
  * @date	3-5-2023
- * @version	1.1 (Updates with every SWD branch)
+ * @version	1.1
 *********************************************************/
 
 //#include "user-header"
@@ -135,7 +135,7 @@ UART UART_receiver(void)
 	uint8_t temp=0;
 	uint8_t i = 0;
 
-	for(unsigned char j = 0; j<LINE_STORAGE; j++)		// Empties the array
+	for(unsigned char j = 0; j<STORAGE; j++)		// Empties the array
 		data.receive[j] = 0;
 
 	while(1)

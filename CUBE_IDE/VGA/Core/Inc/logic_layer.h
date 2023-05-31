@@ -6,7 +6,7 @@
  *
  * @authors Skip Wijtman
  * @date    24-5-2023
- * @version 1.0
+ * @version 1.2
 *********************************************************/
 #ifndef INC_LOGIC_LAYER_H_
 #define INC_LOGIC_LAYER_H_
@@ -19,20 +19,36 @@
 
 
 //struct definition
-
+typedef struct PARSE_STORAGE
+{
+	int number_store[3];
+	int color;
+	int loop_iterator;
+	int var_store[6];
+	int err_code;
+}PARSE, *PPARSE;
 
 //#define-statements
 enum ERROR
 {
-	NO_ERR = 0,
+	NO_ERR = 0,		// All errors listed
 	COMMAND_ERR
 };
 
-#define LINE_LEN 		5
-#define RECTANGLE_LEN 	10
-#define CLEAR_LEN 		12
-#define TEXT_LEN 		6
-#define BITMAP_LEN 		7
+#define LINE_LEN 			5		// Defines to skip the command in the received array
+#define RECTANGLE_LEN 		10
+#define CLEAR_LEN 			12
+#define TEXT_LEN 			6
+#define BITMAP_LEN 			7
+
+#define LB_ASCII_NUMBERS	48		// Defines to mark the lower and upper bounds of the ASCII numbers
+#define UB_ASCII_NUMBERS	57
+
+#define LB_ASCII_LETTERS	97		// Defines to mark the lower and upper bounds of the ASCII lowercase letters
+#define UB_ASCII_LETTERS	122
+
+#define TRUE 				1
+#define FALSE				0
 
 //external vars
 
@@ -40,7 +56,7 @@ enum ERROR
 //prototype user functions
 int parse_cmd(UART data);
 int draw_options(char cmd, UART data);
-void number_converter(char tracker, char ASCII);
-
+int number_converter(char ASCII);
+PARSE color_assign(UART data, int i);
 
 #endif /* INC_LOGIC_LAYER_H_ */

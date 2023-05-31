@@ -88,7 +88,7 @@ int main(void)
 
 	  test = UART_receiver();
 
-	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
+	  for(j = 0; j<STORAGE; j++)		// Copies received data
 		  arr[j] = test.receive[j];
 
 

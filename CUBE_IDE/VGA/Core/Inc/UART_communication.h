@@ -6,7 +6,7 @@
  *
  * @authors: Skip Wijtman
  * @date: 3-5-2023
- * @version: 1.1 (Updates with every SWD branch)
+ * @version: 1.1
 *********************************************************/
 
 #ifndef INC_UART_COMMUNICATION_H_
@@ -21,7 +21,7 @@
 
 //#define-statements
 #define WAIT_FOR_DATA 	4000000
-#define LINE_STORAGE 	100
+#define STORAGE 	100
 #define NO_DATA			69
 
 //external vars
@@ -30,8 +30,8 @@
 //struct definition
 typedef struct UART_Communication
 {
-	uint8_t receive[LINE_STORAGE];
-	uint8_t buffer[LINE_STORAGE];	
+	uint8_t receive[STORAGE];
+	uint8_t buffer[STORAGE];
 	int 	err_code;
 }UART, *PUART;
 

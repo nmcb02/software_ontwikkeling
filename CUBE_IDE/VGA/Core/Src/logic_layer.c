@@ -5,7 +5,7 @@
  *
  * @authors Skip Wijtman
  * @date    24-5-2023
- * @version 1.0
+ * @version 1.2
 *********************************************************/
 
 //#include "user-header"
@@ -64,7 +64,7 @@ int parse_cmd(UART data)
  * 			also get parsed further
  *
  * 			Here a switch-case is used to determine the
- * 			received command, Cases 1 to 5 are numbered as
+ * 			received command, Cases 0 to 4 are numbered as
  * 			followed:
  *
  * 			-# lijn
@@ -79,53 +79,79 @@ int parse_cmd(UART data)
 *******************************************************/
 int draw_options(char cmd, UART data)
 {
-	char cmd_length;
-
-	switch(cmd)				//////Voor cijfers kan er een array van 3 lang gebruikt worden om deze een voor een in te zetten, na vertalen van ASCII, en wanneer er een comma weer is gevondendeze getallen goed bijelkaar optellen
-	{						///// dit hier boven is goed, maar dat moet dan waarschijnlijk ook weer in een struct, dus de vraag is of hier ook een struct voor gemaakt wordt of dat de 'UART' struct algemeen wordt.
+	PARSE parsing;
+	switch(cmd)				//////ALLES HIERONDER NOG EEN KEER DOOLOPEN OF HET KLOPT EN LOGISCH IS
+	{
 		case 0:
-		{
-			char tracker = 0;
-			cmd_length = LINE_LEN;			// The cmd length to skip it in the script tekst
-			for(int i = cmd_length; i<LINE_STORAGE; i++)		// Start the loop after the command, to convert the rest of the script
+			int num_tracker = 0;
+			int var_counter = 0;
+			int num_checker = 0;
+			int let_checker = 0;
+			for(int i = LINE_LEN; i<STORAGE; i++)		// Start the loop after the command, to convert the rest of the script
 			{
-				if(data.receive[i] >= 48 && data.receive[i] <= 57)		// When a numberin ASCII values is found convert this to decimals
+				if(data.receive[i] >= LB_ASCII_NUMBERS && data.receive[i] <= UB_ASCII_NUMBERS)		// When a number in ASCII values is found convert this to decimals
 				{
-					tracker++;											// Tracks how much numbers between two comma's are found so that these will be added together,   e.g.   ,100, in ASCII is '49' '48' '48' which will be converted to '1' '0' '0', but these numbers must be added together for the original '100'
-					number_converter(tracker, data.receive[i]);
+					parsing.number_store[tracker] = number_converter(data.receive[i]);				// Converts and returns the number
+					num_tracker++;														// Tracks how much numbers between two comma's are found so that these will be added together,   e.g.   ,100, in ASCII is '49' '48' '48' which will be converted to '1' '0' '0', but these numbers must be added together for the original '100'
+					num_checker = TRUE;													// Signals that ASCII number is found
 				}
+
+				else if(data.receive[i] >= LB_ASCII_LETTERS && data.receive[i] <= UB_ASCII_LETTERS)		// When a letter is found convert the found text to a color
+				{
+					parsing = color_assign(data, i);				// Reads the wanted color and matches this, also tracks the loop iterator to skip the rest of the letters
+					i = parsing.loop_iterator;						// Change 'i' to skip remaining letters of the same supposed color
+					let_checker = TRUE;								// Signals that ASCII letter is found
+				}
+
+				else
+					// error?
+
+				if(data.receive[i] == ',')	// Reset the trackers when a comma is found, to start new character conversion, also stores data to use when complete
+				{
+					num_tracker = 0;
+					if(num_checker)
+						parsing.var_store[var_counter] = (parsing.number_store[0] * 100) + (parsing.number_store[1] * 10) + parsing.number_store[2];
+					if(let_checker)
+						parsing.var_store[var_counter] = parsing.color;
+					for(int j = 0; j<sizeof(parsing.number_store); j++)
+						parsing.number_store[j] = 0;
+					let_checker = 0;
+					num_checker = 0;
+				}
+
+
 
 			}
 			break;
-		}
 
 		case 1:
-		{
+
 			break;
-		}
 
 		case 2:
-		{
+
 			break;
-		}
 
 		case 3:
-		{
+
 			break;
-		}
 
 		case 4:
-		{
+
 			break;
-		}
 
 		default:
-			return COMMAND_ERR;
+			return NO_ERR;
 	}
 	return NO_ERR;
 }
 
-void number_converter(char tracker, char ASCII)
+int number_converter(char ASCII)
+{
+	return num;
+}
+
+PARSE color_assign(UART data, int i)
 {
 
 }
