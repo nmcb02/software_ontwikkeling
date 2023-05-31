@@ -16,13 +16,13 @@
 *********************************************************/
 
 //#include <library-header>
-#include "API_functions.h"
 #include <math.h>
 
 //#include "user-header"
 #include "main.h"
 #include "stm32_ub_vga_screen.h"
 #include "UART_communication.h"
+#include "API_functions.h"
 
 //#define-statements
 
@@ -37,6 +37,7 @@ uint8_t i=0;
 //int some = 1; // Variable for clear screen test
 int x = 0;
 unsigned char j;
+
 /*****************************************************//**
  * @brief	Program start.
  *
@@ -51,7 +52,12 @@ int main(void)
 	UB_VGA_Screen_Init(); 	// Init VGA-Screen
 
 
-//		UB_VGA_FillScreen(VGA_COL_WHITE);
+	UB_VGA_FillScreen(VGA_COL_WHITE);
+	API_draw_line(10, 10, 30, 10, VGA_COL_BLUE, 2);
+
+/* BITMAP test*/
+//	API_draw_bitmap(2, 2, 8);
+//	API_draw_bitmap(130, 2, 10);
 
 /*  LINE drawing test */
 
@@ -85,23 +91,23 @@ int main(void)
 	UART_sendString("goed!");
 */
 
-//  while(1)		// Infinite loop
-//  {
-//	  data = UART_getChar();	// Stores received data in variable
-//	  if(data != 0)				// If data is received
-//	  {
-//		  save[i] = data;		// Stores received data for later usage and better readability
-//		  i++;
-//		  if(data == ' ')		// still testing // When a space is found start anew for data receiving
-//			  i = 0;
-//	  }
-
-	  UART test;
-
-	  test = UART_receiver();
-
-	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
-		  arr[j] = test.receive[j];
+  while(1)		// Infinite loop
+  {
+	  data = UART_getChar();	// Stores received data in variable
+	  if(data != 0)				// If data is received
+	  {
+		  save[i] = data;		// Stores received data for later usage and better readability
+		  i++;
+		  if(data == ' ')		// still testing // When a space is found start anew for data receiving
+			  i = 0;
+	  }
+  }
+//	  UART test;
+//
+//	  test = UART_receiver();
+//
+//	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
+//		  arr[j] = test.receive[j];
 
 
 //  }
