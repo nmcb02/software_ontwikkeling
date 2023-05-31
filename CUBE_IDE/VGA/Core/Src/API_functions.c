@@ -113,9 +113,22 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
  *
  * @param   color Color of the screen
  *
- * @return  Error code if error or no error occurs
+ * @return  Error code if error occurs
 *******************************************************/
 int API_clearscreen (int color)
+{
+	UB_VGA_FillScreen(color);
+
+	return 0;
+}
+/*****************************************************//**
+ * @brief   This function gives the user the ability to clear the screen to a certain color
+ *
+ * @param   color Color of the screen
+ *
+ * @return  Error code if error or no error occurs
+*******************************************************/
+int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int filled)
 {
 	UB_VGA_FillScreen(color);
 

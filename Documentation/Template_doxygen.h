@@ -18,11 +18,11 @@
 typedef struct test
 {
     int testing;
-}TEST, *PTEST;
+}TEST, *PTEST;                  // Pointer-typedefs have to be the same name, but with a capital 'P'( typedef PERSON *PPERSON;)
 
 //#define-statements
 #define ERROR 69                // Defines and typedefs should all be in caps
-                                // Pointer-typedefs have to be the same name, but with a capital 'P'( typedef PERSON *PPERSON;)
+                                
 //external vars 
 extern int test_1;
 
