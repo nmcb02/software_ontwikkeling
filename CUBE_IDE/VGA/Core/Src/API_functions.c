@@ -165,7 +165,7 @@ int API_draw_bitmap (int x_lup, int y_lup, const int bm_nr[6400])
 			else if (bm_nr[index_x] == 224)
 				UB_VGA_SetPixel(x, y, VGA_COL_RED);
 			else if (bm_nr[index_x] == 247)
-				UB_VGA_SetPixel(x, y, VGA_COL_MAGENTA);
+				UB_VGA_SetPixel(x, y, VGA_COL_PINK);
 			else if (bm_nr[index_x] == 255)
 				UB_VGA_SetPixel(x, y, VGA_COL_WHITE);
 
