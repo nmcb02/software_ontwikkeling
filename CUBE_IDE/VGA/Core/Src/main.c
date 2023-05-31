@@ -36,6 +36,15 @@ uint8_t arr[100];
 uint8_t i=0;
 int x = 0;
 unsigned char j;
+
+int bitmap[6][7] =
+{{0, 0, 0, 0, 1, 0, 0},
+ {0, 0, 0, 0, 1, 1, 0},
+ {1, 1, 1, 1, 1, 1, 1},
+{1, 1, 1, 1, 1, 1, 1},
+{0, 0, 0, 0, 1, 1, 0},
+{0, 0, 0, 0, 1, 0, 0}};
+
 /*****************************************************//**
  * @brief	Program start.
  *
@@ -51,6 +60,8 @@ int main(void)
 
 
 	UB_VGA_FillScreen(VGA_COL_WHITE);
+	API_draw_line(10, 10, 30, 10, VGA_COL_BLUE, 2);
+	API_draw_bitmap(100, 120, bitmap);
 
 /*	RECTANGLE drawing test	*/
 
@@ -88,12 +99,12 @@ int main(void)
 //			  i = 0;
 //	  }
 
-	  UART test;
-
-	  test = UART_receiver();
-
-	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
-		  arr[j] = test.receive[j];
+//	  UART test;
+//
+//	  test = UART_receiver();
+//
+//	  for(j = 0; j<LINE_STORAGE; j++)		// Copies received data
+//		  arr[j] = test.receive[j];
 
 
 //  }

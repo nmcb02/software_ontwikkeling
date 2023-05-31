@@ -131,8 +131,26 @@ int API_clearscreen (int color)
  *
  * @return  Error code if error or no error occurs
 *******************************************************/
-int API_draw_bitmap (int x_lup, int y_lup, int bm_nr)
+int API_draw_bitmap (int x_lup, int y_lup, int bm_nr[][7])
 {
+	int index_x, index_y;
+	int row = sizeof(bm_nr);
+	int column = sizeof(bm_nr[0])/sizeof(bm_nr[0][0]);
+
+	for(int y = y_lup; y < y_lup + 6; y++)
+	{
+		index_y = y - y_lup;
+		for(int x = x_lup; x < x_lup + column; x++)
+		{
+			index_x = x - x_lup;
+			if (bm_nr[index_y][index_x] == 1)
+			{
+				UB_VGA_SetPixel(x, y, VGA_COL_BLACK);
+			}
+			else
+				UB_VGA_SetPixel(x, y, VGA_COL_MAGENTA);
+		}
+	}
 
 	return 0;
 }
