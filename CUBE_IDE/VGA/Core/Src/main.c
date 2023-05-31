@@ -34,6 +34,7 @@ char save[100];
 char save2[100];
 uint8_t arr[100];
 uint8_t i=0;
+//int some = 1; // Variable for clear screen test
 int x = 0;
 unsigned char j;
 /*****************************************************//**
@@ -50,20 +51,27 @@ int main(void)
 	UB_VGA_Screen_Init(); 	// Init VGA-Screen
 
 
-	UB_VGA_FillScreen(VGA_COL_WHITE);
+//		UB_VGA_FillScreen(VGA_COL_WHITE);
 
-/*	RECTANGLE drawing test	*/
+/*  LINE drawing test */
 
-//	API_draw_rectangle(10, 10, 200, 100, VGA_COL_RED, 0);
+//	API_draw_line(10, 30, 50, 30, VGA_COL_GREEN, 10);
+//	API_draw_line(50, 30, 50, 60, VGA_COL_GREEN, 10);
+//	API_draw_line(110, 10, 140, 60, VGA_COL_GREEN, 5);
+//	API_draw_line(110, 60, 140, 10, VGA_COL_GREEN, 5);
 
+/* CLEARSCREEN test, don't forget to uncomment the "some" variable */
 
-/*  LINE drawing test
+//	while (some == 1)
+//	{
+//		UB_VGA_FillScreen(VGA_COL_BLACK);
+//		API_draw_line(100, 120, 200, 120, VGA_COL_MAGENTA, 4);
+//		some = 0;
+//	}
+//
+//	while (!some)
+//		API_clearscreen(VGA_COL_WHITE);
 
-	API_draw_line(10, 30, 50, 30, VGA_COL_GREEN, 10);
-	API_draw_line(50, 30, 50, 60, VGA_COL_GREEN, 10);
-	API_draw_line(110, 10, 140, 60, VGA_COL_GREEN, 5);
-	API_draw_line(110, 60, 140, 10, VGA_COL_GREEN, 5);
-*/
 
 /*	UART testing
 
