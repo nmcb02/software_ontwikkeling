@@ -5,7 +5,7 @@
  *
  * @authors Naomi Born
  * @date    17-05-2023
- * @version 1.0
+ * @version 1.1
 *********************************************************/
 //#include other "user-header"
 #include "API_functions.h"
@@ -45,10 +45,8 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 	{
 		for (int y = y_1; y <= y_1 + weight; y++)
 		{
-			for(int x = x_1; x <= x_2; x++)
-			{
+			for (int x = x_1; x <= x_2; x++)
 				UB_VGA_SetPixel(x, y, color);
-			}
 		}
 	}
 
@@ -56,16 +54,14 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 	{
 		for (int x = x_1; x <= x_1 + weight; x++)
 		{
-			for(int y = y_1; y <= y_2; y++)
-			{
+			for (int y = y_1; y <= y_2; y++)
 				UB_VGA_SetPixel(x, y, color);
-			}
 		}
 	}
 
 	else if (dxabs>=dyabs)	// Delta x is bigger than delta y
 	{
-		for(int j = 0; j < weight; j++)
+		for (int j = 0; j < weight; j++)
 		{
 			for (int i = 0; i < dxabs; i++) // Loop for a line < delta x
 			{
@@ -87,7 +83,7 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 
 	else
 	{
-		for(int j = 0; j < weight; j++)
+		for (int j = 0; j < weight; j++)
 		{
 			for (int i = 0; i < dyabs; i++) // Loop for a line < delta x
 			{
@@ -118,6 +114,51 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 int API_clearscreen (int color)
 {
 	UB_VGA_FillScreen(color);
+
+	return 0;
+}
+/*****************************************************//**
+ * @brief   This function gives the user the ability to draw a rectangle on a VGA screen
+ *
+ * @param   x_1 Starting point coördinate of x
+ * @param   y_1 Starting point coördinate of y
+ * @param   width Width of the rectangle max. 320
+ * @param   height Height of the rectangle max. 240
+ * @param   color Color of the rectangle/borders
+ * @param   filled 1 is filled rectangle 0 is just borders
+ *
+ * @return  Error code if error occurs
+*******************************************************/
+int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int filled)
+{
+	int x_2, y_2;
+
+	x_2 = x_1 + width;
+	y_2 = y_1 + height;
+
+	if (filled)	//Drawing a filled rectangle
+	{
+		for (int y = y_1; y <= y_2; y++)
+		{
+			for (int x = x_1; x <= width; x++)
+				UB_VGA_SetPixel(x, y, color);
+		}
+	}
+
+	else if (!filled)
+	{
+		for (int x = x_1; x <= x_2; x++)	// Draw top line
+			UB_VGA_SetPixel(x, y_1, color);
+
+		for (int y = y_1; y <= y_2; y++)	// Draw left line
+			UB_VGA_SetPixel(x_1, y, color);
+
+		for (int y = y_1; y <= y_2; y++)	// Draw right line
+			UB_VGA_SetPixel(x_2, y, color);
+
+		for (int x = x_1; x <= x_2; x++)	// Draw bottom line
+			UB_VGA_SetPixel(x, y_2, color);
+	}
 
 	return 0;
 }
