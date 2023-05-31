@@ -32,7 +32,8 @@ typedef struct PARSE_STORAGE
 enum ERROR
 {
 	NO_ERR = 0,		// All errors listed
-	COMMAND_ERR
+	COMMAND_ERR,
+	DATA_ERR
 };
 
 #define LINE_LEN 			5		// Defines to skip the command in the received array

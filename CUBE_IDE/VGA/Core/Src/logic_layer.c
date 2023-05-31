@@ -80,6 +80,7 @@ int parse_cmd(UART data)
 int draw_options(char cmd, UART data)
 {
 	PARSE parsing;
+	cahr ERR = NO_ERR;
 	switch(cmd)				//////ALLES HIERONDER NOG EEN KEER DOOLOPEN OF HET KLOPT EN LOGISCH IS
 	{
 		case 0:
@@ -103,19 +104,22 @@ int draw_options(char cmd, UART data)
 					let_checker = TRUE;								// Signals that ASCII letter is found
 				}
 
-				else
-					// error?
+				else						// Error data not usable
+					return ERR = DATA_ERR;
 
 				if(data.receive[i] == ',')	// Reset the trackers when a comma is found, to start new character conversion, also stores data to use when complete
 				{
 					num_tracker = 0;
-					if(num_checker)
+					if(num_checker)			// When the data was in numbers
 						parsing.var_store[var_counter] = (parsing.number_store[0] * 100) + (parsing.number_store[1] * 10) + parsing.number_store[2];
-					if(let_checker)
+
+					if(let_checker)			// When the data was in letters
 						parsing.var_store[var_counter] = parsing.color;
-					for(int j = 0; j<sizeof(parsing.number_store); j++)
+
+					for(int j = 0; j<sizeof(parsing.number_store); j++)		// Empties the numbers stored
 						parsing.number_store[j] = 0;
-					let_checker = 0;
+
+					let_checker = 0;				// Reset signals
 					num_checker = 0;
 				}
 
@@ -141,7 +145,7 @@ int draw_options(char cmd, UART data)
 			break;
 
 		default:
-			return NO_ERR;
+			return NO_ERR;		// Different error, but which one?
 	}
 	return NO_ERR;
 }
