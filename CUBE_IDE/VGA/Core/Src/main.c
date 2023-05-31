@@ -52,7 +52,7 @@ int main(void)
 	UB_VGA_Screen_Init(); 	// Init VGA-Screen
 
 
-	UB_VGA_FillScreen(VGA_COL_WHITE);
+	UB_VGA_FillScreen(VGA_COL_WHITE);	// Start with a white screen
 	API_draw_line(10, 10, 30, 10, VGA_COL_BLUE, 2);
 
 /* BITMAP test*/

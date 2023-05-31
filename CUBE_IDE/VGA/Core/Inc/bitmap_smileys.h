@@ -1,5 +1,5 @@
 /*******************************************************//**
- * @file    btimap_smileys.h
+ * @file    bitmap_smileys.h
  *
  * @brief  	Header file for bitmap arrays
  *

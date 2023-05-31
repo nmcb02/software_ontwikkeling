@@ -58,27 +58,23 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 		{
 			for (int y = y_1; y <= y_1 + weight; y++)
 			{
-				for(int x = x_1; x <= x_2; x++)
-			{
+				for (int x = x_1; x <= x_2; x++)
 					UB_VGA_SetPixel(x, y, color);
-				}
 			}
-	}
+		}
 
 		else if (dx == 0) // vertical line
 		{
 			for (int x = x_1; x <= x_1 + weight; x++)
 			{
 				for(int y = y_1; y <= y_2; y++)
-			{
 					UB_VGA_SetPixel(x, y, color);
-				}
 			}
-	}
+		}
 
 		else if (dxabs>=dyabs)	// Delta x is bigger than delta y
 		{
-			for(int j = 0; j < weight; j++)
+			for (int j = 0; j < weight; j++)
 			{
 				for (int i = 0; i < dxabs; i++) // Loop for a line < delta x
 				{
@@ -245,9 +241,9 @@ int API_draw_bitmap (int x_lup, int y_lup, int bm_nr)
 	}
 
 
-	for(int y = y_lup; y < y_lup + BITMAP_HEIGHT; y++)		// For loop to get the y-coordinate
+	for (int y = y_lup; y < y_lup + BITMAP_HEIGHT; y++)		// For loop to get the y-coordinate
 	{
-		for(int x = x_lup; x < x_lup + BITMAP_WIDTH; x++)	// For loop to get the x-coordinate
+		for (int x = x_lup; x < x_lup + BITMAP_WIDTH; x++)	// For loop to get the x-coordinate
 		{
 			index_x++;
 			if (index_x == BITMAP_SIZE)	// If index is equal to the array size quit the loop
