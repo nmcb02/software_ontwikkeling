@@ -146,19 +146,26 @@ int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int 
 *******************************************************/
 int API_draw_bitmap (int x_lup, int y_lup, const int bm_nr[6400])
 {
-	int index_x = x_lup;
+	int index_x = 0;
 
 	for(int y = y_lup; y < y_lup + BITMAP_HEIGHT; y++)
 	{
-		for(int x = 0; x < BITMAP_WIDTH; x++)
+		for(int x = x_lup; x < x_lup + BITMAP_WIDTH; x++)
 		{
-			index_x = x_lup++;
+			index_x++;
 			if (index_x == BITMAP_SIZE)
 				break;
 
 			else if (bm_nr[index_x] == 0)
 				UB_VGA_SetPixel(x, y, VGA_COL_BLACK);
-
+			else if (bm_nr[index_x] == 23)
+				UB_VGA_SetPixel(x, y, VGA_COL_BLUE);
+			else if (bm_nr[index_x] == 252)
+				UB_VGA_SetPixel(x, y, VGA_COL_YELLOW);
+			else if (bm_nr[index_x] == 224)
+				UB_VGA_SetPixel(x, y, VGA_COL_RED);
+			else if (bm_nr[index_x] == 247)
+				UB_VGA_SetPixel(x, y, VGA_COL_MAGENTA);
 			else if (bm_nr[index_x] == 255)
 				UB_VGA_SetPixel(x, y, VGA_COL_WHITE);
 

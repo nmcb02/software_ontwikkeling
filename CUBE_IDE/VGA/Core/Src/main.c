@@ -56,7 +56,8 @@ int main(void)
 
 	UB_VGA_FillScreen(VGA_COL_WHITE);
 //	API_draw_line(10, 10, 30, 10, VGA_COL_BLUE, 2);
-	API_draw_bitmap(2, 2, arrow_right);
+	API_draw_bitmap(2, 2, smiley_sad_col);
+	API_draw_bitmap(130, 2, smiley_angry);
 
 /*  LINE drawing test */
 
