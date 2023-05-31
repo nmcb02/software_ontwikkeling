@@ -9,6 +9,8 @@
 *********************************************************/
 //#include other "user-header"
 #include "API_functions.h"
+#include "bitmap_arrows.h"
+#include "bitmap_smileys.h"
 
 /*****************************************************//**
  * @brief   This function gives the user the ability to draw lines on a VGA screen
@@ -144,9 +146,47 @@ int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int 
  *
  * @return  Error code if error or no error occurs
 *******************************************************/
-int API_draw_bitmap (int x_lup, int y_lup, const int bm_nr[6400])
+int API_draw_bitmap (int x_lup, int y_lup, int bm_nr)
 {
 	int index_x = 0;
+	int bitmap[BITMAP_SIZE];
+
+	switch(bm_nr)
+	{
+		case 1:
+			memcpy(bitmap, arrow_up, sizeof bitmap);
+			break;
+		case 2:
+			memcpy(bitmap, arrow_down, sizeof bitmap);
+			break;
+		case 3:
+			memcpy(bitmap, arrow_left, sizeof bitmap);
+			break;
+		case 4:
+			memcpy(bitmap, arrow_right, sizeof bitmap);
+			break;
+		case 5:
+			memcpy(bitmap, smiley_angry, sizeof bitmap);
+			break;
+		case 6:
+			memcpy(bitmap, smiley_angry_col, sizeof bitmap);
+			break;
+		case 7:
+			memcpy(bitmap, smiley_happy, sizeof bitmap);
+			break;
+		case 8:
+			memcpy(bitmap, smiley_happy_col, sizeof bitmap);
+			break;
+		case 9:
+			memcpy(bitmap, smiley_sad, sizeof bitmap);
+			break;
+		case 10:
+			memcpy(bitmap, smiley_sad_col, sizeof bitmap);
+			break;
+		default:
+			return 1; //error no existing bitmap number given
+	}
+
 
 	for(int y = y_lup; y < y_lup + BITMAP_HEIGHT; y++)
 	{
@@ -156,17 +196,17 @@ int API_draw_bitmap (int x_lup, int y_lup, const int bm_nr[6400])
 			if (index_x == BITMAP_SIZE)
 				break;
 
-			else if (bm_nr[index_x] == 0)
+			else if (bitmap[index_x] == 0)
 				UB_VGA_SetPixel(x, y, VGA_COL_BLACK);
-			else if (bm_nr[index_x] == 23)
+			else if (bitmap[index_x] == 23)
 				UB_VGA_SetPixel(x, y, VGA_COL_BLUE);
-			else if (bm_nr[index_x] == 252)
+			else if (bitmap[index_x] == 252)
 				UB_VGA_SetPixel(x, y, VGA_COL_YELLOW);
-			else if (bm_nr[index_x] == 224)
+			else if (bitmap[index_x] == 224)
 				UB_VGA_SetPixel(x, y, VGA_COL_RED);
-			else if (bm_nr[index_x] == 247)
+			else if (bitmap[index_x] == 247)
 				UB_VGA_SetPixel(x, y, VGA_COL_PINK);
-			else if (bm_nr[index_x] == 255)
+			else if (bitmap[index_x] == 255)
 				UB_VGA_SetPixel(x, y, VGA_COL_WHITE);
 
 		}
