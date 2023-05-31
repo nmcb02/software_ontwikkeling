@@ -19,6 +19,9 @@
 
 //#define-statements
 #define sgn(x) ((x<0)?-1:((x>0)?1:0)) // macro to return the sign of a number
+#define BITMAP_HEIGHT 77
+#define BITMAP_WIDTH 120
+#define BITMAP_SIZE 9240
 
 // prototype user functions
 int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight);

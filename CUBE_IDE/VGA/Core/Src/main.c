@@ -23,7 +23,8 @@
 #include "stm32_ub_vga_screen.h"
 #include "UART_communication.h"
 #include "API_functions.h"
-#include "bitmap.h"
+#include "bitmap_arrows.h"
+#include "bitmap_smileys.h"
 
 //#define-statements
 
@@ -38,14 +39,6 @@ uint8_t i=0;
 //int some = 1; // Variable for clear screen test
 int x = 0;
 unsigned char j;
-
-int bitmap[6][7] =
-{{0, 0, 0, 0, 1, 0, 0},
- {0, 0, 0, 0, 1, 1, 0},
- {1, 1, 1, 1, 1, 1, 1},
-{1, 1, 1, 1, 1, 1, 1},
-{0, 0, 0, 0, 1, 1, 0},
-{0, 0, 0, 0, 1, 0, 0}};
 
 /*****************************************************//**
  * @brief	Program start.
@@ -63,7 +56,7 @@ int main(void)
 
 	UB_VGA_FillScreen(VGA_COL_WHITE);
 //	API_draw_line(10, 10, 30, 10, VGA_COL_BLUE, 2);
-	API_draw_bitmap(2, 2, pijl_rechts_small[0]);
+	API_draw_bitmap(2, 2, arrow_right);
 
 /*  LINE drawing test */
 
