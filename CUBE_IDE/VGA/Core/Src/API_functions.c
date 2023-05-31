@@ -123,16 +123,49 @@ int API_clearscreen (int color)
 
 	return 0;
 }
+
 /*****************************************************//**
- * @brief   This function gives the user the ability to clear the screen to a certain color
+ * @brief   This function gives the user the ability to draw a rectangle on a VGA screen
  *
- * @param   color Color of the screen
+ * @param   x_1 Starting point coördinate of x
+ * @param   y_1 Starting point coördinate of y
+ * @param   width Width of the rectangle max. 320
+ * @param   height Height of the rectangle max. 240
+ * @param   color Color of the rectangle/borders
+ * @param   filled 1 is filled rectangle 0 is just borders
  *
- * @return  Error code if error or no error occurs
+ * @return  Error code if error occurs
 *******************************************************/
 int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int filled)
 {
-	UB_VGA_FillScreen(color);
+	int x_2, y_2;
+
+	x_2 = x_1 + width;
+	y_2 = y_1 + height;
+
+	if (filled)	//Drawing a filled rectangle
+	{
+		for (int y = y_1; y <= y_2; y++)
+		{
+			for (int x = x_1; x <= width; x++)
+				UB_VGA_SetPixel(x, y, color);
+		}
+	}
+
+	else if (!filled)
+	{
+		for (int x = x_1; x <= x_2; x++)	// Draw top line
+			UB_VGA_SetPixel(x, y_1, color);
+
+		for (int y = y_1; y <= y_2; y++)	// Draw left line
+			UB_VGA_SetPixel(x_1, y, color);
+
+		for (int y = y_1; y <= y_2; y++)	// Draw right line
+			UB_VGA_SetPixel(x_2, y, color);
+
+		for (int x = x_1; x <= x_2; x++)	// Draw bottom line
+			UB_VGA_SetPixel(x, y_2, color);
+	}
 
 	return 0;
 }
@@ -151,7 +184,7 @@ int API_draw_bitmap (int x_lup, int y_lup, int bm_nr)
 	int index_x = 0;
 	int bitmap[BITMAP_SIZE];
 
-	switch(bm_nr)
+	switch(bm_nr)	// Switch case to decide which bitmap needs to be shown
 	{
 		case 1:
 			memcpy(bitmap, arrow_up, sizeof bitmap);
@@ -188,14 +221,14 @@ int API_draw_bitmap (int x_lup, int y_lup, int bm_nr)
 	}
 
 
-	for(int y = y_lup; y < y_lup + BITMAP_HEIGHT; y++)
+	for(int y = y_lup; y < y_lup + BITMAP_HEIGHT; y++)		// For loop to get the y-coordinate
 	{
-		for(int x = x_lup; x < x_lup + BITMAP_WIDTH; x++)
+		for(int x = x_lup; x < x_lup + BITMAP_WIDTH; x++)	// For loop to get the x-coordinate
 		{
 			index_x++;
-			if (index_x == BITMAP_SIZE)
+			if (index_x == BITMAP_SIZE)	// If index is equal to the array size quit the loop
 				break;
-
+			// If statements for various colors from the bitmaps
 			else if (bitmap[index_x] == 0)
 				UB_VGA_SetPixel(x, y, VGA_COL_BLACK);
 			else if (bitmap[index_x] == 23)
