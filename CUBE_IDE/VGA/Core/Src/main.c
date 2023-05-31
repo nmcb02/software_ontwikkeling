@@ -16,13 +16,14 @@
 *********************************************************/
 
 //#include <library-header>
-#include "API_functions.h"
 #include <math.h>
 
 //#include "user-header"
 #include "main.h"
 #include "stm32_ub_vga_screen.h"
 #include "UART_communication.h"
+#include "API_functions.h"
+#include "bitmap.h"
 
 //#define-statements
 
@@ -61,8 +62,8 @@ int main(void)
 
 
 	UB_VGA_FillScreen(VGA_COL_WHITE);
-	API_draw_line(10, 10, 30, 10, VGA_COL_BLUE, 2);
-	API_draw_bitmap(100, 120, bitmap);
+//	API_draw_line(10, 10, 30, 10, VGA_COL_BLUE, 2);
+	API_draw_bitmap(2, 2, pijl_rechts_small[0]);
 
 /*  LINE drawing test */
 
@@ -96,8 +97,8 @@ int main(void)
 	UART_sendString("goed!");
 */
 
-//  while(1)		// Infinite loop
-//  {
+  while(1)		// Infinite loop
+  {
 //	  data = UART_getChar();	// Stores received data in variable
 //	  if(data != 0)				// If data is received
 //	  {
@@ -105,7 +106,7 @@ int main(void)
 //		  i++;
 //		  if(data == ' ')		// still testing // When a space is found start anew for data receiving
 //			  i = 0;
-//	  }
+	  }
 
 //	  UART test;
 //

@@ -144,24 +144,24 @@ int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int 
  *
  * @return  Error code if error or no error occurs
 *******************************************************/
-int API_draw_bitmap (int x_lup, int y_lup, int bm_nr[][7])
+int API_draw_bitmap (int x_lup, int y_lup, const int bm_nr[6400])
 {
-	int index_x, index_y;
-	int row = sizeof(bm_nr);
-	int column = sizeof(bm_nr[0])/sizeof(bm_nr[0][0]);
+	int index_x = x_lup;
 
-	for(int y = y_lup; y < y_lup + 6; y++)
+	for(int y = y_lup; y < y_lup + 64; y++)
 	{
-		index_y = y - y_lup;
-		for(int x = x_lup; x < x_lup + column; x++)
+		for(int x = 0; x < 100; x++)
 		{
-			index_x = x - x_lup;
-			if (bm_nr[index_y][index_x] == 1)
-			{
+			index_x = x_lup++;
+			if (index_x == 6300)
+				break;
+
+			else if (bm_nr[index_x] == 0)
 				UB_VGA_SetPixel(x, y, VGA_COL_BLACK);
-			}
-			else
-				UB_VGA_SetPixel(x, y, VGA_COL_MAGENTA);
+
+			else if (bm_nr[index_x] == 255)
+				UB_VGA_SetPixel(x, y, VGA_COL_WHITE);
+
 		}
 	}
 
