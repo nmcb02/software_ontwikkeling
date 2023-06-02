@@ -80,11 +80,10 @@ int parse_cmd(UART data)
 int draw_options(char cmd, UART data)
 {
 	PARSE parsing;
-	cahr ERR = NO_ERR;
+	char ERR = NO_ERR;
 	switch(cmd)				//////ALLES HIERONDER NOG EEN KEER DOOLOPEN OF HET KLOPT EN LOGISCH IS
 	{
 		case 0:
-			int num_tracker = 0;
 			int var_counter = 0;
 			int num_checker = 0;
 			int let_checker = 0;
@@ -92,8 +91,10 @@ int draw_options(char cmd, UART data)
 			{
 				if(data.receive[i] >= LB_ASCII_NUMBERS && data.receive[i] <= UB_ASCII_NUMBERS)		// When a number in ASCII values is found convert this to decimals
 				{
-					parsing.number_store[tracker] = number_converter(data.receive[i]);				// Converts and returns the number
-					num_tracker++;														// Tracks how much numbers between two comma's are found so that these will be added together,   e.g.   ,100, in ASCII is '49' '48' '48' which will be converted to '1' '0' '0', but these numbers must be added together for the original '100'
+					parsing.number_store[0] = parsing.number_store[1];					// Shifting the found numbers to correct possition to add them for the supposed value
+					parsing.number_store[1] = parsing.number_store[2];
+
+					parsing.number_store[2] = number_converter(data.receive[i]);				// Converts and returns the number
 					num_checker = TRUE;													// Signals that ASCII number is found
 				}
 
@@ -109,7 +110,6 @@ int draw_options(char cmd, UART data)
 
 				if(data.receive[i] == ',')	// Reset the trackers when a comma is found, to start new character conversion, also stores data to use when complete
 				{
-					num_tracker = 0;
 					if(num_checker)			// When the data was in numbers
 						parsing.var_store[var_counter] = (parsing.number_store[0] * 100) + (parsing.number_store[1] * 10) + parsing.number_store[2];
 
