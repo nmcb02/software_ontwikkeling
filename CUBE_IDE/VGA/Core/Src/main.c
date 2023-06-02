@@ -16,13 +16,13 @@
 *********************************************************/
 
 //#include <library-header>
-#include "API_functions.h"
 #include <math.h>
 
 //#include "user-header"
 #include "main.h"
 #include "stm32_ub_vga_screen.h"
 #include "UART_communication.h"
+#include "API_functions.h"
 #include "logic_layer.h"
 
 //#define-statements
@@ -35,9 +35,11 @@ char save[100];
 char save2[100];
 uint8_t arr[100];
 uint8_t i=0;
+//int some = 1; // Variable for clear screen test
 int x = 0;
 unsigned char j;
 int val = 0;
+
 /*****************************************************//**
  * @brief	Program start.
  *
@@ -51,15 +53,33 @@ int main(void)
 	UART2_config();			// Init UART
 	UB_VGA_Screen_Init(); 	// Init VGA-Screen
 
+
 	UB_VGA_FillScreen(VGA_COL_WHITE);
+	API_draw_line(10, 10, 30, 10, VGA_COL_BLUE, 2);
 
-/*  LINE drawing test
+/* BITMAP test*/
+//	API_draw_bitmap(2, 2, 8);
+//	API_draw_bitmap(130, 2, 10);
 
-	API_draw_line(10, 30, 50, 30, VGA_COL_GREEN, 10);
-	API_draw_line(50, 30, 50, 60, VGA_COL_GREEN, 10);
-	API_draw_line(110, 10, 140, 60, VGA_COL_GREEN, 5);
-	API_draw_line(110, 60, 140, 10, VGA_COL_GREEN, 5);
-*/
+/*  LINE drawing test */
+
+//	API_draw_line(10, 30, 50, 30, VGA_COL_GREEN, 10);
+//	API_draw_line(50, 30, 50, 60, VGA_COL_GREEN, 10);
+//	API_draw_line(110, 10, 140, 60, VGA_COL_GREEN, 5);
+//	API_draw_line(110, 60, 140, 10, VGA_COL_GREEN, 5);
+
+/* CLEARSCREEN test, don't forget to uncomment the "some" variable */
+
+//	while (some == 1)
+//	{
+//		UB_VGA_FillScreen(VGA_COL_BLACK);
+//		API_draw_line(100, 120, 200, 120, VGA_COL_MAGENTA, 4);
+//		some = 0;
+//	}
+//
+//	while (!some)
+//		API_clearscreen(VGA_COL_WHITE);
+
 
 /*	UART testing
 

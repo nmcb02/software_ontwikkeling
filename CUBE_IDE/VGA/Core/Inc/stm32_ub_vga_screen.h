@@ -36,6 +36,7 @@
 #define  VGA_COL_MAGENTA        0xE3
 #define  VGA_COL_YELLOW         0xFC
 
+#define  VGA_COL_PINK			      0xEE
 #define VGA_COL_LIGHTBLUE                   // Extra colors   
 #define VGA_COL_LIGHTGREEN
 #define VGA_COL_LIGHTCYAN
