@@ -33,8 +33,12 @@ enum ERROR
 {
 	NO_ERR = 0,		// All errors listed
 	COMMAND_ERR,
-	DATA_ERR
+	DATA_ERR,
+	COLOR_ERR
 };
+
+#define MAX_CMD_LEN 		12
+#define MAX_COL_LEN			12		
 
 #define LINE_LEN 			5		// Defines to skip the command in the received array
 #define RECTANGLE_LEN 		10

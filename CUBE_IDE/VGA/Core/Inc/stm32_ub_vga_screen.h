@@ -36,7 +36,13 @@
 #define  VGA_COL_MAGENTA        0xE3
 #define  VGA_COL_YELLOW         0xFC
 
-
+#define VGA_COL_LIGHTBLUE                   // Extra colors   
+#define VGA_COL_LIGHTGREEN
+#define VGA_COL_LIGHTCYAN
+#define VGA_COL_LIGHTRED
+#define VGA_COL_LIGHTMAGENTA
+#define VGA_COL_BROWN
+#define VGA_COL_GRAY
 
 //--------------------------------------------------------------
 // define the VGA_display
