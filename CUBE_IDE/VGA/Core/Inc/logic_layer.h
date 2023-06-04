@@ -16,6 +16,8 @@
 
 //#include other "user-header"
 #include "UART_communication.h"
+#include "stm32_ub_vga_screen.h"
+#include "API_functions.h"
 
 
 //struct definition
@@ -38,7 +40,7 @@ enum ERROR
 };
 
 #define MAX_CMD_LEN 		12
-#define MAX_COL_LEN			12		
+#define MAX_COL_LEN			13
 
 #define LINE_LEN 			5		// Defines to skip the command in the received array
 #define RECTANGLE_LEN 		10
@@ -62,6 +64,6 @@ enum ERROR
 int parse_cmd(UART data);
 int draw_options(char cmd, UART data);
 int number_converter(char ASCII);
-PARSE color_assign(UART data, int i);
+PARSE color_assign(UART data, int i, PARSE parsing);
 
 #endif /* INC_LOGIC_LAYER_H_ */

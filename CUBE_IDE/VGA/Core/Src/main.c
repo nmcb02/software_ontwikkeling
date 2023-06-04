@@ -55,68 +55,53 @@ int main(void)
 
 
 	UB_VGA_FillScreen(VGA_COL_WHITE);
-	API_draw_line(10, 10, 30, 10, VGA_COL_BLUE, 2);
-
-/* BITMAP test*/
-//	API_draw_bitmap(2, 2, 8);
-//	API_draw_bitmap(130, 2, 10);
-
-/*  LINE drawing test */
-
-//	API_draw_line(10, 30, 50, 30, VGA_COL_GREEN, 10);
-//	API_draw_line(50, 30, 50, 60, VGA_COL_GREEN, 10);
-//	API_draw_line(110, 10, 140, 60, VGA_COL_GREEN, 5);
-//	API_draw_line(110, 60, 140, 10, VGA_COL_GREEN, 5);
-
-/* CLEARSCREEN test, don't forget to uncomment the "some" variable */
-
-//	while (some == 1)
-//	{
-//		UB_VGA_FillScreen(VGA_COL_BLACK);
-//		API_draw_line(100, 120, 200, 120, VGA_COL_MAGENTA, 4);
-//		some = 0;
-//	}
-//
-//	while (!some)
-//		API_clearscreen(VGA_COL_WHITE);
-
-
-/*	UART testing
-
-	UART_sendChar('g');
-	UART_sendChar('o');
-	UART_sendChar('e');
-	UART_sendChar('d');
-	UART_sendChar('\n');
-	UART_sendChar('!');
-
-	UART_sendString("goed!");
-*/
 
   while(1)		// Infinite loop
   {
-//	  data = UART_getChar();	// Stores received data in variable
-//	  if(data != 0)				// If data is received
-//	  {
-//		  save[i] = data;		// Stores received data for later usage and better readability
-//		  i++;
-//		  if(data == ' ')		// still testing // When a space is found start anew for data receiving
-//			  i = 0;
-//	  }
-
 	  UART test;
+	  int err=0;
 
-	  test = UART_receiver();
+//	  test = UART_receiver();
+//
+////	  for(j = 0; j<STORAGE; j++)		// Copies received data
+////		  arr[j] = test.receive[j];
+//
+//
+//	  if(test.receive[0] != 0)		// When data received, parse
+//	  {
+//		  val = parse_cmd(test);
+//
+//	  }
+//
+//	  else
+//		  val = NO_DATA;
 
-	  for(j = 0; j<STORAGE; j++)		// Copies received data
-		  arr[j] = test.receive[j];
+	  test.receive[0] = 'l';
+	  test.receive[1] = 'i';
+	  test.receive[2] = 'j';
+	  test.receive[3] = 'n';
+	  test.receive[4] = ',';
+	  test.receive[5] = '1';
+	  test.receive[6] = ',';
+	  test.receive[7] = '1';
+	  test.receive[8] = ',';
+	  test.receive[9] = '1';
+	  test.receive[10] = '0';
+	  test.receive[11] = '0';
+	  test.receive[12] = ',';
+	  test.receive[13] = '1';
+	  test.receive[14] = '0';
+	  test.receive[15] = '0';
+	  test.receive[16] = ',';
+	  test.receive[17] = 'r';
+	  test.receive[18] = 'o';
+	  test.receive[19] = 'o';
+	  test.receive[20] = 'd';
+	  test.receive[21] = ',';
+	  test.receive[22] = '4';
+	  test.receive[23] = '\n';
 
-
-	  if(test.receive[0] != 0)		// When data received, parse
-		  val = parse_cmd(test);
-
-	  else
-		  val = NO_DATA;
+	  err = draw_options(val, test);
 
   }
 }

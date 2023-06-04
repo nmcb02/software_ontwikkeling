@@ -147,6 +147,9 @@ UART UART_receiver(void)
 
 		 if(temp == '\n' || temp == NO_DATA)		// When a LN is found start anew for data receiving
 		 {
+			 if(temp == '\n')
+				 data.receive[i] = temp;
+
 			 i = 0;
 			 break;
 		 }

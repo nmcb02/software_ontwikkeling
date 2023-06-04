@@ -21,7 +21,7 @@
 
 //#define-statements
 #define WAIT_FOR_DATA 	4000000
-#define STORAGE 	100
+#define STORAGE 		100
 #define NO_DATA			69
 
 //external vars

@@ -15,29 +15,29 @@
 
 
 //global vars
-char cmd[12] = {0};
+char cmd[MAX_CMD_LEN] = {0};
 
-char compare_cmd[5][12] = {	{"lijn"}, 
-							{"rechthoek"}, 
-							{"clearscherm"}, 
-							{"tekst"}, 
-							{"bitmap"}};
+char compare_cmd[5][MAX_CMD_LEN] = {	{"lijn"},
+										{"rechthoek"},
+										{"clearscherm"},
+										{"tekst"},
+										{"bitmap"}};
 
-char compare_col[15][12] = {{"zwart"}, 
-							{"blauw"}, 
-							{"lichtblauw"}, 
-							{"groen"}, 
-							{"lichtgroen"}, 
-							{"cyaan"}, 
-							{"lichtcyaan"}, 
-							{"rood"}, 
-							{"lichtrood"}, 
-							{"magenta"}, 
-							{"lichtmagenta"}, 
-							{"bruin"}, 
-							{"geel"}, 
-							{"grijs"}, 
-							{"wit"}};
+char compare_col[15][MAX_COL_LEN] = {	{"zwart"},
+										{"blauw"},
+										{"lichtblauw"},
+										{"groen"},
+										{"lichtgroen"},
+										{"cyaan"},
+										{"lichtcyaan"},
+										{"rood"},
+										{"lichtrood"},
+										{"magenta"},
+										{"lichtmagenta"},
+										{"bruin"},
+										{"geel"},
+										{"grijs"},
+										{"wit"}};
 
 /*****************************************************//**
  * @brief	Function that parses the command of the
@@ -103,13 +103,22 @@ int parse_cmd(UART data)
 int draw_options(char cmd, UART data)
 {
 	PARSE parsing;
+
+	for(int j = 0; j < (sizeof(parsing.number_store)/sizeof(parsing.number_store[0])); j++)		// Empties the array
+		parsing.number_store[j] = 0;
+	for(int j = 0; j < (sizeof(parsing.var_store)/sizeof(parsing.var_store[0])); j++)
+		parsing.var_store[j] = 0;
+
+
+
 	char ERR = NO_ERR;
+	int var_counter = 0;
+	int num_checker = 0;
+	int let_checker = 0;
+
 	switch(cmd)				//////ALLES HIERONDER NOG EEN KEER DOOLOPEN OF HET KLOPT EN LOGISCH IS
 	{
 		case 0:
-			int var_counter = 0;
-			int num_checker = 0;
-			int let_checker = 0;
 			for(int i = LINE_LEN; i<STORAGE; i++)		// Start the loop after the command, to convert the rest of the script
 			{
 				if(data.receive[i] >= LB_ASCII_NUMBERS && data.receive[i] <= UB_ASCII_NUMBERS)		// When a number in ASCII values is found convert this to decimals
@@ -119,19 +128,19 @@ int draw_options(char cmd, UART data)
 
 					parsing.number_store[2] = number_converter(data.receive[i]);				// Converts and returns the number
 					num_checker = TRUE;													// Signals that ASCII number is found
+					let_checker = FALSE;
 				}
 
 				else if(data.receive[i] >= LB_ASCII_LETTERS && data.receive[i] <= UB_ASCII_LETTERS)		// When a letter is found convert the found text to a color
 				{
-					parsing = color_assign(data, i);				// Reads the wanted color and matches this, also tracks the loop iterator to skip the rest of the letters
+					parsing = color_assign(data, i, parsing);				// Reads the wanted color and matches this, also tracks the loop iterator to skip the rest of the letters
 					i = parsing.loop_iterator;						// Change 'i' to skip remaining letters of the same supposed color
 					let_checker = TRUE;								// Signals that ASCII letter is found
+					num_checker = FALSE;
 				}
 
-				else						// Error data not usable
-					return ERR = DATA_ERR;
 
-				if(data.receive[i] == ',')	// Reset the trackers when a comma is found, to start new character conversion, also stores data to use when complete
+				else if(data.receive[i] == ',' || data.receive[i] == '\n')	// Reset the trackers when a comma is found, to start new character conversion, also stores data to use when complete
 				{
 					if(num_checker)			// When the data was in numbers
 						parsing.var_store[var_counter] = (parsing.number_store[0] * 100) + (parsing.number_store[1] * 10) + parsing.number_store[2];
@@ -139,16 +148,21 @@ int draw_options(char cmd, UART data)
 					if(let_checker)			// When the data was in letters
 						parsing.var_store[var_counter] = parsing.color;
 
-					for(int j = 0; j<sizeof(parsing.number_store); j++)		// Empties the numbers stored
+					for(int j = 0; j<(sizeof(parsing.number_store)/sizeof(parsing.number_store[0])); j++)		// Empties the numbers stored
 						parsing.number_store[j] = 0;
 
-					let_checker = 0;				// Reset signals
-					num_checker = 0;
+					let_checker = FALSE;				// Reset signals
+					num_checker = FALSE;
+					var_counter++;
+
+					if(data.receive[i] == '\n')
+						break;
 				}
 
-
-
+				else						// Error data not usable
+					return ERR = DATA_ERR;
 			}
+			API_draw_line(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
 			break;
 
 		case 1:
@@ -195,25 +209,27 @@ int number_converter(char ASCII)
  * @return	parsing is a struct variable with data info 
  * 			which are retrieved from the script
 *******************************************************/
-PARSE color_assign(UART data, int i)
+PARSE color_assign(UART data, int i, PARSE parsing)
 {
-	PARSE parsing;
 	char color[MAX_COL_LEN];
+	for(int j = 0; j<MAX_COL_LEN; j++)		// Empties the array
+		color[j] = 0;
 
-	for(i; i<(i+MAX_COL_LEN); i++)           // Loop to isolate the color
+	int j = 0;
+	for(i=i; i<(i+MAX_COL_LEN); i++)           // Loop to isolate the color
 	{
 		if(data.receive[i] == ',')          // Stop the loop when a comma is found, color is isloated
 		{
-			color[i] = '\0';                  // Add a string terminator
+			color[j] = '\0';                  // Add a string terminator
 			break;
 		}
 
-		color[i] = data.receive[i];           // Store the color in array
+		color[j] = data.receive[i];           // Store the color in array
+		j++;
 	}
 
-	parsing.iterator = i;					  // Storing i, which stopped on a comma, for the loop in 'draw_options' to continue
+	parsing.loop_iterator = i-1;					  // Storing i, the iterator is now set right before the comma so that the loop in the parser can continue properly
 
-	int j;
 	for(j = 0; j<(sizeof(compare_col)/sizeof(compare_col[0])); j++)		// Loop to find the color, iterator tracks which color
 	{
 		if(strcmp(color, compare_col[j]) == 0)		// When correct color is found
