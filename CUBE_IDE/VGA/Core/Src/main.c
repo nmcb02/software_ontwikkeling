@@ -61,47 +61,47 @@ int main(void)
 	  UART test;
 	  int err=0;
 
-//	  test = UART_receiver();
-//
-////	  for(j = 0; j<STORAGE; j++)		// Copies received data
-////		  arr[j] = test.receive[j];
-//
-//
-//	  if(test.receive[0] != 0)		// When data received, parse
-//	  {
-//		  val = parse_cmd(test);
-//
-//	  }
-//
-//	  else
-//		  val = NO_DATA;
+	  test = UART_receiver();
 
-	  test.receive[0] = 'l';
-	  test.receive[1] = 'i';
-	  test.receive[2] = 'j';
-	  test.receive[3] = 'n';
-	  test.receive[4] = ',';
-	  test.receive[5] = '1';
-	  test.receive[6] = ',';
-	  test.receive[7] = '1';
-	  test.receive[8] = ',';
-	  test.receive[9] = '1';
-	  test.receive[10] = '0';
-	  test.receive[11] = '0';
-	  test.receive[12] = ',';
-	  test.receive[13] = '1';
-	  test.receive[14] = '0';
-	  test.receive[15] = '0';
-	  test.receive[16] = ',';
-	  test.receive[17] = 'r';
-	  test.receive[18] = 'o';
-	  test.receive[19] = 'o';
-	  test.receive[20] = 'd';
-	  test.receive[21] = ',';
-	  test.receive[22] = '4';
-	  test.receive[23] = '\n';
+//	  for(j = 0; j<STORAGE; j++)		// Copies received data
+//		  arr[j] = test.receive[j];
 
-	  err = draw_options(val, test);
+
+	  if(test.receive[0] != 0)		// When data received, parse
+	  {
+		  val = parse_cmd(test);
+		  err = draw_options(val, test);
+	  }
+
+	  else
+		  val = NO_DATA;
+
+//	  test.receive[0] = 'l';
+//	  test.receive[1] = 'i';
+//	  test.receive[2] = 'j';
+//	  test.receive[3] = 'n';
+//	  test.receive[4] = ',';
+//	  test.receive[5] = '1';
+//	  test.receive[6] = ',';
+//	  test.receive[7] = '1';
+//	  test.receive[8] = ',';
+//	  test.receive[9] = '1';
+//	  test.receive[10] = '0';
+//	  test.receive[11] = '0';
+//	  test.receive[12] = ',';
+//	  test.receive[13] = '1';
+//	  test.receive[14] = '0';
+//	  test.receive[15] = '0';
+//	  test.receive[16] = ',';
+//	  test.receive[17] = 'r';
+//	  test.receive[18] = 'o';
+//	  test.receive[19] = 'o';
+//	  test.receive[20] = 'd';
+//	  test.receive[21] = ',';
+//	  test.receive[22] = '4';
+//	  test.receive[23] = '\n';
+
+
 
   }
 }
