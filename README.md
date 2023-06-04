@@ -16,7 +16,7 @@ The following model is designed by us. The front layer is for communication with
 
 ## Usage
 
-### Available colors
+### **Available colors**
 
 - zwart
 - blauw
@@ -35,7 +35,7 @@ The following model is designed by us. The front layer is for communication with
 - wit
 - roze
 
-### Line command
+### **Line command**
 
 The following script command is for drawing a line
 
@@ -51,7 +51,7 @@ The following script command is for drawing a line
 
 ![alt text](/Images-readme/lines.png "Drawable lines")
 
-### Rectangle command
+### **Rectangle command**
 
 The following script command is for drawing a rectangle
 
@@ -67,6 +67,52 @@ The following script command is for drawing a rectangle
 
 ![alt text](/Images-readme/rectangle.png "Drawable rectangle")
 
-### Bitmap command
+### **Bitmap command**
+
+``bitmap, nr, x-lup, y-lup``
+
+``nr``  number of the bitmap between 1 and 10
+
+``x_lup, y_lup`` are starting points
+
+#### **bitmap 1**
+
+![alt text](/Images-readme/pijl-up.png "arrow up")
+
+#### **bitmap 2**
+
+![alt text](/Images-readme/pijl-down.png "arrow down")
+
+#### **bitmap 3**
+
+![alt text](/Images-readme/pijl-links.png "arrow left")
+
+#### **bitmap 4**
+
+![alt text](/Images-readme/pijl-rechts.png "arrow right")
+
+#### **bitmap 5**
+
+![alt text](/Images-readme/smiley-angry.png "Smiley angry")
+
+#### **bitmap 6**
+
+![alt text](/Images-readme/smiley-angry-col.png "Smiley angry color")
+
+#### **bitmap 7**
+
+![alt text](/Images-readme/smiley-happy.png "Smiley happy")
+
+#### **bitmap 8**
+
+![alt text](/Images-readme/smiley-happy-col.png "Smiley happy color")
+
+#### **bitmap 9**
+
+![alt text](/Images-readme/smiley-sad.png "Smiley sad")
+
+#### **bitmap 10**
+
+![alt text](/Images-readme/smiley-sad-col.png "Smiley sad color")
 
 ### Clearscreen command
