@@ -9,7 +9,7 @@
  *
  * @authors	Skip Wijtman
  * @date	3-5-2023
- * @version	1.1 (Updates with every SWD branch)
+ * @version	1.1
 *********************************************************/
 
 //#include "user-header"
@@ -135,18 +135,21 @@ UART UART_receiver(void)
 	uint8_t temp=0;
 	uint8_t i = 0;
 
-	for(unsigned char j = 0; j<LINE_STORAGE; j++)		// Empties the array
+	for(unsigned char j = 0; j<STORAGE; j++)		// Empties the array
 		data.receive[j] = 0;
 
 	while(1)
 	{
 		temp = UART_getChar();
 
-		 if(temp == '\r' || temp == ' ')	// Skip CR and space ASCII symbols, space is still used in sentaces
+		 if(temp == '\r' || temp == ' ')	// Skip CR and space ASCII symbols
 			 continue;
 
-		 if(temp == '\n' || temp == NO_DATA)		// When a LN is found start anew for data receiving
+		 if(temp == '\n' || temp == NO_DATA)		// When a LN is found stop the data receiving
 		 {
+			 if(temp == '\n')
+				 data.receive[i] = temp;
+
 			 i = 0;
 			 break;
 		 }

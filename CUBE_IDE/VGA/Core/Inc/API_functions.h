@@ -28,6 +28,6 @@
 int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight);
 int API_clearscreen(int color);
 int API_draw_rectangle(int x, int y, int width, int height, int color, int filled);
-int API_draw_bitmap(int x_lup, int y_lup, int nr);
+int API_draw_bitmap(int bm_nr, int x_lup, int y_lup);
 
 #endif /* INC_API_FUNCTIONS_H_ */

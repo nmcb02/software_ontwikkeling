@@ -159,14 +159,14 @@ int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int 
 		x_2 = x_1 + width;
 		y_2 = y_1 + height;
 
-		if (filled)	//Drawing a filled rectangle
+	if (filled)	//Drawing a filled rectangle
+	{
+		for (int y = y_1; y <= y_2; y++)
 		{
-			for (int y = y_1; y <= y_2; y++)
-			{
-				for (int x = x_1; x <= x_2; x++)
-					UB_VGA_SetPixel(x, y, color);
-			}
+			for (int x = x_1; x <= x_2; x++)
+				UB_VGA_SetPixel(x, y, color);
 		}
+	}
 
 		else if (!filled)
 		{
@@ -199,7 +199,7 @@ int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int 
  *
  * @return  Error code if error or no error occurs
 *******************************************************/
-int API_draw_bitmap (int x_lup, int y_lup, int bm_nr)
+int API_draw_bitmap (int bm_nr, int x_lup, int y_lup)
 {
 	int index_x = 0;
 	int bitmap[BITMAP_SIZE];
