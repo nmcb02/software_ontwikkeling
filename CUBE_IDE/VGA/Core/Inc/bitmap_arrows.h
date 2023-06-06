@@ -1,5 +1,5 @@
 /*******************************************************//**
- * @file    btimap_arrows.h
+ * @file    bitmap_arrows.h
  *
  * @brief  	Header file for bitmap arrays
  *

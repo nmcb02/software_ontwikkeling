@@ -84,6 +84,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;stm32_ub_vga_screen.h&quot;</code><br />
 </div>
 <p><a href="_a_p_i__functions_8h_source.html">Go to the source code of this file.</a></p>
@@ -93,15 +94,30 @@ Macros</h2></td></tr>
 <tr class="memitem:ae1b5a554c1d4d97654c06032a92f800a"><td class="memItemLeft" align="right" valign="top"><a id="ae1b5a554c1d4d97654c06032a92f800a" name="ae1b5a554c1d4d97654c06032a92f800a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>sgn</b>(x)&#160;&#160;&#160;((x&lt;0)?-1:((x&gt;0)?1:0))</td></tr>
 <tr class="separator:ae1b5a554c1d4d97654c06032a92f800a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9406d1c1ce745f80a0d2ce9fa4f3bafe"><td class="memItemLeft" align="right" valign="top"><a id="a9406d1c1ce745f80a0d2ce9fa4f3bafe" name="a9406d1c1ce745f80a0d2ce9fa4f3bafe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BITMAP_HEIGHT</b>&#160;&#160;&#160;77</td></tr>
+<tr class="separator:a9406d1c1ce745f80a0d2ce9fa4f3bafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444fec18efc59740428a6bb879824685"><td class="memItemLeft" align="right" valign="top"><a id="a444fec18efc59740428a6bb879824685" name="a444fec18efc59740428a6bb879824685"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BITMAP_WIDTH</b>&#160;&#160;&#160;120</td></tr>
+<tr class="separator:a444fec18efc59740428a6bb879824685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5efd9de5f0408f54365716967adbb87"><td class="memItemLeft" align="right" valign="top"><a id="aa5efd9de5f0408f54365716967adbb87" name="aa5efd9de5f0408f54365716967adbb87"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BITMAP_SIZE</b>&#160;&#160;&#160;9240</td></tr>
+<tr class="separator:aa5efd9de5f0408f54365716967adbb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5762291bd9ba0b7c55877a82192975c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__functions_8h.html#a5762291bd9ba0b7c55877a82192975c9">API_draw_line</a> (int x_1, int y_1, int x_2, int y_2, int color, int weight)</td></tr>
 <tr class="memdesc:a5762291bd9ba0b7c55877a82192975c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function gives the user the ability to draw lines on a VGA screen.  <br /></td></tr>
 <tr class="separator:a5762291bd9ba0b7c55877a82192975c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d34bcb0d84db1190d4b876a3f65944"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__functions_8h.html#ac5d34bcb0d84db1190d4b876a3f65944">API_clearscreen</a> (int color)</td></tr>
+<tr class="memdesc:ac5d34bcb0d84db1190d4b876a3f65944"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function gives the user the ability to clear the screen to a certain color.  <br /></td></tr>
+<tr class="separator:ac5d34bcb0d84db1190d4b876a3f65944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0587bfc121fd81d7f77001ded7166d4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__functions_8h.html#a0587bfc121fd81d7f77001ded7166d4f">API_draw_rectangle</a> (int x, int y, int width, int height, int color, int filled)</td></tr>
 <tr class="memdesc:a0587bfc121fd81d7f77001ded7166d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function gives the user the ability to draw a rectangle on a VGA screen.  <br /></td></tr>
 <tr class="separator:a0587bfc121fd81d7f77001ded7166d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a8bac444de7ea445532a9996b8a3a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__functions_8h.html#a95a8bac444de7ea445532a9996b8a3a8">API_draw_bitmap</a> (int x_lup, int y_lup, int nr)</td></tr>
+<tr class="memdesc:a95a8bac444de7ea445532a9996b8a3a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function gives the user the ability to put a bitmap on the VGA screen.  <br /></td></tr>
+<tr class="separator:a95a8bac444de7ea445532a9996b8a3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for API functions. </p>
@@ -109,6 +125,76 @@ Functions</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>17-05-2023 </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ac5d34bcb0d84db1190d4b876a3f65944" name="ac5d34bcb0d84db1190d4b876a3f65944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d34bcb0d84db1190d4b876a3f65944">&#9670;&#160;</a></span>API_clearscreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int API_clearscreen </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function gives the user the ability to clear the screen to a certain color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>Color of the screen</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Error code if error occurs </dd></dl>
+
+</div>
+</div>
+<a id="a95a8bac444de7ea445532a9996b8a3a8" name="a95a8bac444de7ea445532a9996b8a3a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95a8bac444de7ea445532a9996b8a3a8">&#9670;&#160;</a></span>API_draw_bitmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int API_draw_bitmap </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x_lup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y_lup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bm_nr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function gives the user the ability to put a bitmap on the VGA screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x_lup</td><td>X coordinate of x left up y_lup Y coordinate of y left up bm_nr Number of the bitmap</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Error code if error or no error occurs </dd></dl>
+
+</div>
+</div>
 <a id="a5762291bd9ba0b7c55877a82192975c9" name="a5762291bd9ba0b7c55877a82192975c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5762291bd9ba0b7c55877a82192975c9">&#9670;&#160;</a></span>API_draw_line()</h2>
 
@@ -171,7 +257,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Error code if error occurs </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Error code if error or no error occurs </dd></dl>
 
 </div>
 </div>

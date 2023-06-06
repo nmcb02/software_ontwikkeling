@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VGA-UART: CUBE_IDE/FRONT_IO_DISPLAY/Core/Src/main.c File Reference</title>
+<title>VGA-UART: CUBE_IDE/VGA/Core/Src/main.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e3b3ccba3fa7a7a6617f5da397a88713.html">CUBE_IDE</a></li><li class="navelem"><a class="el" href="dir_1704ad49f5e6a30ab3264fb57f392111.html">FRONT_IO_DISPLAY</a></li><li class="navelem"><a class="el" href="dir_c0b132b4edd77070587c8bb56f943357.html">Core</a></li><li class="navelem"><a class="el" href="dir_d935f046256a942b047fe3048c4e6c71.html">Src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_e3b3ccba3fa7a7a6617f5da397a88713.html">CUBE_IDE</a></li><li class="navelem"><a class="el" href="dir_9e66a901c65dcc32f1108cbf6a481354.html">VGA</a></li><li class="navelem"><a class="el" href="dir_e6caeb38a5abc8ac97dddf6f7ac0d4ff.html">Core</a></li><li class="navelem"><a class="el" href="dir_24657ba163246b07d97dde2aa1f40558.html">Src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,70 +80,56 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>: Main program body  
+<p>The file that gets executed and is used for operating a screen via VGA with external functions.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;main.h&quot;</code><br />
-<code>#include &quot;usb_host.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;main.h&quot;</code><br />
+<code>#include &quot;stm32_ub_vga_screen.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_u_a_r_t__communication_8h_source.html">UART_communication.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_a_p_i__functions_8h_source.html">API_functions.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a70af21c671abfcc773614a9a4f63d920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a70af21c671abfcc773614a9a4f63d920">SystemClock_Config</a> (void)</td></tr>
-<tr class="memdesc:a70af21c671abfcc773614a9a4f63d920"><td class="mdescLeft">&#160;</td><td class="mdescRight">System Clock Configuration.  <br /></td></tr>
-<tr class="separator:a70af21c671abfcc773614a9a4f63d920"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601fe6dca9df9023275eef4d1cc49432"><td class="memItemLeft" align="right" valign="top"><a id="a601fe6dca9df9023275eef4d1cc49432" name="a601fe6dca9df9023275eef4d1cc49432"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MX_USB_HOST_Process</b> (void)</td></tr>
-<tr class="separator:a601fe6dca9df9023275eef4d1cc49432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
-<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application entry point.  <br /></td></tr>
+<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program start.  <br /></td></tr>
 <tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1730ffe1e560465665eb47d9264826f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a> (void)</td></tr>
-<tr class="memdesc:a1730ffe1e560465665eb47d9264826f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is executed in case of error occurrence.  <br /></td></tr>
-<tr class="separator:a1730ffe1e560465665eb47d9264826f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af7b2c26e44dadaaa798a5c3d82914ba7"><td class="memItemLeft" align="right" valign="top"><a id="af7b2c26e44dadaaa798a5c3d82914ba7" name="af7b2c26e44dadaaa798a5c3d82914ba7"></a>
-I2C_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><b>hi2c1</b></td></tr>
-<tr class="separator:af7b2c26e44dadaaa798a5c3d82914ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42cb7a8588778f08bf78b1cb4757169c"><td class="memItemLeft" align="right" valign="top"><a id="a42cb7a8588778f08bf78b1cb4757169c" name="a42cb7a8588778f08bf78b1cb4757169c"></a>
-I2S_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><b>hi2s3</b></td></tr>
-<tr class="separator:a42cb7a8588778f08bf78b1cb4757169c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c6222bae4d0328dd843ae099623b40b"><td class="memItemLeft" align="right" valign="top"><a id="a9c6222bae4d0328dd843ae099623b40b" name="a9c6222bae4d0328dd843ae099623b40b"></a>
-SPI_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><b>hspi1</b></td></tr>
-<tr class="separator:a9c6222bae4d0328dd843ae099623b40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325819a8e492ac69542e8b31705af6e9"><td class="memItemLeft" align="right" valign="top"><a id="a325819a8e492ac69542e8b31705af6e9" name="a325819a8e492ac69542e8b31705af6e9"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="separator:a325819a8e492ac69542e8b31705af6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518bfca7e9ae4815b363998b49fa6ae2"><td class="memItemLeft" align="right" valign="top"><a id="a518bfca7e9ae4815b363998b49fa6ae2" name="a518bfca7e9ae4815b363998b49fa6ae2"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> [100]</td></tr>
+<tr class="separator:a518bfca7e9ae4815b363998b49fa6ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20136d75a5906cd4b0b8556a2e93cabb"><td class="memItemLeft" align="right" valign="top"><a id="a20136d75a5906cd4b0b8556a2e93cabb" name="a20136d75a5906cd4b0b8556a2e93cabb"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>save2</b> [100]</td></tr>
+<tr class="separator:a20136d75a5906cd4b0b8556a2e93cabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f63e243e2aa66c2950ac476ccfda92"><td class="memItemLeft" align="right" valign="top"><a id="a71f63e243e2aa66c2950ac476ccfda92" name="a71f63e243e2aa66c2950ac476ccfda92"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>arr</b> [100]</td></tr>
+<tr class="separator:a71f63e243e2aa66c2950ac476ccfda92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27e3188294c2df66d975b74a09c001d"><td class="memItemLeft" align="right" valign="top"><a id="af27e3188294c2df66d975b74a09c001d" name="af27e3188294c2df66d975b74a09c001d"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>i</b> =0</td></tr>
+<tr class="separator:af27e3188294c2df66d975b74a09c001d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6150e0515f7202e2fb518f7206ed97dc"><td class="memItemLeft" align="right" valign="top"><a id="a6150e0515f7202e2fb518f7206ed97dc" name="a6150e0515f7202e2fb518f7206ed97dc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>x</b> = 0</td></tr>
+<tr class="separator:a6150e0515f7202e2fb518f7206ed97dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1217779551b743f5645c17740178e3"><td class="memItemLeft" align="right" valign="top"><a id="aac1217779551b743f5645c17740178e3" name="aac1217779551b743f5645c17740178e3"></a>
+unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>j</b></td></tr>
+<tr class="separator:aac1217779551b743f5645c17740178e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>: Main program body </p>
-<dl class="section attention"><dt>Attention</dt><dd></dd></dl>
-<p>Copyright (c) 2023 STMicroelectronics. All rights reserved.</p>
-<p>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </p>
+<div class="textblock"><p>The file that gets executed and is used for operating a screen via VGA with external functions. </p>
+<p><b>Extra infromation:</b></p><ol type="1">
+<li>CPU : STM32F4</li>
+<li>IDE : CooCox CoIDE 1.7.x</li>
+<li>Module : CMSIS_BOOT, M4_CMSIS_CORE</li>
+<li>Function : VGA_core DMA LIB 320x240, 8bit color</li>
+</ol>
+<dl class="section author"><dt>Authors</dt><dd>UB, J.F van der Bent, Skip Wijtman </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>3-5-2023 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 (Updates with every SWD branch) </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a1730ffe1e560465665eb47d9264826f9" name="a1730ffe1e560465665eb47d9264826f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1730ffe1e560465665eb47d9264826f9">&#9670;&#160;</a></span>Error_Handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Error_Handler </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function is executed in case of error occurrence. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&#160;</a></span>main()</h2>
 
@@ -160,42 +146,14 @@ SPI_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><b>hspi1</b
       </table>
 </div><div class="memdoc">
 
-<p>The application entry point. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int</td><td></td></tr>
+<p>Program start. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Nothing</td><td></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a70af21c671abfcc773614a9a4f63d920" name="a70af21c671abfcc773614a9a4f63d920"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70af21c671abfcc773614a9a4f63d920">&#9670;&#160;</a></span>SystemClock_Config()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SystemClock_Config </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>System Clock Configuration. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">None</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Configure the main internal regulator output voltage</p>
-<p>Initializes the RCC Oscillators according to the specified parameters in the RCC_OscInitTypeDef structure.</p>
-<p>Initializes the CPU, AHB and APB buses clocks</p>
+<dl class="section return"><dt>Returns</dt><dd>integer val </dd></dl>
 
 </div>
 </div>
