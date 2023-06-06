@@ -65,5 +65,6 @@ int parse_cmd(UART data);
 int draw_options(char cmd, UART data);
 int number_converter(char ASCII);
 PARSE color_assign(UART data, int i, PARSE parsing);
+PARSE parse_data(PARSE parsing, UART data, int LEN , int var_counter, int num_checker, int let_checker);
 
 #endif /* INC_LOGIC_LAYER_H_ */

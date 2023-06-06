@@ -63,9 +63,6 @@ int main(void)
 
 	  test = UART_receiver();
 
-//	  for(j = 0; j<STORAGE; j++)		// Copies received data
-//		  arr[j] = test.receive[j];
-
 
 	  if(test.receive[0] != 0)		// When data received, parse
 	  {

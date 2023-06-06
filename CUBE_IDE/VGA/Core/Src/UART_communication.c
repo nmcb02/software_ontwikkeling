@@ -142,10 +142,10 @@ UART UART_receiver(void)
 	{
 		temp = UART_getChar();
 
-		 if(temp == '\r' || temp == ' ')	// Skip CR and space ASCII symbols, space is still used in sentaces
+		 if(temp == '\r' || temp == ' ')	// Skip CR and space ASCII symbols
 			 continue;
 
-		 if(temp == '\n' || temp == NO_DATA)		// When a LN is found start anew for data receiving
+		 if(temp == '\n' || temp == NO_DATA)		// When a LN is found stop the data receiving
 		 {
 			 if(temp == '\n')
 				 data.receive[i] = temp;
