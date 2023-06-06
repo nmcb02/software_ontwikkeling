@@ -42,7 +42,7 @@
 #define VGA_COL_LIGHTCYAN      	0x9F
 #define VGA_COL_LIGHTRED       	0xED
 #define VGA_COL_LIGHTMAGENTA   	0xEF
-#define VGA_COL_BROWN          	0x89
+#define VGA_COL_BROWN          	0x44
 #define VGA_COL_GRAY           	0x6D
 
 //--------------------------------------------------------------
