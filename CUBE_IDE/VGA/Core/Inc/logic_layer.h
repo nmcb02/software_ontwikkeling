@@ -59,7 +59,6 @@ enum ERROR
 
 //external vars
 
-
 //prototype user functions
 int parse_cmd(UART data);
 int draw_options(char cmd, UART data);

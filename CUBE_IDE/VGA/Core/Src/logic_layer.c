@@ -110,7 +110,7 @@ int draw_options(char cmd, UART data)
 		parsing.var_store[j] = 0;
 
 
-
+	int error_return = NO_ERR;
 	int var_counter = 0;
 	int num_checker = 0;
 	int let_checker = 0;
@@ -119,8 +119,12 @@ int draw_options(char cmd, UART data)
 	{
 		case 0:
 			parsing = parse_data(parsing, data, LINE_LEN, var_counter, num_checker, let_checker);
-			API_draw_line(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
-			break;
+
+				if(parsing.err_code != NO_ERR)
+							return parsing.err_code;
+
+			error_return = API_draw_line(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
+			return error_return;
 
 		case 1:
 			parsing = parse_data(parsing, data, RECTANGLE_LEN, var_counter, num_checker, let_checker);
@@ -128,23 +132,30 @@ int draw_options(char cmd, UART data)
 			if(parsing.err_code != NO_ERR)
 				return parsing.err_code;
 
-			API_draw_rectangle(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
-			break;
+			error_return = API_draw_rectangle(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
+			return error_return;
 
 		case 2:
 			parsing = parse_data(parsing, data, CLEAR_LEN, var_counter, num_checker, let_checker);
-			API_clearscreen(parsing.var_store[0]);
-			break;
+
+			if(parsing.err_code != NO_ERR)
+				return parsing.err_code;
+
+			error_return = API_clearscreen(parsing.var_store[0]);
+			return error_return;
 
 		case 3:
 			parsing = parse_data(parsing, data, BITMAP_LEN, var_counter, num_checker, let_checker);
-			API_draw_bitmap(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2]);
-			break;
+
+			if(parsing.err_code != NO_ERR)
+				return parsing.err_code;
+
+			error_return = API_draw_bitmap(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2]);
+			return error_return;
 
 		default:
 			return NO_ERR;		// Different error, but which one?
 	}
-	return NO_ERR;
 }
 
 PARSE parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_checker, int let_checker)
