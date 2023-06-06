@@ -6,7 +6,7 @@
 
 ## Description
 
-With this code scripts with commands can be read and de commands will be executed on a VGA screen.
+With this code scripts with commands can be read and the commands will be executed on a VGA screen.
 
 ## Three tier model
 
@@ -14,7 +14,7 @@ The three tier model is shown in the below picture. The I/O layer also consist o
 
 ![alt text](/Images-readme/threetier.png "Three tier model")
 
-The following model is designed by us. The front layer is for communication with UART. De logic layer to decipher ASCII scriptcommands and the I/O layer consist of the API functions and communication with the VGA screen.
+The following model is designed by us. The front layer is for communication with UART. The logic layer to decipher ASCII scriptcommands and the I/O layer consist of the API functions and communication with the VGA screen.
 
 ![alt text](/Images-readme/Func_ontwerp.drawio.png "Diagram three tier model")
 
@@ -61,7 +61,7 @@ The following script command is for drawing a rectangle
 
 ``rechthoek, x_lup, y_lup, breedte, hoogte, kleur, gevuld``
 
-``x_lup, y_lup`` are starting points
+``x_lup, y_lup`` are starting points of the upper left corner
 
 ``breedte, hoogte`` width, height
 
@@ -77,7 +77,7 @@ The following script command is for drawing a rectangle
 
 ``nr``  number of the bitmap between 1 and 10
 
-``x_lup, y_lup`` are starting points
+``x_lup, y_lup`` are starting points of the upper left corner
 
 #### ***bitmap 1***
 
