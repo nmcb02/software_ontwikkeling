@@ -163,7 +163,7 @@ int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int 
 		{
 			for (int y = y_1; y <= y_2; y++)
 			{
-				for (int x = x_1; x <= width; x++)
+				for (int x = x_1; x <= x_2; x++)
 					UB_VGA_SetPixel(x, y, color);
 			}
 		}
