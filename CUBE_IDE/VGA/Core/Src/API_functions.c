@@ -29,13 +29,13 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 	int dx, dy, sdx, sdy, dxabs, dyabs, x, y, px, py;
 
 	if ((0 > x_1) || (x_1 > VGA_DISPLAY_X) || (0 > x_2) || (x_2 > VGA_DISPLAY_X))
-		return 1; // ERROR:	Invalid value
+		return 1; // ERROR:	Out of bounds
 
 	else if ((0 > y_1)||(y_1 > VGA_DISPLAY_Y)||(0 > y_2)||(y_2 > VGA_DISPLAY_Y))
-		return 1; // ERROR:	Invalid value
+		return 1; // ERROR:	Out of bounds
 
 	else if ((0 > weight)||(weight > VGA_DISPLAY_X)||(0 > weight)||(weight > VGA_DISPLAY_Y))
-		return 1; // ERROR:	Invalid value
+		return 1; // ERROR:	Out of bounds
 
 	else
 	{
@@ -135,8 +135,8 @@ int API_clearscreen(int color)
 /*****************************************************//**
  * @brief   This function gives the user the ability to draw a rectangle on a VGA screen
  *
- * @param   x_1 Starting point coördinate of x
- * @param   y_1 Starting point coördinate of y
+ * @param   x_1 Starting point coördinate of x (upper left)
+ * @param   y_1 Starting point coördinate of y (upper left)
  * @param   width Width of the rectangle max. 320
  * @param   height Height of the rectangle max. 240
  * @param   color Color of the rectangle/borders
@@ -194,8 +194,8 @@ int API_draw_rectangle(int x_1, int y_1, int width, int height, int color, int f
  * @brief   This function gives the user the ability to put a bitmap on the VGA screen
  *
  * @param   x_lup X coordinate of x left up
- * 			y_lup Y coordinate of y left up
- * 			bm_nr Number of the bitmap
+ * @param	y_lup Y coordinate of y left up
+ * @param	bm_nr Number of the bitmap from 1 to 10
  *
  * @return  Error code if error or no error occurs
 *******************************************************/

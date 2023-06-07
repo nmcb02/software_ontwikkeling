@@ -1,0 +1,148 @@
+\hypertarget{_u_a_r_t__communication_8c}{}\doxysection{CUBE\+\_\+\+IDE/\+VGA/\+Core/\+Src/\+UART\+\_\+communication.c File Reference}
+\label{_u_a_r_t__communication_8c}\index{CUBE\_IDE/VGA/Core/Src/UART\_communication.c@{CUBE\_IDE/VGA/Core/Src/UART\_communication.c}}
+
+
+In this file UART is used to make communication possible between the STM32\+F4 board and a computer. With this code messages can be received and sent. This code is made with the assistance of an online guide from \textquotesingle{}Controllerstech\textquotesingle{}.  
+
+
+{\ttfamily \#include \char`\"{}UART\+\_\+communication.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_u_a_r_t__communication_8c_ab84e9f0a99ba6731a4e7d3dfc40493b3}{UART2\+\_\+config}} (void)
+\begin{DoxyCompactList}\small\item\em Function to enable all the necessary registers and operations to use UART. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__communication_8c_add4232249b0688ce38e69d9899550ba0}{UART\+\_\+send\+Char}} (uint8\+\_\+t c)
+\begin{DoxyCompactList}\small\item\em Function that sends char data to the connected terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__communication_8c_a8634cca4ce3fd979b63eabbe926e1ae0}{UART\+\_\+send\+String}} (char $\ast$string)
+\begin{DoxyCompactList}\small\item\em Function that sends a string to the connected terminal. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_u_a_r_t__communication_8c_aae7c3d4380da5daac337818d429241ad}{UART\+\_\+get\+Char}} (void)
+\begin{DoxyCompactList}\small\item\em Function that receives data from the connected terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_u_a_r_t___communication}{UART}} \mbox{\hyperlink{_u_a_r_t__communication_8c_a2387a595d989ba4d08da460927caf5c8}{UART\+\_\+receiver}} (void)
+\begin{DoxyCompactList}\small\item\em Function that read a single line and stores the data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__communication_8c_a2f2a2e6b820f5815970edc1989b95857}{UART\+\_\+error\+Handling}} (int err)
+\begin{DoxyCompactList}\small\item\em Function that handles the occuring errors to the terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+In this file UART is used to make communication possible between the STM32\+F4 board and a computer. With this code messages can be received and sent. This code is made with the assistance of an online guide from \textquotesingle{}Controllerstech\textquotesingle{}. 
+
+\begin{DoxyAuthor}{Authors}
+Skip Wijtman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+3-\/5-\/2023 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_u_a_r_t__communication_8c_ab84e9f0a99ba6731a4e7d3dfc40493b3}\label{_u_a_r_t__communication_8c_ab84e9f0a99ba6731a4e7d3dfc40493b3}} 
+\index{UART\_communication.c@{UART\_communication.c}!UART2\_config@{UART2\_config}}
+\index{UART2\_config@{UART2\_config}!UART\_communication.c@{UART\_communication.c}}
+\doxysubsubsection{\texorpdfstring{UART2\_config()}{UART2\_config()}}
+{\footnotesize\ttfamily void UART2\+\_\+config (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Function to enable all the necessary registers and operations to use UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nothing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_a_r_t__communication_8c_a2f2a2e6b820f5815970edc1989b95857}\label{_u_a_r_t__communication_8c_a2f2a2e6b820f5815970edc1989b95857}} 
+\index{UART\_communication.c@{UART\_communication.c}!UART\_errorHandling@{UART\_errorHandling}}
+\index{UART\_errorHandling@{UART\_errorHandling}!UART\_communication.c@{UART\_communication.c}}
+\doxysubsubsection{\texorpdfstring{UART\_errorHandling()}{UART\_errorHandling()}}
+{\footnotesize\ttfamily void UART\+\_\+error\+Handling (\begin{DoxyParamCaption}\item[{int}]{err }\end{DoxyParamCaption})}
+
+
+
+Function that handles the occuring errors to the terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & error that is supposed to be shown\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_a_r_t__communication_8c_aae7c3d4380da5daac337818d429241ad}\label{_u_a_r_t__communication_8c_aae7c3d4380da5daac337818d429241ad}} 
+\index{UART\_communication.c@{UART\_communication.c}!UART\_getChar@{UART\_getChar}}
+\index{UART\_getChar@{UART\_getChar}!UART\_communication.c@{UART\_communication.c}}
+\doxysubsubsection{\texorpdfstring{UART\_getChar()}{UART\_getChar()}}
+{\footnotesize\ttfamily uint8\+\_\+t UART\+\_\+get\+Char (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Function that receives data from the connected terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nothing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Received data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_a_r_t__communication_8c_a2387a595d989ba4d08da460927caf5c8}\label{_u_a_r_t__communication_8c_a2387a595d989ba4d08da460927caf5c8}} 
+\index{UART\_communication.c@{UART\_communication.c}!UART\_receiver@{UART\_receiver}}
+\index{UART\_receiver@{UART\_receiver}!UART\_communication.c@{UART\_communication.c}}
+\doxysubsubsection{\texorpdfstring{UART\_receiver()}{UART\_receiver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_u_a_r_t___communication}{UART}} UART\+\_\+receiver (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Function that read a single line and stores the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nothing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_a_r_t__communication_8c_add4232249b0688ce38e69d9899550ba0}\label{_u_a_r_t__communication_8c_add4232249b0688ce38e69d9899550ba0}} 
+\index{UART\_communication.c@{UART\_communication.c}!UART\_sendChar@{UART\_sendChar}}
+\index{UART\_sendChar@{UART\_sendChar}!UART\_communication.c@{UART\_communication.c}}
+\doxysubsubsection{\texorpdfstring{UART\_sendChar()}{UART\_sendChar()}}
+{\footnotesize\ttfamily void UART\+\_\+send\+Char (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{c }\end{DoxyParamCaption})}
+
+
+
+Function that sends char data to the connected terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Char} & data do be send\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_a_r_t__communication_8c_a8634cca4ce3fd979b63eabbe926e1ae0}\label{_u_a_r_t__communication_8c_a8634cca4ce3fd979b63eabbe926e1ae0}} 
+\index{UART\_communication.c@{UART\_communication.c}!UART\_sendString@{UART\_sendString}}
+\index{UART\_sendString@{UART\_sendString}!UART\_communication.c@{UART\_communication.c}}
+\doxysubsubsection{\texorpdfstring{UART\_sendString()}{UART\_sendString()}}
+{\footnotesize\ttfamily void UART\+\_\+send\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{string }\end{DoxyParamCaption})}
+
+
+
+Function that sends a string to the connected terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em String} & do be send\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}

@@ -159,6 +159,13 @@ UART UART_receiver(void)
 	return data;
 }
 
+/*****************************************************//**
+ * @brief	Function that handles the occuring errors to the terminal
+ *
+ * @param	err error that is supposed to be shown
+ *
+ * @return	nothing
+*******************************************************/
 void UART_errorHandling(int err)
 {
 	switch(err)

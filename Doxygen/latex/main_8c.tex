@@ -1,0 +1,89 @@
+\hypertarget{main_8c}{}\doxysection{CUBE\+\_\+\+IDE/\+VGA/\+Core/\+Src/main.c File Reference}
+\label{main_8c}\index{CUBE\_IDE/VGA/Core/Src/main.c@{CUBE\_IDE/VGA/Core/Src/main.c}}
+
+
+The file that gets executed and is used for operating a screen via VGA with external functions.  
+
+
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32\+\_\+ub\+\_\+vga\+\_\+screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}UART\+\_\+communication.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}API\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}logic\+\_\+layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}error.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em Program start. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_a325819a8e492ac69542e8b31705af6e9}\label{main_8c_a325819a8e492ac69542e8b31705af6e9}} 
+uint8\+\_\+t {\bfseries data}
+\item 
+\mbox{\Hypertarget{main_8c_a518bfca7e9ae4815b363998b49fa6ae2}\label{main_8c_a518bfca7e9ae4815b363998b49fa6ae2}} 
+char {\bfseries save} \mbox{[}100\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8c_a20136d75a5906cd4b0b8556a2e93cabb}\label{main_8c_a20136d75a5906cd4b0b8556a2e93cabb}} 
+char {\bfseries save2} \mbox{[}100\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8c_a71f63e243e2aa66c2950ac476ccfda92}\label{main_8c_a71f63e243e2aa66c2950ac476ccfda92}} 
+uint8\+\_\+t {\bfseries arr} \mbox{[}100\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8c_af27e3188294c2df66d975b74a09c001d}\label{main_8c_af27e3188294c2df66d975b74a09c001d}} 
+uint8\+\_\+t {\bfseries i} =0
+\item 
+\mbox{\Hypertarget{main_8c_a6150e0515f7202e2fb518f7206ed97dc}\label{main_8c_a6150e0515f7202e2fb518f7206ed97dc}} 
+int {\bfseries x} = 0
+\item 
+\mbox{\Hypertarget{main_8c_aac1217779551b743f5645c17740178e3}\label{main_8c_aac1217779551b743f5645c17740178e3}} 
+unsigned char {\bfseries j}
+\item 
+\mbox{\Hypertarget{main_8c_aa0ccb5ee6d882ee3605ff47745c6467b}\label{main_8c_aa0ccb5ee6d882ee3605ff47745c6467b}} 
+int {\bfseries val} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The file that gets executed and is used for operating a screen via VGA with external functions. 
+
+{\bfseries{Extra infromation\+:}}
+\begin{DoxyEnumerate}
+\item CPU \+: STM32\+F4
+\item IDE \+: Coo\+Cox Co\+IDE 1.\+7.\+x
+\item Module \+: CMSIS\+\_\+\+BOOT, M4\+\_\+\+CMSIS\+\_\+\+CORE
+\item Function \+: VGA\+\_\+core DMA LIB 320x240, 8bit color
+\end{DoxyEnumerate}
+
+\begin{DoxyAuthor}{Authors}
+UB, J.\+F van der Bent, Skip Wijtman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+3-\/5-\/2023 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 (Updates with every SWD branch) 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Program start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nothing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer val 
+\end{DoxyReturn}

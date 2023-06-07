@@ -45,7 +45,7 @@ char compare_col[16][MAX_COL_LEN] = {	{"zwart"},
  *
  * @param	data is a struct variable with the received script
  *
- * @return	Error code
+ * @return	Error code or the current index of found
 *******************************************************/
 int parse_cmd(UART data)
 {
@@ -160,6 +160,22 @@ int draw_options(char cmd, UART data)
 	}
 }
 
+/*****************************************************//**
+ * @brief	This function is used for parsing data and 
+ * 			converts ASCII to decimals
+ * 
+ * @param	parsing is a struct variable that stores all needed data for functions
+ * @param 	data is a struct variable with the received script
+ * @param	LEN is the length of the command + the comma to skip these is the parser
+ * @param 	var_counter is an index of an array to store the data in from the script
+ * @param 	num_checker is a variable to confirm a ASCII number is found and ensures 
+ * 						that no junk color values are stored in the data array
+ * @param	let_checker is a variable to confirm a letter is found and ensures 
+ * 						that no junk number values are stored in the data array
+ * @param	num_counter is a variable which counts the amount of ASCII numbers between two commas
+ *
+ * @return	Error code
+*******************************************************/
 PARSE parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_checker, int let_checker, int num_counter)
 {
 	for(int i = LEN; i<STORAGE; i++)		// Start the loop after the command, to convert the rest of the script
@@ -238,6 +254,7 @@ int number_converter(char ASCII)
  *
  * @param	data is a struct variable with the received script
  * @param 	i is the variable for the loop iterator
+ * @param 	parsing is a struct variable that stores all needed data for functions
  *
  * @return	parsing is a struct variable with data info 
  * 			which are retrieved from the script
