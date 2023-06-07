@@ -61,16 +61,18 @@ int parse_cmd(UART data)
 	}
 
     char found = NO_DATA;
+    int counter = 0;
 
 	for(int i = 0; i<5; i++)           		 // Loop to scearch for which command is given ///try: i<(sizeof(compare_cmd)/sizeof(compare[0])) 
 	{
+		counter++;
         if(strcmp(cmd, compare_cmd[i]) == 0)    // When a command is found, remember which iteration. Also no error
         {
         	found = i;
-        	return NO_ERR;
+        	break;
         }
 
-        else								// When no command is found, error
+        else if (counter == 4)								// When no command is found, error
         	return COMMAND_ERR;
 	}
 
