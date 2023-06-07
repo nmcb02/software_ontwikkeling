@@ -61,22 +61,22 @@ int parse_cmd(UART data)
 	}
 
     char found = NO_DATA;
-    char ERR = NO_ERR;
+    int counter = 0;
 
 	for(int i = 0; i<5; i++)           		 // Loop to scearch for which command is given ///try: i<(sizeof(compare_cmd)/sizeof(compare[0])) 
 	{
+		counter++;
         if(strcmp(cmd, compare_cmd[i]) == 0)    // When a command is found, remember which iteration. Also no error
         {
         	found = i;
-        	ERR = NO_ERR;
         	break;
         }
 
-        else								// When no command is found, error
-        	ERR = COMMAND_ERR;
+        else if (counter == 4)								// When no command is found, error
+        	return COMMAND_ERR;
 	}
 
-	return found;
+	return found + ERROR_OFF;
 }
 
 /*****************************************************//**
@@ -110,41 +110,52 @@ int draw_options(char cmd, UART data)
 		parsing.var_store[j] = 0;
 
 
-
+	int error_return = NO_ERR;
 	int var_counter = 0;
 	int num_checker = 0;
 	int let_checker = 0;
 
 	switch(cmd)				//////ALLES HIERONDER NOG EEN KEER DOOLOPEN OF HET KLOPT EN LOGISCH IS
 	{
-		case 0:
+		case 5:
 			parsing = parse_data(parsing, data, LINE_LEN, var_counter, num_checker, let_checker);
-			API_draw_line(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
-			break;
 
-		case 1:
+				if(parsing.err_code != NO_ERR)
+							return parsing.err_code;
+
+			error_return = API_draw_line(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
+			return error_return;
+
+		case 6:
 			parsing = parse_data(parsing, data, RECTANGLE_LEN, var_counter, num_checker, let_checker);
 
 			if(parsing.err_code != NO_ERR)
 				return parsing.err_code;
 
-			API_draw_rectangle(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
-			break;
+			error_return = API_draw_rectangle(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
+			return error_return;
 
-		case 2:
+		case 7:
 			parsing = parse_data(parsing, data, CLEAR_LEN, var_counter, num_checker, let_checker);
-			API_clearscreen(parsing.var_store[0]);
-			break;
 
-		case 3:
+			if(parsing.err_code != NO_ERR)
+				return parsing.err_code;
+
+			error_return = API_clearscreen(parsing.var_store[0]);
+			return error_return;
+
+		case 8:
 			parsing = parse_data(parsing, data, BITMAP_LEN, var_counter, num_checker, let_checker);
-			API_draw_bitmap(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2]);
-			break;
+
+			if(parsing.err_code != NO_ERR)
+				return parsing.err_code;
+
+			error_return = API_draw_bitmap(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2]);
+			return error_return;
 
 		default:
-			return NO_ERR;		// Different error, but which one?
+			return cmd;		// Different error, but which one?
 	}
-	return NO_ERR;
 }
 
 PARSE parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_checker, int let_checker)

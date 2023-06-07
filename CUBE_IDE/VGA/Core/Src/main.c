@@ -60,7 +60,7 @@ int main(void)
   while(1)		// Infinite loop
   {
 	  UART test;
-	  int err=0;
+	  int err = NO_ERR;
 
 	  test = UART_receiver();
 
