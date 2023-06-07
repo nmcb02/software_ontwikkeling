@@ -166,11 +166,13 @@ int draw_options(char cmd, UART data)
  * 
  * @param	parsing is a struct variable that stores all needed data for functions
  * @param 	data is a struct variable with the received script
- * @param	LEN
- * @param 	var_counter
- * @param 	num_checker
- * @param	let_checker
- * @param	num_counter
+ * @param	LEN is the length of the command + the comma to skip these is the parser
+ * @param 	var_counter is an index of an array to store the data in from the script
+ * @param 	num_checker is a variable to confirm a ASCII number is found and ensures 
+ * 						that no junk color values are stored in the data array
+ * @param	let_checker is a variable to confirm a letter is found and ensures 
+ * 						that no junk number values are stored in the data array
+ * @param	num_counter is a variable which counts the amount of ASCII numbers between two commas
  *
  * @return	Error code
 *******************************************************/
