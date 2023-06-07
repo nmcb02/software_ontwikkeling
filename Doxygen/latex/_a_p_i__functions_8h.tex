@@ -9,7 +9,7 @@ Header file for API functions.
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$string.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}stm32\+\_\+ub\+\_\+vga\+\_\+screen.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}logic\+\_\+layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}error.\+h\char`\"{}}\newline
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
@@ -24,6 +24,54 @@ Header file for API functions.
 \item 
 \mbox{\Hypertarget{_a_p_i__functions_8h_aa5efd9de5f0408f54365716967adbb87}\label{_a_p_i__functions_8h_aa5efd9de5f0408f54365716967adbb87}} 
 \#define {\bfseries BITMAP\+\_\+\+SIZE}~9240
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_aba61684a71c46c07ee552c378b6cc60c}\label{_a_p_i__functions_8h_aba61684a71c46c07ee552c378b6cc60c}} 
+\#define {\bfseries BM\+\_\+\+ARROW\+\_\+\+UP}~1
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_af7b0af4d2326474c34c75f22ce638d84}\label{_a_p_i__functions_8h_af7b0af4d2326474c34c75f22ce638d84}} 
+\#define {\bfseries BM\+\_\+\+ARROW\+\_\+down}~2
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_aa1820ac94ecfd370fd70af1f877e8990}\label{_a_p_i__functions_8h_aa1820ac94ecfd370fd70af1f877e8990}} 
+\#define {\bfseries BM\+\_\+\+ARROW\+\_\+left}~3
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_a7e487c7589ddba00d3986f9e3aaf3c4d}\label{_a_p_i__functions_8h_a7e487c7589ddba00d3986f9e3aaf3c4d}} 
+\#define {\bfseries BM\+\_\+\+ARROW\+\_\+right}~4
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_a251ce98ae8333c1efc67ffdd1bc40fcd}\label{_a_p_i__functions_8h_a251ce98ae8333c1efc67ffdd1bc40fcd}} 
+\#define {\bfseries BM\+\_\+\+SMILEY\+\_\+\+ANGERY}~5
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_ad9b074612613bba8a07059615f98936c}\label{_a_p_i__functions_8h_ad9b074612613bba8a07059615f98936c}} 
+\#define {\bfseries BM\+\_\+\+SMILEY\+\_\+\+ANGERY\+\_\+\+COL}~6
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_af6b38d6bbd0725d1930dc0d9970449c1}\label{_a_p_i__functions_8h_af6b38d6bbd0725d1930dc0d9970449c1}} 
+\#define {\bfseries BM\+\_\+\+SMILEY\+\_\+\+HAPPY}~7
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_a7b0fde2e75f6794d060b77f4ac852f95}\label{_a_p_i__functions_8h_a7b0fde2e75f6794d060b77f4ac852f95}} 
+\#define {\bfseries BM\+\_\+\+SMILEY\+\_\+\+HAPPY\+\_\+\+COL}~8
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_a009766551886bb8f57e1e10ffe4e52a6}\label{_a_p_i__functions_8h_a009766551886bb8f57e1e10ffe4e52a6}} 
+\#define {\bfseries BM\+\_\+\+SMILEY\+\_\+\+SAD}~9
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_a36d98a8187c3a392bd5d1ae6828dde33}\label{_a_p_i__functions_8h_a36d98a8187c3a392bd5d1ae6828dde33}} 
+\#define {\bfseries BM\+\_\+\+SMILEY\+\_\+\+SAD\+\_\+\+COL}~10
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_a7b3b25cba33b07c303f3060fe41887f6}\label{_a_p_i__functions_8h_a7b3b25cba33b07c303f3060fe41887f6}} 
+\#define {\bfseries BLACK}~0
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_a79d10e672abb49ad63eeaa8aaef57c38}\label{_a_p_i__functions_8h_a79d10e672abb49ad63eeaa8aaef57c38}} 
+\#define {\bfseries BLUE}~23
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_abf681265909adf3d3e8116c93c0ba179}\label{_a_p_i__functions_8h_abf681265909adf3d3e8116c93c0ba179}} 
+\#define {\bfseries YELLOW}~252
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_a8d23feea868a983c8c2b661e1e16972f}\label{_a_p_i__functions_8h_a8d23feea868a983c8c2b661e1e16972f}} 
+\#define {\bfseries RED}~224
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_ada419fe3b48fcf19daed7cc57ccf1174}\label{_a_p_i__functions_8h_ada419fe3b48fcf19daed7cc57ccf1174}} 
+\#define {\bfseries PINK}~247
+\item 
+\mbox{\Hypertarget{_a_p_i__functions_8h_a87b537f5fa5c109d3c05c13d6b18f382}\label{_a_p_i__functions_8h_a87b537f5fa5c109d3c05c13d6b18f382}} 
+\#define {\bfseries WHITE}~255
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -48,7 +96,7 @@ Naomi Born
 17-\/05-\/2023 
 \end{DoxyDate}
 \begin{DoxyVersion}{Version}
-1.\+0 
+1.\+1 
 \end{DoxyVersion}
 
 
