@@ -3,6 +3,7 @@
 - [Description](#description)
 - [Three tier model](#three-tier-model)
 - [Usage](#usage)
+- [ERRORS](#errors)
 
 ## Description
 
@@ -126,3 +127,22 @@ The following script command is for clearing the screen with a desired color
 ``clearscherm, kleur``
 
 ``kleur`` is desired color
+
+## ERRORS
+
+- COMMAND :
+Er is een commando gegeven wat niet herkent wordt.
+Ondersteunde commando's zijn: 'lijn', 'rechthoek', 'clearscherm' en 'bitmap'.
+
+- OUT OF BOUNDS :
+Er is een co-ordinaat gegeven wat zich buiten het scherm bevind.
+De beschikbare co-ordinaten voor de X-as zijn 0 t/m 319, voor de Y-as 0 t/m 239.
+
+- COLOR :
+Er is een kleur opgegeven welke niet herkent wordt.
+De beschikbare kleuren zijn: zwart, blauw, lichtblauw, groen, lichtgroen, cyaan, lichtcyaan, rood, lichtrood, magenta, lichtmagenta, bruin, geel, grijs, wit en roze.
+
+- DATA :
+Er is iets onbekends in de data reeks in gevuld.
+De data wat herkent wordt zijn cijfers en letters, als er iets anders is ingevuld, zoals een '/'
+dan wordt dit niet herkent.
