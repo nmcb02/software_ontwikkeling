@@ -57,6 +57,8 @@ enum ERROR
 #define TRUE 				1
 #define FALSE				0
 
+#define ERROR_OFF 			5
+
 //external vars
 
 //prototype user functions

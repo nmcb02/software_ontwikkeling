@@ -61,22 +61,20 @@ int parse_cmd(UART data)
 	}
 
     char found = NO_DATA;
-    char ERR = NO_ERR;
 
 	for(int i = 0; i<5; i++)           		 // Loop to scearch for which command is given ///try: i<(sizeof(compare_cmd)/sizeof(compare[0])) 
 	{
         if(strcmp(cmd, compare_cmd[i]) == 0)    // When a command is found, remember which iteration. Also no error
         {
         	found = i;
-        	ERR = NO_ERR;
-        	break;
+        	return NO_ERR;
         }
 
         else								// When no command is found, error
-        	ERR = COMMAND_ERR;
+        	return COMMAND_ERR;
 	}
 
-	return found;
+	return found + ERROR_OFF;
 }
 
 /*****************************************************//**
@@ -117,7 +115,7 @@ int draw_options(char cmd, UART data)
 
 	switch(cmd)				//////ALLES HIERONDER NOG EEN KEER DOOLOPEN OF HET KLOPT EN LOGISCH IS
 	{
-		case 0:
+		case 5:
 			parsing = parse_data(parsing, data, LINE_LEN, var_counter, num_checker, let_checker);
 
 				if(parsing.err_code != NO_ERR)
@@ -126,7 +124,7 @@ int draw_options(char cmd, UART data)
 			error_return = API_draw_line(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
 			return error_return;
 
-		case 1:
+		case 6:
 			parsing = parse_data(parsing, data, RECTANGLE_LEN, var_counter, num_checker, let_checker);
 
 			if(parsing.err_code != NO_ERR)
@@ -135,7 +133,7 @@ int draw_options(char cmd, UART data)
 			error_return = API_draw_rectangle(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
 			return error_return;
 
-		case 2:
+		case 7:
 			parsing = parse_data(parsing, data, CLEAR_LEN, var_counter, num_checker, let_checker);
 
 			if(parsing.err_code != NO_ERR)
@@ -144,7 +142,7 @@ int draw_options(char cmd, UART data)
 			error_return = API_clearscreen(parsing.var_store[0]);
 			return error_return;
 
-		case 3:
+		case 8:
 			parsing = parse_data(parsing, data, BITMAP_LEN, var_counter, num_checker, let_checker);
 
 			if(parsing.err_code != NO_ERR)
@@ -154,7 +152,7 @@ int draw_options(char cmd, UART data)
 			return error_return;
 
 		default:
-			return NO_ERR;		// Different error, but which one?
+			return cmd;		// Different error, but which one?
 	}
 }
 
