@@ -1,5 +1,5 @@
 /*******************************************************//**
- * @file    Template_doxygen.c
+ * @file    logic_layer.c
  *
  * @brief   Here commands will be processed and executed
  *
@@ -109,16 +109,18 @@ int draw_options(char cmd, UART data)
 	for(int j = 0; j < (sizeof(parsing.var_store)/sizeof(parsing.var_store[0])); j++)
 		parsing.var_store[j] = 0;
 
+	parsing.err_code = 0;				// Removing junk values
 
 	int error_return = NO_ERR;
 	int var_counter = 0;
+	int num_counter = 0;
 	int num_checker = 0;
 	int let_checker = 0;
 
-	switch(cmd)				//////ALLES HIERONDER NOG EEN KEER DOOLOPEN OF HET KLOPT EN LOGISCH IS
-	{
+	switch(cmd)				// Chooses the corresponding function with the found command
+	{						// In the case the data is parsed and used, also searches for errors and stop the function execution when one is found
 		case 5:
-			parsing = parse_data(parsing, data, LINE_LEN, var_counter, num_checker, let_checker);
+			parsing = parse_data(parsing, data, LINE_LEN, var_counter, num_checker, let_checker, num_counter);
 
 				if(parsing.err_code != NO_ERR)
 							return parsing.err_code;
@@ -127,7 +129,7 @@ int draw_options(char cmd, UART data)
 			return error_return;
 
 		case 6:
-			parsing = parse_data(parsing, data, RECTANGLE_LEN, var_counter, num_checker, let_checker);
+			parsing = parse_data(parsing, data, RECTANGLE_LEN, var_counter, num_checker, let_checker, num_counter);
 
 			if(parsing.err_code != NO_ERR)
 				return parsing.err_code;
@@ -136,7 +138,7 @@ int draw_options(char cmd, UART data)
 			return error_return;
 
 		case 7:
-			parsing = parse_data(parsing, data, CLEAR_LEN, var_counter, num_checker, let_checker);
+			parsing = parse_data(parsing, data, CLEAR_LEN, var_counter, num_checker, let_checker, num_counter);
 
 			if(parsing.err_code != NO_ERR)
 				return parsing.err_code;
@@ -145,7 +147,7 @@ int draw_options(char cmd, UART data)
 			return error_return;
 
 		case 8:
-			parsing = parse_data(parsing, data, BITMAP_LEN, var_counter, num_checker, let_checker);
+			parsing = parse_data(parsing, data, BITMAP_LEN, var_counter, num_checker, let_checker, num_counter);
 
 			if(parsing.err_code != NO_ERR)
 				return parsing.err_code;
@@ -154,11 +156,11 @@ int draw_options(char cmd, UART data)
 			return error_return;
 
 		default:
-			return cmd;		// Different error, but which one?
+			return cmd;		// ERROR found in 'parse_cmd' returning found error
 	}
 }
 
-PARSE parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_checker, int let_checker)
+PARSE parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_checker, int let_checker, int num_counter)
 {
 	for(int i = LEN; i<STORAGE; i++)		// Start the loop after the command, to convert the rest of the script
 	{
@@ -168,6 +170,7 @@ PARSE parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_che
 			parsing.number_store[1] = parsing.number_store[2];
 
 			parsing.number_store[2] = number_converter(data.receive[i]);				// Converts and returns the number
+			num_counter++;
 			num_checker = TRUE;													// Signals that ASCII number is found
 			let_checker = FALSE;
 		}
@@ -192,12 +195,19 @@ PARSE parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_che
 			for(int j = 0; j<(sizeof(parsing.number_store)/sizeof(parsing.number_store[0])); j++)		// Empties the numbers stored
 				parsing.number_store[j] = 0;
 
+			if(data.receive[i] == '\n')			// When a '\n'is found the data parsing is complete
+				break;
+
+			if(num_counter >= 4)				// When more than 3 digits, between 2 comma's, are found in the data, ERROR
+			{
+				parsing.err_code = OOB_ERR;
+				return parsing;
+			}
+
+			num_counter = 0;
 			let_checker = FALSE;				// Reset signals
 			num_checker = FALSE;
 			var_counter++;
-
-			if(data.receive[i] == '\n')
-				break;
 		}
 
 		else						// Error data not usable

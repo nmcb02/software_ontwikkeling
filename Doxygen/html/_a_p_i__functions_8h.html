@@ -86,6 +86,7 @@ $(function() {
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;stm32_ub_vga_screen.h&quot;</code><br />
+<code>#include &quot;logic_layer.h&quot;</code><br />
 </div>
 <p><a href="_a_p_i__functions_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -115,9 +116,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0587bfc121fd81d7f77001ded7166d4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__functions_8h.html#a0587bfc121fd81d7f77001ded7166d4f">API_draw_rectangle</a> (int x, int y, int width, int height, int color, int filled)</td></tr>
 <tr class="memdesc:a0587bfc121fd81d7f77001ded7166d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function gives the user the ability to draw a rectangle on a VGA screen.  <br /></td></tr>
 <tr class="separator:a0587bfc121fd81d7f77001ded7166d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95a8bac444de7ea445532a9996b8a3a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__functions_8h.html#a95a8bac444de7ea445532a9996b8a3a8">API_draw_bitmap</a> (int x_lup, int y_lup, int nr)</td></tr>
-<tr class="memdesc:a95a8bac444de7ea445532a9996b8a3a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function gives the user the ability to put a bitmap on the VGA screen.  <br /></td></tr>
-<tr class="separator:a95a8bac444de7ea445532a9996b8a3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba0c9aa23537bf68521fd5d1ac4124c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__functions_8h.html#a6ba0c9aa23537bf68521fd5d1ac4124c">API_draw_bitmap</a> (int bm_nr, int x_lup, int y_lup)</td></tr>
+<tr class="memdesc:a6ba0c9aa23537bf68521fd5d1ac4124c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function gives the user the ability to put a bitmap on the VGA screen.  <br /></td></tr>
+<tr class="separator:a6ba0c9aa23537bf68521fd5d1ac4124c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for API functions. </p>
@@ -152,8 +153,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a95a8bac444de7ea445532a9996b8a3a8" name="a95a8bac444de7ea445532a9996b8a3a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95a8bac444de7ea445532a9996b8a3a8">&#9670;&#160;</a></span>API_draw_bitmap()</h2>
+<a id="a6ba0c9aa23537bf68521fd5d1ac4124c" name="a6ba0c9aa23537bf68521fd5d1ac4124c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba0c9aa23537bf68521fd5d1ac4124c">&#9670;&#160;</a></span>API_draw_bitmap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,19 +163,19 @@ Functions</h2></td></tr>
           <td class="memname">int API_draw_bitmap </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bm_nr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>x_lup</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y_lup</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>bm_nr</em>&#160;</td>
+          <td class="paramname"><em>y_lup</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

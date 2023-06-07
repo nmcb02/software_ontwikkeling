@@ -24,6 +24,7 @@
 #include "UART_communication.h"
 #include "API_functions.h"
 #include "logic_layer.h"
+#include "error.h"
 
 //#define-statements
 
@@ -73,33 +74,10 @@ int main(void)
 	  else
 		  val = NO_DATA;
 
-//	  test.receive[0] = 'l';
-//	  test.receive[1] = 'i';
-//	  test.receive[2] = 'j';
-//	  test.receive[3] = 'n';
-//	  test.receive[4] = ',';
-//	  test.receive[5] = '1';
-//	  test.receive[6] = ',';
-//	  test.receive[7] = '1';
-//	  test.receive[8] = ',';
-//	  test.receive[9] = '1';
-//	  test.receive[10] = '0';
-//	  test.receive[11] = '0';
-//	  test.receive[12] = ',';
-//	  test.receive[13] = '1';
-//	  test.receive[14] = '0';
-//	  test.receive[15] = '0';
-//	  test.receive[16] = ',';
-//	  test.receive[17] = 'r';
-//	  test.receive[18] = 'o';
-//	  test.receive[19] = 'o';
-//	  test.receive[20] = 'd';
-//	  test.receive[21] = ',';
-//	  test.receive[22] = '4';
-//	  test.receive[23] = '\n';
-
-
-
+	  if(err != NO_ERR)
+	  {
+		  UART_errorHandling(err);
+	  }
   }
 }
 

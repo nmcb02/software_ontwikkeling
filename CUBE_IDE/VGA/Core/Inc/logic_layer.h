@@ -1,8 +1,8 @@
 /*******************************************************//**
- * @file    Template_doxygen.h
+ * @file    logic_layer.h
  *
  * @brief   This file contains the functions which are used
- * 		   	in the source file 'Template_doxygen.c'.
+ * 		   	in the source file 'logic_layer.c'.
  *
  * @authors Skip Wijtman
  * @date    24-5-2023
@@ -18,6 +18,7 @@
 #include "UART_communication.h"
 #include "stm32_ub_vga_screen.h"
 #include "API_functions.h"
+#include "error.h"
 
 
 //struct definition
@@ -31,15 +32,7 @@ typedef struct PARSE_STORAGE
 }PARSE, *PPARSE;
 
 //#define-statements
-enum ERROR
-{
-	NO_ERR = 0,		// All errors listed
-	COMMAND_ERR,
-	DATA_ERR,
-	COLOR_ERR
-};
-
-#define MAX_CMD_LEN 		12
+#define MAX_CMD_LEN 		12		// Defines for loops
 #define MAX_COL_LEN			13
 
 #define LINE_LEN 			5		// Defines to skip the command in the received array
@@ -66,6 +59,6 @@ int parse_cmd(UART data);
 int draw_options(char cmd, UART data);
 int number_converter(char ASCII);
 PARSE color_assign(UART data, int i, PARSE parsing);
-PARSE parse_data(PARSE parsing, UART data, int LEN , int var_counter, int num_checker, int let_checker);
+PARSE parse_data(PARSE parsing, UART data, int LEN , int var_counter, int num_checker, int let_checker, int num_counter);
 
 #endif /* INC_LOGIC_LAYER_H_ */
