@@ -45,7 +45,7 @@ char compare_col[16][MAX_COL_LEN] = {	{"zwart"},
  *
  * @param	data is a struct variable with the received script
  *
- * @return	Error code
+ * @return	Error code or the current index of found
 *******************************************************/
 int parse_cmd(UART data)
 {
@@ -160,6 +160,20 @@ int draw_options(char cmd, UART data)
 	}
 }
 
+/*****************************************************//**
+ * @brief	This function is used for parsing data and 
+ * 			converts ASCII to decimals
+ * 
+ * @param	parsing is a struct variable that stores all needed data for functions
+ * @param 	data is a struct variable with the received script
+ * @param	LEN
+ * @param 	var_counter
+ * @param 	num_checker
+ * @param	let_checker
+ * @param	num_counter
+ *
+ * @return	Error code
+*******************************************************/
 PARSE parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_checker, int let_checker, int num_counter)
 {
 	for(int i = LEN; i<STORAGE; i++)		// Start the loop after the command, to convert the rest of the script
