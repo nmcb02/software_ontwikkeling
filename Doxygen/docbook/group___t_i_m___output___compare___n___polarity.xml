@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___output___compare___n___polarity" xml:lang="en-US">
+<title>TIM_Output_Compare_N_Polarity</title>
+<indexterm><primary>TIM_Output_Compare_N_Polarity</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___t_i_m___output___compare___n___polarity_1gaa62288888d4f6858bee6b3cd9086ae3f"/>#define <emphasis role="strong">TIM_OCNPolarity_High</emphasis>&#160;&#160;&#160;((uint16_t)0x0000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___output___compare___n___polarity_1ga9582560b2e7dae2e8dc3b65909b0c9cf"/>#define <emphasis role="strong">TIM_OCNPolarity_Low</emphasis>&#160;&#160;&#160;((uint16_t)0x0008)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___output___compare___n___polarity_1gad7385dee1d2b6ce0daf23ceaac4439cd">IS_TIM_OCN_POLARITY</link>(POLARITY)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___t_i_m___output___compare___n___polarity_1gad7385dee1d2b6ce0daf23ceaac4439cd"/><section>
+    <title>IS_TIM_OCN_POLARITY</title>
+<indexterm><primary>IS_TIM_OCN_POLARITY</primary><secondary>TIM_Output_Compare_N_Polarity</secondary></indexterm>
+<indexterm><primary>TIM_Output_Compare_N_Polarity</primary><secondary>IS_TIM_OCN_POLARITY</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_OCN_POLARITY( POLARITY)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((POLARITY)&#32;==&#32;TIM_OCNPolarity_High)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((POLARITY)&#32;==&#32;TIM_OCNPolarity_Low))
+</programlisting></section>
+</section>
+</section>

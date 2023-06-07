@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___r_c_c___a_p_b1___peripherals" xml:lang="en-US">
+<title>RCC_APB1_Peripherals</title>
+<indexterm><primary>RCC_APB1_Peripherals</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga742bab2f04cebe587574b53f7107aeaf"/>#define <emphasis role="strong">RCC_APB1Periph_TIM2</emphasis>&#160;&#160;&#160;((uint32_t)0x00000001)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1gad4454f63a511a256e55aad55c03beb76"/>#define <emphasis role="strong">RCC_APB1Periph_TIM3</emphasis>&#160;&#160;&#160;((uint32_t)0x00000002)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga80f9f3720804a97210b723696bd94d83"/>#define <emphasis role="strong">RCC_APB1Periph_TIM4</emphasis>&#160;&#160;&#160;((uint32_t)0x00000004)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga4905c26000a571fa01fc057fe31d254a"/>#define <emphasis role="strong">RCC_APB1Periph_TIM5</emphasis>&#160;&#160;&#160;((uint32_t)0x00000008)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga4974e8b8f11d54fbc0bac1988ff6254c"/>#define <emphasis role="strong">RCC_APB1Periph_TIM6</emphasis>&#160;&#160;&#160;((uint32_t)0x00000010)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga9415b0c46db5318bdee3f868c16b8d35"/>#define <emphasis role="strong">RCC_APB1Periph_TIM7</emphasis>&#160;&#160;&#160;((uint32_t)0x00000020)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga0a4ec40233160ca20adaa571073e7bcd"/>#define <emphasis role="strong">RCC_APB1Periph_TIM12</emphasis>&#160;&#160;&#160;((uint32_t)0x00000040)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga34397b722f46f31e898136fb51a7523a"/>#define <emphasis role="strong">RCC_APB1Periph_TIM13</emphasis>&#160;&#160;&#160;((uint32_t)0x00000080)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga7100c45768eea1484f6fd519b53e287d"/>#define <emphasis role="strong">RCC_APB1Periph_TIM14</emphasis>&#160;&#160;&#160;((uint32_t)0x00000100)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1gad84e40be78ddc40b8eae1c2b0898f6b1"/>#define <emphasis role="strong">RCC_APB1Periph_WWDG</emphasis>&#160;&#160;&#160;((uint32_t)0x00000800)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1gaa21f1dfb4fcf241c6f85a048eaca29df"/>#define <emphasis role="strong">RCC_APB1Periph_SPI2</emphasis>&#160;&#160;&#160;((uint32_t)0x00004000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1gabb0b40e839ef7403b086482e89d56f35"/>#define <emphasis role="strong">RCC_APB1Periph_SPI3</emphasis>&#160;&#160;&#160;((uint32_t)0x00008000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1gaa69c77220b943a42a4bacb8a3bf87dd0"/>#define <emphasis role="strong">RCC_APB1Periph_USART2</emphasis>&#160;&#160;&#160;((uint32_t)0x00020000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1gaf72838a63d7d6200f251c1eb334cbaac"/>#define <emphasis role="strong">RCC_APB1Periph_USART3</emphasis>&#160;&#160;&#160;((uint32_t)0x00040000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga839d7ae3386622158210ecf53d9cd989"/>#define <emphasis role="strong">RCC_APB1Periph_UART4</emphasis>&#160;&#160;&#160;((uint32_t)0x00080000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1gaa00c73f88a7af45fb29df97b07acd856"/>#define <emphasis role="strong">RCC_APB1Periph_UART5</emphasis>&#160;&#160;&#160;((uint32_t)0x00100000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga594f87d504f7d63697d841033d1538f6"/>#define <emphasis role="strong">RCC_APB1Periph_I2C1</emphasis>&#160;&#160;&#160;((uint32_t)0x00200000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga8eaeded403b5a2277fbfb3896c639416"/>#define <emphasis role="strong">RCC_APB1Periph_I2C2</emphasis>&#160;&#160;&#160;((uint32_t)0x00400000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1gaec6eadaf773ba87b5ef04b03c62bbac7"/>#define <emphasis role="strong">RCC_APB1Periph_I2C3</emphasis>&#160;&#160;&#160;((uint32_t)0x00800000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga7f1d940739de0134ae89e9e04214989d"/>#define <emphasis role="strong">RCC_APB1Periph_CAN1</emphasis>&#160;&#160;&#160;((uint32_t)0x02000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga62801597b97816751c038acb1466179c"/>#define <emphasis role="strong">RCC_APB1Periph_CAN2</emphasis>&#160;&#160;&#160;((uint32_t)0x04000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga59ae4e17d5b35a934b1614f8ee883834"/>#define <emphasis role="strong">RCC_APB1Periph_PWR</emphasis>&#160;&#160;&#160;((uint32_t)0x10000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1ga8d019a727701634822c19371b6aaabb5"/>#define <emphasis role="strong">RCC_APB1Periph_DAC</emphasis>&#160;&#160;&#160;((uint32_t)0x20000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_p_b1___peripherals_1gab68e85308494436c4c55a69c42a79f36"/>#define <emphasis role="strong">IS_RCC_APB1_PERIPH</emphasis>(PERIPH)&#160;&#160;&#160;((((PERIPH) &amp; 0xC9013600) == 0x00) &amp;&amp; ((PERIPH) != 0x00))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+</section>

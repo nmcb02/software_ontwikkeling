@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___clock___division___c_k_d" xml:lang="en-US">
+<title>TIM_Clock_Division_CKD</title>
+<indexterm><primary>TIM_Clock_Division_CKD</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___t_i_m___clock___division___c_k_d_1ga88691a07b3976791977d280045b3c850"/>#define <emphasis role="strong">TIM_CKD_DIV1</emphasis>&#160;&#160;&#160;((uint16_t)0x0000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___clock___division___c_k_d_1ga46a5fd6a173a7e88528a6e4084a08665"/>#define <emphasis role="strong">TIM_CKD_DIV2</emphasis>&#160;&#160;&#160;((uint16_t)0x0100)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___clock___division___c_k_d_1gac2e5c030f964f9b4c92fa8129fb923bc"/>#define <emphasis role="strong">TIM_CKD_DIV4</emphasis>&#160;&#160;&#160;((uint16_t)0x0200)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___clock___division___c_k_d_1ga9298ec9ad2d578a4c54e6c0dd4c03946">IS_TIM_CKD_DIV</link>(DIV)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___t_i_m___clock___division___c_k_d_1ga9298ec9ad2d578a4c54e6c0dd4c03946"/><section>
+    <title>IS_TIM_CKD_DIV</title>
+<indexterm><primary>IS_TIM_CKD_DIV</primary><secondary>TIM_Clock_Division_CKD</secondary></indexterm>
+<indexterm><primary>TIM_Clock_Division_CKD</primary><secondary>IS_TIM_CKD_DIV</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_CKD_DIV( DIV)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((DIV)&#32;==&#32;TIM_CKD_DIV1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((DIV)&#32;==&#32;TIM_CKD_DIV2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((DIV)&#32;==&#32;TIM_CKD_DIV4))
+</programlisting></section>
+</section>
+</section>

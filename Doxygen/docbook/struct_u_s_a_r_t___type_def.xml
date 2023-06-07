@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_u_s_a_r_t___type_def" xml:lang="en-US">
+<title>USART_TypeDef Struct Reference</title>
+<indexterm><primary>USART_TypeDef</primary></indexterm>
+<para>
+
+<para>Universal Synchronous Asynchronous Receiver Transmitter. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f4xx.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1a44962ea5442d203bf4954035d1bfeb9d">SR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1a149feba01f9c4a49570c6d88619f504f">RESERVED0</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1a0a1acc0425516ff7969709d118b96a3b">DR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1a8249a3955aace28d92109b391311eb30">RESERVED1</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1af0ba3d82d524fddbe0fb3309788e2954">BRR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1a5573848497a716a9947fd87487709feb">RESERVED2</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1a61400ce239355b62aa25c95fcc18a5e1">CR1</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1a6c3b31022e6f59b800e9f5cc2a89d54c">RESERVED3</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1a2a3e81bd118d1bc52d24a0b0772e6a0c">CR2</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1aa0223808025f5bf9c056185038c9d545">RESERVED4</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1a9651ce2df8eec57b9cab2f27f6dbf3e1">CR3</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1abd36010ac282682d1f3c641b183b1b6f">RESERVED5</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1a26f8b74978e03c8a4c99c9395a6a524d">GTPR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_u_s_a_r_t___type_def_1aab502dde158ab7da8e7823d1f8a06edb">RESERVED6</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Universal Synchronous Asynchronous Receiver Transmitter. </para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1af0ba3d82d524fddbe0fb3309788e2954"/><section>
+    <title>BRR</title>
+<indexterm><primary>BRR</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>BRR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t BRR</computeroutput></para>
+<para>USART Baud rate register, Address offset: 0x08 </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1a61400ce239355b62aa25c95fcc18a5e1"/><section>
+    <title>CR1</title>
+<indexterm><primary>CR1</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>CR1</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t CR1</computeroutput></para>
+<para>USART Control register 1, Address offset: 0x0C </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1a2a3e81bd118d1bc52d24a0b0772e6a0c"/><section>
+    <title>CR2</title>
+<indexterm><primary>CR2</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>CR2</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t CR2</computeroutput></para>
+<para>USART Control register 2, Address offset: 0x10 </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1a9651ce2df8eec57b9cab2f27f6dbf3e1"/><section>
+    <title>CR3</title>
+<indexterm><primary>CR3</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>CR3</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t CR3</computeroutput></para>
+<para>USART Control register 3, Address offset: 0x14 </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1a0a1acc0425516ff7969709d118b96a3b"/><section>
+    <title>DR</title>
+<indexterm><primary>DR</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>DR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t DR</computeroutput></para>
+<para>USART Data register, Address offset: 0x04 </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1a26f8b74978e03c8a4c99c9395a6a524d"/><section>
+    <title>GTPR</title>
+<indexterm><primary>GTPR</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>GTPR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t GTPR</computeroutput></para>
+<para>USART Guard time and prescaler register, Address offset: 0x18 </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1a149feba01f9c4a49570c6d88619f504f"/><section>
+    <title>RESERVED0</title>
+<indexterm><primary>RESERVED0</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>RESERVED0</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED0</computeroutput></para>
+<para>Reserved, 0x02 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1a8249a3955aace28d92109b391311eb30"/><section>
+    <title>RESERVED1</title>
+<indexterm><primary>RESERVED1</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>RESERVED1</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED1</computeroutput></para>
+<para>Reserved, 0x06 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1a5573848497a716a9947fd87487709feb"/><section>
+    <title>RESERVED2</title>
+<indexterm><primary>RESERVED2</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>RESERVED2</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED2</computeroutput></para>
+<para>Reserved, 0x0A <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1a6c3b31022e6f59b800e9f5cc2a89d54c"/><section>
+    <title>RESERVED3</title>
+<indexterm><primary>RESERVED3</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>RESERVED3</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED3</computeroutput></para>
+<para>Reserved, 0x0E <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1aa0223808025f5bf9c056185038c9d545"/><section>
+    <title>RESERVED4</title>
+<indexterm><primary>RESERVED4</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>RESERVED4</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED4</computeroutput></para>
+<para>Reserved, 0x12 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1abd36010ac282682d1f3c641b183b1b6f"/><section>
+    <title>RESERVED5</title>
+<indexterm><primary>RESERVED5</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>RESERVED5</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED5</computeroutput></para>
+<para>Reserved, 0x16 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1aab502dde158ab7da8e7823d1f8a06edb"/><section>
+    <title>RESERVED6</title>
+<indexterm><primary>RESERVED6</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>RESERVED6</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED6</computeroutput></para>
+<para>Reserved, 0x1A <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_u_s_a_r_t___type_def_1a44962ea5442d203bf4954035d1bfeb9d"/><section>
+    <title>SR</title>
+<indexterm><primary>SR</primary><secondary>USART_TypeDef</secondary></indexterm>
+<indexterm><primary>USART_TypeDef</primary><secondary>SR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t SR</computeroutput></para>
+<para>USART Status register, Address offset: 0x00 </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_stm32f4xx_8h">stm32f4xx.h</link></section>
+</section>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___d_m_a__fifo__threshold__level" xml:lang="en-US">
+<title>DMA_fifo_threshold_level</title>
+<indexterm><primary>DMA_fifo_threshold_level</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___d_m_a__fifo__threshold__level_1gacc98384bbba43a9c4f70b448518acfe4"/>#define <emphasis role="strong">DMA_FIFOThreshold_1QuarterFull</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__fifo__threshold__level_1ga626b546865960343fdcfdf33ac8ceb03"/>#define <emphasis role="strong">DMA_FIFOThreshold_HalfFull</emphasis>&#160;&#160;&#160;((uint32_t)0x00000001)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__fifo__threshold__level_1ga6f041008fce4bb341f9a518d803a308b"/>#define <emphasis role="strong">DMA_FIFOThreshold_3QuartersFull</emphasis>&#160;&#160;&#160;((uint32_t)0x00000002)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__fifo__threshold__level_1ga9f1008e0df7d41d910ed89d7e0872e69"/>#define <emphasis role="strong">DMA_FIFOThreshold_Full</emphasis>&#160;&#160;&#160;((uint32_t)0x00000003)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__fifo__threshold__level_1gaeafc0d9e327d6e5b26cd37f6744b232f">IS_DMA_FIFO_THRESHOLD</link>(THRESHOLD)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___d_m_a__fifo__threshold__level_1gaeafc0d9e327d6e5b26cd37f6744b232f"/><section>
+    <title>IS_DMA_FIFO_THRESHOLD</title>
+<indexterm><primary>IS_DMA_FIFO_THRESHOLD</primary><secondary>DMA_fifo_threshold_level</secondary></indexterm>
+<indexterm><primary>DMA_fifo_threshold_level</primary><secondary>IS_DMA_FIFO_THRESHOLD</secondary></indexterm>
+<para><computeroutput>#define IS_DMA_FIFO_THRESHOLD( THRESHOLD)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((THRESHOLD)&#32;==&#32;DMA_FIFOThreshold_1QuarterFull&#32;)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((THRESHOLD)&#32;==&#32;DMA_FIFOThreshold_HalfFull)&#32;&#32;&#32;&#32;&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((THRESHOLD)&#32;==&#32;DMA_FIFOThreshold_3QuartersFull)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((THRESHOLD)&#32;==&#32;DMA_FIFOThreshold_Full))
+</programlisting></section>
+</section>
+</section>

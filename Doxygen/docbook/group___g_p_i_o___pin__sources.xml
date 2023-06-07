@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___g_p_i_o___pin__sources" xml:lang="en-US">
+<title>GPIO_Pin_sources</title>
+<indexterm><primary>GPIO_Pin_sources</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1ga028bcbdf5a7fd81ec45830f60a022bb4"/>#define <emphasis role="strong">GPIO_PinSource0</emphasis>&#160;&#160;&#160;((uint8_t)0x00)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1gad02324cdd8526a7aacd15a5a910d56f1"/>#define <emphasis role="strong">GPIO_PinSource1</emphasis>&#160;&#160;&#160;((uint8_t)0x01)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1ga7808fb6269890fa1e37a322418884607"/>#define <emphasis role="strong">GPIO_PinSource2</emphasis>&#160;&#160;&#160;((uint8_t)0x02)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1ga0df17fee84ec9ab096b5525a06871863"/>#define <emphasis role="strong">GPIO_PinSource3</emphasis>&#160;&#160;&#160;((uint8_t)0x03)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1gaf5aa545455dacbf315a40cecd0842b6c"/>#define <emphasis role="strong">GPIO_PinSource4</emphasis>&#160;&#160;&#160;((uint8_t)0x04)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1gaf231e680fe2db4ea44a7fd0f5d5c5875"/>#define <emphasis role="strong">GPIO_PinSource5</emphasis>&#160;&#160;&#160;((uint8_t)0x05)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1gada41b6bd03b2873a2400628df0a1026e"/>#define <emphasis role="strong">GPIO_PinSource6</emphasis>&#160;&#160;&#160;((uint8_t)0x06)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1ga609974472a3a7c5274fc56018d7adf16"/>#define <emphasis role="strong">GPIO_PinSource7</emphasis>&#160;&#160;&#160;((uint8_t)0x07)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1ga6f5962c5b2ce5734734563bdad18fbd6"/>#define <emphasis role="strong">GPIO_PinSource8</emphasis>&#160;&#160;&#160;((uint8_t)0x08)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1gabaaed5961f2b9862082f74e18f5c3f0e"/>#define <emphasis role="strong">GPIO_PinSource9</emphasis>&#160;&#160;&#160;((uint8_t)0x09)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1gacec97d9c2d319b450f699adff6430c86"/>#define <emphasis role="strong">GPIO_PinSource10</emphasis>&#160;&#160;&#160;((uint8_t)0x0A)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1ga446be4a99e84eefb5c71a643211f598b"/>#define <emphasis role="strong">GPIO_PinSource11</emphasis>&#160;&#160;&#160;((uint8_t)0x0B)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1gaaa64892c00d50b0fa49f0ce72a83e6e0"/>#define <emphasis role="strong">GPIO_PinSource12</emphasis>&#160;&#160;&#160;((uint8_t)0x0C)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1gace4beb385facd306324fa9e362df5fda"/>#define <emphasis role="strong">GPIO_PinSource13</emphasis>&#160;&#160;&#160;((uint8_t)0x0D)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1ga5fbb540a86af4015a46ac16c61ddb1f7"/>#define <emphasis role="strong">GPIO_PinSource14</emphasis>&#160;&#160;&#160;((uint8_t)0x0E)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___pin__sources_1ga9b29d9a9ecb1579ecedf4ea53ccbfd5b"/>#define <emphasis role="strong">GPIO_PinSource15</emphasis>&#160;&#160;&#160;((uint8_t)0x0F)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___g_p_i_o___pin__sources_1ga689e4e72591136b6a8d4df9d895181f7">IS_GPIO_PIN_SOURCE</link>(PINSOURCE)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___g_p_i_o___pin__sources_1ga689e4e72591136b6a8d4df9d895181f7"/><section>
+    <title>IS_GPIO_PIN_SOURCE</title>
+<indexterm><primary>IS_GPIO_PIN_SOURCE</primary><secondary>GPIO_Pin_sources</secondary></indexterm>
+<indexterm><primary>GPIO_Pin_sources</primary><secondary>IS_GPIO_PIN_SOURCE</secondary></indexterm>
+<para><computeroutput>#define IS_GPIO_PIN_SOURCE( PINSOURCE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((PINSOURCE)&#32;==&#32;GPIO_PinSource0)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource3)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource4)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource5)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource6)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource7)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource8)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource9)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource10)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource11)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource12)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource13)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource14)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource15))
+</programlisting></section>
+</section>
+</section>

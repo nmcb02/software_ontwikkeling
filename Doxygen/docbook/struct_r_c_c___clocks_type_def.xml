@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_r_c_c___clocks_type_def" xml:lang="en-US">
+<title>RCC_ClocksTypeDef Struct Reference</title>
+<indexterm><primary>RCC_ClocksTypeDef</primary></indexterm>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_struct_r_c_c___clocks_type_def_1a48b5f04759728e39921969e75c4899e8">SYSCLK_Frequency</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_r_c_c___clocks_type_def_1a5f9bf60f522a160aa7a878acf92ce129">HCLK_Frequency</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_r_c_c___clocks_type_def_1a9045b24904bde572d479e85c6d2801f6">PCLK1_Frequency</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_r_c_c___clocks_type_def_1a45ada83b2d388a60ed994451f260f389">PCLK2_Frequency</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_r_c_c___clocks_type_def_1a5f9bf60f522a160aa7a878acf92ce129"/><section>
+    <title>HCLK_Frequency</title>
+<indexterm><primary>HCLK_Frequency</primary><secondary>RCC_ClocksTypeDef</secondary></indexterm>
+<indexterm><primary>RCC_ClocksTypeDef</primary><secondary>HCLK_Frequency</secondary></indexterm>
+<para><computeroutput>uint32_t HCLK_Frequency</computeroutput></para>
+<para>HCLK clock frequency expressed in Hz </para>
+</section>
+<anchor xml:id="_struct_r_c_c___clocks_type_def_1a9045b24904bde572d479e85c6d2801f6"/><section>
+    <title>PCLK1_Frequency</title>
+<indexterm><primary>PCLK1_Frequency</primary><secondary>RCC_ClocksTypeDef</secondary></indexterm>
+<indexterm><primary>RCC_ClocksTypeDef</primary><secondary>PCLK1_Frequency</secondary></indexterm>
+<para><computeroutput>uint32_t PCLK1_Frequency</computeroutput></para>
+<para>PCLK1 clock frequency expressed in Hz </para>
+</section>
+<anchor xml:id="_struct_r_c_c___clocks_type_def_1a45ada83b2d388a60ed994451f260f389"/><section>
+    <title>PCLK2_Frequency</title>
+<indexterm><primary>PCLK2_Frequency</primary><secondary>RCC_ClocksTypeDef</secondary></indexterm>
+<indexterm><primary>RCC_ClocksTypeDef</primary><secondary>PCLK2_Frequency</secondary></indexterm>
+<para><computeroutput>uint32_t PCLK2_Frequency</computeroutput></para>
+<para>PCLK2 clock frequency expressed in Hz </para>
+</section>
+<anchor xml:id="_struct_r_c_c___clocks_type_def_1a48b5f04759728e39921969e75c4899e8"/><section>
+    <title>SYSCLK_Frequency</title>
+<indexterm><primary>SYSCLK_Frequency</primary><secondary>RCC_ClocksTypeDef</secondary></indexterm>
+<indexterm><primary>RCC_ClocksTypeDef</primary><secondary>SYSCLK_Frequency</secondary></indexterm>
+<para><computeroutput>uint32_t SYSCLK_Frequency</computeroutput></para>
+<para>SYSCLK clock frequency expressed in Hz </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_stm32f4xx__rcc_8h">stm32f4xx_rcc.h</link></section>
+</section>

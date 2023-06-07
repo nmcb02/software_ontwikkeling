@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler" xml:lang="en-US">
+<title>RCC_MCO1_Clock_Source_Prescaler</title>
+<indexterm><primary>RCC_MCO1_Clock_Source_Prescaler</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1ga4ae28483bf1fc780e97740573546602a"/>#define <emphasis role="strong">RCC_MCO1Source_HSI</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1ga9389beb903be73312e7c75a3f99a05a3"/>#define <emphasis role="strong">RCC_MCO1Source_LSE</emphasis>&#160;&#160;&#160;((uint32_t)0x00200000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1gaf9cd71937a147980d41efd3507e3a161"/>#define <emphasis role="strong">RCC_MCO1Source_HSE</emphasis>&#160;&#160;&#160;((uint32_t)0x00400000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1gacab701c21ecb3d792aa64188e77a7a7f"/>#define <emphasis role="strong">RCC_MCO1Source_PLLCLK</emphasis>&#160;&#160;&#160;((uint32_t)0x00600000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1gac558c2ebb774dc0bcb94dfb94b421a3d"/>#define <emphasis role="strong">RCC_MCO1Div_1</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1gab0247962772ebf1735b7b2a84c235415"/>#define <emphasis role="strong">RCC_MCO1Div_2</emphasis>&#160;&#160;&#160;((uint32_t)0x04000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1ga298d00af4cd40822e28a5a20d6cdbfb6"/>#define <emphasis role="strong">RCC_MCO1Div_3</emphasis>&#160;&#160;&#160;((uint32_t)0x05000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1ga2300f224151c8e15424142ee4fc5f549"/>#define <emphasis role="strong">RCC_MCO1Div_4</emphasis>&#160;&#160;&#160;((uint32_t)0x06000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1ga756a1097bf0e4fe15d72f113572d0c04"/>#define <emphasis role="strong">RCC_MCO1Div_5</emphasis>&#160;&#160;&#160;((uint32_t)0x07000000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___r_c_c___m_c_o1___clock___source___prescaler_1ga073031d9c90c555f7874912b7e4905f6">IS_RCC_MCO1SOURCE</link>(SOURCE)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___r_c_c___m_c_o1___clock___source___prescaler_1ga8a8ff14a7fcdc6ef638ca8666e609c99">IS_RCC_MCO1DIV</link>(DIV)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1ga8a8ff14a7fcdc6ef638ca8666e609c99"/><section>
+    <title>IS_RCC_MCO1DIV</title>
+<indexterm><primary>IS_RCC_MCO1DIV</primary><secondary>RCC_MCO1_Clock_Source_Prescaler</secondary></indexterm>
+<indexterm><primary>RCC_MCO1_Clock_Source_Prescaler</primary><secondary>IS_RCC_MCO1DIV</secondary></indexterm>
+<para><computeroutput>#define IS_RCC_MCO1DIV( DIV)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((DIV)&#32;==&#32;RCC_MCO1Div_1)&#32;||&#32;((DIV)&#32;==&#32;RCC_MCO1Div_2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((DIV)&#32;==&#32;RCC_MCO1Div_3)&#32;||&#32;((DIV)&#32;==&#32;RCC_MCO1Div_4)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((DIV)&#32;==&#32;RCC_MCO1Div_5))
+</programlisting></section>
+<anchor xml:id="_group___r_c_c___m_c_o1___clock___source___prescaler_1ga073031d9c90c555f7874912b7e4905f6"/><section>
+    <title>IS_RCC_MCO1SOURCE</title>
+<indexterm><primary>IS_RCC_MCO1SOURCE</primary><secondary>RCC_MCO1_Clock_Source_Prescaler</secondary></indexterm>
+<indexterm><primary>RCC_MCO1_Clock_Source_Prescaler</primary><secondary>IS_RCC_MCO1SOURCE</secondary></indexterm>
+<para><computeroutput>#define IS_RCC_MCO1SOURCE( SOURCE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((SOURCE)&#32;==&#32;RCC_MCO1Source_HSI)&#32;||&#32;((SOURCE)&#32;==&#32;RCC_MCO1Source_LSE)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_MCO1Source_HSE)&#32;||&#32;((SOURCE)&#32;==&#32;RCC_MCO1Source_PLLCLK))
+</programlisting></section>
+</section>
+</section>

@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_stm32f4xx__rcc_8h_source" xml:lang="en-US">
+<title>stm32f4xx_rcc.h</title>
+<indexterm><primary>CUBE_IDE/VGA/Core/Inc/stm32f4xx_rcc.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+22 <emphasis role="comment">/*&#32;Define&#32;to&#32;prevent&#32;recursive&#32;inclusion&#32;-------------------------------------*/</emphasis>
+23 <emphasis role="preprocessor">#ifndef&#32;__STM32F4xx_RCC_H</emphasis>
+24 <emphasis role="preprocessor">#define&#32;__STM32F4xx_RCC_H</emphasis>
+25 
+26 <emphasis role="preprocessor">#ifdef&#32;__cplusplus</emphasis>
+27 &#32;<emphasis role="keyword">extern</emphasis>&#32;<emphasis role="stringliteral">&quot;C&quot;</emphasis>&#32;{
+28 <emphasis role="preprocessor">#endif</emphasis>
+29 
+30 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+31 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_stm32f4xx_8h">stm32f4xx.h</link>&quot;</emphasis>
+32 
+41 <emphasis role="comment">/*&#32;Exported&#32;types&#32;------------------------------------------------------------*/</emphasis>
+42 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct</emphasis>
+43 {
+44 &#32;&#32;uint32_t&#32;<link linkend="_struct_r_c_c___clocks_type_def_1a48b5f04759728e39921969e75c4899e8">SYSCLK_Frequency</link>;&#32;
+45 &#32;&#32;uint32_t&#32;<link linkend="_struct_r_c_c___clocks_type_def_1a5f9bf60f522a160aa7a878acf92ce129">HCLK_Frequency</link>;&#32;&#32;&#32;
+46 &#32;&#32;uint32_t&#32;<link linkend="_struct_r_c_c___clocks_type_def_1a9045b24904bde572d479e85c6d2801f6">PCLK1_Frequency</link>;&#32;&#32;
+47 &#32;&#32;uint32_t&#32;<link linkend="_struct_r_c_c___clocks_type_def_1a45ada83b2d388a60ed994451f260f389">PCLK2_Frequency</link>;&#32;&#32;
+48 }<link linkend="_struct_r_c_c___clocks_type_def">RCC_ClocksTypeDef</link>;
+49 
+50 <emphasis role="comment">/*&#32;Exported&#32;constants&#32;--------------------------------------------------------*/</emphasis>
+51 
+59 <emphasis role="preprocessor">#define&#32;RCC_HSE_OFF&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x00)</emphasis>
+60 <emphasis role="preprocessor">#define&#32;RCC_HSE_ON&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x01)</emphasis>
+61 <emphasis role="preprocessor">#define&#32;RCC_HSE_Bypass&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x05)</emphasis>
+62 <emphasis role="preprocessor">#define&#32;IS_RCC_HSE(HSE)&#32;(((HSE)&#32;==&#32;RCC_HSE_OFF)&#32;||&#32;((HSE)&#32;==&#32;RCC_HSE_ON)&#32;||&#32;\</emphasis>
+63 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((HSE)&#32;==&#32;RCC_HSE_Bypass))</emphasis>
+71 <emphasis role="preprocessor">#define&#32;RCC_PLLSource_HSI&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000000)</emphasis>
+72 <emphasis role="preprocessor">#define&#32;RCC_PLLSource_HSE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00400000)</emphasis>
+73 <emphasis role="preprocessor">#define&#32;IS_RCC_PLL_SOURCE(SOURCE)&#32;(((SOURCE)&#32;==&#32;RCC_PLLSource_HSI)&#32;||&#32;\</emphasis>
+74 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_PLLSource_HSE))</emphasis>
+75 <emphasis role="preprocessor">#define&#32;IS_RCC_PLLM_VALUE(VALUE)&#32;((VALUE)&#32;&lt;=&#32;63)</emphasis>
+76 <emphasis role="preprocessor">#define&#32;IS_RCC_PLLN_VALUE(VALUE)&#32;((192&#32;&lt;=&#32;(VALUE))&#32;&amp;&amp;&#32;((VALUE)&#32;&lt;=&#32;432))</emphasis>
+77 <emphasis role="preprocessor">#define&#32;IS_RCC_PLLP_VALUE(VALUE)&#32;(((VALUE)&#32;==&#32;2)&#32;||&#32;((VALUE)&#32;==&#32;4)&#32;||&#32;((VALUE)&#32;==&#32;6)&#32;||&#32;((VALUE)&#32;==&#32;8))</emphasis>
+78 <emphasis role="preprocessor">#define&#32;IS_RCC_PLLQ_VALUE(VALUE)&#32;((4&#32;&lt;=&#32;(VALUE))&#32;&amp;&amp;&#32;((VALUE)&#32;&lt;=&#32;15))</emphasis>
+79 &#32;
+80 <emphasis role="preprocessor">#define&#32;IS_RCC_PLLI2SN_VALUE(VALUE)&#32;((192&#32;&lt;=&#32;(VALUE))&#32;&amp;&amp;&#32;((VALUE)&#32;&lt;=&#32;432))</emphasis>
+81 <emphasis role="preprocessor">#define&#32;IS_RCC_PLLI2SR_VALUE(VALUE)&#32;((2&#32;&lt;=&#32;(VALUE))&#32;&amp;&amp;&#32;((VALUE)&#32;&lt;=&#32;7))&#32;&#32;&#32;</emphasis>
+89 <emphasis role="preprocessor">#define&#32;RCC_SYSCLKSource_HSI&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000000)</emphasis>
+90 <emphasis role="preprocessor">#define&#32;RCC_SYSCLKSource_HSE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000001)</emphasis>
+91 <emphasis role="preprocessor">#define&#32;RCC_SYSCLKSource_PLLCLK&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000002)</emphasis>
+92 <emphasis role="preprocessor">#define&#32;IS_RCC_SYSCLK_SOURCE(SOURCE)&#32;(((SOURCE)&#32;==&#32;RCC_SYSCLKSource_HSI)&#32;||&#32;\</emphasis>
+93 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_SYSCLKSource_HSE)&#32;||&#32;\</emphasis>
+94 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_SYSCLKSource_PLLCLK))</emphasis>
+102 <emphasis role="preprocessor">#define&#32;RCC_SYSCLK_Div1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000000)</emphasis>
+103 <emphasis role="preprocessor">#define&#32;RCC_SYSCLK_Div2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000080)</emphasis>
+104 <emphasis role="preprocessor">#define&#32;RCC_SYSCLK_Div4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000090)</emphasis>
+105 <emphasis role="preprocessor">#define&#32;RCC_SYSCLK_Div8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000000A0)</emphasis>
+106 <emphasis role="preprocessor">#define&#32;RCC_SYSCLK_Div16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000000B0)</emphasis>
+107 <emphasis role="preprocessor">#define&#32;RCC_SYSCLK_Div64&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000000C0)</emphasis>
+108 <emphasis role="preprocessor">#define&#32;RCC_SYSCLK_Div128&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000000D0)</emphasis>
+109 <emphasis role="preprocessor">#define&#32;RCC_SYSCLK_Div256&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000000E0)</emphasis>
+110 <emphasis role="preprocessor">#define&#32;RCC_SYSCLK_Div512&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000000F0)</emphasis>
+111 <emphasis role="preprocessor">#define&#32;IS_RCC_HCLK(HCLK)&#32;(((HCLK)&#32;==&#32;RCC_SYSCLK_Div1)&#32;||&#32;((HCLK)&#32;==&#32;RCC_SYSCLK_Div2)&#32;||&#32;\</emphasis>
+112 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((HCLK)&#32;==&#32;RCC_SYSCLK_Div4)&#32;||&#32;((HCLK)&#32;==&#32;RCC_SYSCLK_Div8)&#32;||&#32;\</emphasis>
+113 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((HCLK)&#32;==&#32;RCC_SYSCLK_Div16)&#32;||&#32;((HCLK)&#32;==&#32;RCC_SYSCLK_Div64)&#32;||&#32;\</emphasis>
+114 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((HCLK)&#32;==&#32;RCC_SYSCLK_Div128)&#32;||&#32;((HCLK)&#32;==&#32;RCC_SYSCLK_Div256)&#32;||&#32;\</emphasis>
+115 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((HCLK)&#32;==&#32;RCC_SYSCLK_Div512))</emphasis>
+123 <emphasis role="preprocessor">#define&#32;RCC_HCLK_Div1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000000)</emphasis>
+124 <emphasis role="preprocessor">#define&#32;RCC_HCLK_Div2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00001000)</emphasis>
+125 <emphasis role="preprocessor">#define&#32;RCC_HCLK_Div4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00001400)</emphasis>
+126 <emphasis role="preprocessor">#define&#32;RCC_HCLK_Div8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00001800)</emphasis>
+127 <emphasis role="preprocessor">#define&#32;RCC_HCLK_Div16&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00001C00)</emphasis>
+128 <emphasis role="preprocessor">#define&#32;IS_RCC_PCLK(PCLK)&#32;(((PCLK)&#32;==&#32;RCC_HCLK_Div1)&#32;||&#32;((PCLK)&#32;==&#32;RCC_HCLK_Div2)&#32;||&#32;\</emphasis>
+129 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PCLK)&#32;==&#32;RCC_HCLK_Div4)&#32;||&#32;((PCLK)&#32;==&#32;RCC_HCLK_Div8)&#32;||&#32;\</emphasis>
+130 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PCLK)&#32;==&#32;RCC_HCLK_Div16))</emphasis>
+138 <emphasis role="preprocessor">#define&#32;RCC_IT_LSIRDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x01)</emphasis>
+139 <emphasis role="preprocessor">#define&#32;RCC_IT_LSERDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x02)</emphasis>
+140 <emphasis role="preprocessor">#define&#32;RCC_IT_HSIRDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x04)</emphasis>
+141 <emphasis role="preprocessor">#define&#32;RCC_IT_HSERDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x08)</emphasis>
+142 <emphasis role="preprocessor">#define&#32;RCC_IT_PLLRDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x10)</emphasis>
+143 <emphasis role="preprocessor">#define&#32;RCC_IT_PLLI2SRDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x20)</emphasis>
+144 <emphasis role="preprocessor">#define&#32;RCC_IT_CSS&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x80)</emphasis>
+145 <emphasis role="preprocessor">#define&#32;IS_RCC_IT(IT)&#32;((((IT)&#32;&amp;&#32;(uint8_t)0xC0)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((IT)&#32;!=&#32;0x00))</emphasis>
+146 <emphasis role="preprocessor">#define&#32;IS_RCC_GET_IT(IT)&#32;(((IT)&#32;==&#32;RCC_IT_LSIRDY)&#32;||&#32;((IT)&#32;==&#32;RCC_IT_LSERDY)&#32;||&#32;\</emphasis>
+147 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;RCC_IT_HSIRDY)&#32;||&#32;((IT)&#32;==&#32;RCC_IT_HSERDY)&#32;||&#32;\</emphasis>
+148 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;RCC_IT_PLLRDY)&#32;||&#32;((IT)&#32;==&#32;RCC_IT_CSS)&#32;||&#32;\</emphasis>
+149 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;RCC_IT_PLLI2SRDY))</emphasis>
+150 <emphasis role="preprocessor">#define&#32;IS_RCC_CLEAR_IT(IT)&#32;((((IT)&#32;&amp;&#32;(uint8_t)0x40)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((IT)&#32;!=&#32;0x00))</emphasis>
+158 <emphasis role="preprocessor">#define&#32;RCC_LSE_OFF&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x00)</emphasis>
+159 <emphasis role="preprocessor">#define&#32;RCC_LSE_ON&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x01)</emphasis>
+160 <emphasis role="preprocessor">#define&#32;RCC_LSE_Bypass&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x04)</emphasis>
+161 <emphasis role="preprocessor">#define&#32;IS_RCC_LSE(LSE)&#32;(((LSE)&#32;==&#32;RCC_LSE_OFF)&#32;||&#32;((LSE)&#32;==&#32;RCC_LSE_ON)&#32;||&#32;\</emphasis>
+162 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((LSE)&#32;==&#32;RCC_LSE_Bypass))</emphasis>
+170 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_LSE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000100)</emphasis>
+171 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_LSI&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000200)</emphasis>
+172 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00020300)</emphasis>
+173 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00030300)</emphasis>
+174 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00040300)</emphasis>
+175 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div5&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00050300)</emphasis>
+176 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div6&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00060300)</emphasis>
+177 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div7&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00070300)</emphasis>
+178 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00080300)</emphasis>
+179 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div9&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00090300)</emphasis>
+180 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div10&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000A0300)</emphasis>
+181 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div11&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000B0300)</emphasis>
+182 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div12&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000C0300)</emphasis>
+183 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div13&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000D0300)</emphasis>
+184 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div14&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000E0300)</emphasis>
+185 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div15&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x000F0300)</emphasis>
+186 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div16&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00100300)</emphasis>
+187 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div17&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00110300)</emphasis>
+188 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div18&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00120300)</emphasis>
+189 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div19&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00130300)</emphasis>
+190 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div20&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00140300)</emphasis>
+191 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div21&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00150300)</emphasis>
+192 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div22&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00160300)</emphasis>
+193 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div23&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00170300)</emphasis>
+194 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div24&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00180300)</emphasis>
+195 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div25&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00190300)</emphasis>
+196 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div26&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x001A0300)</emphasis>
+197 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div27&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x001B0300)</emphasis>
+198 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div28&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x001C0300)</emphasis>
+199 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div29&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x001D0300)</emphasis>
+200 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div30&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x001E0300)</emphasis>
+201 <emphasis role="preprocessor">#define&#32;RCC_RTCCLKSource_HSE_Div31&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x001F0300)</emphasis>
+202 <emphasis role="preprocessor">#define&#32;IS_RCC_RTCCLK_SOURCE(SOURCE)&#32;(((SOURCE)&#32;==&#32;RCC_RTCCLKSource_LSE)&#32;||&#32;\</emphasis>
+203 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_LSI)&#32;||&#32;\</emphasis>
+204 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div2)&#32;||&#32;\</emphasis>
+205 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div3)&#32;||&#32;\</emphasis>
+206 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div4)&#32;||&#32;\</emphasis>
+207 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div5)&#32;||&#32;\</emphasis>
+208 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div6)&#32;||&#32;\</emphasis>
+209 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div7)&#32;||&#32;\</emphasis>
+210 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div8)&#32;||&#32;\</emphasis>
+211 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div9)&#32;||&#32;\</emphasis>
+212 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div10)&#32;||&#32;\</emphasis>
+213 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div11)&#32;||&#32;\</emphasis>
+214 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div12)&#32;||&#32;\</emphasis>
+215 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div13)&#32;||&#32;\</emphasis>
+216 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div14)&#32;||&#32;\</emphasis>
+217 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div15)&#32;||&#32;\</emphasis>
+218 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div16)&#32;||&#32;\</emphasis>
+219 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div17)&#32;||&#32;\</emphasis>
+220 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div18)&#32;||&#32;\</emphasis>
+221 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div19)&#32;||&#32;\</emphasis>
+222 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div20)&#32;||&#32;\</emphasis>
+223 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div21)&#32;||&#32;\</emphasis>
+224 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div22)&#32;||&#32;\</emphasis>
+225 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div23)&#32;||&#32;\</emphasis>
+226 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div24)&#32;||&#32;\</emphasis>
+227 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div25)&#32;||&#32;\</emphasis>
+228 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div26)&#32;||&#32;\</emphasis>
+229 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div27)&#32;||&#32;\</emphasis>
+230 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div28)&#32;||&#32;\</emphasis>
+231 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div29)&#32;||&#32;\</emphasis>
+232 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div30)&#32;||&#32;\</emphasis>
+233 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_RTCCLKSource_HSE_Div31))</emphasis>
+241 <emphasis role="preprocessor">#define&#32;RCC_I2S2CLKSource_PLLI2S&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x00)</emphasis>
+242 <emphasis role="preprocessor">#define&#32;RCC_I2S2CLKSource_Ext&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x01)</emphasis>
+243 
+244 <emphasis role="preprocessor">#define&#32;IS_RCC_I2SCLK_SOURCE(SOURCE)&#32;(((SOURCE)&#32;==&#32;RCC_I2S2CLKSource_PLLI2S)&#32;||&#32;((SOURCE)&#32;==&#32;RCC_I2S2CLKSource_Ext))&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
+252 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_GPIOA&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000001)</emphasis>
+253 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_GPIOB&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000002)</emphasis>
+254 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_GPIOC&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000004)</emphasis>
+255 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_GPIOD&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000008)</emphasis>
+256 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_GPIOE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000010)</emphasis>
+257 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_GPIOF&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000020)</emphasis>
+258 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_GPIOG&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000040)</emphasis>
+259 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_GPIOH&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000080)</emphasis>
+260 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_GPIOI&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000100)</emphasis>
+261 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_CRC&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00001000)</emphasis>
+262 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_FLITF&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00008000)</emphasis>
+263 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_SRAM1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00010000)</emphasis>
+264 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_SRAM2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00020000)</emphasis>
+265 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_BKPSRAM&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00040000)</emphasis>
+266 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_CCMDATARAMEN&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00100000)</emphasis>
+267 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_DMA1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00200000)</emphasis>
+268 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_DMA2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00400000)</emphasis>
+269 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_ETH_MAC&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x02000000)</emphasis>
+270 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_ETH_MAC_Tx&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x04000000)</emphasis>
+271 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_ETH_MAC_Rx&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x08000000)</emphasis>
+272 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_ETH_MAC_PTP&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x10000000)</emphasis>
+273 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_OTG_HS&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x20000000)</emphasis>
+274 <emphasis role="preprocessor">#define&#32;RCC_AHB1Periph_OTG_HS_ULPI&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x40000000)</emphasis>
+275 <emphasis role="preprocessor">#define&#32;IS_RCC_AHB1_CLOCK_PERIPH(PERIPH)&#32;((((PERIPH)&#32;&amp;&#32;0x818BEE00)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((PERIPH)&#32;!=&#32;0x00))</emphasis>
+276 <emphasis role="preprocessor">#define&#32;IS_RCC_AHB1_RESET_PERIPH(PERIPH)&#32;((((PERIPH)&#32;&amp;&#32;0xDD9FEE00)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((PERIPH)&#32;!=&#32;0x00))</emphasis>
+277 <emphasis role="preprocessor">#define&#32;IS_RCC_AHB1_LPMODE_PERIPH(PERIPH)&#32;((((PERIPH)&#32;&amp;&#32;0x81986E00)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((PERIPH)&#32;!=&#32;0x00))</emphasis>
+285 <emphasis role="preprocessor">#define&#32;RCC_AHB2Periph_DCMI&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000001)</emphasis>
+286 <emphasis role="preprocessor">#define&#32;RCC_AHB2Periph_CRYP&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000010)</emphasis>
+287 <emphasis role="preprocessor">#define&#32;RCC_AHB2Periph_HASH&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000020)</emphasis>
+288 <emphasis role="preprocessor">#define&#32;RCC_AHB2Periph_RNG&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000040)</emphasis>
+289 <emphasis role="preprocessor">#define&#32;RCC_AHB2Periph_OTG_FS&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000080)</emphasis>
+290 <emphasis role="preprocessor">#define&#32;IS_RCC_AHB2_PERIPH(PERIPH)&#32;((((PERIPH)&#32;&amp;&#32;0xFFFFFF0E)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((PERIPH)&#32;!=&#32;0x00))</emphasis>
+298 <emphasis role="preprocessor">#define&#32;RCC_AHB3Periph_FSMC&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000001)</emphasis>
+299 <emphasis role="preprocessor">#define&#32;IS_RCC_AHB3_PERIPH(PERIPH)&#32;((((PERIPH)&#32;&amp;&#32;0xFFFFFFFE)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((PERIPH)&#32;!=&#32;0x00))</emphasis>
+307 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_TIM2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000001)</emphasis>
+308 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_TIM3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000002)</emphasis>
+309 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_TIM4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000004)</emphasis>
+310 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_TIM5&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000008)</emphasis>
+311 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_TIM6&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000010)</emphasis>
+312 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_TIM7&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000020)</emphasis>
+313 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_TIM12&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000040)</emphasis>
+314 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_TIM13&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000080)</emphasis>
+315 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_TIM14&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000100)</emphasis>
+316 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_WWDG&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000800)</emphasis>
+317 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_SPI2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00004000)</emphasis>
+318 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_SPI3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00008000)</emphasis>
+319 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_USART2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00020000)</emphasis>
+320 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_USART3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00040000)</emphasis>
+321 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_UART4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00080000)</emphasis>
+322 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_UART5&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00100000)</emphasis>
+323 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_I2C1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00200000)</emphasis>
+324 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_I2C2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00400000)</emphasis>
+325 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_I2C3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00800000)</emphasis>
+326 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_CAN1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x02000000)</emphasis>
+327 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_CAN2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x04000000)</emphasis>
+328 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_PWR&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x10000000)</emphasis>
+329 <emphasis role="preprocessor">#define&#32;RCC_APB1Periph_DAC&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x20000000)</emphasis>
+330 <emphasis role="preprocessor">#define&#32;IS_RCC_APB1_PERIPH(PERIPH)&#32;((((PERIPH)&#32;&amp;&#32;0xC9013600)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((PERIPH)&#32;!=&#32;0x00))</emphasis>
+338 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_TIM1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000001)</emphasis>
+339 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_TIM8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000002)</emphasis>
+340 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_USART1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000010)</emphasis>
+341 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_USART6&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000020)</emphasis>
+342 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_ADC&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000100)</emphasis>
+343 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_ADC1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000100)</emphasis>
+344 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_ADC2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000200)</emphasis>
+345 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_ADC3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000400)</emphasis>
+346 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_SDIO&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000800)</emphasis>
+347 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_SPI1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00001000)</emphasis>
+348 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_SYSCFG&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00004000)</emphasis>
+349 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_TIM9&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00010000)</emphasis>
+350 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_TIM10&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00020000)</emphasis>
+351 <emphasis role="preprocessor">#define&#32;RCC_APB2Periph_TIM11&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00040000)</emphasis>
+352 <emphasis role="preprocessor">#define&#32;IS_RCC_APB2_PERIPH(PERIPH)&#32;((((PERIPH)&#32;&amp;&#32;0xFFF8A0CC)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((PERIPH)&#32;!=&#32;0x00))</emphasis>
+353 <emphasis role="preprocessor">#define&#32;IS_RCC_APB2_RESET_PERIPH(PERIPH)&#32;((((PERIPH)&#32;&amp;&#32;0xFFF8A6CC)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((PERIPH)&#32;!=&#32;0x00))</emphasis>
+361 <emphasis role="preprocessor">#define&#32;RCC_MCO1Source_HSI&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000000)</emphasis>
+362 <emphasis role="preprocessor">#define&#32;RCC_MCO1Source_LSE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00200000)</emphasis>
+363 <emphasis role="preprocessor">#define&#32;RCC_MCO1Source_HSE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00400000)</emphasis>
+364 <emphasis role="preprocessor">#define&#32;RCC_MCO1Source_PLLCLK&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00600000)</emphasis>
+365 <emphasis role="preprocessor">#define&#32;RCC_MCO1Div_1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000000)</emphasis>
+366 <emphasis role="preprocessor">#define&#32;RCC_MCO1Div_2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x04000000)</emphasis>
+367 <emphasis role="preprocessor">#define&#32;RCC_MCO1Div_3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x05000000)</emphasis>
+368 <emphasis role="preprocessor">#define&#32;RCC_MCO1Div_4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x06000000)</emphasis>
+369 <emphasis role="preprocessor">#define&#32;RCC_MCO1Div_5&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x07000000)</emphasis>
+370 <emphasis role="preprocessor">#define&#32;IS_RCC_MCO1SOURCE(SOURCE)&#32;(((SOURCE)&#32;==&#32;RCC_MCO1Source_HSI)&#32;||&#32;((SOURCE)&#32;==&#32;RCC_MCO1Source_LSE)&#32;||&#32;\</emphasis>
+371 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_MCO1Source_HSE)&#32;||&#32;((SOURCE)&#32;==&#32;RCC_MCO1Source_PLLCLK))</emphasis>
+372 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+373 <emphasis role="preprocessor">#define&#32;IS_RCC_MCO1DIV(DIV)&#32;(((DIV)&#32;==&#32;RCC_MCO1Div_1)&#32;||&#32;((DIV)&#32;==&#32;RCC_MCO1Div_2)&#32;||&#32;\</emphasis>
+374 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((DIV)&#32;==&#32;RCC_MCO1Div_3)&#32;||&#32;((DIV)&#32;==&#32;RCC_MCO1Div_4)&#32;||&#32;\</emphasis>
+375 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((DIV)&#32;==&#32;RCC_MCO1Div_5))&#32;</emphasis>
+383 <emphasis role="preprocessor">#define&#32;RCC_MCO2Source_SYSCLK&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000000)</emphasis>
+384 <emphasis role="preprocessor">#define&#32;RCC_MCO2Source_PLLI2SCLK&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x40000000)</emphasis>
+385 <emphasis role="preprocessor">#define&#32;RCC_MCO2Source_HSE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x80000000)</emphasis>
+386 <emphasis role="preprocessor">#define&#32;RCC_MCO2Source_PLLCLK&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0xC0000000)</emphasis>
+387 <emphasis role="preprocessor">#define&#32;RCC_MCO2Div_1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000000)</emphasis>
+388 <emphasis role="preprocessor">#define&#32;RCC_MCO2Div_2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x20000000)</emphasis>
+389 <emphasis role="preprocessor">#define&#32;RCC_MCO2Div_3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x28000000)</emphasis>
+390 <emphasis role="preprocessor">#define&#32;RCC_MCO2Div_4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x30000000)</emphasis>
+391 <emphasis role="preprocessor">#define&#32;RCC_MCO2Div_5&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x38000000)</emphasis>
+392 <emphasis role="preprocessor">#define&#32;IS_RCC_MCO2SOURCE(SOURCE)&#32;(((SOURCE)&#32;==&#32;RCC_MCO2Source_SYSCLK)&#32;||&#32;((SOURCE)&#32;==&#32;RCC_MCO2Source_PLLI2SCLK)||&#32;\</emphasis>
+393 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;RCC_MCO2Source_HSE)&#32;||&#32;((SOURCE)&#32;==&#32;RCC_MCO2Source_PLLCLK))</emphasis>
+394 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+395 <emphasis role="preprocessor">#define&#32;IS_RCC_MCO2DIV(DIV)&#32;(((DIV)&#32;==&#32;RCC_MCO2Div_1)&#32;||&#32;((DIV)&#32;==&#32;RCC_MCO2Div_2)&#32;||&#32;\</emphasis>
+396 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((DIV)&#32;==&#32;RCC_MCO2Div_3)&#32;||&#32;((DIV)&#32;==&#32;RCC_MCO2Div_4)&#32;||&#32;\</emphasis>
+397 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((DIV)&#32;==&#32;RCC_MCO2Div_5))&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
+405 <emphasis role="preprocessor">#define&#32;RCC_FLAG_HSIRDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x21)</emphasis>
+406 <emphasis role="preprocessor">#define&#32;RCC_FLAG_HSERDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x31)</emphasis>
+407 <emphasis role="preprocessor">#define&#32;RCC_FLAG_PLLRDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x39)</emphasis>
+408 <emphasis role="preprocessor">#define&#32;RCC_FLAG_PLLI2SRDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x3B)</emphasis>
+409 <emphasis role="preprocessor">#define&#32;RCC_FLAG_LSERDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x41)</emphasis>
+410 <emphasis role="preprocessor">#define&#32;RCC_FLAG_LSIRDY&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x61)</emphasis>
+411 <emphasis role="preprocessor">#define&#32;RCC_FLAG_BORRST&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x79)</emphasis>
+412 <emphasis role="preprocessor">#define&#32;RCC_FLAG_PINRST&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x7A)</emphasis>
+413 <emphasis role="preprocessor">#define&#32;RCC_FLAG_PORRST&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x7B)</emphasis>
+414 <emphasis role="preprocessor">#define&#32;RCC_FLAG_SFTRST&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x7C)</emphasis>
+415 <emphasis role="preprocessor">#define&#32;RCC_FLAG_IWDGRST&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x7D)</emphasis>
+416 <emphasis role="preprocessor">#define&#32;RCC_FLAG_WWDGRST&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x7E)</emphasis>
+417 <emphasis role="preprocessor">#define&#32;RCC_FLAG_LPWRRST&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x7F)</emphasis>
+418 <emphasis role="preprocessor">#define&#32;IS_RCC_FLAG(FLAG)&#32;(((FLAG)&#32;==&#32;RCC_FLAG_HSIRDY)&#32;||&#32;((FLAG)&#32;==&#32;RCC_FLAG_HSERDY)&#32;||&#32;\</emphasis>
+419 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((FLAG)&#32;==&#32;RCC_FLAG_PLLRDY)&#32;||&#32;((FLAG)&#32;==&#32;RCC_FLAG_LSERDY)&#32;||&#32;\</emphasis>
+420 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((FLAG)&#32;==&#32;RCC_FLAG_LSIRDY)&#32;||&#32;((FLAG)&#32;==&#32;RCC_FLAG_BORRST)&#32;||&#32;\</emphasis>
+421 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((FLAG)&#32;==&#32;RCC_FLAG_PINRST)&#32;||&#32;((FLAG)&#32;==&#32;RCC_FLAG_PORRST)&#32;||&#32;\</emphasis>
+422 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((FLAG)&#32;==&#32;RCC_FLAG_SFTRST)&#32;||&#32;((FLAG)&#32;==&#32;RCC_FLAG_IWDGRST)||&#32;\</emphasis>
+423 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((FLAG)&#32;==&#32;RCC_FLAG_WWDGRST)||&#32;((FLAG)&#32;==&#32;RCC_FLAG_LPWRRST)||&#32;\</emphasis>
+424 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((FLAG)&#32;==&#32;RCC_FLAG_PLLI2SRDY))</emphasis>
+425 <emphasis role="preprocessor">#define&#32;IS_RCC_CALIBRATION_VALUE(VALUE)&#32;((VALUE)&#32;&lt;=&#32;0x1F)</emphasis>
+434 <emphasis role="comment">/*&#32;Exported&#32;macro&#32;------------------------------------------------------------*/</emphasis>
+435 <emphasis role="comment">/*&#32;Exported&#32;functions&#32;--------------------------------------------------------*/</emphasis>&#32;
+436 
+437 <emphasis role="comment">/*&#32;Function&#32;used&#32;to&#32;set&#32;the&#32;RCC&#32;clock&#32;configuration&#32;to&#32;the&#32;default&#32;reset&#32;state&#32;*/</emphasis>
+438 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga413f6422be11b1334abe60b3bff2e062">RCC_DeInit</link>(<emphasis role="keywordtype">void</emphasis>);
+439 
+440 <emphasis role="comment">/*&#32;Internal/external&#32;clocks,&#32;PLL,&#32;CSS&#32;and&#32;MCO&#32;configuration&#32;functions&#32;*********/</emphasis>
+441 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga523b06e73f6aa8a03e42299c855066a8">RCC_HSEConfig</link>(uint8_t&#32;RCC_HSE);
+442 ErrorStatus&#32;<link linkend="_group___r_c_c_1gae0f15692614dd048ee4110a056f001dc">RCC_WaitForHSEStartUp</link>(<emphasis role="keywordtype">void</emphasis>);
+443 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1gaa2d6a35f5c2e0f86317c3beb222677fc">RCC_AdjustHSICalibrationValue</link>(uint8_t&#32;HSICalibrationValue);
+444 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga0c6772a1e43765909495f57815ef69e2">RCC_HSICmd</link>(FunctionalState&#32;NewState);
+445 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga65209ab5c3589b249c7d70f978735ca6">RCC_LSEConfig</link>(uint8_t&#32;RCC_LSE);
+446 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga81e3ca29fd154ac2019bba6936d6d5ed">RCC_LSICmd</link>(FunctionalState&#32;NewState);
+447 
+448 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga154b93e90bfdede2a874244a1ff1002e">RCC_PLLConfig</link>(uint32_t&#32;RCC_PLLSource,&#32;uint32_t&#32;PLLM,&#32;uint32_t&#32;PLLN,&#32;uint32_t&#32;PLLP,&#32;uint32_t&#32;PLLQ);
+449 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga84dee53c75e58fdb53571716593c2272">RCC_PLLCmd</link>(FunctionalState&#32;NewState);
+450 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga4c15157382939a693c15620a4867e6ad">RCC_PLLI2SConfig</link>(uint32_t&#32;PLLI2SN,&#32;uint32_t&#32;PLLI2SR);
+451 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga2efe493a6337d5e0034bfcdfb0f541e4">RCC_PLLI2SCmd</link>(FunctionalState&#32;NewState);
+452 
+453 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga0ff1fd7b9a8a49cdda11b7d7261c3494">RCC_ClockSecuritySystemCmd</link>(FunctionalState&#32;NewState);
+454 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga15c9ecb6ef015ed008cb28e5b7a50531">RCC_MCO1Config</link>(uint32_t&#32;RCC_MCO1Source,&#32;uint32_t&#32;RCC_MCO1Div);
+455 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1gaf50f10675b747de60c739e44e5c22aee">RCC_MCO2Config</link>(uint32_t&#32;RCC_MCO2Source,&#32;uint32_t&#32;RCC_MCO2Div);
+456 
+457 <emphasis role="comment">/*&#32;System,&#32;AHB&#32;and&#32;APB&#32;busses&#32;clocks&#32;configuration&#32;functions&#32;******************/</emphasis>
+458 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga3551a36a8f0a3dc96a74d6b939048337">RCC_SYSCLKConfig</link>(uint32_t&#32;RCC_SYSCLKSource);
+459 uint8_t&#32;<link linkend="_group___r_c_c_1gaaeb32311c208b2a980841c9c884a41ea">RCC_GetSYSCLKSource</link>(<emphasis role="keywordtype">void</emphasis>);
+460 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga9d0aec72e236c6cdf3a3a82dfb525491">RCC_HCLKConfig</link>(uint32_t&#32;RCC_SYSCLK);
+461 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga448137346d4292985d4e7a61dd1a824f">RCC_PCLK1Config</link>(uint32_t&#32;RCC_HCLK);
+462 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga09f9c010a4adca9e036da42c2ca6126a">RCC_PCLK2Config</link>(uint32_t&#32;RCC_HCLK);
+463 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga3e9944fd1ed734275222bbb3e3f29993">RCC_GetClocksFreq</link>(<link linkend="_struct_r_c_c___clocks_type_def">RCC_ClocksTypeDef</link>*&#32;RCC_Clocks);
+464 
+465 <emphasis role="comment">/*&#32;Peripheral&#32;clocks&#32;configuration&#32;functions&#32;**********************************/</emphasis>
+466 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga1473d8a5a020642966359611c44181b0">RCC_RTCCLKConfig</link>(uint32_t&#32;RCC_RTCCLKSource);
+467 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga9802f84846df2cea8e369234ed13b159">RCC_RTCCLKCmd</link>(FunctionalState&#32;NewState);
+468 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga636c3b72f35391e67f12a551b15fa54a">RCC_BackupResetCmd</link>(FunctionalState&#32;NewState);
+469 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga6c56f8529988fcc8f4dbffbc1bab27d0">RCC_I2SCLKConfig</link>(uint32_t&#32;RCC_I2SCLKSource);&#32;
+470 
+471 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga80c89116820d48bb38db2e7d5e5a49b9">RCC_AHB1PeriphClockCmd</link>(uint32_t&#32;RCC_AHB1Periph,&#32;FunctionalState&#32;NewState);
+472 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1gaadffedbd87e796f01d9776b8ee01ff5e">RCC_AHB2PeriphClockCmd</link>(uint32_t&#32;RCC_AHB2Periph,&#32;FunctionalState&#32;NewState);
+473 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga4eb8c119f2e9bf2bd2e042d27f151338">RCC_AHB3PeriphClockCmd</link>(uint32_t&#32;RCC_AHB3Periph,&#32;FunctionalState&#32;NewState);
+474 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1gaee7cc5d73af7fe1986fceff8afd3973e">RCC_APB1PeriphClockCmd</link>(uint32_t&#32;RCC_APB1Periph,&#32;FunctionalState&#32;NewState);
+475 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga56ff55caf8d835351916b40dd030bc87">RCC_APB2PeriphClockCmd</link>(uint32_t&#32;RCC_APB2Periph,&#32;FunctionalState&#32;NewState);
+476 
+477 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1gaa7c450567f4731d4f0615f63586cad86">RCC_AHB1PeriphResetCmd</link>(uint32_t&#32;RCC_AHB1Periph,&#32;FunctionalState&#32;NewState);
+478 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1gafb119d6d1955d1b8c361e8140845ac5a">RCC_AHB2PeriphResetCmd</link>(uint32_t&#32;RCC_AHB2Periph,&#32;FunctionalState&#32;NewState);
+479 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1gaee44f159a1ca9ebdd7117bff387cd592">RCC_AHB3PeriphResetCmd</link>(uint32_t&#32;RCC_AHB3Periph,&#32;FunctionalState&#32;NewState);
+480 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1gab197ae4369c10b92640a733b40ed2801">RCC_APB1PeriphResetCmd</link>(uint32_t&#32;RCC_APB1Periph,&#32;FunctionalState&#32;NewState);
+481 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1gad94553850ac07106a27ee85fec37efdf">RCC_APB2PeriphResetCmd</link>(uint32_t&#32;RCC_APB2Periph,&#32;FunctionalState&#32;NewState);
+482 
+483 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga5cd0d5adbc7496d7005b208bd19ce255">RCC_AHB1PeriphClockLPModeCmd</link>(uint32_t&#32;RCC_AHB1Periph,&#32;FunctionalState&#32;NewState);
+484 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga1ac5bb9676ae9b48e50d6a95de922ce3">RCC_AHB2PeriphClockLPModeCmd</link>(uint32_t&#32;RCC_AHB2Periph,&#32;FunctionalState&#32;NewState);
+485 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga4e1df07cdfd81c068902d9d35fcc3911">RCC_AHB3PeriphClockLPModeCmd</link>(uint32_t&#32;RCC_AHB3Periph,&#32;FunctionalState&#32;NewState);
+486 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga84dd64badb84768cbcf19e241cadff50">RCC_APB1PeriphClockLPModeCmd</link>(uint32_t&#32;RCC_APB1Periph,&#32;FunctionalState&#32;NewState);
+487 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga30365b9e0b4c5d7e98c2675c862ddd7e">RCC_APB2PeriphClockLPModeCmd</link>(uint32_t&#32;RCC_APB2Periph,&#32;FunctionalState&#32;NewState);
+488 
+489 <emphasis role="comment">/*&#32;Interrupts&#32;and&#32;flags&#32;management&#32;functions&#32;**********************************/</emphasis>
+490 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1gaa953aa226e9ce45300d535941e4dfe2f">RCC_ITConfig</link>(uint8_t&#32;RCC_IT,&#32;FunctionalState&#32;NewState);
+491 FlagStatus&#32;<link linkend="_group___r_c_c_1ga2897bdc52f272031c44fb1f72205d295">RCC_GetFlagStatus</link>(uint8_t&#32;RCC_FLAG);
+492 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga53f909dbb15a54124419084ebda97d72">RCC_ClearFlag</link>(<emphasis role="keywordtype">void</emphasis>);
+493 ITStatus&#32;<link linkend="_group___r_c_c_1ga6126c99f398ee4be410ad76ae3aee18f">RCC_GetITStatus</link>(uint8_t&#32;RCC_IT);
+494 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___r_c_c_1ga529842d165910f8f87e26115da36089b">RCC_ClearITPendingBit</link>(uint8_t&#32;RCC_IT);
+495 
+496 <emphasis role="preprocessor">#ifdef&#32;__cplusplus</emphasis>
+497 }
+498 <emphasis role="preprocessor">#endif</emphasis>
+499 
+500 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;__STM32F4xx_RCC_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+501 
+510 <emphasis role="comment">/*******************&#32;(C)&#32;COPYRIGHT&#32;2011&#32;STMicroelectronics&#32;*****END&#32;OF&#32;FILE****/</emphasis>
+</programlisting></section>

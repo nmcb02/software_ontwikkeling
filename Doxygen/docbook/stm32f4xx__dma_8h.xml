@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_stm32f4xx__dma_8h" xml:lang="en-US">
+<title>CUBE_IDE/VGA/Core/Inc/stm32f4xx_dma.h File Reference</title>
+<indexterm><primary>CUBE_IDE/VGA/Core/Inc/stm32f4xx_dma.h</primary></indexterm>
+<para>
+
+<para>This file contains all the functions prototypes for the DMA firmware library. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;stm32f4xx.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_d_m_a___init_type_def">DMA_InitTypeDef</link></para>
+
+<para>DMA Init structure definition. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___d_m_a___exported___constants_1gabcab9fa1c48b148703a8f41c1d99e0c8">IS_DMA_ALL_PERIPH</link>(PERIPH)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a___exported___constants_1gaad08400369c8c129927cdb9cf1baae29">IS_DMA_ALL_CONTROLLER</link>(CONTROLLER)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Channel_0</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Channel_1</emphasis>&#160;&#160;&#160;((uint32_t)0x02000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Channel_2</emphasis>&#160;&#160;&#160;((uint32_t)0x04000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Channel_3</emphasis>&#160;&#160;&#160;((uint32_t)0x06000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Channel_4</emphasis>&#160;&#160;&#160;((uint32_t)0x08000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Channel_5</emphasis>&#160;&#160;&#160;((uint32_t)0x0A000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Channel_6</emphasis>&#160;&#160;&#160;((uint32_t)0x0C000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Channel_7</emphasis>&#160;&#160;&#160;((uint32_t)0x0E000000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__channel_1gac7f4709d9244f25b853789d888a74d46">IS_DMA_CHANNEL</link>(CHANNEL)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_DIR_PeripheralToMemory</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_DIR_MemoryToPeripheral</emphasis>&#160;&#160;&#160;((uint32_t)0x00000040)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_DIR_MemoryToMemory</emphasis>&#160;&#160;&#160;((uint32_t)0x00000080)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__data__transfer__direction_1gae2b02e8e823854bcd7c5746cdd29e70d">IS_DMA_DIRECTION</link>(DIRECTION)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">IS_DMA_BUFFER_SIZE</emphasis>(SIZE)&#160;&#160;&#160;(((SIZE) &gt;= 0x1) &amp;&amp; ((SIZE) &lt; 0x10000))</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PeripheralInc_Enable</emphasis>&#160;&#160;&#160;((uint32_t)0x00000200)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PeripheralInc_Disable</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__peripheral__incremented__mode_1ga28762105b3f567c16ba79a47e68ff0fa">IS_DMA_PERIPHERAL_INC_STATE</link>(STATE)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_MemoryInc_Enable</emphasis>&#160;&#160;&#160;((uint32_t)0x00000400)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_MemoryInc_Disable</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__memory__incremented__mode_1gaa880f39d499d1e80449cf80381e4eb67">IS_DMA_MEMORY_INC_STATE</link>(STATE)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PeripheralDataSize_Byte</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PeripheralDataSize_HalfWord</emphasis>&#160;&#160;&#160;((uint32_t)0x00000800)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PeripheralDataSize_Word</emphasis>&#160;&#160;&#160;((uint32_t)0x00001000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__peripheral__data__size_1gad7916e0ae55cdf5efdfa68a09a028037">IS_DMA_PERIPHERAL_DATA_SIZE</link>(SIZE)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_MemoryDataSize_Byte</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_MemoryDataSize_HalfWord</emphasis>&#160;&#160;&#160;((uint32_t)0x00002000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_MemoryDataSize_Word</emphasis>&#160;&#160;&#160;((uint32_t)0x00004000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__memory__data__size_1gac9e3748cebcb16d4ae4206d562bc804c">IS_DMA_MEMORY_DATA_SIZE</link>(SIZE)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Mode_Normal</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Mode_Circular</emphasis>&#160;&#160;&#160;((uint32_t)0x00000100)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__circular__normal__mode_1gad88ee5030574d6a573904378fb62c7ac">IS_DMA_MODE</link>(MODE)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Priority_Low</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Priority_Medium</emphasis>&#160;&#160;&#160;((uint32_t)0x00010000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Priority_High</emphasis>&#160;&#160;&#160;((uint32_t)0x00020000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Priority_VeryHigh</emphasis>&#160;&#160;&#160;((uint32_t)0x00030000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__priority__level_1gaa1cae2ab458948511596467c87cd02b6">IS_DMA_PRIORITY</link>(PRIORITY)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOMode_Disable</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOMode_Enable</emphasis>&#160;&#160;&#160;((uint32_t)0x00000004)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__fifo__direct__mode_1gadb90a893aeb49fd4bc14af750af3837c">IS_DMA_FIFO_MODE_STATE</link>(STATE)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOThreshold_1QuarterFull</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOThreshold_HalfFull</emphasis>&#160;&#160;&#160;((uint32_t)0x00000001)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOThreshold_3QuartersFull</emphasis>&#160;&#160;&#160;((uint32_t)0x00000002)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOThreshold_Full</emphasis>&#160;&#160;&#160;((uint32_t)0x00000003)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__fifo__threshold__level_1gaeafc0d9e327d6e5b26cd37f6744b232f">IS_DMA_FIFO_THRESHOLD</link>(THRESHOLD)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_MemoryBurst_Single</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_MemoryBurst_INC4</emphasis>&#160;&#160;&#160;((uint32_t)0x00800000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_MemoryBurst_INC8</emphasis>&#160;&#160;&#160;((uint32_t)0x01000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_MemoryBurst_INC16</emphasis>&#160;&#160;&#160;((uint32_t)0x01800000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__memory__burst_1ga921ebf06447dc036180fff50b7e4846a">IS_DMA_MEMORY_BURST</link>(BURST)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PeripheralBurst_Single</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PeripheralBurst_INC4</emphasis>&#160;&#160;&#160;((uint32_t)0x00200000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PeripheralBurst_INC8</emphasis>&#160;&#160;&#160;((uint32_t)0x00400000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PeripheralBurst_INC16</emphasis>&#160;&#160;&#160;((uint32_t)0x00600000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__peripheral__burst_1ga7c60961178e2a32e9e364a220a8aca88">IS_DMA_PERIPHERAL_BURST</link>(BURST)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOStatus_Less1QuarterFull</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000 &lt;&lt; 3)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOStatus_1QuarterFull</emphasis>&#160;&#160;&#160;((uint32_t)0x00000001 &lt;&lt; 3)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOStatus_HalfFull</emphasis>&#160;&#160;&#160;((uint32_t)0x00000002 &lt;&lt; 3)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOStatus_3QuartersFull</emphasis>&#160;&#160;&#160;((uint32_t)0x00000003 &lt;&lt; 3)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOStatus_Empty</emphasis>&#160;&#160;&#160;((uint32_t)0x00000004 &lt;&lt; 3)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FIFOStatus_Full</emphasis>&#160;&#160;&#160;((uint32_t)0x00000005 &lt;&lt; 3)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__fifo__status__level_1ga6980114eab3b3eea701f3802dd97dc12">IS_DMA_FIFO_STATUS</link>(STATUS)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_FEIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10800001)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_DMEIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10800004)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TEIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10000008)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_HTIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10000010)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TCIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10000020)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_FEIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10000040)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_DMEIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10000100)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TEIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10000200)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_HTIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10000400)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TCIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10000800)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_FEIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10010000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_DMEIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10040000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TEIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10080000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_HTIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10100000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TCIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10200000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_FEIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x10400000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_DMEIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x11000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TEIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x12000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_HTIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x14000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TCIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x18000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_FEIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20000001)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_DMEIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20000004)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TEIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20000008)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_HTIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20000010)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TCIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20000020)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_FEIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20000040)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_DMEIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20000100)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TEIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20000200)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_HTIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20000400)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TCIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20000800)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_FEIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20010000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_DMEIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20040000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TEIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20080000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_HTIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20100000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TCIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20200000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_FEIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x20400000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_DMEIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x21000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TEIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x22000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_HTIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x24000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FLAG_TCIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x28000000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__flags__definition_1ga4b33e418489c9a3c9adcbdbaca93e4a3">IS_DMA_CLEAR_FLAG</link>(FLAG)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__flags__definition_1ga98e421aa0a15fbeecb4cab3612985676">IS_DMA_GET_FLAG</link>(FLAG)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TC</emphasis>&#160;&#160;&#160;((uint32_t)0x00000010)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_HT</emphasis>&#160;&#160;&#160;((uint32_t)0x00000008)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TE</emphasis>&#160;&#160;&#160;((uint32_t)0x00000004)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_DME</emphasis>&#160;&#160;&#160;((uint32_t)0x00000002)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_FE</emphasis>&#160;&#160;&#160;((uint32_t)0x00000080)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">IS_DMA_CONFIG_IT</emphasis>(IT)&#160;&#160;&#160;((((IT) &amp; 0xFFFFFF61) == 0x00) &amp;&amp; ((IT) != 0x00))</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_FEIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x90000001)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_DMEIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10001004)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TEIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10002008)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_HTIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10004010)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TCIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10008020)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_FEIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x90000040)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_DMEIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10001100)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TEIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10002200)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_HTIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10004400)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TCIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10008800)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_FEIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x90010000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_DMEIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10041000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TEIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10082000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_HTIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10104000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TCIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10208000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_FEIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x90400000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_DMEIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x11001000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TEIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x12002000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_HTIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x14004000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TCIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x18008000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_FEIF4</emphasis>&#160;&#160;&#160;((uint32_t)0xA0000001)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_DMEIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20001004)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TEIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20002008)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_HTIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20004010)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TCIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20008020)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_FEIF5</emphasis>&#160;&#160;&#160;((uint32_t)0xA0000040)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_DMEIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20001100)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TEIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20002200)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_HTIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20004400)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TCIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20008800)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_FEIF6</emphasis>&#160;&#160;&#160;((uint32_t)0xA0010000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_DMEIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20041000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TEIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20082000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_HTIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20104000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TCIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20208000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_FEIF7</emphasis>&#160;&#160;&#160;((uint32_t)0xA0400000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_DMEIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x21001000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TEIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x22002000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_HTIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x24004000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_IT_TCIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x28008000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__interrupts__definitions_1ga390481b083355ed774b04f70a42f0dfb">IS_DMA_CLEAR_IT</link>(IT)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__interrupts__definitions_1gaaafa1bd74bc5e78e276c731faa8eed22">IS_DMA_GET_IT</link>(IT)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PINCOS_Psize</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_PINCOS_WordAligned</emphasis>&#160;&#160;&#160;((uint32_t)0x00008000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__peripheral__increment__offset_1ga2fcfea7f5dedb658358f1220773fb2f2">IS_DMA_PINCOS_SIZE</link>(SIZE)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FlowCtrl_Memory</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_FlowCtrl_Peripheral</emphasis>&#160;&#160;&#160;((uint32_t)0x00000020)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__flow__controller__definitions_1ga78c0f18c0a86c67510f540a4210aadb7">IS_DMA_FLOW_CTRL</link>(CTRL)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Memory_0</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">DMA_Memory_1</emphasis>&#160;&#160;&#160;((uint32_t)0x00080000)</para>
+</listitem>
+            <listitem><para>#define <emphasis role="strong">IS_DMA_CURRENT_MEM</emphasis>(MEM)&#160;&#160;&#160;(((MEM) == DMA_Memory_0) || ((MEM) == DMA_Memory_1))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_group___d_m_a_1ga38d4a4ab8990299f8a6cf064e1e811d0">DMA_DeInit</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx)</para>
+
+<para>Deinitialize the DMAy Streamx registers to their default reset values. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1gaced8a4149acfb0a50b50e63273a87148">DMA_Init</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, <link linkend="_struct_d_m_a___init_type_def">DMA_InitTypeDef</link> *DMA_InitStruct)</para>
+
+<para>Initializes the DMAy Streamx according to the specified parameters in the DMA_InitStruct structure. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1ga0f7f95f750a90a6824f4e9b6f58adc7e">DMA_StructInit</link> (<link linkend="_struct_d_m_a___init_type_def">DMA_InitTypeDef</link> *DMA_InitStruct)</para>
+
+<para>Fills each DMA_InitStruct member with its default value. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1gab2bea22f9f6dc62fdd7afb385a0c1f73">DMA_Cmd</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, FunctionalState NewState)</para>
+
+<para>Enables or disables the specified DMAy Streamx. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1ga210a9861460b3c9b3fa14fdc1a949744">DMA_PeriphIncOffsetSizeConfig</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, uint32_t DMA_Pincos)</para>
+
+<para>Configures, when the PINC (Peripheral Increment address mode) bit is set, if the peripheral address should be incremented with the data size (configured with PSIZE bits) or by a fixed offset equal to 4 (32-bit aligned addresses). </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1ga77f7628f6be9d6d088127eceb090b8b2">DMA_FlowControllerConfig</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, uint32_t DMA_FlowCtrl)</para>
+
+<para>Configures, when the DMAy Streamx is disabled, the flow controller for the next transactions (Peripheral or Memory). </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1ga6a11a2c951cff59b125ba8857d44e3f3">DMA_SetCurrDataCounter</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, uint16_t Counter)</para>
+
+<para>Writes the number of data units to be transferred on the DMAy Streamx. </para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_group___d_m_a_1ga4a76444a92423f5f15a4328738d6dc46">DMA_GetCurrDataCounter</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx)</para>
+
+<para>Returns the number of remaining data units in the current DMAy Streamx transfer. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1ga8d0957e50302efaf48a16c62d14c9ca8">DMA_DoubleBufferModeConfig</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, uint32_t Memory1BaseAddr, uint32_t DMA_CurrentMemory)</para>
+
+<para>Configures, when the DMAy Streamx is disabled, the double buffer mode and the current memory target. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1ga7fe09e62ea3125db384829dab59ebe3e">DMA_DoubleBufferModeCmd</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, FunctionalState NewState)</para>
+
+<para>Enables or disables the double buffer mode for the selected DMA stream. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1ga4ebcffd32eb6968ac61cfb64a6bae258">DMA_MemoryTargetConfig</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, uint32_t MemoryBaseAddr, uint32_t DMA_MemoryTarget)</para>
+
+<para>Configures the Memory address for the next buffer transfer in double buffer mode (for dynamic use). This function can be called when the DMA Stream is enabled and when the transfer is ongoing. <?linebreak?> </para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___d_m_a_1ga74b6624f9faa2f43c9369ddbdeab241c">DMA_GetCurrentMemoryTarget</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx)</para>
+
+<para>Returns the current memory target used by double buffer transfer. </para>
+</listitem>
+            <listitem><para>FunctionalState <link linkend="_group___d_m_a_1gaa4d631cdd6cd020106435f30c0c6fb15">DMA_GetCmdStatus</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx)</para>
+
+<para>Returns the status of EN bit for the specified DMAy Streamx. </para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___d_m_a_1ga9893809a7067861ec111f7d712ebf28d">DMA_GetFIFOStatus</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx)</para>
+
+<para>Returns the current DMAy Streamx FIFO filled level. </para>
+</listitem>
+            <listitem><para>FlagStatus <link linkend="_group___d_m_a_1ga10cfc0fe31d64a1fd8fb3efb4ae2a411">DMA_GetFlagStatus</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, uint32_t DMA_FLAG)</para>
+
+<para>Checks whether the specified DMAy Streamx flag is set or not. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1ga510d62b4051f5a5de164e84b266b851d">DMA_ClearFlag</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, uint32_t DMA_FLAG)</para>
+
+<para>Clears the DMAy Streamx&apos;s pending flags. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1gab9c469a3f5d4aca5c97dee798ffc2f05">DMA_ITConfig</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState)</para>
+
+<para>Enables or disables the specified DMAy Streamx interrupts. </para>
+</listitem>
+            <listitem><para>ITStatus <link linkend="_group___d_m_a_1gad0ccf5f6548bd7cf8f2cae30393bb716">DMA_GetITStatus</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, uint32_t DMA_IT)</para>
+
+<para>Checks whether the specified DMAy Streamx interrupt has occurred or not. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___d_m_a_1gad5433018889cd36140d98bb380c4e76e">DMA_ClearITPendingBit</link> (<link linkend="_struct_d_m_a___stream___type_def">DMA_Stream_TypeDef</link> *DMAy_Streamx, uint32_t DMA_IT)</para>
+
+<para>Clears the DMAy Streamx&apos;s interrupt pending bits. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This file contains all the functions prototypes for the DMA firmware library. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>MCD Application Team </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>V1.0.0 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>30-September-2011 </para>
+</formalpara>
+<caution><title>Attention</title>
+
+<para></para>
+</caution>
+THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.</para>
+
+<para><formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#169; COPYRIGHT 2011 STMicroelectronics</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+</section>
+</section>

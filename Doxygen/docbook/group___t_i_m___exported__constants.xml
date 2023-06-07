@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___exported__constants" xml:lang="en-US">
+<title>TIM_Exported_constants</title>
+<indexterm><primary>TIM_Exported_constants</primary></indexterm>
+<simplesect>
+    <title>Modules    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___t_i_m___output___compare__and___p_w_m__modes">TIM_Output_Compare_and_PWM_modes</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___one___pulse___mode">TIM_One_Pulse_Mode</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___channel">TIM_Channel</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___clock___division___c_k_d">TIM_Clock_Division_CKD</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___counter___mode">TIM_Counter_Mode</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___output___compare___polarity">TIM_Output_Compare_Polarity</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___output___compare___n___polarity">TIM_Output_Compare_N_Polarity</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___output___compare___state">TIM_Output_Compare_State</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___output___compare___n___state">TIM_Output_Compare_N_State</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___capture___compare___state">TIM_Capture_Compare_State</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___capture___compare___n___state">TIM_Capture_Compare_N_State</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___break___input__enable__disable">TIM_Break_Input_enable_disable</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___break___polarity">TIM_Break_Polarity</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___a_o_e___bit___set___reset">TIM_AOE_Bit_Set_Reset</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___lock__level">TIM_Lock_level</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state">TIM_OSSI_Off_State_Selection_for_Idle_mode_state</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state">TIM_OSSR_Off_State_Selection_for_Run_mode_state</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___output___compare___idle___state">TIM_Output_Compare_Idle_State</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___output___compare___n___idle___state">TIM_Output_Compare_N_Idle_State</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___input___capture___polarity">TIM_Input_Capture_Polarity</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___input___capture___selection">TIM_Input_Capture_Selection</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___input___capture___prescaler">TIM_Input_Capture_Prescaler</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m__interrupt__sources">TIM_interrupt_sources</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___d_m_a___base__address">TIM_DMA_Base_address</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___d_m_a___burst___length">TIM_DMA_Burst_Length</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___d_m_a__sources">TIM_DMA_sources</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___external___trigger___prescaler">TIM_External_Trigger_Prescaler</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___internal___trigger___selection">TIM_Internal_Trigger_Selection</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___t_ix___external___clock___source">TIM_TIx_External_Clock_Source</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___external___trigger___polarity">TIM_External_Trigger_Polarity</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___prescaler___reload___mode">TIM_Prescaler_Reload_Mode</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___forced___action">TIM_Forced_Action</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___encoder___mode">TIM_Encoder_Mode</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___event___source">TIM_Event_Source</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___update___source">TIM_Update_Source</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___output___compare___preload___state">TIM_Output_Compare_Preload_State</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___output___compare___fast___state">TIM_Output_Compare_Fast_State</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___output___compare___clear___state">TIM_Output_Compare_Clear_State</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___trigger___output___source">TIM_Trigger_Output_Source</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___slave___mode">TIM_Slave_Mode</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___master___slave___mode">TIM_Master_Slave_Mode</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___remap">TIM_Remap</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___flags">TIM_Flags</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___input___capture___filer___value">TIM_Input_Capture_Filer_Value</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___external___trigger___filter">TIM_External_Trigger_Filter</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___legacy">TIM_Legacy</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___t_i_m___exported__constants_1ga71710da28a59c007a1d2ddee18a5ffcc">IS_TIM_ALL_PERIPH</link>(PERIPH)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___exported__constants_1ga1abea04e3837b7683d8e8dc33441677f">IS_TIM_LIST1_PERIPH</link>(PERIPH)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___exported__constants_1ga3c489ac3294f0d8f2ec097da909bc8e0">IS_TIM_LIST2_PERIPH</link>(PERIPH)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___exported__constants_1ga2d80541c542755ac3f2aca078bd98adb">IS_TIM_LIST3_PERIPH</link>(PERIPH)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___exported__constants_1ga9c2699fd3d0c0901f8ac706c3d2dfe10">IS_TIM_LIST4_PERIPH</link>(PERIPH)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___exported__constants_1ga90232c3966a578fbd9be2b228f225cb4">IS_TIM_LIST5_PERIPH</link>(PERIPH)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___exported__constants_1ga9449f429a84af2291f431b990361e639">IS_TIM_LIST6_PERIPH</link>(TIMx)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___t_i_m___exported__constants_1ga71710da28a59c007a1d2ddee18a5ffcc"/><section>
+    <title>IS_TIM_ALL_PERIPH</title>
+<indexterm><primary>IS_TIM_ALL_PERIPH</primary><secondary>TIM_Exported_constants</secondary></indexterm>
+<indexterm><primary>TIM_Exported_constants</primary><secondary>IS_TIM_ALL_PERIPH</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_ALL_PERIPH( PERIPH)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((PERIPH)&#32;==&#32;TIM1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM3)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM4)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM5)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM6)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM7)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM8)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM9)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM10)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM11)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM12)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((PERIPH)&#32;==&#32;TIM13)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM14)))
+</programlisting></section>
+<anchor xml:id="_group___t_i_m___exported__constants_1ga1abea04e3837b7683d8e8dc33441677f"/><section>
+    <title>IS_TIM_LIST1_PERIPH</title>
+<indexterm><primary>IS_TIM_LIST1_PERIPH</primary><secondary>TIM_Exported_constants</secondary></indexterm>
+<indexterm><primary>TIM_Exported_constants</primary><secondary>IS_TIM_LIST1_PERIPH</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_LIST1_PERIPH( PERIPH)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((PERIPH)&#32;==&#32;TIM1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM3)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM4)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM5)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM8)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM9)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM10)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM11)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM12)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM13)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM14))
+</programlisting></section>
+<anchor xml:id="_group___t_i_m___exported__constants_1ga3c489ac3294f0d8f2ec097da909bc8e0"/><section>
+    <title>IS_TIM_LIST2_PERIPH</title>
+<indexterm><primary>IS_TIM_LIST2_PERIPH</primary><secondary>TIM_Exported_constants</secondary></indexterm>
+<indexterm><primary>TIM_Exported_constants</primary><secondary>IS_TIM_LIST2_PERIPH</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_LIST2_PERIPH( PERIPH)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((PERIPH)&#32;==&#32;TIM1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM3)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM4)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM5)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM8)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM9)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM12))
+</programlisting></section>
+<anchor xml:id="_group___t_i_m___exported__constants_1ga2d80541c542755ac3f2aca078bd98adb"/><section>
+    <title>IS_TIM_LIST3_PERIPH</title>
+<indexterm><primary>IS_TIM_LIST3_PERIPH</primary><secondary>TIM_Exported_constants</secondary></indexterm>
+<indexterm><primary>TIM_Exported_constants</primary><secondary>IS_TIM_LIST3_PERIPH</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_LIST3_PERIPH( PERIPH)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((PERIPH)&#32;==&#32;TIM1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM3)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM4)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM5)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM8))
+</programlisting></section>
+<anchor xml:id="_group___t_i_m___exported__constants_1ga9c2699fd3d0c0901f8ac706c3d2dfe10"/><section>
+    <title>IS_TIM_LIST4_PERIPH</title>
+<indexterm><primary>IS_TIM_LIST4_PERIPH</primary><secondary>TIM_Exported_constants</secondary></indexterm>
+<indexterm><primary>TIM_Exported_constants</primary><secondary>IS_TIM_LIST4_PERIPH</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_LIST4_PERIPH( PERIPH)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((PERIPH)&#32;==&#32;TIM1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM8))
+</programlisting></section>
+<anchor xml:id="_group___t_i_m___exported__constants_1ga90232c3966a578fbd9be2b228f225cb4"/><section>
+    <title>IS_TIM_LIST5_PERIPH</title>
+<indexterm><primary>IS_TIM_LIST5_PERIPH</primary><secondary>TIM_Exported_constants</secondary></indexterm>
+<indexterm><primary>TIM_Exported_constants</primary><secondary>IS_TIM_LIST5_PERIPH</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_LIST5_PERIPH( PERIPH)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((PERIPH)&#32;==&#32;TIM1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM3)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM4)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM5)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM6)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM7)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;TIM8))
+</programlisting></section>
+<anchor xml:id="_group___t_i_m___exported__constants_1ga9449f429a84af2291f431b990361e639"/><section>
+    <title>IS_TIM_LIST6_PERIPH</title>
+<indexterm><primary>IS_TIM_LIST6_PERIPH</primary><secondary>TIM_Exported_constants</secondary></indexterm>
+<indexterm><primary>TIM_Exported_constants</primary><secondary>IS_TIM_LIST6_PERIPH</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_LIST6_PERIPH( TIMx)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((TIMx)&#32;==&#32;TIM2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((TIMx)&#32;==&#32;TIM5)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((TIMx)&#32;==&#32;TIM11))
+</programlisting></section>
+</section>
+</section>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___d_m_a__fifo__direct__mode" xml:lang="en-US">
+<title>DMA_fifo_direct_mode</title>
+<indexterm><primary>DMA_fifo_direct_mode</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___d_m_a__fifo__direct__mode_1gadad9e503fa9867a981e3090d333483d7"/>#define <emphasis role="strong">DMA_FIFOMode_Disable</emphasis>&#160;&#160;&#160;((uint32_t)0x00000000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__fifo__direct__mode_1ga482bc2af420602d1a8c2aa35049a3857"/>#define <emphasis role="strong">DMA_FIFOMode_Enable</emphasis>&#160;&#160;&#160;((uint32_t)0x00000004)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__fifo__direct__mode_1gadb90a893aeb49fd4bc14af750af3837c">IS_DMA_FIFO_MODE_STATE</link>(STATE)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___d_m_a__fifo__direct__mode_1gadb90a893aeb49fd4bc14af750af3837c"/><section>
+    <title>IS_DMA_FIFO_MODE_STATE</title>
+<indexterm><primary>IS_DMA_FIFO_MODE_STATE</primary><secondary>DMA_fifo_direct_mode</secondary></indexterm>
+<indexterm><primary>DMA_fifo_direct_mode</primary><secondary>IS_DMA_FIFO_MODE_STATE</secondary></indexterm>
+<para><computeroutput>#define IS_DMA_FIFO_MODE_STATE( STATE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((STATE)&#32;==&#32;DMA_FIFOMode_Disable&#32;)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((STATE)&#32;==&#32;DMA_FIFOMode_Enable))
+</programlisting></section>
+</section>
+</section>

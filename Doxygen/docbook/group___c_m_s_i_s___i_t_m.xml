@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___c_m_s_i_s___i_t_m" xml:lang="en-US">
+<title>CMSIS ITM</title>
+<indexterm><primary>CMSIS ITM</primary></indexterm>
+<simplesect>
+    <title>Modules    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s___core_debug">CMSIS Core Debug</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_i_t_m___type">ITM_Type</link></para>
+
+<para>Structure type to access the Instrumentation Trace Macrocell Register (ITM). </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga7abe5e590d1611599df87a1884a352e8">ITM_TPR_PRIVMASK_Pos</link>&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga168e089d882df325a387aab3a802a46b">ITM_TPR_PRIVMASK_Msk</link>&#160;&#160;&#160;(0xFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga7abe5e590d1611599df87a1884a352e8">ITM_TPR_PRIVMASK_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga9174ad4a36052c377cef4e6aba2ed484">ITM_TCR_BUSY_Pos</link>&#160;&#160;&#160;23</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga43ad7cf33de12f2ef3a412d4f354c60f">ITM_TCR_BUSY_Msk</link>&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga9174ad4a36052c377cef4e6aba2ed484">ITM_TCR_BUSY_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1gaca0281de867f33114aac0636f7ce65d3">ITM_TCR_TraceBusID_Pos</link>&#160;&#160;&#160;16</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga60c20bd9649d1da5a2be8e656ba19a60">ITM_TCR_TraceBusID_Msk</link>&#160;&#160;&#160;(0x7FUL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1gaca0281de867f33114aac0636f7ce65d3">ITM_TCR_TraceBusID_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga96c7c7cbc0d98426c408090b41f583f1">ITM_TCR_GTSFREQ_Pos</link>&#160;&#160;&#160;10</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1gade862cf009827f7f6748fc44c541b067">ITM_TCR_GTSFREQ_Msk</link>&#160;&#160;&#160;(3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga96c7c7cbc0d98426c408090b41f583f1">ITM_TCR_GTSFREQ_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1gad7bc9ee1732032c6e0de035f0978e473">ITM_TCR_TSPrescale_Pos</link>&#160;&#160;&#160;8</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga7a723f71bfb0204c264d8dbe8cc7ae52">ITM_TCR_TSPrescale_Msk</link>&#160;&#160;&#160;(3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1gad7bc9ee1732032c6e0de035f0978e473">ITM_TCR_TSPrescale_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga7a380f0c8078f6560051406583ecd6a5">ITM_TCR_SWOENA_Pos</link>&#160;&#160;&#160;4</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga97476cb65bab16a328b35f81fd02010a">ITM_TCR_SWOENA_Msk</link>&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga7a380f0c8078f6560051406583ecd6a5">ITM_TCR_SWOENA_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga543636236b85604f4bba68e7ae42a122">ITM_TCR_TXENA_Pos</link>&#160;&#160;&#160;3</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1gac20ab2d72a9ecbec649d229e3800aa31">ITM_TCR_TXENA_Msk</link>&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga543636236b85604f4bba68e7ae42a122">ITM_TCR_TXENA_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1gaa93a1147a39fc63980d299231252a30e">ITM_TCR_SYNCENA_Pos</link>&#160;&#160;&#160;2</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1gac89b74a78701c25b442105d7fe2bbefb">ITM_TCR_SYNCENA_Msk</link>&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1gaa93a1147a39fc63980d299231252a30e">ITM_TCR_SYNCENA_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga5aa381845f810114ab519b90753922a1">ITM_TCR_TSENA_Pos</link>&#160;&#160;&#160;1</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga436b2e8fa24328f48f2da31c00fc9e65">ITM_TCR_TSENA_Msk</link>&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga5aa381845f810114ab519b90753922a1">ITM_TCR_TSENA_Pos</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga3286b86004bce7ffe17ee269f87f8d9d">ITM_TCR_ITMENA_Pos</link>&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s___i_t_m_1ga7dd53e3bff24ac09d94e61cb595cb2d9">ITM_TCR_ITMENA_Msk</link>&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga3286b86004bce7ffe17ee269f87f8d9d">ITM_TCR_ITMENA_Pos</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Type definitions for the Cortex-M Instrumentation Trace Macrocell (ITM) </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga43ad7cf33de12f2ef3a412d4f354c60f"/><section>
+    <title>ITM_TCR_BUSY_Msk</title>
+<indexterm><primary>ITM_TCR_BUSY_Msk</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_BUSY_Msk</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_BUSY_Msk&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga9174ad4a36052c377cef4e6aba2ed484">ITM_TCR_BUSY_Pos</link>)</computeroutput></para>
+<para>ITM TCR: BUSY Mask </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga9174ad4a36052c377cef4e6aba2ed484"/><section>
+    <title>ITM_TCR_BUSY_Pos</title>
+<indexterm><primary>ITM_TCR_BUSY_Pos</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_BUSY_Pos</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_BUSY_Pos&#160;&#160;&#160;23</computeroutput></para>
+<para>ITM TCR: BUSY Position </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1gade862cf009827f7f6748fc44c541b067"/><section>
+    <title>ITM_TCR_GTSFREQ_Msk</title>
+<indexterm><primary>ITM_TCR_GTSFREQ_Msk</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_GTSFREQ_Msk</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_GTSFREQ_Msk&#160;&#160;&#160;(3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga96c7c7cbc0d98426c408090b41f583f1">ITM_TCR_GTSFREQ_Pos</link>)</computeroutput></para>
+<para>ITM TCR: Global timestamp frequency Mask </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga96c7c7cbc0d98426c408090b41f583f1"/><section>
+    <title>ITM_TCR_GTSFREQ_Pos</title>
+<indexterm><primary>ITM_TCR_GTSFREQ_Pos</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_GTSFREQ_Pos</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_GTSFREQ_Pos&#160;&#160;&#160;10</computeroutput></para>
+<para>ITM TCR: Global timestamp frequency Position </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga7dd53e3bff24ac09d94e61cb595cb2d9"/><section>
+    <title>ITM_TCR_ITMENA_Msk</title>
+<indexterm><primary>ITM_TCR_ITMENA_Msk</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_ITMENA_Msk</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_ITMENA_Msk&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga3286b86004bce7ffe17ee269f87f8d9d">ITM_TCR_ITMENA_Pos</link>)</computeroutput></para>
+<para>ITM TCR: ITM Enable bit Mask </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga3286b86004bce7ffe17ee269f87f8d9d"/><section>
+    <title>ITM_TCR_ITMENA_Pos</title>
+<indexterm><primary>ITM_TCR_ITMENA_Pos</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_ITMENA_Pos</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_ITMENA_Pos&#160;&#160;&#160;0</computeroutput></para>
+<para>ITM TCR: ITM Enable bit Position </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga97476cb65bab16a328b35f81fd02010a"/><section>
+    <title>ITM_TCR_SWOENA_Msk</title>
+<indexterm><primary>ITM_TCR_SWOENA_Msk</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_SWOENA_Msk</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_SWOENA_Msk&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga7a380f0c8078f6560051406583ecd6a5">ITM_TCR_SWOENA_Pos</link>)</computeroutput></para>
+<para>ITM TCR: SWOENA Mask </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga7a380f0c8078f6560051406583ecd6a5"/><section>
+    <title>ITM_TCR_SWOENA_Pos</title>
+<indexterm><primary>ITM_TCR_SWOENA_Pos</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_SWOENA_Pos</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_SWOENA_Pos&#160;&#160;&#160;4</computeroutput></para>
+<para>ITM TCR: SWOENA Position </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1gac89b74a78701c25b442105d7fe2bbefb"/><section>
+    <title>ITM_TCR_SYNCENA_Msk</title>
+<indexterm><primary>ITM_TCR_SYNCENA_Msk</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_SYNCENA_Msk</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_SYNCENA_Msk&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1gaa93a1147a39fc63980d299231252a30e">ITM_TCR_SYNCENA_Pos</link>)</computeroutput></para>
+<para>ITM TCR: SYNCENA Mask </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1gaa93a1147a39fc63980d299231252a30e"/><section>
+    <title>ITM_TCR_SYNCENA_Pos</title>
+<indexterm><primary>ITM_TCR_SYNCENA_Pos</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_SYNCENA_Pos</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_SYNCENA_Pos&#160;&#160;&#160;2</computeroutput></para>
+<para>ITM TCR: SYNCENA Position </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga60c20bd9649d1da5a2be8e656ba19a60"/><section>
+    <title>ITM_TCR_TraceBusID_Msk</title>
+<indexterm><primary>ITM_TCR_TraceBusID_Msk</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_TraceBusID_Msk</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_TraceBusID_Msk&#160;&#160;&#160;(0x7FUL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1gaca0281de867f33114aac0636f7ce65d3">ITM_TCR_TraceBusID_Pos</link>)</computeroutput></para>
+<para>ITM TCR: ATBID Mask </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1gaca0281de867f33114aac0636f7ce65d3"/><section>
+    <title>ITM_TCR_TraceBusID_Pos</title>
+<indexterm><primary>ITM_TCR_TraceBusID_Pos</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_TraceBusID_Pos</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_TraceBusID_Pos&#160;&#160;&#160;16</computeroutput></para>
+<para>ITM TCR: ATBID Position </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga436b2e8fa24328f48f2da31c00fc9e65"/><section>
+    <title>ITM_TCR_TSENA_Msk</title>
+<indexterm><primary>ITM_TCR_TSENA_Msk</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_TSENA_Msk</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_TSENA_Msk&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga5aa381845f810114ab519b90753922a1">ITM_TCR_TSENA_Pos</link>)</computeroutput></para>
+<para>ITM TCR: TSENA Mask </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga5aa381845f810114ab519b90753922a1"/><section>
+    <title>ITM_TCR_TSENA_Pos</title>
+<indexterm><primary>ITM_TCR_TSENA_Pos</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_TSENA_Pos</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_TSENA_Pos&#160;&#160;&#160;1</computeroutput></para>
+<para>ITM TCR: TSENA Position </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga7a723f71bfb0204c264d8dbe8cc7ae52"/><section>
+    <title>ITM_TCR_TSPrescale_Msk</title>
+<indexterm><primary>ITM_TCR_TSPrescale_Msk</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_TSPrescale_Msk</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_TSPrescale_Msk&#160;&#160;&#160;(3UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1gad7bc9ee1732032c6e0de035f0978e473">ITM_TCR_TSPrescale_Pos</link>)</computeroutput></para>
+<para>ITM TCR: TSPrescale Mask </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1gad7bc9ee1732032c6e0de035f0978e473"/><section>
+    <title>ITM_TCR_TSPrescale_Pos</title>
+<indexterm><primary>ITM_TCR_TSPrescale_Pos</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_TSPrescale_Pos</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_TSPrescale_Pos&#160;&#160;&#160;8</computeroutput></para>
+<para>ITM TCR: TSPrescale Position </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1gac20ab2d72a9ecbec649d229e3800aa31"/><section>
+    <title>ITM_TCR_TXENA_Msk</title>
+<indexterm><primary>ITM_TCR_TXENA_Msk</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_TXENA_Msk</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_TXENA_Msk&#160;&#160;&#160;(1UL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga543636236b85604f4bba68e7ae42a122">ITM_TCR_TXENA_Pos</link>)</computeroutput></para>
+<para>ITM TCR: TXENA Mask </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga543636236b85604f4bba68e7ae42a122"/><section>
+    <title>ITM_TCR_TXENA_Pos</title>
+<indexterm><primary>ITM_TCR_TXENA_Pos</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TCR_TXENA_Pos</secondary></indexterm>
+<para><computeroutput>#define ITM_TCR_TXENA_Pos&#160;&#160;&#160;3</computeroutput></para>
+<para>ITM TCR: TXENA Position </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga168e089d882df325a387aab3a802a46b"/><section>
+    <title>ITM_TPR_PRIVMASK_Msk</title>
+<indexterm><primary>ITM_TPR_PRIVMASK_Msk</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TPR_PRIVMASK_Msk</secondary></indexterm>
+<para><computeroutput>#define ITM_TPR_PRIVMASK_Msk&#160;&#160;&#160;(0xFUL &lt;&lt; <link linkend="_group___c_m_s_i_s___i_t_m_1ga7abe5e590d1611599df87a1884a352e8">ITM_TPR_PRIVMASK_Pos</link>)</computeroutput></para>
+<para>ITM TPR: PRIVMASK Mask </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s___i_t_m_1ga7abe5e590d1611599df87a1884a352e8"/><section>
+    <title>ITM_TPR_PRIVMASK_Pos</title>
+<indexterm><primary>ITM_TPR_PRIVMASK_Pos</primary><secondary>CMSIS ITM</secondary></indexterm>
+<indexterm><primary>CMSIS ITM</primary><secondary>ITM_TPR_PRIVMASK_Pos</secondary></indexterm>
+<para><computeroutput>#define ITM_TPR_PRIVMASK_Pos&#160;&#160;&#160;0</computeroutput></para>
+<para>ITM TPR: PRIVMASK Position </para>
+</section>
+</section>
+</section>

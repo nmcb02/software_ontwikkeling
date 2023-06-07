@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_e_t_h___type_def" xml:lang="en-US">
+<title>ETH_TypeDef Struct Reference</title>
+<indexterm><primary>ETH_TypeDef</primary></indexterm>
+<para>
+
+<para>Ethernet MAC. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f4xx.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a20acbcac1c35f66de94c9ff0e2ddc7b0"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACCR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a8ad4e3dbde1518ecde5d979c2a89a76a"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACFFR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a121212bdb227106df681d24e5d896a4e"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACHTHR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a1d34ab8e5c2041c00ba9526b3958099d"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACHTLR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a9ea1e1c6615eb3bd70eb328dba65fc87"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACMIIAR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a87c7687c35332bf5ee86473043652146"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACMIIDR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a12f62d3d3b9ee30c20c324b146e72795"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACFCR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a92ff1fe799bb33d13efbaa1195867781"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACVLANTR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a8be676577db129a84a9a2689519a8502"/>uint32_t <emphasis role="strong">RESERVED0</emphasis> [2]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a129dcc23d48588d5af7dd218b617933d"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACRWUFFR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1abbb2f4f89e7d8c3242365b4506e43217"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACPMTCSR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a28d88d9a08aab1adbebea61c42ef901e"/>uint32_t <emphasis role="strong">RESERVED1</emphasis> [2]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a1173127526cca9128e409bc83c7729dc"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACSR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1ac42b829c02429cb9363563f7eb9d58ed"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACIMR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1ab8b4520c137846f0a128146144514419"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACA0HR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a45e8169adb601f00e411b840f9fbb5af"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACA0LR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a3a6cc81e1024f9a93ec7653d32f12dcb"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACA1HR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1aadfb486dd07e2fd02fb491733deffd9b"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACA1LR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a38f1ce04678d5141e115cfd6f7b803d1"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACA2HR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a423b12ab536a1c4fdb1ce63f645822a7"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACA2LR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1ad02ff09f7ce33f093ad04b84fee2bdec"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACA3HR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a2ba9f73c7fa756305d54a8f80872c6df"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MACA3LR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a1cf0d9299ef58b327f4e3d03da1c1aaf"/>uint32_t <emphasis role="strong">RESERVED2</emphasis> [40]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1ad57490cb3a07132702f96d8b5d547c89"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCCR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1aea29ac183c979d0cb95ad3781fe9ed91"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCRIR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a614e0b81fce7cf218a357f8a0a3de7b8"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCTIR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a63872a3017c14a869c647123573dd002"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCRIMR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a18e294dd2625a93ebf2aab9f2b3c4911"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCTIMR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1af6446adf612691721c62fc68aff4fe39"/>uint32_t <emphasis role="strong">RESERVED3</emphasis> [14]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a23970354d69354ab78165e76afd6c2f7"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCTGFSCCR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a50c8425cf8d27268b3272ace0a224a94"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCTGFMSCCR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1abca175d3acfbc2a0806452fd57ea5fc4"/>uint32_t <emphasis role="strong">RESERVED4</emphasis> [5]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a71d932b554a5548e5d85ed81e58c1ed0"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCTGFCR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a3c1a316c73bb5f0eae7fbe66177cbca6"/>uint32_t <emphasis role="strong">RESERVED5</emphasis> [10]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1aff6eeec1afa983f153ff0786c8902d43"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCRFCECR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a65bb525a3f4d3ee131f9a7ed899d5eef"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCRFAECR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a7e9a9bba62d1d98e3058b29a892b3877"/>uint32_t <emphasis role="strong">RESERVED6</emphasis> [10]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a6ff264b60a3b40f40d136288e5ec5ba8"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">MMCRGUFCR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1ab1b7eacec3f164ed04001e9c806f73f9"/>uint32_t <emphasis role="strong">RESERVED7</emphasis> [334]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1aa657aa42398bc8294976632d778b6db4"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">PTPTSCR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1af34b7e8815984e272daa3f089014af4e"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">PTPSSIR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a1ebbda0d742e80ca3d53edfa3a95f627"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">PTPTSHR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a55c1058cd74dba0ed0cb8963684b9199"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">PTPTSLR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1ae8e4ef158db1de28bfd759e40677ba4c"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">PTPTSHUR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a646bf44e807d10a09f980ace333d33ab"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">PTPTSLUR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a8f47c0f21e22b98bbc2c9f3b6342fbb8"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">PTPTSAR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1af90723c7aee9c32113a2667b0a5c69f1"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">PTPTTHR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a28e7b0195ce457d20f585f6587fc1cb8"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">PTPTTLR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a2e60bc2eefc18398fb2459d1b44453e5"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">RESERVED8</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1adca0624d09f2c72eee9807cea80a4d0c"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">PTPTSSR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1ae62fffd7d8f9f69b15edacdea4ba27f2"/>uint32_t <emphasis role="strong">RESERVED9</emphasis> [565]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1ad1e11eb1200e64e0563e3576bf258194"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMABMR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1acf0114902a52b7ffcc343e06484b3623"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMATPDR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1aad6309afe126da26921191697d7e5c43"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMARPDR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a581ce491c035ce46db723260377c2032"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMARDLAR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a7dba9527df73350f35683140d73a5f8d"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMATDLAR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a9e7c3d04e4dcf975939eeaac246b25d0"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMASR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1aa15b972f30ee47f5df0d3ebc8866509d"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMAOMR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1add56f3652fd065c6797411e80477a064"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMAIER</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a12eba1fc5d54aa50fdda201f7f9a84a3"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMAMFBOCR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1ac6fe9e194ed9d08bf6bd28ceb80ac4b0"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMARSWTR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a57d552323802fb4dd0bac95a02e814f0"/>uint32_t <emphasis role="strong">RESERVED10</emphasis> [8]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1ab5bb348210fdd9a5538eb57abc5a5673"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMACHTDR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a9c49de2e699886d6604fd2b3d376a0e9"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMACHRDR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1a900f9f888342fbdd8ee07e3ee1d4b73c"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMACHTBAR</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_e_t_h___type_def_1acf3f7ecbf774d8d505655ac7f24761fc"/><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <emphasis role="strong">DMACHRBAR</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Ethernet MAC. </para>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_stm32f4xx_8h">stm32f4xx.h</link></section>
+</section>

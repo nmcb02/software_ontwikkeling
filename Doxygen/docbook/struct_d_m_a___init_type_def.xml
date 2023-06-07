@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_d_m_a___init_type_def" xml:lang="en-US">
+<title>DMA_InitTypeDef Struct Reference</title>
+<indexterm><primary>DMA_InitTypeDef</primary></indexterm>
+<para>
+
+<para>DMA Init structure definition. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f4xx_dma.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1afae070f2d49543b1acd3e318c6de8527">DMA_Channel</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1ad02abd574cca0caeacd0cc05d2174a42">DMA_PeripheralBaseAddr</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1aebf1267410908265f83a8037245c337e">DMA_Memory0BaseAddr</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1a4cf4283185065f65d5a63089877cbb8d">DMA_DIR</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1ad5e4b9069a7a145b3312d54d09059f78">DMA_BufferSize</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1ad0bf5e8b3968eaf8dc18e923b94acfe1">DMA_PeripheralInc</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1ad8f8a0f3ba4db5d79fd78d02093e4eb9">DMA_MemoryInc</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1a61bf939d8657d44a9beb1daa91c14668">DMA_PeripheralDataSize</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1a7ec1648d136d31d6c504565bf6949eb6">DMA_MemoryDataSize</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1a5f09c16a03a50120c1a1a49ae6a7c667">DMA_Mode</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1aabb62e3f5536fc15a201058a1b6bda18">DMA_Priority</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1a684555f9f5644259b7c4ca446b6dcf8f">DMA_FIFOMode</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1a2bbb3ea272279aa5cddef702e153a09d">DMA_FIFOThreshold</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1a90987eb939726acf365f2bf039a51725">DMA_MemoryBurst</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_d_m_a___init_type_def_1a6772e281310a3e93781364c723984138">DMA_PeripheralBurst</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>DMA Init structure definition. </para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_d_m_a___init_type_def_1ad5e4b9069a7a145b3312d54d09059f78"/><section>
+    <title>DMA_BufferSize</title>
+<indexterm><primary>DMA_BufferSize</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_BufferSize</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_BufferSize</computeroutput></para>
+<para>Specifies the buffer size, in data unit, of the specified Stream. The data unit is equal to the configuration set in DMA_PeripheralDataSize or DMA_MemoryDataSize members depending in the transfer direction. </para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1afae070f2d49543b1acd3e318c6de8527"/><section>
+    <title>DMA_Channel</title>
+<indexterm><primary>DMA_Channel</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_Channel</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_Channel</computeroutput></para>
+<para>Specifies the channel used for the specified stream. This parameter can be a value of <link linkend="_group___d_m_a__channel">DMA_channel</link> </para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1a4cf4283185065f65d5a63089877cbb8d"/><section>
+    <title>DMA_DIR</title>
+<indexterm><primary>DMA_DIR</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_DIR</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_DIR</computeroutput></para>
+<para>Specifies if the data will be transferred from memory to peripheral, from memory to memory or from peripheral to memory. This parameter can be a value of <link linkend="_group___d_m_a__data__transfer__direction">DMA_data_transfer_direction</link> </para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1a684555f9f5644259b7c4ca446b6dcf8f"/><section>
+    <title>DMA_FIFOMode</title>
+<indexterm><primary>DMA_FIFOMode</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_FIFOMode</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_FIFOMode</computeroutput></para>
+<para>Specifies if the FIFO mode or Direct mode will be used for the specified Stream. This parameter can be a value of <link linkend="_group___d_m_a__fifo__direct__mode">DMA_fifo_direct_mode</link> <note><title>Note</title>
+
+<para>The Direct mode (FIFO mode disabled) cannot be used if the memory-to-memory data transfer is configured on the selected Stream </para>
+</note>
+</para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1a2bbb3ea272279aa5cddef702e153a09d"/><section>
+    <title>DMA_FIFOThreshold</title>
+<indexterm><primary>DMA_FIFOThreshold</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_FIFOThreshold</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_FIFOThreshold</computeroutput></para>
+<para>Specifies the FIFO threshold level. This parameter can be a value of <link linkend="_group___d_m_a__fifo__threshold__level">DMA_fifo_threshold_level</link> </para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1aebf1267410908265f83a8037245c337e"/><section>
+    <title>DMA_Memory0BaseAddr</title>
+<indexterm><primary>DMA_Memory0BaseAddr</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_Memory0BaseAddr</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_Memory0BaseAddr</computeroutput></para>
+<para>Specifies the memory 0 base address for DMAy Streamx. This memory is the default memory used when double buffer mode is not enabled. </para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1a90987eb939726acf365f2bf039a51725"/><section>
+    <title>DMA_MemoryBurst</title>
+<indexterm><primary>DMA_MemoryBurst</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_MemoryBurst</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_MemoryBurst</computeroutput></para>
+<para>Specifies the Burst transfer configuration for the memory transfers. It specifies the amount of data to be transferred in a single non interruptable transaction. This parameter can be a value of <link linkend="_group___d_m_a__memory__burst">DMA_memory_burst</link> <note><title>Note</title>
+
+<para>The burst mode is possible only if the address Increment mode is enabled. </para>
+</note>
+</para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1a7ec1648d136d31d6c504565bf6949eb6"/><section>
+    <title>DMA_MemoryDataSize</title>
+<indexterm><primary>DMA_MemoryDataSize</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_MemoryDataSize</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_MemoryDataSize</computeroutput></para>
+<para>Specifies the Memory data width. This parameter can be a value of <link linkend="_group___d_m_a__memory__data__size">DMA_memory_data_size</link> </para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1ad8f8a0f3ba4db5d79fd78d02093e4eb9"/><section>
+    <title>DMA_MemoryInc</title>
+<indexterm><primary>DMA_MemoryInc</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_MemoryInc</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_MemoryInc</computeroutput></para>
+<para>Specifies whether the memory address register should be incremented or not. This parameter can be a value of <link linkend="_group___d_m_a__memory__incremented__mode">DMA_memory_incremented_mode</link> </para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1a5f09c16a03a50120c1a1a49ae6a7c667"/><section>
+    <title>DMA_Mode</title>
+<indexterm><primary>DMA_Mode</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_Mode</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_Mode</computeroutput></para>
+<para>Specifies the operation mode of the DMAy Streamx. This parameter can be a value of <link linkend="_group___d_m_a__circular__normal__mode">DMA_circular_normal_mode</link> <note><title>Note</title>
+
+<para>The circular buffer mode cannot be used if the memory-to-memory data transfer is configured on the selected Stream </para>
+</note>
+</para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1ad02abd574cca0caeacd0cc05d2174a42"/><section>
+    <title>DMA_PeripheralBaseAddr</title>
+<indexterm><primary>DMA_PeripheralBaseAddr</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_PeripheralBaseAddr</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_PeripheralBaseAddr</computeroutput></para>
+<para>Specifies the peripheral base address for DMAy Streamx. </para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1a6772e281310a3e93781364c723984138"/><section>
+    <title>DMA_PeripheralBurst</title>
+<indexterm><primary>DMA_PeripheralBurst</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_PeripheralBurst</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_PeripheralBurst</computeroutput></para>
+<para>Specifies the Burst transfer configuration for the peripheral transfers. It specifies the amount of data to be transferred in a single non interruptable transaction. This parameter can be a value of <link linkend="_group___d_m_a__peripheral__burst">DMA_peripheral_burst</link> <note><title>Note</title>
+
+<para>The burst mode is possible only if the address Increment mode is enabled. </para>
+</note>
+</para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1a61bf939d8657d44a9beb1daa91c14668"/><section>
+    <title>DMA_PeripheralDataSize</title>
+<indexterm><primary>DMA_PeripheralDataSize</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_PeripheralDataSize</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_PeripheralDataSize</computeroutput></para>
+<para>Specifies the Peripheral data width. This parameter can be a value of <link linkend="_group___d_m_a__peripheral__data__size">DMA_peripheral_data_size</link> </para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1ad0bf5e8b3968eaf8dc18e923b94acfe1"/><section>
+    <title>DMA_PeripheralInc</title>
+<indexterm><primary>DMA_PeripheralInc</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_PeripheralInc</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_PeripheralInc</computeroutput></para>
+<para>Specifies whether the Peripheral address register should be incremented or not. This parameter can be a value of <link linkend="_group___d_m_a__peripheral__incremented__mode">DMA_peripheral_incremented_mode</link> </para>
+</section>
+<anchor xml:id="_struct_d_m_a___init_type_def_1aabb62e3f5536fc15a201058a1b6bda18"/><section>
+    <title>DMA_Priority</title>
+<indexterm><primary>DMA_Priority</primary><secondary>DMA_InitTypeDef</secondary></indexterm>
+<indexterm><primary>DMA_InitTypeDef</primary><secondary>DMA_Priority</secondary></indexterm>
+<para><computeroutput>uint32_t DMA_Priority</computeroutput></para>
+<para>Specifies the software priority for the DMAy Streamx. This parameter can be a value of <link linkend="_group___d_m_a__priority__level">DMA_priority_level</link> </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_stm32f4xx__dma_8h">stm32f4xx_dma.h</link></section>
+</section>

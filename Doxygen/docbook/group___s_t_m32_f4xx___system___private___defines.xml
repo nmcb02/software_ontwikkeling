@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___s_t_m32_f4xx___system___private___defines" xml:lang="en-US">
+<title>STM32F4xx_System_Private_Defines</title>
+<indexterm><primary>STM32F4xx_System_Private_Defines</primary></indexterm>
+<para>
+
+<para>&#8205;** </para>
+ 
+</para>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___s_t_m32_f4xx___system___private___defines_1ga40e1495541cbb4acbe3f1819bd87a9fe">VECT_TAB_OFFSET</link>&#160;&#160;&#160;0x00</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___s_t_m32_f4xx___system___private___defines_1ga0fa5a868f5cd056a04b1c42e454b9617"/>#define <emphasis role="strong">PLL_M</emphasis>&#160;&#160;&#160;8</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___s_t_m32_f4xx___system___private___defines_1ga04586ea638d21afe558db4f2798c38a6"/>#define <emphasis role="strong">PLL_N</emphasis>&#160;&#160;&#160;336</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___s_t_m32_f4xx___system___private___defines_1ga290dcd27167e925d817e8334111c1c01"/>#define <emphasis role="strong">PLL_P</emphasis>&#160;&#160;&#160;2</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___s_t_m32_f4xx___system___private___defines_1gac958257ddb2537c539cffdb3a4543067"/>#define <emphasis role="strong">PLL_Q</emphasis>&#160;&#160;&#160;7</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>&#8205;** </para>
+
+<para>&#8205;** </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___s_t_m32_f4xx___system___private___defines_1ga40e1495541cbb4acbe3f1819bd87a9fe"/><section>
+    <title>VECT_TAB_OFFSET</title>
+<indexterm><primary>VECT_TAB_OFFSET</primary><secondary>STM32F4xx_System_Private_Defines</secondary></indexterm>
+<indexterm><primary>STM32F4xx_System_Private_Defines</primary><secondary>VECT_TAB_OFFSET</secondary></indexterm>
+<para><computeroutput>#define VECT_TAB_OFFSET&#160;&#160;&#160;0x00</computeroutput></para>
+<para>&lt; Uncomment the following line if you need to use external SRAM mounted on STM324xG_EVAL board as data memory <?linebreak?></para>
+
+<para>&lt; Uncomment the following line if you need to relocate your vector Table in Internal SRAM. Vector Table base offset field. This value must be a multiple of 0x200. </para>
+</section>
+</section>
+</section>

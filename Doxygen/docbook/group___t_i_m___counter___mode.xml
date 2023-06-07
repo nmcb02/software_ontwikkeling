@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___counter___mode" xml:lang="en-US">
+<title>TIM_Counter_Mode</title>
+<indexterm><primary>TIM_Counter_Mode</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___t_i_m___counter___mode_1gaf4cd3ce74af3122507b77c8f6e79c832"/>#define <emphasis role="strong">TIM_CounterMode_Up</emphasis>&#160;&#160;&#160;((uint16_t)0x0000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___counter___mode_1gadd7c4200d185bdcd9e64ae80e6b200b0"/>#define <emphasis role="strong">TIM_CounterMode_Down</emphasis>&#160;&#160;&#160;((uint16_t)0x0010)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___counter___mode_1gac07392e9637f8a0d115d4ba9a002ae93"/>#define <emphasis role="strong">TIM_CounterMode_CenterAligned1</emphasis>&#160;&#160;&#160;((uint16_t)0x0020)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___counter___mode_1ga3793122e4c123a99e46fc2f04acea0d4"/>#define <emphasis role="strong">TIM_CounterMode_CenterAligned2</emphasis>&#160;&#160;&#160;((uint16_t)0x0040)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___counter___mode_1ga65d9bc01ffa287cd7cf200d08c20a1ce"/>#define <emphasis role="strong">TIM_CounterMode_CenterAligned3</emphasis>&#160;&#160;&#160;((uint16_t)0x0060)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___counter___mode_1ga9543fec190793e800d5d1b1b853636f5">IS_TIM_COUNTER_MODE</link>(MODE)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___t_i_m___counter___mode_1ga9543fec190793e800d5d1b1b853636f5"/><section>
+    <title>IS_TIM_COUNTER_MODE</title>
+<indexterm><primary>IS_TIM_COUNTER_MODE</primary><secondary>TIM_Counter_Mode</secondary></indexterm>
+<indexterm><primary>TIM_Counter_Mode</primary><secondary>IS_TIM_COUNTER_MODE</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_COUNTER_MODE( MODE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((MODE)&#32;==&#32;TIM_CounterMode_Up)&#32;||&#32;&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((MODE)&#32;==&#32;TIM_CounterMode_Down)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((MODE)&#32;==&#32;TIM_CounterMode_CenterAligned1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((MODE)&#32;==&#32;TIM_CounterMode_CenterAligned2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((MODE)&#32;==&#32;TIM_CounterMode_CenterAligned3))
+</programlisting></section>
+</section>
+</section>

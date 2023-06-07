@@ -1,0 +1,1026 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___c_m_s_i_s__core___debug_functions" xml:lang="en-US">
+<title>CMSIS Core Debug Functions</title>
+<indexterm><primary>CMSIS Core Debug Functions</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:16</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:7</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:16</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:7</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga84de5f534817cdbf8bd9064080effca2">b</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad0fb62e7a08e70fc5e0a76b67809f84b">w</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:23</para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:23</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e920e9d2e9a2738f8face0863888c0e">b</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad0fb62e7a08e70fc5e0a76b67809f84b">w</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:7</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:4</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777">IT</link>:2</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d">ISR</link>:9</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:7</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099">GE</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16">_reserved1</link>:4</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972">T</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777">IT</link>:2</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a">Q</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222">V</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776">C</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e">Z</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f">N</link>:1</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga61873807b9abee3dfa090c036e580d2e">b</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad0fb62e7a08e70fc5e0a76b67809f84b">w</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga2a6e513e8a6bf4e58db169e312172332">nPRIV</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae185aac93686ffc78e998a9daf41415b">SPSEL</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga2518558c090f60161ba4e718a54ee468">FPCA</link>:1</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:29</para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga2a6e513e8a6bf4e58db169e312172332">nPRIV</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae185aac93686ffc78e998a9daf41415b">SPSEL</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga2518558c090f60161ba4e718a54ee468">FPCA</link>:1</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1">_reserved0</link>:29</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5d690aa9e65fccaa320e1b8613f502c9">b</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad0fb62e7a08e70fc5e0a76b67809f84b">w</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga0bf79013b539f9f929c75bd50f8ec67d">ISER</link> [8]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gac881b676be4d9659951f43c2fccb34b4"/>uint32_t <emphasis role="strong">RESERVED0</emphasis> [24]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaf458bc93cfb899fc1c77c5d1f39dde88">ICER</link> [8]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gab993fe7f0b489b30bc677ccf53426a92"/>uint32_t <emphasis role="strong">RSERVED1</emphasis> [24]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gab39acf254b485e3ad71b18aa9f1ca594">ISPR</link> [8]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga86dfd6bf6c297be163d078945f67e8b6"/>uint32_t <emphasis role="strong">RESERVED2</emphasis> [24]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga8165d9a8c0090021e56bbe91c2c44667">ICPR</link> [8]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga3371761ff5e69fb1b6b3c2c3b4d69b18"/>uint32_t <emphasis role="strong">RESERVED3</emphasis> [24]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gac8694e172f431db09b5d570993da3917">IABR</link> [8]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga0c75e6c517dc8e5596ffa3ef6285c232"/>uint32_t <emphasis role="strong">RESERVED4</emphasis> [56]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint8_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga38c377984f751265667317981f101bb4">IP</link> [240]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga77017390737a14d5eb4cdb41f0aa3dce"/>uint32_t <emphasis role="strong">RESERVED5</emphasis> [644]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga471c399bb79454dcdfb342a31a5684ae">STIR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga30abfea43143a424074f682bd61eace0">CPUID</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga8fec9e122b923822e7f951cd48cf1d47">ICSR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaaf388a921a016cae590cfcf1e43b1cdf">VTOR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaaec159b48828355cb770049b8b2e8d91">AIRCR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga64a95891ad3e904dd5548112539c1c98">SCR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5e1322e27c40bf91d172f9673f205c97">CCR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint8_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga17dc9f83c53cbf7fa249e79a2d2a43f8">SHP</link> [12]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga04d136e5436e5fa2fb2aaa78a5f86b19">SHCSR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae6b1e9cde3f94195206c016214cf3936">CFSR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga87aadbc5e1ffb76d755cf13f4721ae71">HFSR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga415598d9009bb3ffe9f35e03e5a386fe">DFSR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga88820a178974aa7b7927155cee5c47ed">MMFAR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gad49f99b1c83dcab356579af171bfa475">BFAR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gab9176079ea223dd8902589da91af63a2">AFSR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga00a6649cfac6bbadee51d6ba4c73001d">PFR</link> [2]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga1b9a71780ae327f1f337a2176b777618">DFR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5c0e2e1c7195d4dc09a5ca077c596318">ADR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gab0dc71239f7d5ffe2e78e683b9530064">MMFR</link> [4]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga130a0c6b3da7f29507a1888afbdce7ee">ISAR</link> [5]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga92bdd34d0bb3e2d14a3ce60040036510"/>uint32_t <emphasis role="strong">RESERVED0</emphasis> [5]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacccaf5688449c8253e9952ddc2161528">CPACR</link></para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga40626516c1871e2cb75ae9d5940a9341"/>uint32_t <emphasis role="strong">RESERVED0</emphasis> [1]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5bb2c6795b90f12077534825cc844b56">ICTR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga9a73f00a0223775caeb09c5c6abb3087">ACTLR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga15fc8d35f045f329b80c544bef35ff64">CTRL</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gaad9adf4efc940cddb8161b69cfbe19d3">LOAD</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga26fb318c3b0a0ec7f45daafd5f8799a3">VAL</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga40e07d0a4638a676780713b6ceeec4ef">CALIB</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint8_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga0374c0b98ab9de6f71fabff7412df832">u8</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint16_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae8d499140220fa6d4eab1da7262bf08e">u16</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacaf6d0e14a3d4b541c624913b4a1931e">u32</link></para>
+</listitem>
+            <listitem><para>union {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;<link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint8_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga0374c0b98ab9de6f71fabff7412df832">u8</link></para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;<link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint16_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae8d499140220fa6d4eab1da7262bf08e">u16</link></para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;<link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gacaf6d0e14a3d4b541c624913b4a1931e">u32</link></para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga95d6dd68e2d2d252ef38c97738b31bd8">PORT</link> [32]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga498ca2f25075b26fd57d1f66d976fe8c"/>uint32_t <emphasis role="strong">RESERVED0</emphasis> [864]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga8ffb3c6b706b03334f6fe37ef5d8b165">TER</link></para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gae5c625673da1df1777833e51754c525b"/>uint32_t <emphasis role="strong">RESERVED1</emphasis> [15]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga72bb9b7d61fe3262cd2a6070a7bd5b69">TPR</link></para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga391748a705084dd61c4a9f56d456a12c"/>uint32_t <emphasis role="strong">RESERVED2</emphasis> [15]</para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1gae9dd9282fab299d0cd6e119564688e53">TCR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga39bc5e68dc6071187fbe2348891eabfa">DHCSR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga7b49cb58573da77cc8a83a1b21262180">DCRSR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga5bcffe99d1d5471d5e5befbc6272ebf0">DCRDR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_group___c_m_s_i_s__core___debug_functions_1ga6cdfc0a6ce3e988cc02c2d6e8107d193">DEMCR</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>volatile int32_t <link linkend="_group___c_m_s_i_s__core__register_1ga12e68e55a7badc271b948d6c7230b2a8">ITM_RxBuffer</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1gaa822cb398ee022b59e9e6c5d7bbb228a">ITM_RXBUFFER_EMPTY</link>&#160;&#160;&#160;0x5AA55AA5</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1gaa822cb398ee022b59e9e6c5d7bbb228a"/><section>
+    <title>ITM_RXBUFFER_EMPTY</title>
+<indexterm><primary>ITM_RXBUFFER_EMPTY</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ITM_RXBUFFER_EMPTY</secondary></indexterm>
+<para><computeroutput>#define ITM_RXBUFFER_EMPTY&#160;&#160;&#160;0x5AA55AA5</computeroutput></para>
+<para>value identifying ITM_RxBuffer is ready for next character </para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1"/><section>
+    <title>_reserved0<computeroutput>[1/8]</computeroutput></title>
+<indexterm><primary>_reserved0</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved0</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved0</computeroutput></para>
+<para>bit: 0..15 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1"/><section>
+    <title>_reserved0<computeroutput>[2/8]</computeroutput></title>
+<indexterm><primary>_reserved0</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved0</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved0</computeroutput></para>
+<para>bit: 0..15 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1"/><section>
+    <title>_reserved0<computeroutput>[3/8]</computeroutput></title>
+<indexterm><primary>_reserved0</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved0</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved0</computeroutput></para>
+<para>bit: 9..31 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1"/><section>
+    <title>_reserved0<computeroutput>[4/8]</computeroutput></title>
+<indexterm><primary>_reserved0</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved0</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved0</computeroutput></para>
+<para>bit: 9..31 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1"/><section>
+    <title>_reserved0<computeroutput>[5/8]</computeroutput></title>
+<indexterm><primary>_reserved0</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved0</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved0</computeroutput></para>
+<para>bit: 9..15 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1"/><section>
+    <title>_reserved0<computeroutput>[6/8]</computeroutput></title>
+<indexterm><primary>_reserved0</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved0</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved0</computeroutput></para>
+<para>bit: 9..15 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1"/><section>
+    <title>_reserved0<computeroutput>[7/8]</computeroutput></title>
+<indexterm><primary>_reserved0</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved0</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved0</computeroutput></para>
+<para>bit: 3..31 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gac8a6a13838a897c8d0b8bc991bbaf7c1"/><section>
+    <title>_reserved0<computeroutput>[8/8]</computeroutput></title>
+<indexterm><primary>_reserved0</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved0</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved0</computeroutput></para>
+<para>bit: 3..31 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16"/><section>
+    <title>_reserved1<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>_reserved1</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved1</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved1</computeroutput></para>
+<para>bit: 20..26 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16"/><section>
+    <title>_reserved1<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>_reserved1</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved1</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved1</computeroutput></para>
+<para>bit: 20..26 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16"/><section>
+    <title>_reserved1<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>_reserved1</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved1</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved1</computeroutput></para>
+<para>bit: 20..23 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga959a73d8faee56599b7e792a7c5a2d16"/><section>
+    <title>_reserved1<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>_reserved1</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>_reserved1</secondary></indexterm>
+<para><computeroutput>uint32_t _reserved1</computeroutput></para>
+<para>bit: 20..23 Reserved <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga9a73f00a0223775caeb09c5c6abb3087"/><section>
+    <title>ACTLR</title>
+<indexterm><primary>ACTLR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ACTLR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t ACTLR</computeroutput></para>
+<para>Offset: 0x008 (R/W) Auxiliary Control Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga5c0e2e1c7195d4dc09a5ca077c596318"/><section>
+    <title>ADR</title>
+<indexterm><primary>ADR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ADR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t ADR</computeroutput></para>
+<para>Offset: 0x04C (R/ ) Auxiliary Feature Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gab9176079ea223dd8902589da91af63a2"/><section>
+    <title>AFSR</title>
+<indexterm><primary>AFSR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>AFSR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t AFSR</computeroutput></para>
+<para>Offset: 0x03C (R/W) Auxiliary Fault Status Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gaaec159b48828355cb770049b8b2e8d91"/><section>
+    <title>AIRCR</title>
+<indexterm><primary>AIRCR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>AIRCR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t AIRCR</computeroutput></para>
+<para>Offset: 0x00C (R/W) Application Interrupt and Reset Control Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga84de5f534817cdbf8bd9064080effca2"/><section>
+    <title><computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>b</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>struct  { ... }  b</computeroutput></para>
+<para>Structure used for bit access <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga6e920e9d2e9a2738f8face0863888c0e"/><section>
+    <title><computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>b</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>struct  { ... }  b</computeroutput></para>
+<para>Structure used for bit access <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga61873807b9abee3dfa090c036e580d2e"/><section>
+    <title><computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>b</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>struct  { ... }  b</computeroutput></para>
+<para>Structure used for bit access <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga5d690aa9e65fccaa320e1b8613f502c9"/><section>
+    <title><computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>b</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>struct  { ... }  b</computeroutput></para>
+<para>Structure used for bit access <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gad49f99b1c83dcab356579af171bfa475"/><section>
+    <title>BFAR</title>
+<indexterm><primary>BFAR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>BFAR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t BFAR</computeroutput></para>
+<para>Offset: 0x038 (R/W) BusFault Address Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776"/><section>
+    <title>C<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>C</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>C</secondary></indexterm>
+<para><computeroutput>uint32_t C</computeroutput></para>
+<para>bit: 29 Carry condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776"/><section>
+    <title>C<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>C</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>C</secondary></indexterm>
+<para><computeroutput>uint32_t C</computeroutput></para>
+<para>bit: 29 Carry condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776"/><section>
+    <title>C<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>C</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>C</secondary></indexterm>
+<para><computeroutput>uint32_t C</computeroutput></para>
+<para>bit: 29 Carry condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga7a1caf92f32fe9ebd8d1fe89b06c7776"/><section>
+    <title>C<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>C</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>C</secondary></indexterm>
+<para><computeroutput>uint32_t C</computeroutput></para>
+<para>bit: 29 Carry condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga40e07d0a4638a676780713b6ceeec4ef"/><section>
+    <title>CALIB</title>
+<indexterm><primary>CALIB</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>CALIB</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t CALIB</computeroutput></para>
+<para>Offset: 0x00C (R/ ) SysTick Calibration Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga5e1322e27c40bf91d172f9673f205c97"/><section>
+    <title>CCR</title>
+<indexterm><primary>CCR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>CCR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t CCR</computeroutput></para>
+<para>Offset: 0x014 (R/W) Configuration Control Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gae6b1e9cde3f94195206c016214cf3936"/><section>
+    <title>CFSR</title>
+<indexterm><primary>CFSR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>CFSR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t CFSR</computeroutput></para>
+<para>Offset: 0x028 (R/W) Configurable Fault Status Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gacccaf5688449c8253e9952ddc2161528"/><section>
+    <title>CPACR</title>
+<indexterm><primary>CPACR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>CPACR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t CPACR</computeroutput></para>
+<para>Offset: 0x088 (R/W) Coprocessor Access Control Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga30abfea43143a424074f682bd61eace0"/><section>
+    <title>CPUID</title>
+<indexterm><primary>CPUID</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>CPUID</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t CPUID</computeroutput></para>
+<para>Offset: 0x000 (R/ ) CPUID Base Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga15fc8d35f045f329b80c544bef35ff64"/><section>
+    <title>CTRL</title>
+<indexterm><primary>CTRL</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>CTRL</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t CTRL</computeroutput></para>
+<para>Offset: 0x000 (R/W) SysTick Control and Status Register </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga5bcffe99d1d5471d5e5befbc6272ebf0"/><section>
+    <title>DCRDR</title>
+<indexterm><primary>DCRDR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>DCRDR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DCRDR</computeroutput></para>
+<para>Offset: 0x008 (R/W) Debug Core Register Data Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga7b49cb58573da77cc8a83a1b21262180"/><section>
+    <title>DCRSR</title>
+<indexterm><primary>DCRSR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>DCRSR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint32_t DCRSR</computeroutput></para>
+<para>Offset: 0x004 ( /W) Debug Core Register Selector Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga6cdfc0a6ce3e988cc02c2d6e8107d193"/><section>
+    <title>DEMCR</title>
+<indexterm><primary>DEMCR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>DEMCR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DEMCR</computeroutput></para>
+<para>Offset: 0x00C (R/W) Debug Exception and Monitor Control Register </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga1b9a71780ae327f1f337a2176b777618"/><section>
+    <title>DFR</title>
+<indexterm><primary>DFR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>DFR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t DFR</computeroutput></para>
+<para>Offset: 0x048 (R/ ) Debug Feature Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga415598d9009bb3ffe9f35e03e5a386fe"/><section>
+    <title>DFSR</title>
+<indexterm><primary>DFSR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>DFSR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DFSR</computeroutput></para>
+<para>Offset: 0x030 (R/W) Debug Fault Status Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga39bc5e68dc6071187fbe2348891eabfa"/><section>
+    <title>DHCSR</title>
+<indexterm><primary>DHCSR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>DHCSR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DHCSR</computeroutput></para>
+<para>Offset: 0x000 (R/W) Debug Halting Control and Status Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga2518558c090f60161ba4e718a54ee468"/><section>
+    <title>FPCA<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>FPCA</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>FPCA</secondary></indexterm>
+<para><computeroutput>uint32_t FPCA</computeroutput></para>
+<para>bit: 2 FP extension active flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga2518558c090f60161ba4e718a54ee468"/><section>
+    <title>FPCA<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>FPCA</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>FPCA</secondary></indexterm>
+<para><computeroutput>uint32_t FPCA</computeroutput></para>
+<para>bit: 2 FP extension active flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099"/><section>
+    <title>GE<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>GE</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>GE</secondary></indexterm>
+<para><computeroutput>uint32_t GE</computeroutput></para>
+<para>bit: 16..19 Greater than or Equal flags <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099"/><section>
+    <title>GE<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>GE</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>GE</secondary></indexterm>
+<para><computeroutput>uint32_t GE</computeroutput></para>
+<para>bit: 16..19 Greater than or Equal flags <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099"/><section>
+    <title>GE<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>GE</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>GE</secondary></indexterm>
+<para><computeroutput>uint32_t GE</computeroutput></para>
+<para>bit: 16..19 Greater than or Equal flags <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gaa91800ec6e90e457c7a1acd1f2e17099"/><section>
+    <title>GE<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>GE</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>GE</secondary></indexterm>
+<para><computeroutput>uint32_t GE</computeroutput></para>
+<para>bit: 16..19 Greater than or Equal flags <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga87aadbc5e1ffb76d755cf13f4721ae71"/><section>
+    <title>HFSR</title>
+<indexterm><primary>HFSR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>HFSR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t HFSR</computeroutput></para>
+<para>Offset: 0x02C (R/W) HardFault Status Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gac8694e172f431db09b5d570993da3917"/><section>
+    <title>IABR</title>
+<indexterm><primary>IABR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>IABR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t IABR[8]</computeroutput></para>
+<para>Offset: 0x200 (R/W) Interrupt Active bit Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gaf458bc93cfb899fc1c77c5d1f39dde88"/><section>
+    <title>ICER</title>
+<indexterm><primary>ICER</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ICER</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t ICER[8]</computeroutput></para>
+<para>Offset: 0x080 (R/W) Interrupt Clear Enable Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga8165d9a8c0090021e56bbe91c2c44667"/><section>
+    <title>ICPR</title>
+<indexterm><primary>ICPR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ICPR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t ICPR[8]</computeroutput></para>
+<para>Offset: 0x180 (R/W) Interrupt Clear Pending Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga8fec9e122b923822e7f951cd48cf1d47"/><section>
+    <title>ICSR</title>
+<indexterm><primary>ICSR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ICSR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t ICSR</computeroutput></para>
+<para>Offset: 0x004 (R/W) Interrupt Control and State Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga5bb2c6795b90f12077534825cc844b56"/><section>
+    <title>ICTR</title>
+<indexterm><primary>ICTR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ICTR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t ICTR</computeroutput></para>
+<para>Offset: 0x004 (R/ ) Interrupt Controller Type Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga38c377984f751265667317981f101bb4"/><section>
+    <title>IP</title>
+<indexterm><primary>IP</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>IP</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint8_t IP[240]</computeroutput></para>
+<para>Offset: 0x300 (R/W) Interrupt Priority Register (8Bit wide) </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga130a0c6b3da7f29507a1888afbdce7ee"/><section>
+    <title>ISAR</title>
+<indexterm><primary>ISAR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ISAR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t ISAR[5]</computeroutput></para>
+<para>Offset: 0x060 (R/ ) Instruction Set Attributes Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga0bf79013b539f9f929c75bd50f8ec67d"/><section>
+    <title>ISER</title>
+<indexterm><primary>ISER</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ISER</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t ISER[8]</computeroutput></para>
+<para>Offset: 0x000 (R/W) Interrupt Set Enable Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gab39acf254b485e3ad71b18aa9f1ca594"/><section>
+    <title>ISPR</title>
+<indexterm><primary>ISPR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ISPR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t ISPR[8]</computeroutput></para>
+<para>Offset: 0x100 (R/W) Interrupt Set Pending Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d"/><section>
+    <title>ISR<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>ISR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ISR</secondary></indexterm>
+<para><computeroutput>uint32_t ISR</computeroutput></para>
+<para>bit: 0.. 8 Exception number <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d"/><section>
+    <title>ISR<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>ISR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ISR</secondary></indexterm>
+<para><computeroutput>uint32_t ISR</computeroutput></para>
+<para>bit: 0.. 8 Exception number <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d"/><section>
+    <title>ISR<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>ISR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ISR</secondary></indexterm>
+<para><computeroutput>uint32_t ISR</computeroutput></para>
+<para>bit: 0.. 8 Exception number <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gad502ba7dbb2aab5f87c782b28f02622d"/><section>
+    <title>ISR<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>ISR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ISR</secondary></indexterm>
+<para><computeroutput>uint32_t ISR</computeroutput></para>
+<para>bit: 0.. 8 Exception number <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777"/><section>
+    <title>IT<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>IT</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>IT</secondary></indexterm>
+<para><computeroutput>uint32_t IT</computeroutput></para>
+<para>bit: 25..26 saved IT state (read 0) <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga76485660fe8ad98cdc71ddd7cb0ed777"/><section>
+    <title>IT<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>IT</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>IT</secondary></indexterm>
+<para><computeroutput>uint32_t IT</computeroutput></para>
+<para>bit: 25..26 saved IT state (read 0) <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1ga12e68e55a7badc271b948d6c7230b2a8"/><section>
+    <title>ITM_RxBuffer</title>
+<indexterm><primary>ITM_RxBuffer</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>ITM_RxBuffer</secondary></indexterm>
+<para><computeroutput>volatile int32_t ITM_RxBuffer<computeroutput>[extern]</computeroutput></computeroutput></para>
+<para>external variable to receive characters <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gaad9adf4efc940cddb8161b69cfbe19d3"/><section>
+    <title>LOAD</title>
+<indexterm><primary>LOAD</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>LOAD</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t LOAD</computeroutput></para>
+<para>Offset: 0x004 (R/W) SysTick Reload Value Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga88820a178974aa7b7927155cee5c47ed"/><section>
+    <title>MMFAR</title>
+<indexterm><primary>MMFAR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>MMFAR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t MMFAR</computeroutput></para>
+<para>Offset: 0x034 (R/W) MemManage Fault Address Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gab0dc71239f7d5ffe2e78e683b9530064"/><section>
+    <title>MMFR</title>
+<indexterm><primary>MMFR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>MMFR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t MMFR[4]</computeroutput></para>
+<para>Offset: 0x050 (R/ ) Memory Model Feature Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f"/><section>
+    <title>N<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>N</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>N</secondary></indexterm>
+<para><computeroutput>uint32_t N</computeroutput></para>
+<para>bit: 31 Negative condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f"/><section>
+    <title>N<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>N</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>N</secondary></indexterm>
+<para><computeroutput>uint32_t N</computeroutput></para>
+<para>bit: 31 Negative condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f"/><section>
+    <title>N<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>N</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>N</secondary></indexterm>
+<para><computeroutput>uint32_t N</computeroutput></para>
+<para>bit: 31 Negative condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gabae0610bc2a97bbf7f689e953e0b451f"/><section>
+    <title>N<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>N</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>N</secondary></indexterm>
+<para><computeroutput>uint32_t N</computeroutput></para>
+<para>bit: 31 Negative condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga2a6e513e8a6bf4e58db169e312172332"/><section>
+    <title>nPRIV<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>nPRIV</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>nPRIV</secondary></indexterm>
+<para><computeroutput>uint32_t nPRIV</computeroutput></para>
+<para>bit: 0 Execution privilege in Thread mode </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga2a6e513e8a6bf4e58db169e312172332"/><section>
+    <title>nPRIV<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>nPRIV</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>nPRIV</secondary></indexterm>
+<para><computeroutput>uint32_t nPRIV</computeroutput></para>
+<para>bit: 0 Execution privilege in Thread mode </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga00a6649cfac6bbadee51d6ba4c73001d"/><section>
+    <title>PFR</title>
+<indexterm><primary>PFR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>PFR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaf63697ed9952cc71e1225efe205f6cd3">__I</link> uint32_t PFR[2]</computeroutput></para>
+<para>Offset: 0x040 (R/ ) Processor Feature Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga95d6dd68e2d2d252ef38c97738b31bd8"/><section>
+    <title></title>
+<indexterm><primary>PORT</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>PORT</secondary></indexterm>
+<para><computeroutput>__O union  { ... }  PORT[32]</computeroutput></para>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port Registers <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a"/><section>
+    <title>Q<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>Q</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>Q</secondary></indexterm>
+<para><computeroutput>uint32_t Q</computeroutput></para>
+<para>bit: 27 Saturation condition flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a"/><section>
+    <title>Q<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>Q</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>Q</secondary></indexterm>
+<para><computeroutput>uint32_t Q</computeroutput></para>
+<para>bit: 27 Saturation condition flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a"/><section>
+    <title>Q<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>Q</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>Q</secondary></indexterm>
+<para><computeroutput>uint32_t Q</computeroutput></para>
+<para>bit: 27 Saturation condition flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga65f27ddc4f7e09c14ce7c5211b2e000a"/><section>
+    <title>Q<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>Q</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>Q</secondary></indexterm>
+<para><computeroutput>uint32_t Q</computeroutput></para>
+<para>bit: 27 Saturation condition flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga64a95891ad3e904dd5548112539c1c98"/><section>
+    <title>SCR</title>
+<indexterm><primary>SCR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>SCR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t SCR</computeroutput></para>
+<para>Offset: 0x010 (R/W) System Control Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga04d136e5436e5fa2fb2aaa78a5f86b19"/><section>
+    <title>SHCSR</title>
+<indexterm><primary>SHCSR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>SHCSR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t SHCSR</computeroutput></para>
+<para>Offset: 0x024 (R/W) System Handler Control and State Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga17dc9f83c53cbf7fa249e79a2d2a43f8"/><section>
+    <title>SHP</title>
+<indexterm><primary>SHP</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>SHP</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint8_t SHP[12]</computeroutput></para>
+<para>Offset: 0x018 (R/W) System Handlers Priority Registers (4-7, 8-11, 12-15) </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gae185aac93686ffc78e998a9daf41415b"/><section>
+    <title>SPSEL<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>SPSEL</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>SPSEL</secondary></indexterm>
+<para><computeroutput>uint32_t SPSEL</computeroutput></para>
+<para>bit: 1 Stack to be used <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gae185aac93686ffc78e998a9daf41415b"/><section>
+    <title>SPSEL<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>SPSEL</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>SPSEL</secondary></indexterm>
+<para><computeroutput>uint32_t SPSEL</computeroutput></para>
+<para>bit: 1 Stack to be used <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga471c399bb79454dcdfb342a31a5684ae"/><section>
+    <title>STIR</title>
+<indexterm><primary>STIR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>STIR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint32_t STIR</computeroutput></para>
+<para>Offset: 0xE00 ( /W) Software Trigger Interrupt Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972"/><section>
+    <title>T<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>T</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>T</secondary></indexterm>
+<para><computeroutput>uint32_t T</computeroutput></para>
+<para>bit: 24 Thumb bit (read 0) <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga6e1cf12e53a20224f6f62c001d9be972"/><section>
+    <title>T<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>T</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>T</secondary></indexterm>
+<para><computeroutput>uint32_t T</computeroutput></para>
+<para>bit: 24 Thumb bit (read 0) <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gae9dd9282fab299d0cd6e119564688e53"/><section>
+    <title>TCR</title>
+<indexterm><primary>TCR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>TCR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t TCR</computeroutput></para>
+<para>Offset: 0xE80 (R/W) ITM Trace Control Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga8ffb3c6b706b03334f6fe37ef5d8b165"/><section>
+    <title>TER</title>
+<indexterm><primary>TER</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>TER</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t TER</computeroutput></para>
+<para>Offset: 0xE00 (R/W) ITM Trace Enable Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga72bb9b7d61fe3262cd2a6070a7bd5b69"/><section>
+    <title>TPR</title>
+<indexterm><primary>TPR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>TPR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t TPR</computeroutput></para>
+<para>Offset: 0xE40 (R/W) ITM Trace Privilege Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gae8d499140220fa6d4eab1da7262bf08e"/><section>
+    <title>u16<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>u16</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>u16</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint16_t u16</computeroutput></para>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port 16-bit <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gae8d499140220fa6d4eab1da7262bf08e"/><section>
+    <title>u16<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>u16</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>u16</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint16_t u16</computeroutput></para>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port 16-bit <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gacaf6d0e14a3d4b541c624913b4a1931e"/><section>
+    <title>u32<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>u32</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>u32</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint32_t u32</computeroutput></para>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port 32-bit <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gacaf6d0e14a3d4b541c624913b4a1931e"/><section>
+    <title>u32<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>u32</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>u32</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint32_t u32</computeroutput></para>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port 32-bit <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga0374c0b98ab9de6f71fabff7412df832"/><section>
+    <title>u8<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>u8</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>u8</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint8_t u8</computeroutput></para>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port 8-bit <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga0374c0b98ab9de6f71fabff7412df832"/><section>
+    <title>u8<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>u8</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>u8</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1ga7e25d9380f9ef903923964322e71f2f6">__O</link> uint8_t u8</computeroutput></para>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port 8-bit <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222"/><section>
+    <title>V<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>V</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>V</secondary></indexterm>
+<para><computeroutput>uint32_t V</computeroutput></para>
+<para>bit: 28 Overflow condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222"/><section>
+    <title>V<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>V</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>V</secondary></indexterm>
+<para><computeroutput>uint32_t V</computeroutput></para>
+<para>bit: 28 Overflow condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222"/><section>
+    <title>V<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>V</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>V</secondary></indexterm>
+<para><computeroutput>uint32_t V</computeroutput></para>
+<para>bit: 28 Overflow condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gacd4a2b64faee91e4a9eef300667fa222"/><section>
+    <title>V<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>V</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>V</secondary></indexterm>
+<para><computeroutput>uint32_t V</computeroutput></para>
+<para>bit: 28 Overflow condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga26fb318c3b0a0ec7f45daafd5f8799a3"/><section>
+    <title>VAL</title>
+<indexterm><primary>VAL</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>VAL</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t VAL</computeroutput></para>
+<para>Offset: 0x008 (R/W) SysTick Current Value Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gaaf388a921a016cae590cfcf1e43b1cdf"/><section>
+    <title>VTOR</title>
+<indexterm><primary>VTOR</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>VTOR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t VTOR</computeroutput></para>
+<para>Offset: 0x008 (R/W) Vector Table Offset Register <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gad0fb62e7a08e70fc5e0a76b67809f84b"/><section>
+    <title>w<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>w</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>w</secondary></indexterm>
+<para><computeroutput>uint32_t w</computeroutput></para>
+<para>Type used for word access <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gad0fb62e7a08e70fc5e0a76b67809f84b"/><section>
+    <title>w<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>w</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>w</secondary></indexterm>
+<para><computeroutput>uint32_t w</computeroutput></para>
+<para>Type used for word access <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gad0fb62e7a08e70fc5e0a76b67809f84b"/><section>
+    <title>w<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>w</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>w</secondary></indexterm>
+<para><computeroutput>uint32_t w</computeroutput></para>
+<para>Type used for word access <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1gad0fb62e7a08e70fc5e0a76b67809f84b"/><section>
+    <title>w<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>w</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>w</secondary></indexterm>
+<para><computeroutput>uint32_t w</computeroutput></para>
+<para>Type used for word access <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e"/><section>
+    <title>Z<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>Z</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>Z</secondary></indexterm>
+<para><computeroutput>uint32_t Z</computeroutput></para>
+<para>bit: 30 Zero condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e"/><section>
+    <title>Z<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>Z</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>Z</secondary></indexterm>
+<para><computeroutput>uint32_t Z</computeroutput></para>
+<para>bit: 30 Zero condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e"/><section>
+    <title>Z<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>Z</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>Z</secondary></indexterm>
+<para><computeroutput>uint32_t Z</computeroutput></para>
+<para>bit: 30 Zero condition code flag <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core___debug_functions_1ga5ae954cbd9986cd64625d7fa00943c8e"/><section>
+    <title>Z<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>Z</primary><secondary>CMSIS Core Debug Functions</secondary></indexterm>
+<indexterm><primary>CMSIS Core Debug Functions</primary><secondary>Z</secondary></indexterm>
+<para><computeroutput>uint32_t Z</computeroutput></para>
+<para>bit: 30 Zero condition code flag <?linebreak?> </para>
+</section>
+</section>
+</section>

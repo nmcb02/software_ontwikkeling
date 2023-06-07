@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___c_m_s_i_s__core__register" xml:lang="en-US">
+<title>CMSIS Core Register</title>
+<indexterm><primary>CMSIS Core Register</primary></indexterm>
+<simplesect>
+    <title>Modules    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s___c_o_r_e">CMSIS Core</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</link>&#160;&#160;&#160;(0xE000E000UL)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</link>&#160;&#160;&#160;(0xE0000000UL)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</link>&#160;&#160;&#160;(0xE000EDF0UL)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1ga58effaac0b93006b756d33209e814646">SysTick_BASE</link>&#160;&#160;&#160;(<link linkend="_group___c_m_s_i_s__core__register_1ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</link> +  0x0010UL)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1gaa0288691785a5f868238e0468b39523d">NVIC_BASE</link>&#160;&#160;&#160;(<link linkend="_group___c_m_s_i_s__core__register_1ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</link> +  0x0100UL)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</link>&#160;&#160;&#160;(<link linkend="_group___c_m_s_i_s__core__register_1ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</link> +  0x0D00UL)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1ga9fe0cd2eef83a8adad94490d9ecca63f">SCnSCB</link>&#160;&#160;&#160;((<link linkend="_struct_s_cn_s_c_b___type">SCnSCB_Type</link>    *)     <link linkend="_group___c_m_s_i_s__core__register_1ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</link>      )</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</link>&#160;&#160;&#160;((<link linkend="_struct_s_c_b___type">SCB_Type</link>       *)     <link linkend="_group___c_m_s_i_s__core__register_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</link>      )</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1gacd96c53beeaff8f603fcda425eb295de">SysTick</link>&#160;&#160;&#160;((<link linkend="_struct_sys_tick___type">SysTick_Type</link>   *)     <link linkend="_group___c_m_s_i_s__core__register_1ga58effaac0b93006b756d33209e814646">SysTick_BASE</link>  )</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1gac8e97e8ce56ae9f57da1363a937f8a17">NVIC</link>&#160;&#160;&#160;((<link linkend="_struct_n_v_i_c___type">NVIC_Type</link>      *)     <link linkend="_group___c_m_s_i_s__core__register_1gaa0288691785a5f868238e0468b39523d">NVIC_BASE</link>     )</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1gabae7cdf882def602cb787bb039ff6a43">ITM</link>&#160;&#160;&#160;((<link linkend="_struct_i_t_m___type">ITM_Type</link>       *)     <link linkend="_group___c_m_s_i_s__core__register_1gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</link>      )</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1gab6e30a2b802d9021619dbb0be7f5d63d">CoreDebug</link>&#160;&#160;&#160;((<link linkend="_struct_core_debug___type">CoreDebug_Type</link> *)     <link linkend="_group___c_m_s_i_s__core__register_1ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</link>)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___c_m_s_i_s__core__register_1gaa822cb398ee022b59e9e6c5d7bbb228a">ITM_RXBUFFER_EMPTY</link>&#160;&#160;&#160;0x5AA55AA5</para>
+</listitem>
+            <listitem><para>volatile int32_t <link linkend="_group___c_m_s_i_s__core__register_1ga12e68e55a7badc271b948d6c7230b2a8">ITM_RxBuffer</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Core Register contain:<itemizedlist>
+<listitem>
+<para>Core Register</para>
+</listitem><listitem>
+<para>Core NVIC Register</para>
+</listitem><listitem>
+<para>Core SCB Register</para>
+</listitem><listitem>
+<para>Core SysTick Register</para>
+</listitem><listitem>
+<para>Core Debug Register</para>
+</listitem><listitem>
+<para>Core MPU Register</para>
+</listitem><listitem>
+<para>Core FPU Register </para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1gab6e30a2b802d9021619dbb0be7f5d63d"/><section>
+    <title>CoreDebug</title>
+<indexterm><primary>CoreDebug</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>CoreDebug</secondary></indexterm>
+<para><computeroutput>#define CoreDebug&#160;&#160;&#160;((<link linkend="_struct_core_debug___type">CoreDebug_Type</link> *)     <link linkend="_group___c_m_s_i_s__core__register_1ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</link>)</computeroutput></para>
+<para>Core Debug configuration struct <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1ga680604dbcda9e9b31a1639fcffe5230b"/><section>
+    <title>CoreDebug_BASE</title>
+<indexterm><primary>CoreDebug_BASE</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>CoreDebug_BASE</secondary></indexterm>
+<para><computeroutput>#define CoreDebug_BASE&#160;&#160;&#160;(0xE000EDF0UL)</computeroutput></para>
+<para>Core Debug Base Address <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1gabae7cdf882def602cb787bb039ff6a43"/><section>
+    <title>ITM</title>
+<indexterm><primary>ITM</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>ITM</secondary></indexterm>
+<para><computeroutput>#define ITM&#160;&#160;&#160;((<link linkend="_struct_i_t_m___type">ITM_Type</link>       *)     <link linkend="_group___c_m_s_i_s__core__register_1gadd76251e412a195ec0a8f47227a8359e">ITM_BASE</link>      )</computeroutput></para>
+<para>ITM configuration struct <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1gadd76251e412a195ec0a8f47227a8359e"/><section>
+    <title>ITM_BASE</title>
+<indexterm><primary>ITM_BASE</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>ITM_BASE</secondary></indexterm>
+<para><computeroutput>#define ITM_BASE&#160;&#160;&#160;(0xE0000000UL)</computeroutput></para>
+<para>ITM Base Address <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1gaa822cb398ee022b59e9e6c5d7bbb228a"/><section>
+    <title>ITM_RXBUFFER_EMPTY</title>
+<indexterm><primary>ITM_RXBUFFER_EMPTY</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>ITM_RXBUFFER_EMPTY</secondary></indexterm>
+<para><computeroutput>#define ITM_RXBUFFER_EMPTY&#160;&#160;&#160;0x5AA55AA5</computeroutput></para>
+<para>value identifying ITM_RxBuffer is ready for next character </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1gac8e97e8ce56ae9f57da1363a937f8a17"/><section>
+    <title>NVIC</title>
+<indexterm><primary>NVIC</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>NVIC</secondary></indexterm>
+<para><computeroutput>#define NVIC&#160;&#160;&#160;((<link linkend="_struct_n_v_i_c___type">NVIC_Type</link>      *)     <link linkend="_group___c_m_s_i_s__core__register_1gaa0288691785a5f868238e0468b39523d">NVIC_BASE</link>     )</computeroutput></para>
+<para>NVIC configuration struct <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1gaa0288691785a5f868238e0468b39523d"/><section>
+    <title>NVIC_BASE</title>
+<indexterm><primary>NVIC_BASE</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>NVIC_BASE</secondary></indexterm>
+<para><computeroutput>#define NVIC_BASE&#160;&#160;&#160;(<link linkend="_group___c_m_s_i_s__core__register_1ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</link> +  0x0100UL)</computeroutput></para>
+<para>NVIC Base Address <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1gaaaf6477c2bde2f00f99e3c2fd1060b01"/><section>
+    <title>SCB</title>
+<indexterm><primary>SCB</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>SCB</secondary></indexterm>
+<para><computeroutput>#define SCB&#160;&#160;&#160;((<link linkend="_struct_s_c_b___type">SCB_Type</link>       *)     <link linkend="_group___c_m_s_i_s__core__register_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</link>      )</computeroutput></para>
+<para>SCB configuration struct <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1gad55a7ddb8d4b2398b0c1cfec76c0d9fd"/><section>
+    <title>SCB_BASE</title>
+<indexterm><primary>SCB_BASE</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>SCB_BASE</secondary></indexterm>
+<para><computeroutput>#define SCB_BASE&#160;&#160;&#160;(<link linkend="_group___c_m_s_i_s__core__register_1ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</link> +  0x0D00UL)</computeroutput></para>
+<para>System Control Block Base Address <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1ga9fe0cd2eef83a8adad94490d9ecca63f"/><section>
+    <title>SCnSCB</title>
+<indexterm><primary>SCnSCB</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>SCnSCB</secondary></indexterm>
+<para><computeroutput>#define SCnSCB&#160;&#160;&#160;((<link linkend="_struct_s_cn_s_c_b___type">SCnSCB_Type</link>    *)     <link linkend="_group___c_m_s_i_s__core__register_1ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</link>      )</computeroutput></para>
+<para>System control Register not in SCB </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1ga3c14ed93192c8d9143322bbf77ebf770"/><section>
+    <title>SCS_BASE</title>
+<indexterm><primary>SCS_BASE</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>SCS_BASE</secondary></indexterm>
+<para><computeroutput>#define SCS_BASE&#160;&#160;&#160;(0xE000E000UL)</computeroutput></para>
+<para>System Control Space Base Address <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1gacd96c53beeaff8f603fcda425eb295de"/><section>
+    <title>SysTick</title>
+<indexterm><primary>SysTick</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>SysTick</secondary></indexterm>
+<para><computeroutput>#define SysTick&#160;&#160;&#160;((<link linkend="_struct_sys_tick___type">SysTick_Type</link>   *)     <link linkend="_group___c_m_s_i_s__core__register_1ga58effaac0b93006b756d33209e814646">SysTick_BASE</link>  )</computeroutput></para>
+<para>SysTick configuration struct <?linebreak?> </para>
+</section>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1ga58effaac0b93006b756d33209e814646"/><section>
+    <title>SysTick_BASE</title>
+<indexterm><primary>SysTick_BASE</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>SysTick_BASE</secondary></indexterm>
+<para><computeroutput>#define SysTick_BASE&#160;&#160;&#160;(<link linkend="_group___c_m_s_i_s__core__register_1ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</link> +  0x0010UL)</computeroutput></para>
+<para>SysTick Base Address <?linebreak?> </para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_group___c_m_s_i_s__core__register_1ga12e68e55a7badc271b948d6c7230b2a8"/><section>
+    <title>ITM_RxBuffer</title>
+<indexterm><primary>ITM_RxBuffer</primary><secondary>CMSIS Core Register</secondary></indexterm>
+<indexterm><primary>CMSIS Core Register</primary><secondary>ITM_RxBuffer</secondary></indexterm>
+<para><computeroutput>volatile int32_t ITM_RxBuffer<computeroutput>[extern]</computeroutput></computeroutput></para>
+<para>external variable to receive characters <?linebreak?> </para>
+</section>
+</section>
+</section>

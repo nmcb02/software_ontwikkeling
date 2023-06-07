@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___r_c_c___a_h_b2___peripherals" xml:lang="en-US">
+<title>RCC_AHB2_Peripherals</title>
+<indexterm><primary>RCC_AHB2_Peripherals</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_h_b2___peripherals_1ga514e63d5f3ced29ca4014d84e269ea6e"/>#define <emphasis role="strong">RCC_AHB2Periph_DCMI</emphasis>&#160;&#160;&#160;((uint32_t)0x00000001)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_h_b2___peripherals_1ga99893bb6ef0cc504fbbc6236ae883410"/>#define <emphasis role="strong">RCC_AHB2Periph_CRYP</emphasis>&#160;&#160;&#160;((uint32_t)0x00000010)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_h_b2___peripherals_1gad235f25cf07339b1486e95adf4e2111c"/>#define <emphasis role="strong">RCC_AHB2Periph_HASH</emphasis>&#160;&#160;&#160;((uint32_t)0x00000020)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_h_b2___peripherals_1gae6c14647792757c0b3a4339c74f9ce96"/>#define <emphasis role="strong">RCC_AHB2Periph_RNG</emphasis>&#160;&#160;&#160;((uint32_t)0x00000040)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_h_b2___peripherals_1ga95977679051aa7428d823404bff63aea"/>#define <emphasis role="strong">RCC_AHB2Periph_OTG_FS</emphasis>&#160;&#160;&#160;((uint32_t)0x00000080)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___a_h_b2___peripherals_1ga90f3f337a5f503e36280ab4504d31c39"/>#define <emphasis role="strong">IS_RCC_AHB2_PERIPH</emphasis>(PERIPH)&#160;&#160;&#160;((((PERIPH) &amp; 0xFFFFFF0E) == 0x00) &amp;&amp; ((PERIPH) != 0x00))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+</section>

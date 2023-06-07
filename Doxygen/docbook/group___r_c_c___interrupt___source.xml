@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___r_c_c___interrupt___source" xml:lang="en-US">
+<title>RCC_Interrupt_Source</title>
+<indexterm><primary>RCC_Interrupt_Source</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___r_c_c___interrupt___source_1ga2b4ef277c1b71f96e0bef4b9a72fca94"/>#define <emphasis role="strong">RCC_IT_LSIRDY</emphasis>&#160;&#160;&#160;((uint8_t)0x01)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___interrupt___source_1gad6b6e78a426850f595ef180d292a673d"/>#define <emphasis role="strong">RCC_IT_LSERDY</emphasis>&#160;&#160;&#160;((uint8_t)0x02)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___interrupt___source_1ga69637e51b71f73f519c8c0a0613d042f"/>#define <emphasis role="strong">RCC_IT_HSIRDY</emphasis>&#160;&#160;&#160;((uint8_t)0x04)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___interrupt___source_1gad13eaede352bca59611e6cae68665866"/>#define <emphasis role="strong">RCC_IT_HSERDY</emphasis>&#160;&#160;&#160;((uint8_t)0x08)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___interrupt___source_1ga68d48e7811fb58f2649dce6cf0d823d9"/>#define <emphasis role="strong">RCC_IT_PLLRDY</emphasis>&#160;&#160;&#160;((uint8_t)0x10)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___interrupt___source_1ga6468ff3bad854272cf1120ffbf69b7ac"/>#define <emphasis role="strong">RCC_IT_PLLI2SRDY</emphasis>&#160;&#160;&#160;((uint8_t)0x20)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___interrupt___source_1ga9bb34a4912d2084dc1c0834eb53aa7a3"/>#define <emphasis role="strong">RCC_IT_CSS</emphasis>&#160;&#160;&#160;((uint8_t)0x80)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___interrupt___source_1ga710d72ccf88ddbec09b033c81a571a83"/>#define <emphasis role="strong">IS_RCC_IT</emphasis>(IT)&#160;&#160;&#160;((((IT) &amp; (uint8_t)0xC0) == 0x00) &amp;&amp; ((IT) != 0x00))</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___r_c_c___interrupt___source_1ga7a1b771d6d9c2d8346ab58a1f046f6a6">IS_RCC_GET_IT</link>(IT)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___interrupt___source_1ga8374741e47d696accd1a72647650ba63"/>#define <emphasis role="strong">IS_RCC_CLEAR_IT</emphasis>(IT)&#160;&#160;&#160;((((IT) &amp; (uint8_t)0x40) == 0x00) &amp;&amp; ((IT) != 0x00))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___r_c_c___interrupt___source_1ga7a1b771d6d9c2d8346ab58a1f046f6a6"/><section>
+    <title>IS_RCC_GET_IT</title>
+<indexterm><primary>IS_RCC_GET_IT</primary><secondary>RCC_Interrupt_Source</secondary></indexterm>
+<indexterm><primary>RCC_Interrupt_Source</primary><secondary>IS_RCC_GET_IT</secondary></indexterm>
+<para><computeroutput>#define IS_RCC_GET_IT( IT)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((IT)&#32;==&#32;RCC_IT_LSIRDY)&#32;||&#32;((IT)&#32;==&#32;RCC_IT_LSERDY)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;RCC_IT_HSIRDY)&#32;||&#32;((IT)&#32;==&#32;RCC_IT_HSERDY)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;RCC_IT_PLLRDY)&#32;||&#32;((IT)&#32;==&#32;RCC_IT_CSS)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;RCC_IT_PLLI2SRDY))
+</programlisting></section>
+</section>
+</section>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_v_g_a__t" xml:lang="en-US">
+<title>VGA_t Struct Reference</title>
+<indexterm><primary>VGA_t</primary></indexterm>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_struct_v_g_a__t_1a649bc185f93377aec7fa1c136dd2add0"/>uint16_t <emphasis role="strong">hsync_cnt</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_v_g_a__t_1a7f47a855ae47844b419d75797f00fbbb"/>uint32_t <emphasis role="strong">start_adr</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_v_g_a__t_1a1fc3c1405cc22f5d4fc21eb58c47c06a"/>uint32_t <emphasis role="strong">dma2_cr_reg</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/stm32_ub_vga_screen.h</section>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___r_c_c___private___functions" xml:lang="en-US">
+<title>RCC_Private_Functions</title>
+<indexterm><primary>RCC_Private_Functions</primary></indexterm>
+<simplesect>
+    <title>Modules    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___r_c_c___group1">Internal and external clocks, PLL, CSS and MCO configuration functions</link></para>
+
+<para>Internal and external clocks, PLL, CSS and MCO configuration functions. </para>
+</listitem>
+            <listitem><para><link linkend="_group___r_c_c___group2">System AHB and APB busses clocks configuration functions</link></para>
+
+<para>System, AHB and APB busses clocks configuration functions. </para>
+</listitem>
+            <listitem><para><link linkend="_group___r_c_c___group3">Peripheral clocks configuration functions</link></para>
+
+<para>Peripheral clocks configuration functions. </para>
+</listitem>
+            <listitem><para><link linkend="_group___r_c_c___group4">Interrupts and flags management functions</link></para>
+
+<para>Interrupts and flags management functions. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+</section>

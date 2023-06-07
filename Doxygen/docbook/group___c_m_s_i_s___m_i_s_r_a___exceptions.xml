@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___c_m_s_i_s___m_i_s_r_a___exceptions" xml:lang="en-US">
+<title>CMSIS MISRA-C:2004 Compliance Exceptions</title>
+<indexterm><primary>CMSIS MISRA-C:2004 Compliance Exceptions</primary></indexterm>
+
+<para>CMSIS violates following MISRA-C2004 Rules:</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Violates MISRA 2004 Required Rule 8.5, object/function definition in header file.<?linebreak?> Function definitions in header files are used to allow &apos;inlining&apos;.</para>
+</listitem><listitem>
+<para>Violates MISRA 2004 Required Rule 18.4, declaration of union type or object of union type: &apos;{...}&apos;.<?linebreak?> Unions are used for effective representation of core registers.</para>
+</listitem><listitem>
+<para>Violates MISRA 2004 Advisory Rule 19.7, Function-like macro defined.<?linebreak?> Function-like macros are used to allow more efficient code. </para>
+</listitem></itemizedlist>
+</para>
+</section>

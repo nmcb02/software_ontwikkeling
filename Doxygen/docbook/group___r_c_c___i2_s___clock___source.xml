@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___r_c_c___i2_s___clock___source" xml:lang="en-US">
+<title>RCC_I2S_Clock_Source</title>
+<indexterm><primary>RCC_I2S_Clock_Source</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___r_c_c___i2_s___clock___source_1gae26cc973323877114a509a0108d0a08a"/>#define <emphasis role="strong">RCC_I2S2CLKSource_PLLI2S</emphasis>&#160;&#160;&#160;((uint8_t)0x00)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___i2_s___clock___source_1gaaed7a69a9f2c18645ef6aacd2135c750"/>#define <emphasis role="strong">RCC_I2S2CLKSource_Ext</emphasis>&#160;&#160;&#160;((uint8_t)0x01)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___i2_s___clock___source_1gaa1bd931fa367969adeec7ba154ef7beb"/>#define <emphasis role="strong">IS_RCC_I2SCLK_SOURCE</emphasis>(SOURCE)&#160;&#160;&#160;(((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+</section>

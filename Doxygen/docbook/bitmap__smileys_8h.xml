@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bitmap__smileys_8h" xml:lang="en-US">
+<title>CUBE_IDE/VGA/Core/Inc/bitmap_smileys.h File Reference</title>
+<indexterm><primary>CUBE_IDE/VGA/Core/Inc/bitmap_smileys.h</primary></indexterm>
+<para>
+
+<para>Header file for bitmap arrays. </para>
+ 
+</para>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_bitmap__smileys_8h_1adacaf946a4c663a5be23abe05a40401c"/>const int <emphasis role="strong">smiley_happy_col</emphasis> []</para>
+</listitem>
+            <listitem><para><anchor xml:id="_bitmap__smileys_8h_1a22cd0db1392df802d218fed3569a554a"/>const int <emphasis role="strong">smiley_angry_col</emphasis> []</para>
+</listitem>
+            <listitem><para><anchor xml:id="_bitmap__smileys_8h_1a640fe2e8ffebcae43bdc5408027e1872"/>const int <emphasis role="strong">smiley_sad_col</emphasis> []</para>
+</listitem>
+            <listitem><para><anchor xml:id="_bitmap__smileys_8h_1a4dde582ce6f4c9ce3027bd21384e8acb"/>const int <emphasis role="strong">smiley_happy</emphasis> []</para>
+</listitem>
+            <listitem><para><anchor xml:id="_bitmap__smileys_8h_1a44a80b4ba53ef0c7d3c78381a533deae"/>const int <emphasis role="strong">smiley_sad</emphasis> []</para>
+</listitem>
+            <listitem><para><anchor xml:id="_bitmap__smileys_8h_1a42ca56b3a59b5d91edf40122bae58456"/>const int <emphasis role="strong">smiley_angry</emphasis> []</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Header file for bitmap arrays. </para>
+
+<para><formalpara><title>Authors</title>
+
+<para>Naomi Born </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>31-05-2023 </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>1.0 </para>
+</formalpara>
+</para>
+</section>
+</section>

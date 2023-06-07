@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state" xml:lang="en-US">
+<title>TIM_OSSR_Off_State_Selection_for_Run_mode_state</title>
+<indexterm><primary>TIM_OSSR_Off_State_Selection_for_Run_mode_state</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state_1ga3703ba6189db045bec48c864289f997e"/>#define <emphasis role="strong">TIM_OSSRState_Enable</emphasis>&#160;&#160;&#160;((uint16_t)0x0800)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state_1ga766dfd8b3c32ec1b8b446f0e2dbe7b97"/>#define <emphasis role="strong">TIM_OSSRState_Disable</emphasis>&#160;&#160;&#160;((uint16_t)0x0000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state_1ga48b4f15f6346e28087edbb9af2ba4f63">IS_TIM_OSSR_STATE</link>(STATE)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state_1ga48b4f15f6346e28087edbb9af2ba4f63"/><section>
+    <title>IS_TIM_OSSR_STATE</title>
+<indexterm><primary>IS_TIM_OSSR_STATE</primary><secondary>TIM_OSSR_Off_State_Selection_for_Run_mode_state</secondary></indexterm>
+<indexterm><primary>TIM_OSSR_Off_State_Selection_for_Run_mode_state</primary><secondary>IS_TIM_OSSR_STATE</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_OSSR_STATE( STATE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((STATE)&#32;==&#32;TIM_OSSRState_Enable)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((STATE)&#32;==&#32;TIM_OSSRState_Disable))
+</programlisting></section>
+</section>
+</section>

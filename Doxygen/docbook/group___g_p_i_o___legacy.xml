@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___g_p_i_o___legacy" xml:lang="en-US">
+<title>GPIO_Legacy</title>
+<indexterm><primary>GPIO_Legacy</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___legacy_1gadf4dafa8caa4e91d2bee996c4bfdf8cc"/>#define <emphasis role="strong">GPIO_Mode_AIN</emphasis>&#160;&#160;&#160;<link linkend="_group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a6e5c0d7e6d2e22b834b24e1ca1d6d0db">GPIO_Mode_AN</link></para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___legacy_1gaddd737997abcd1154c0998b22333b579"/>#define <emphasis role="strong">GPIO_AF_OTG1_FS</emphasis>&#160;&#160;&#160;<link linkend="_group___g_p_i_o___alternat__function__selection__define_1gaeba0aeefec841e505170efc7762ae588">GPIO_AF_OTG_FS</link></para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___legacy_1ga54715298b3dc7e843429fd3e24d42cd4"/>#define <emphasis role="strong">GPIO_AF_OTG2_HS</emphasis>&#160;&#160;&#160;GPIO_AF_OTG_HS</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___g_p_i_o___legacy_1ga85e574d8321b9d9aaa2790351b4f0c1e"/>#define <emphasis role="strong">GPIO_AF_OTG2_FS</emphasis>&#160;&#160;&#160;GPIO_AF_OTG_HS_FS</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+</section>

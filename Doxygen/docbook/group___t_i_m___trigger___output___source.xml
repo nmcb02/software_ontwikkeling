@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___trigger___output___source" xml:lang="en-US">
+<title>TIM_Trigger_Output_Source</title>
+<indexterm><primary>TIM_Trigger_Output_Source</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___t_i_m___trigger___output___source_1gafb039ed39279a4d1134b234797b1cdfb"/>#define <emphasis role="strong">TIM_TRGOSource_Reset</emphasis>&#160;&#160;&#160;((uint16_t)0x0000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___trigger___output___source_1gaa228ba6cfafcf676e33e3ee35cb7fc1c"/>#define <emphasis role="strong">TIM_TRGOSource_Enable</emphasis>&#160;&#160;&#160;((uint16_t)0x0010)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___trigger___output___source_1ga8a73c717070ab1a0ef90326780f20aef"/>#define <emphasis role="strong">TIM_TRGOSource_Update</emphasis>&#160;&#160;&#160;((uint16_t)0x0020)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___trigger___output___source_1ga2d044b472c021f5484b9f71eb9ca69f1"/>#define <emphasis role="strong">TIM_TRGOSource_OC1</emphasis>&#160;&#160;&#160;((uint16_t)0x0030)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___trigger___output___source_1ga7cb70a2a026dc02136bdbb3dcc483d6c"/>#define <emphasis role="strong">TIM_TRGOSource_OC1Ref</emphasis>&#160;&#160;&#160;((uint16_t)0x0040)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___trigger___output___source_1ga059f9f6cf96c833180eb3cdf5e56bd04"/>#define <emphasis role="strong">TIM_TRGOSource_OC2Ref</emphasis>&#160;&#160;&#160;((uint16_t)0x0050)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___trigger___output___source_1ga40943bc1c3f22b983c683cbf0e87a218"/>#define <emphasis role="strong">TIM_TRGOSource_OC3Ref</emphasis>&#160;&#160;&#160;((uint16_t)0x0060)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___trigger___output___source_1gafc81561599199912d613c65f760919bc"/>#define <emphasis role="strong">TIM_TRGOSource_OC4Ref</emphasis>&#160;&#160;&#160;((uint16_t)0x0070)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___trigger___output___source_1gadf4e4e0422bd9c108b184884781d2d46">IS_TIM_TRGO_SOURCE</link>(SOURCE)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___t_i_m___trigger___output___source_1gadf4e4e0422bd9c108b184884781d2d46"/><section>
+    <title>IS_TIM_TRGO_SOURCE</title>
+<indexterm><primary>IS_TIM_TRGO_SOURCE</primary><secondary>TIM_Trigger_Output_Source</secondary></indexterm>
+<indexterm><primary>TIM_Trigger_Output_Source</primary><secondary>IS_TIM_TRGO_SOURCE</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_TRGO_SOURCE( SOURCE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((SOURCE)&#32;==&#32;TIM_TRGOSource_Reset)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;TIM_TRGOSource_Enable)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;TIM_TRGOSource_Update)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;TIM_TRGOSource_OC1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;TIM_TRGOSource_OC1Ref)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;TIM_TRGOSource_OC2Ref)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;TIM_TRGOSource_OC3Ref)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;TIM_TRGOSource_OC4Ref))
+</programlisting></section>
+</section>
+</section>

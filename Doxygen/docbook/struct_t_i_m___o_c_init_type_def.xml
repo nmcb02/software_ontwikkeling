@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_t_i_m___o_c_init_type_def" xml:lang="en-US">
+<title>TIM_OCInitTypeDef Struct Reference</title>
+<indexterm><primary>TIM_OCInitTypeDef</primary></indexterm>
+<para>
+
+<para>TIM Output Compare Init structure definition <?linebreak?> </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f4xx_tim.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___o_c_init_type_def_1afa69e616eb0b11bd238062dd8a5ceaa5">TIM_OCMode</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___o_c_init_type_def_1a1e88e3081574da1e1abc089df87985ba">TIM_OutputState</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___o_c_init_type_def_1a74a30f1a994c6676c0ce2b56243ed184">TIM_OutputNState</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_struct_t_i_m___o_c_init_type_def_1afd7020848ac0ad264aa3c4687f3c3ec4">TIM_Pulse</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___o_c_init_type_def_1acc7066b59671f62f2696c382c879c9c8">TIM_OCPolarity</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___o_c_init_type_def_1aa392739b843a7974702c5ec71864f982">TIM_OCNPolarity</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___o_c_init_type_def_1afb328e9ef4de6eb9d78390d7366b9a6e">TIM_OCIdleState</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___o_c_init_type_def_1a68f0241aa8d57bb42cd8e56c153f8e48">TIM_OCNIdleState</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>TIM Output Compare Init structure definition <?linebreak?> </para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_t_i_m___o_c_init_type_def_1afb328e9ef4de6eb9d78390d7366b9a6e"/><section>
+    <title>TIM_OCIdleState</title>
+<indexterm><primary>TIM_OCIdleState</primary><secondary>TIM_OCInitTypeDef</secondary></indexterm>
+<indexterm><primary>TIM_OCInitTypeDef</primary><secondary>TIM_OCIdleState</secondary></indexterm>
+<para><computeroutput>uint16_t TIM_OCIdleState</computeroutput></para>
+<para>Specifies the TIM Output Compare pin state during Idle state. This parameter can be a value of <link linkend="_group___t_i_m___output___compare___idle___state">TIM_Output_Compare_Idle_State</link> <note><title>Note</title>
+
+<para>This parameter is valid only for TIM1 and TIM8. </para>
+</note>
+</para>
+</section>
+<anchor xml:id="_struct_t_i_m___o_c_init_type_def_1afa69e616eb0b11bd238062dd8a5ceaa5"/><section>
+    <title>TIM_OCMode</title>
+<indexterm><primary>TIM_OCMode</primary><secondary>TIM_OCInitTypeDef</secondary></indexterm>
+<indexterm><primary>TIM_OCInitTypeDef</primary><secondary>TIM_OCMode</secondary></indexterm>
+<para><computeroutput>uint16_t TIM_OCMode</computeroutput></para>
+<para>Specifies the TIM mode. This parameter can be a value of <link linkend="_group___t_i_m___output___compare__and___p_w_m__modes">TIM_Output_Compare_and_PWM_modes</link> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___o_c_init_type_def_1a68f0241aa8d57bb42cd8e56c153f8e48"/><section>
+    <title>TIM_OCNIdleState</title>
+<indexterm><primary>TIM_OCNIdleState</primary><secondary>TIM_OCInitTypeDef</secondary></indexterm>
+<indexterm><primary>TIM_OCInitTypeDef</primary><secondary>TIM_OCNIdleState</secondary></indexterm>
+<para><computeroutput>uint16_t TIM_OCNIdleState</computeroutput></para>
+<para>Specifies the TIM Output Compare pin state during Idle state. This parameter can be a value of <link linkend="_group___t_i_m___output___compare___n___idle___state">TIM_Output_Compare_N_Idle_State</link> <note><title>Note</title>
+
+<para>This parameter is valid only for TIM1 and TIM8. </para>
+</note>
+</para>
+</section>
+<anchor xml:id="_struct_t_i_m___o_c_init_type_def_1aa392739b843a7974702c5ec71864f982"/><section>
+    <title>TIM_OCNPolarity</title>
+<indexterm><primary>TIM_OCNPolarity</primary><secondary>TIM_OCInitTypeDef</secondary></indexterm>
+<indexterm><primary>TIM_OCInitTypeDef</primary><secondary>TIM_OCNPolarity</secondary></indexterm>
+<para><computeroutput>uint16_t TIM_OCNPolarity</computeroutput></para>
+<para>Specifies the complementary output polarity. This parameter can be a value of <link linkend="_group___t_i_m___output___compare___n___polarity">TIM_Output_Compare_N_Polarity</link> <note><title>Note</title>
+
+<para>This parameter is valid only for TIM1 and TIM8. </para>
+</note>
+</para>
+</section>
+<anchor xml:id="_struct_t_i_m___o_c_init_type_def_1acc7066b59671f62f2696c382c879c9c8"/><section>
+    <title>TIM_OCPolarity</title>
+<indexterm><primary>TIM_OCPolarity</primary><secondary>TIM_OCInitTypeDef</secondary></indexterm>
+<indexterm><primary>TIM_OCInitTypeDef</primary><secondary>TIM_OCPolarity</secondary></indexterm>
+<para><computeroutput>uint16_t TIM_OCPolarity</computeroutput></para>
+<para>Specifies the output polarity. This parameter can be a value of <link linkend="_group___t_i_m___output___compare___polarity">TIM_Output_Compare_Polarity</link> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___o_c_init_type_def_1a74a30f1a994c6676c0ce2b56243ed184"/><section>
+    <title>TIM_OutputNState</title>
+<indexterm><primary>TIM_OutputNState</primary><secondary>TIM_OCInitTypeDef</secondary></indexterm>
+<indexterm><primary>TIM_OCInitTypeDef</primary><secondary>TIM_OutputNState</secondary></indexterm>
+<para><computeroutput>uint16_t TIM_OutputNState</computeroutput></para>
+<para>Specifies the TIM complementary Output Compare state. This parameter can be a value of <link linkend="_group___t_i_m___output___compare___n___state">TIM_Output_Compare_N_State</link> <note><title>Note</title>
+
+<para>This parameter is valid only for TIM1 and TIM8. </para>
+</note>
+</para>
+</section>
+<anchor xml:id="_struct_t_i_m___o_c_init_type_def_1a1e88e3081574da1e1abc089df87985ba"/><section>
+    <title>TIM_OutputState</title>
+<indexterm><primary>TIM_OutputState</primary><secondary>TIM_OCInitTypeDef</secondary></indexterm>
+<indexterm><primary>TIM_OCInitTypeDef</primary><secondary>TIM_OutputState</secondary></indexterm>
+<para><computeroutput>uint16_t TIM_OutputState</computeroutput></para>
+<para>Specifies the TIM Output Compare state. This parameter can be a value of <link linkend="_group___t_i_m___output___compare___state">TIM_Output_Compare_State</link> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___o_c_init_type_def_1afd7020848ac0ad264aa3c4687f3c3ec4"/><section>
+    <title>TIM_Pulse</title>
+<indexterm><primary>TIM_Pulse</primary><secondary>TIM_OCInitTypeDef</secondary></indexterm>
+<indexterm><primary>TIM_OCInitTypeDef</primary><secondary>TIM_Pulse</secondary></indexterm>
+<para><computeroutput>uint32_t TIM_Pulse</computeroutput></para>
+<para>Specifies the pulse value to be loaded into the Capture Compare Register. This parameter can be a number between 0x0000 and 0xFFFF </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_stm32f4xx__tim_8h">stm32f4xx_tim.h</link></section>
+</section>

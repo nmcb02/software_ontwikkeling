@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___m_i_s_c___private___functions" xml:lang="en-US">
+<title>MISC_Private_Functions</title>
+<indexterm><primary>MISC_Private_Functions</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_group___m_i_s_c___private___functions_1gadfb1f34f803ce54c976643db8c484442">NVIC_PriorityGroupConfig</link> (uint32_t NVIC_PriorityGroup)</para>
+
+<para>Configures the priority grouping: pre-emption priority and subpriority. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___m_i_s_c___private___functions_1ga4ab373ed0870c06fca5eb51d639adf41">NVIC_Init</link> (<link linkend="_struct_n_v_i_c___init_type_def">NVIC_InitTypeDef</link> *NVIC_InitStruct)</para>
+
+<para>Initializes the NVIC peripheral according to the specified parameters in the NVIC_InitStruct. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___m_i_s_c___private___functions_1ga1145208ad70edfc2fab19b8b8ef1b1a1">NVIC_SetVectorTable</link> (uint32_t NVIC_VectTab, uint32_t Offset)</para>
+
+<para>Sets the vector table location and Offset. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___m_i_s_c___private___functions_1gae21011c5232f5b8f366acbecd12a1d4a">NVIC_SystemLPConfig</link> (uint8_t LowPowerMode, FunctionalState NewState)</para>
+
+<para>Selects the condition for the system to enter low power mode. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___m_i_s_c___private___functions_1ga2777d255bb06ad62bb6372a9db1ff385">SysTick_CLKSourceConfig</link> (uint32_t SysTick_CLKSource)</para>
+
+<para>Configures the SysTick clock source. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_group___m_i_s_c___private___functions_1ga4ab373ed0870c06fca5eb51d639adf41"/><section>
+    <title>NVIC_Init()</title>
+<indexterm><primary>NVIC_Init</primary><secondary>MISC_Private_Functions</secondary></indexterm>
+<indexterm><primary>MISC_Private_Functions</primary><secondary>NVIC_Init</secondary></indexterm>
+<para><computeroutput>void NVIC_Init (<link linkend="_struct_n_v_i_c___init_type_def">NVIC_InitTypeDef</link> * NVIC_InitStruct)</computeroutput></para><para>
+
+<para>Initializes the NVIC peripheral according to the specified parameters in the NVIC_InitStruct. </para>
+</para>
+
+<para><note><title>Note</title>
+
+<para>To configure interrupts priority correctly, the <link linkend="_group___m_i_s_c___private___functions_1gadfb1f34f803ce54c976643db8c484442">NVIC_PriorityGroupConfig()</link> function should be called before. </para>
+</note>
+
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NVIC_InitStruct</entry><entry>
+<para>pointer to a <link linkend="_struct_n_v_i_c___init_type_def">NVIC_InitTypeDef</link> structure that contains the configuration information for the specified NVIC peripheral. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Return values</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_group___m_i_s_c___private___functions_1gadfb1f34f803ce54c976643db8c484442"/><section>
+    <title>NVIC_PriorityGroupConfig()</title>
+<indexterm><primary>NVIC_PriorityGroupConfig</primary><secondary>MISC_Private_Functions</secondary></indexterm>
+<indexterm><primary>MISC_Private_Functions</primary><secondary>NVIC_PriorityGroupConfig</secondary></indexterm>
+<para><computeroutput>void NVIC_PriorityGroupConfig (uint32_t NVIC_PriorityGroup)</computeroutput></para><para>
+
+<para>Configures the priority grouping: pre-emption priority and subpriority. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NVIC_PriorityGroup</entry><entry>
+<para>specifies the priority grouping bits length. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>NVIC_PriorityGroup_0: 0 bits for pre-emption priority 4 bits for subpriority </para>
+</listitem>
+<listitem>
+<para>NVIC_PriorityGroup_1: 1 bits for pre-emption priority 3 bits for subpriority </para>
+</listitem>
+<listitem>
+<para>NVIC_PriorityGroup_2: 2 bits for pre-emption priority 2 bits for subpriority </para>
+</listitem>
+<listitem>
+<para>NVIC_PriorityGroup_3: 3 bits for pre-emption priority 1 bits for subpriority </para>
+</listitem>
+<listitem>
+<para>NVIC_PriorityGroup_4: 4 bits for pre-emption priority 0 bits for subpriority </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>When the NVIC_PriorityGroup_0 is selected, IRQ pre-emption is no more possible. The pending IRQ priority will be managed only by the subpriority. </para>
+</note>
+
+                <formalpara>
+                    <title>
+Return values</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_group___m_i_s_c___private___functions_1ga1145208ad70edfc2fab19b8b8ef1b1a1"/><section>
+    <title>NVIC_SetVectorTable()</title>
+<indexterm><primary>NVIC_SetVectorTable</primary><secondary>MISC_Private_Functions</secondary></indexterm>
+<indexterm><primary>MISC_Private_Functions</primary><secondary>NVIC_SetVectorTable</secondary></indexterm>
+<para><computeroutput>void NVIC_SetVectorTable (uint32_t NVIC_VectTab, uint32_t Offset)</computeroutput></para><para>
+
+<para>Sets the vector table location and Offset. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>NVIC_VectTab</entry><entry>
+<para>specifies if the vector table is in RAM or FLASH memory. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>NVIC_VectTab_RAM: Vector Table in internal SRAM. </para>
+</listitem>
+<listitem>
+<para>NVIC_VectTab_FLASH: Vector Table in internal FLASH. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+<entry>Offset</entry><entry>
+<para>Vector Table base offset field. This value must be a multiple of 0x200. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Return values</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_group___m_i_s_c___private___functions_1gae21011c5232f5b8f366acbecd12a1d4a"/><section>
+    <title>NVIC_SystemLPConfig()</title>
+<indexterm><primary>NVIC_SystemLPConfig</primary><secondary>MISC_Private_Functions</secondary></indexterm>
+<indexterm><primary>MISC_Private_Functions</primary><secondary>NVIC_SystemLPConfig</secondary></indexterm>
+<para><computeroutput>void NVIC_SystemLPConfig (uint8_t LowPowerMode, FunctionalState NewState)</computeroutput></para><para>
+
+<para>Selects the condition for the system to enter low power mode. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>LowPowerMode</entry><entry>
+<para>Specifies the new mode for the system to enter low power mode. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>NVIC_LP_SEVONPEND: Low Power SEV on Pend. </para>
+</listitem>
+<listitem>
+<para>NVIC_LP_SLEEPDEEP: Low Power DEEPSLEEP request. </para>
+</listitem>
+<listitem>
+<para>NVIC_LP_SLEEPONEXIT: Low Power Sleep on Exit. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+<entry>NewState</entry><entry>
+<para>new state of LP condition. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Return values</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_group___m_i_s_c___private___functions_1ga2777d255bb06ad62bb6372a9db1ff385"/><section>
+    <title>SysTick_CLKSourceConfig()</title>
+<indexterm><primary>SysTick_CLKSourceConfig</primary><secondary>MISC_Private_Functions</secondary></indexterm>
+<indexterm><primary>MISC_Private_Functions</primary><secondary>SysTick_CLKSourceConfig</secondary></indexterm>
+<para><computeroutput>void SysTick_CLKSourceConfig (uint32_t SysTick_CLKSource)</computeroutput></para><para>
+
+<para>Configures the SysTick clock source. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>SysTick_CLKSource</entry><entry>
+<para>specifies the SysTick clock source. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>SysTick_CLKSource_HCLK_Div8: AHB clock divided by 8 selected as SysTick clock source. </para>
+</listitem>
+<listitem>
+<para>SysTick_CLKSource_HCLK: AHB clock selected as SysTick clock source. </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Return values</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

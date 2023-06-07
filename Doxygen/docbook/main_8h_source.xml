@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8h_source" xml:lang="en-US">
+<title>main.h</title>
+<indexterm><primary>CUBE_IDE/VGA/Core/Inc/main.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="comment">//--------------------------------------------------------------</emphasis>
+2 <emphasis role="comment">//&#32;File&#32;&#32;&#32;&#32;&#32;:&#32;main.h</emphasis>
+3 <emphasis role="comment">//--------------------------------------------------------------</emphasis>
+4 
+5 <emphasis role="comment">//--------------------------------------------------------------</emphasis>
+6 <emphasis role="preprocessor">#ifndef&#32;__STM32F4_UB_MAIN_H</emphasis>
+7 <emphasis role="preprocessor">#define&#32;__STM32F4_UB_MAIN_H</emphasis>
+8 
+9 
+10 <emphasis role="comment">//--------------------------------------------------------------</emphasis>
+11 <emphasis role="comment">//&#32;Includes</emphasis>
+12 <emphasis role="comment">//--------------------------------------------------------------</emphasis>
+13 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_stm32f4xx_8h">stm32f4xx.h</link>&quot;</emphasis>
+14 
+15 
+16 <emphasis role="comment">//--------------------------------------------------------------</emphasis>
+17 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;__STM32F4_UB_MAIN_H</emphasis>
+</programlisting></section>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___external___trigger___filter" xml:lang="en-US">
+<title>TIM_External_Trigger_Filter</title>
+<indexterm><primary>TIM_External_Trigger_Filter</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___t_i_m___external___trigger___filter_1ga500df0646edcf07316a55a652502ca87"/>#define <emphasis role="strong">IS_TIM_EXT_FILTER</emphasis>(EXTFILTER)&#160;&#160;&#160;((EXTFILTER) &lt;= 0xF)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+</section>

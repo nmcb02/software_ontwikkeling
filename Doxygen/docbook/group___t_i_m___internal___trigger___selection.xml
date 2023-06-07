@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___internal___trigger___selection" xml:lang="en-US">
+<title>TIM_Internal_Trigger_Selection</title>
+<indexterm><primary>TIM_Internal_Trigger_Selection</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___t_i_m___internal___trigger___selection_1gab7cf2b7db3956d4fd1e5a5d84f4891e7"/>#define <emphasis role="strong">TIM_TS_ITR0</emphasis>&#160;&#160;&#160;((uint16_t)0x0000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___internal___trigger___selection_1gad90fbca297153ca9c0112a67ea2c6cb3"/>#define <emphasis role="strong">TIM_TS_ITR1</emphasis>&#160;&#160;&#160;((uint16_t)0x0010)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___internal___trigger___selection_1ga8599ba58a5f911d648503c7ac55d4320"/>#define <emphasis role="strong">TIM_TS_ITR2</emphasis>&#160;&#160;&#160;((uint16_t)0x0020)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___internal___trigger___selection_1ga63183e611b91c5847040172c0069514d"/>#define <emphasis role="strong">TIM_TS_ITR3</emphasis>&#160;&#160;&#160;((uint16_t)0x0030)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___internal___trigger___selection_1ga8c89554efc693e679c94b5a749af123c"/>#define <emphasis role="strong">TIM_TS_TI1F_ED</emphasis>&#160;&#160;&#160;((uint16_t)0x0040)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___internal___trigger___selection_1ga38d3514d54bcdb0ea8ac8bd91c5832b5"/>#define <emphasis role="strong">TIM_TS_TI1FP1</emphasis>&#160;&#160;&#160;((uint16_t)0x0050)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___internal___trigger___selection_1ga0ed58a269bccd3f22d19cc9a2ba3123f"/>#define <emphasis role="strong">TIM_TS_TI2FP2</emphasis>&#160;&#160;&#160;((uint16_t)0x0060)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___internal___trigger___selection_1gaece08e02e056613a882aa7ff0a6ccc2d"/>#define <emphasis role="strong">TIM_TS_ETRF</emphasis>&#160;&#160;&#160;((uint16_t)0x0070)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___internal___trigger___selection_1ga36e47cf625c695a368a68280e950dfbc">IS_TIM_TRIGGER_SELECTION</link>(SELECTION)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___internal___trigger___selection_1ga1ce6c387021e2fdaf3fa3d7cd3eae962">IS_TIM_INTERNAL_TRIGGER_SELECTION</link>(SELECTION)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___t_i_m___internal___trigger___selection_1ga1ce6c387021e2fdaf3fa3d7cd3eae962"/><section>
+    <title>IS_TIM_INTERNAL_TRIGGER_SELECTION</title>
+<indexterm><primary>IS_TIM_INTERNAL_TRIGGER_SELECTION</primary><secondary>TIM_Internal_Trigger_Selection</secondary></indexterm>
+<indexterm><primary>TIM_Internal_Trigger_Selection</primary><secondary>IS_TIM_INTERNAL_TRIGGER_SELECTION</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_INTERNAL_TRIGGER_SELECTION( SELECTION)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((SELECTION)&#32;==&#32;TIM_TS_ITR0)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;TIM_TS_ITR1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;TIM_TS_ITR2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;TIM_TS_ITR3))
+</programlisting></section>
+<anchor xml:id="_group___t_i_m___internal___trigger___selection_1ga36e47cf625c695a368a68280e950dfbc"/><section>
+    <title>IS_TIM_TRIGGER_SELECTION</title>
+<indexterm><primary>IS_TIM_TRIGGER_SELECTION</primary><secondary>TIM_Internal_Trigger_Selection</secondary></indexterm>
+<indexterm><primary>TIM_Internal_Trigger_Selection</primary><secondary>IS_TIM_TRIGGER_SELECTION</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_TRIGGER_SELECTION( SELECTION)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((SELECTION)&#32;==&#32;TIM_TS_ITR0)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;TIM_TS_ITR1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;TIM_TS_ITR2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;TIM_TS_ITR3)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;TIM_TS_TI1F_ED)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;TIM_TS_TI1FP1)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;TIM_TS_TI2FP2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;TIM_TS_ETRF))
+</programlisting></section>
+</section>
+</section>

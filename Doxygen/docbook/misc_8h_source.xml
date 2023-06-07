@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_misc_8h_source" xml:lang="en-US">
+<title>misc.h</title>
+<indexterm><primary>CUBE_IDE/VGA/Core/Inc/misc.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+23 <emphasis role="comment">/*&#32;Define&#32;to&#32;prevent&#32;recursive&#32;inclusion&#32;-------------------------------------*/</emphasis>
+24 <emphasis role="preprocessor">#ifndef&#32;__MISC_H</emphasis>
+25 <emphasis role="preprocessor">#define&#32;__MISC_H</emphasis>
+26 
+27 <emphasis role="preprocessor">#ifdef&#32;__cplusplus</emphasis>
+28 &#32;<emphasis role="keyword">extern</emphasis>&#32;<emphasis role="stringliteral">&quot;C&quot;</emphasis>&#32;{
+29 <emphasis role="preprocessor">#endif</emphasis>
+30 
+31 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+32 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_stm32f4xx_8h">stm32f4xx.h</link>&quot;</emphasis>
+33 
+42 <emphasis role="comment">/*&#32;Exported&#32;types&#32;------------------------------------------------------------*/</emphasis>
+43 
+48 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct</emphasis>
+49 {
+50 &#32;&#32;uint8_t&#32;<link linkend="_struct_n_v_i_c___init_type_def_1ae972a759b8b04f3856a614315c03d2d0">NVIC_IRQChannel</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+55 &#32;&#32;uint8_t&#32;<link linkend="_struct_n_v_i_c___init_type_def_1aa395d7151e569272cbcf04420a1a4128">NVIC_IRQChannelPreemptionPriority</link>;&#32;&#32;
+60 &#32;&#32;uint8_t&#32;<link linkend="_struct_n_v_i_c___init_type_def_1a91b24559ddbc12752f2414582fb47cb9">NVIC_IRQChannelSubPriority</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+65 &#32;&#32;FunctionalState&#32;<link linkend="_struct_n_v_i_c___init_type_def_1a3c5567ef024a0489884083c88f17b4d5">NVIC_IRQChannelCmd</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+68 }&#32;<link linkend="_struct_n_v_i_c___init_type_def">NVIC_InitTypeDef</link>;
+69 &#32;
+70 <emphasis role="comment">/*&#32;Exported&#32;constants&#32;--------------------------------------------------------*/</emphasis>
+71 
+80 <emphasis role="preprocessor">#define&#32;NVIC_VectTab_RAM&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x20000000)</emphasis>
+81 <emphasis role="preprocessor">#define&#32;NVIC_VectTab_FLASH&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x08000000)</emphasis>
+82 <emphasis role="preprocessor">#define&#32;IS_NVIC_VECTTAB(VECTTAB)&#32;(((VECTTAB)&#32;==&#32;NVIC_VectTab_RAM)&#32;||&#32;\</emphasis>
+83 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((VECTTAB)&#32;==&#32;NVIC_VectTab_FLASH))</emphasis>
+92 <emphasis role="preprocessor">#define&#32;NVIC_LP_SEVONPEND&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x10)</emphasis>
+93 <emphasis role="preprocessor">#define&#32;NVIC_LP_SLEEPDEEP&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x04)</emphasis>
+94 <emphasis role="preprocessor">#define&#32;NVIC_LP_SLEEPONEXIT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x02)</emphasis>
+95 <emphasis role="preprocessor">#define&#32;IS_NVIC_LP(LP)&#32;(((LP)&#32;==&#32;NVIC_LP_SEVONPEND)&#32;||&#32;\</emphasis>
+96 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((LP)&#32;==&#32;NVIC_LP_SLEEPDEEP)&#32;||&#32;\</emphasis>
+97 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((LP)&#32;==&#32;NVIC_LP_SLEEPONEXIT))</emphasis>
+106 <emphasis role="preprocessor">#define&#32;NVIC_PriorityGroup_0&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x700)&#32;</emphasis>
+108 <emphasis role="preprocessor">#define&#32;NVIC_PriorityGroup_1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x600)&#32;</emphasis>
+110 <emphasis role="preprocessor">#define&#32;NVIC_PriorityGroup_2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x500)&#32;</emphasis>
+112 <emphasis role="preprocessor">#define&#32;NVIC_PriorityGroup_3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x400)&#32;</emphasis>
+114 <emphasis role="preprocessor">#define&#32;NVIC_PriorityGroup_4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x300)&#32;</emphasis>
+117 <emphasis role="preprocessor">#define&#32;IS_NVIC_PRIORITY_GROUP(GROUP)&#32;(((GROUP)&#32;==&#32;NVIC_PriorityGroup_0)&#32;||&#32;\</emphasis>
+118 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((GROUP)&#32;==&#32;NVIC_PriorityGroup_1)&#32;||&#32;\</emphasis>
+119 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((GROUP)&#32;==&#32;NVIC_PriorityGroup_2)&#32;||&#32;\</emphasis>
+120 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((GROUP)&#32;==&#32;NVIC_PriorityGroup_3)&#32;||&#32;\</emphasis>
+121 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((GROUP)&#32;==&#32;NVIC_PriorityGroup_4))</emphasis>
+122 
+123 <emphasis role="preprocessor">#define&#32;IS_NVIC_PREEMPTION_PRIORITY(PRIORITY)&#32;&#32;((PRIORITY)&#32;&lt;&#32;0x10)</emphasis>
+124 
+125 <emphasis role="preprocessor">#define&#32;IS_NVIC_SUB_PRIORITY(PRIORITY)&#32;&#32;((PRIORITY)&#32;&lt;&#32;0x10)</emphasis>
+126 
+127 <emphasis role="preprocessor">#define&#32;IS_NVIC_OFFSET(OFFSET)&#32;&#32;((OFFSET)&#32;&lt;&#32;0x000FFFFF)</emphasis>
+128 
+137 <emphasis role="preprocessor">#define&#32;SysTick_CLKSource_HCLK_Div8&#32;&#32;&#32;&#32;((uint32_t)0xFFFFFFFB)</emphasis>
+138 <emphasis role="preprocessor">#define&#32;SysTick_CLKSource_HCLK&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint32_t)0x00000004)</emphasis>
+139 <emphasis role="preprocessor">#define&#32;IS_SYSTICK_CLK_SOURCE(SOURCE)&#32;(((SOURCE)&#32;==&#32;SysTick_CLKSource_HCLK)&#32;||&#32;\</emphasis>
+140 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;SysTick_CLKSource_HCLK_Div8))</emphasis>
+149 <emphasis role="comment">/*&#32;Exported&#32;macro&#32;------------------------------------------------------------*/</emphasis>
+150 <emphasis role="comment">/*&#32;Exported&#32;functions&#32;--------------------------------------------------------*/</emphasis>
+151 
+152 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___m_i_s_c_1gadfb1f34f803ce54c976643db8c484442">NVIC_PriorityGroupConfig</link>(uint32_t&#32;NVIC_PriorityGroup);
+153 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___m_i_s_c_1ga4ab373ed0870c06fca5eb51d639adf41">NVIC_Init</link>(<link linkend="_struct_n_v_i_c___init_type_def">NVIC_InitTypeDef</link>*&#32;NVIC_InitStruct);
+154 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___m_i_s_c_1ga1145208ad70edfc2fab19b8b8ef1b1a1">NVIC_SetVectorTable</link>(uint32_t&#32;NVIC_VectTab,&#32;uint32_t&#32;Offset);
+155 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___m_i_s_c_1gae21011c5232f5b8f366acbecd12a1d4a">NVIC_SystemLPConfig</link>(uint8_t&#32;LowPowerMode,&#32;FunctionalState&#32;NewState);
+156 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___m_i_s_c_1ga2777d255bb06ad62bb6372a9db1ff385">SysTick_CLKSourceConfig</link>(uint32_t&#32;SysTick_CLKSource);
+157 
+158 <emphasis role="preprocessor">#ifdef&#32;__cplusplus</emphasis>
+159 }
+160 <emphasis role="preprocessor">#endif</emphasis>
+161 
+162 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;__MISC_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+163 
+172 <emphasis role="comment">/*******************&#32;(C)&#32;COPYRIGHT&#32;2011&#32;STMicroelectronics&#32;*****END&#32;OF&#32;FILE****/</emphasis>
+</programlisting></section>

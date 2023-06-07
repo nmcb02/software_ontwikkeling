@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_d_a_c___type_def" xml:lang="en-US">
+<title>DAC_TypeDef Struct Reference</title>
+<indexterm><primary>DAC_TypeDef</primary></indexterm>
+<para>
+
+<para>Digital to Analog Converter. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f4xx.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1ab40c89c59391aaa9d9a8ec011dd0907a">CR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1a896bbb7153af0b67ad772360feaceeb4">SWTRIGR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1ac2bb55b037b800a25852736afdd7a258">DHR12R1</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1ae9028b8bcb5118b7073165fb50fcd559">DHR12L1</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1ad0a200e12acad17a5c7d2059159ea7e1">DHR8R1</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1a804c7e15dbb587c7ea25511f6a7809f7">DHR12R2</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1a2e45f9c9d67e384187b25334ba0a3e3d">DHR12L2</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1a4c435f0e34ace4421241cd5c3ae87fc2">DHR8R2</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1a1590b77e57f17e75193da259da72095e">DHR12RD</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1acc269320aff0a6482730224a4b641a59">DHR12LD</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1a9590269cba8412f1be96b0ddb846ef44">DHR8RD</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1aa710505be03a41981c35bacc7ce20746">DOR1</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1aba9fb810b0cf6cbc1280c5c63be2418b">DOR2</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_d_a_c___type_def_1af6aca2bbd40c0fb6df7c3aebe224a360">SR</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Digital to Analog Converter. </para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_d_a_c___type_def_1ab40c89c59391aaa9d9a8ec011dd0907a"/><section>
+    <title>CR</title>
+<indexterm><primary>CR</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>CR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t CR</computeroutput></para>
+<para>DAC control register, Address offset: 0x00 </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1ae9028b8bcb5118b7073165fb50fcd559"/><section>
+    <title>DHR12L1</title>
+<indexterm><primary>DHR12L1</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DHR12L1</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DHR12L1</computeroutput></para>
+<para>DAC channel1 12-bit left aligned data holding register, Address offset: 0x0C </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1a2e45f9c9d67e384187b25334ba0a3e3d"/><section>
+    <title>DHR12L2</title>
+<indexterm><primary>DHR12L2</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DHR12L2</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DHR12L2</computeroutput></para>
+<para>DAC channel2 12-bit left aligned data holding register, Address offset: 0x18 </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1acc269320aff0a6482730224a4b641a59"/><section>
+    <title>DHR12LD</title>
+<indexterm><primary>DHR12LD</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DHR12LD</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DHR12LD</computeroutput></para>
+<para>DUAL DAC 12-bit left aligned data holding register, Address offset: 0x24 </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1ac2bb55b037b800a25852736afdd7a258"/><section>
+    <title>DHR12R1</title>
+<indexterm><primary>DHR12R1</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DHR12R1</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DHR12R1</computeroutput></para>
+<para>DAC channel1 12-bit right-aligned data holding register, Address offset: 0x08 </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1a804c7e15dbb587c7ea25511f6a7809f7"/><section>
+    <title>DHR12R2</title>
+<indexterm><primary>DHR12R2</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DHR12R2</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DHR12R2</computeroutput></para>
+<para>DAC channel2 12-bit right aligned data holding register, Address offset: 0x14 </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1a1590b77e57f17e75193da259da72095e"/><section>
+    <title>DHR12RD</title>
+<indexterm><primary>DHR12RD</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DHR12RD</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DHR12RD</computeroutput></para>
+<para>Dual DAC 12-bit right-aligned data holding register, Address offset: 0x20 </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1ad0a200e12acad17a5c7d2059159ea7e1"/><section>
+    <title>DHR8R1</title>
+<indexterm><primary>DHR8R1</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DHR8R1</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DHR8R1</computeroutput></para>
+<para>DAC channel1 8-bit right aligned data holding register, Address offset: 0x10 </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1a4c435f0e34ace4421241cd5c3ae87fc2"/><section>
+    <title>DHR8R2</title>
+<indexterm><primary>DHR8R2</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DHR8R2</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DHR8R2</computeroutput></para>
+<para>DAC channel2 8-bit right-aligned data holding register, Address offset: 0x1C </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1a9590269cba8412f1be96b0ddb846ef44"/><section>
+    <title>DHR8RD</title>
+<indexterm><primary>DHR8RD</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DHR8RD</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DHR8RD</computeroutput></para>
+<para>DUAL DAC 8-bit right aligned data holding register, Address offset: 0x28 </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1aa710505be03a41981c35bacc7ce20746"/><section>
+    <title>DOR1</title>
+<indexterm><primary>DOR1</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DOR1</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DOR1</computeroutput></para>
+<para>DAC channel1 data output register, Address offset: 0x2C </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1aba9fb810b0cf6cbc1280c5c63be2418b"/><section>
+    <title>DOR2</title>
+<indexterm><primary>DOR2</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>DOR2</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t DOR2</computeroutput></para>
+<para>DAC channel2 data output register, Address offset: 0x30 </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1af6aca2bbd40c0fb6df7c3aebe224a360"/><section>
+    <title>SR</title>
+<indexterm><primary>SR</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>SR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t SR</computeroutput></para>
+<para>DAC status register, Address offset: 0x34 </para>
+</section>
+<anchor xml:id="_struct_d_a_c___type_def_1a896bbb7153af0b67ad772360feaceeb4"/><section>
+    <title>SWTRIGR</title>
+<indexterm><primary>SWTRIGR</primary><secondary>DAC_TypeDef</secondary></indexterm>
+<indexterm><primary>DAC_TypeDef</primary><secondary>SWTRIGR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t SWTRIGR</computeroutput></para>
+<para>DAC software trigger register, Address offset: 0x04 </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_stm32f4xx_8h">stm32f4xx.h</link></section>
+</section>

@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_stm32f4xx__gpio_8h_source" xml:lang="en-US">
+<title>stm32f4xx_gpio.h</title>
+<indexterm><primary>CUBE_IDE/VGA/Core/Inc/stm32f4xx_gpio.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+23 <emphasis role="comment">/*&#32;Define&#32;to&#32;prevent&#32;recursive&#32;inclusion&#32;-------------------------------------*/</emphasis>
+24 <emphasis role="preprocessor">#ifndef&#32;__STM32F4xx_GPIO_H</emphasis>
+25 <emphasis role="preprocessor">#define&#32;__STM32F4xx_GPIO_H</emphasis>
+26 
+27 <emphasis role="preprocessor">#ifdef&#32;__cplusplus</emphasis>
+28 &#32;<emphasis role="keyword">extern</emphasis>&#32;<emphasis role="stringliteral">&quot;C&quot;</emphasis>&#32;{
+29 <emphasis role="preprocessor">#endif</emphasis>
+30 
+31 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+32 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_stm32f4xx_8h">stm32f4xx.h</link>&quot;</emphasis>
+33 
+42 <emphasis role="comment">/*&#32;Exported&#32;types&#32;------------------------------------------------------------*/</emphasis>
+43 
+44 <emphasis role="preprocessor">#define&#32;IS_GPIO_ALL_PERIPH(PERIPH)&#32;(((PERIPH)&#32;==&#32;GPIOA)&#32;||&#32;\</emphasis>
+45 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;GPIOB)&#32;||&#32;\</emphasis>
+46 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;GPIOC)&#32;||&#32;\</emphasis>
+47 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;GPIOD)&#32;||&#32;\</emphasis>
+48 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;GPIOE)&#32;||&#32;\</emphasis>
+49 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;GPIOF)&#32;||&#32;\</emphasis>
+50 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;GPIOG)&#32;||&#32;\</emphasis>
+51 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;GPIOH)&#32;||&#32;\</emphasis>
+52 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PERIPH)&#32;==&#32;GPIOI))</emphasis>
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+57 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">enum</emphasis>
+58 {&#32;
+59 &#32;&#32;<link linkend="_group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a484aa18a6156ce916049b334ba1839de">GPIO_Mode_IN</link>&#32;&#32;&#32;=&#32;0x00,&#32;
+60 &#32;&#32;<link linkend="_group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a60f1d530f4119efcad8e1a68c890c6a6">GPIO_Mode_OUT</link>&#32;&#32;=&#32;0x01,&#32;
+61 &#32;&#32;<link linkend="_group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a6d44c35c6c5008d85bac9251a867e701">GPIO_Mode_AF</link>&#32;&#32;&#32;=&#32;0x02,&#32;
+62 &#32;&#32;<link linkend="_group___g_p_i_o_1gga1347339e1c84a196fabbb31205eec5d4a6e5c0d7e6d2e22b834b24e1ca1d6d0db">GPIO_Mode_AN</link>&#32;&#32;&#32;=&#32;0x03&#32;&#32;
+63 }<link linkend="_group___g_p_i_o_1ga1347339e1c84a196fabbb31205eec5d4">GPIOMode_TypeDef</link>;
+64 <emphasis role="preprocessor">#define&#32;IS_GPIO_MODE(MODE)&#32;(((MODE)&#32;==&#32;GPIO_Mode_IN)&#32;&#32;||&#32;((MODE)&#32;==&#32;GPIO_Mode_OUT)&#32;||&#32;\</emphasis>
+65 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((MODE)&#32;==&#32;GPIO_Mode_AF)||&#32;((MODE)&#32;==&#32;GPIO_Mode_AN))</emphasis>
+66 
+70 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">enum</emphasis>
+71 {&#32;
+72 &#32;&#32;GPIO_OType_PP&#32;=&#32;0x00,
+73 &#32;&#32;GPIO_OType_OD&#32;=&#32;0x01
+74 }<link linkend="_group___g_p_i_o_1gae74212e8d66c389f47326b06bdf6d2ab">GPIOOType_TypeDef</link>;
+75 <emphasis role="preprocessor">#define&#32;IS_GPIO_OTYPE(OTYPE)&#32;(((OTYPE)&#32;==&#32;GPIO_OType_PP)&#32;||&#32;((OTYPE)&#32;==&#32;GPIO_OType_OD))</emphasis>
+76 
+77 
+81 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">enum</emphasis>
+82 {&#32;
+83 &#32;&#32;<link linkend="_group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea9bff9e174639332007c914483361be18">GPIO_Speed_2MHz</link>&#32;&#32;&#32;=&#32;0x00,&#32;
+84 &#32;&#32;<link linkend="_group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea59a0acdf2ccd1b4b8d507e845e497c62">GPIO_Speed_25MHz</link>&#32;&#32;=&#32;0x01,&#32;
+85 &#32;&#32;<link linkend="_group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea9c47db10456202ac05134b12738ce581">GPIO_Speed_50MHz</link>&#32;&#32;=&#32;0x02,&#32;
+86 &#32;&#32;<link linkend="_group___g_p_i_o_1gga062ad92b67b4a1f301c161022cf3ba8ea195a0e73cd63d7f5b5d41bd0155eacbb">GPIO_Speed_100MHz</link>&#32;=&#32;0x03&#32;&#32;
+87 }<link linkend="_group___g_p_i_o_1ga062ad92b67b4a1f301c161022cf3ba8e">GPIOSpeed_TypeDef</link>;
+88 <emphasis role="preprocessor">#define&#32;IS_GPIO_SPEED(SPEED)&#32;(((SPEED)&#32;==&#32;GPIO_Speed_2MHz)&#32;||&#32;((SPEED)&#32;==&#32;GPIO_Speed_25MHz)&#32;||&#32;\</emphasis>
+89 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SPEED)&#32;==&#32;GPIO_Speed_50MHz)||&#32;&#32;((SPEED)&#32;==&#32;GPIO_Speed_100MHz))&#32;</emphasis>
+90 
+94 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">enum</emphasis>
+95 {&#32;
+96 &#32;&#32;GPIO_PuPd_NOPULL&#32;=&#32;0x00,
+97 &#32;&#32;GPIO_PuPd_UP&#32;&#32;&#32;&#32;&#32;=&#32;0x01,
+98 &#32;&#32;GPIO_PuPd_DOWN&#32;&#32;&#32;=&#32;0x02
+99 }<link linkend="_group___g_p_i_o_1gafb7ecd99c44b4fd702d669304a36c2c8">GPIOPuPd_TypeDef</link>;
+100 <emphasis role="preprocessor">#define&#32;IS_GPIO_PUPD(PUPD)&#32;(((PUPD)&#32;==&#32;GPIO_PuPd_NOPULL)&#32;||&#32;((PUPD)&#32;==&#32;GPIO_PuPd_UP)&#32;||&#32;\</emphasis>
+101 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PUPD)&#32;==&#32;GPIO_PuPd_DOWN))</emphasis>
+102 
+106 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">enum</emphasis>
+107 {&#32;
+108 &#32;&#32;Bit_RESET&#32;=&#32;0,
+109 &#32;&#32;Bit_SET
+110 }<link linkend="_group___g_p_i_o_1ga176130b21c0e719121470a6042d4cf19">BitAction</link>;
+111 <emphasis role="preprocessor">#define&#32;IS_GPIO_BIT_ACTION(ACTION)&#32;(((ACTION)&#32;==&#32;Bit_RESET)&#32;||&#32;((ACTION)&#32;==&#32;Bit_SET))</emphasis>
+112 
+113 
+117 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">struct</emphasis>
+118 {
+119 &#32;&#32;uint32_t&#32;<link linkend="_struct_g_p_i_o___init_type_def_1a15699fc7e215ac2579cd24ca76cd4591">GPIO_Pin</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+122 &#32;&#32;<link linkend="_group___g_p_i_o_1ga1347339e1c84a196fabbb31205eec5d4">GPIOMode_TypeDef</link>&#32;<link linkend="_struct_g_p_i_o___init_type_def_1a0c7e8901d8b511bbb8c3b153f705dbba">GPIO_Mode</link>;&#32;&#32;&#32;&#32;&#32;
+125 &#32;&#32;<link linkend="_group___g_p_i_o_1ga062ad92b67b4a1f301c161022cf3ba8e">GPIOSpeed_TypeDef</link>&#32;<link linkend="_struct_g_p_i_o___init_type_def_1a57b08335216f50618ebc080e4fbb0a80">GPIO_Speed</link>;&#32;&#32;&#32;
+128 &#32;&#32;<link linkend="_group___g_p_i_o_1gae74212e8d66c389f47326b06bdf6d2ab">GPIOOType_TypeDef</link>&#32;<link linkend="_struct_g_p_i_o___init_type_def_1a321a268abbed3d2f01c27383e8daf92d">GPIO_OType</link>;&#32;&#32;&#32;
+131 &#32;&#32;<link linkend="_group___g_p_i_o_1gafb7ecd99c44b4fd702d669304a36c2c8">GPIOPuPd_TypeDef</link>&#32;<link linkend="_struct_g_p_i_o___init_type_def_1aeb0168ffc465346d21f3120aec320b72">GPIO_PuPd</link>;&#32;&#32;&#32;&#32;&#32;
+133 }<link linkend="_struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link>;
+134 
+135 <emphasis role="comment">/*&#32;Exported&#32;constants&#32;--------------------------------------------------------*/</emphasis>
+136 
+144 <emphasis role="preprocessor">#define&#32;GPIO_Pin_0&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0001)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;0&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+145 <emphasis role="preprocessor">#define&#32;GPIO_Pin_1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0002)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;1&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+146 <emphasis role="preprocessor">#define&#32;GPIO_Pin_2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0004)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;2&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+147 <emphasis role="preprocessor">#define&#32;GPIO_Pin_3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0008)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;3&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+148 <emphasis role="preprocessor">#define&#32;GPIO_Pin_4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0010)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;4&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+149 <emphasis role="preprocessor">#define&#32;GPIO_Pin_5&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0020)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;5&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+150 <emphasis role="preprocessor">#define&#32;GPIO_Pin_6&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0040)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;6&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+151 <emphasis role="preprocessor">#define&#32;GPIO_Pin_7&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0080)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;7&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+152 <emphasis role="preprocessor">#define&#32;GPIO_Pin_8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0100)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;8&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+153 <emphasis role="preprocessor">#define&#32;GPIO_Pin_9&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0200)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;9&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+154 <emphasis role="preprocessor">#define&#32;GPIO_Pin_10&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0400)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;10&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+155 <emphasis role="preprocessor">#define&#32;GPIO_Pin_11&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x0800)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;11&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+156 <emphasis role="preprocessor">#define&#32;GPIO_Pin_12&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x1000)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;12&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+157 <emphasis role="preprocessor">#define&#32;GPIO_Pin_13&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x2000)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;13&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+158 <emphasis role="preprocessor">#define&#32;GPIO_Pin_14&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x4000)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;14&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+159 <emphasis role="preprocessor">#define&#32;GPIO_Pin_15&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0x8000)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;Pin&#32;15&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+160 <emphasis role="preprocessor">#define&#32;GPIO_Pin_All&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint16_t)0xFFFF)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;All&#32;pins&#32;selected&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+161 
+162 <emphasis role="preprocessor">#define&#32;IS_GPIO_PIN(PIN)&#32;((((PIN)&#32;&amp;&#32;(uint16_t)0x00)&#32;==&#32;0x00)&#32;&amp;&amp;&#32;((PIN)&#32;!=&#32;(uint16_t)0x00))</emphasis>
+163 <emphasis role="preprocessor">#define&#32;IS_GET_GPIO_PIN(PIN)&#32;(((PIN)&#32;==&#32;GPIO_Pin_0)&#32;||&#32;\</emphasis>
+164 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_1)&#32;||&#32;\</emphasis>
+165 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_2)&#32;||&#32;\</emphasis>
+166 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_3)&#32;||&#32;\</emphasis>
+167 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_4)&#32;||&#32;\</emphasis>
+168 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_5)&#32;||&#32;\</emphasis>
+169 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_6)&#32;||&#32;\</emphasis>
+170 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_7)&#32;||&#32;\</emphasis>
+171 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_8)&#32;||&#32;\</emphasis>
+172 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_9)&#32;||&#32;\</emphasis>
+173 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_10)&#32;||&#32;\</emphasis>
+174 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_11)&#32;||&#32;\</emphasis>
+175 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_12)&#32;||&#32;\</emphasis>
+176 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_13)&#32;||&#32;\</emphasis>
+177 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_14)&#32;||&#32;\</emphasis>
+178 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PIN)&#32;==&#32;GPIO_Pin_15))</emphasis>
+187 <emphasis role="preprocessor">#define&#32;GPIO_PinSource0&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x00)</emphasis>
+188 <emphasis role="preprocessor">#define&#32;GPIO_PinSource1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x01)</emphasis>
+189 <emphasis role="preprocessor">#define&#32;GPIO_PinSource2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x02)</emphasis>
+190 <emphasis role="preprocessor">#define&#32;GPIO_PinSource3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x03)</emphasis>
+191 <emphasis role="preprocessor">#define&#32;GPIO_PinSource4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x04)</emphasis>
+192 <emphasis role="preprocessor">#define&#32;GPIO_PinSource5&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x05)</emphasis>
+193 <emphasis role="preprocessor">#define&#32;GPIO_PinSource6&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x06)</emphasis>
+194 <emphasis role="preprocessor">#define&#32;GPIO_PinSource7&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x07)</emphasis>
+195 <emphasis role="preprocessor">#define&#32;GPIO_PinSource8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x08)</emphasis>
+196 <emphasis role="preprocessor">#define&#32;GPIO_PinSource9&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x09)</emphasis>
+197 <emphasis role="preprocessor">#define&#32;GPIO_PinSource10&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x0A)</emphasis>
+198 <emphasis role="preprocessor">#define&#32;GPIO_PinSource11&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x0B)</emphasis>
+199 <emphasis role="preprocessor">#define&#32;GPIO_PinSource12&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x0C)</emphasis>
+200 <emphasis role="preprocessor">#define&#32;GPIO_PinSource13&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x0D)</emphasis>
+201 <emphasis role="preprocessor">#define&#32;GPIO_PinSource14&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x0E)</emphasis>
+202 <emphasis role="preprocessor">#define&#32;GPIO_PinSource15&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x0F)</emphasis>
+203 
+204 <emphasis role="preprocessor">#define&#32;IS_GPIO_PIN_SOURCE(PINSOURCE)&#32;(((PINSOURCE)&#32;==&#32;GPIO_PinSource0)&#32;||&#32;\</emphasis>
+205 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource1)&#32;||&#32;\</emphasis>
+206 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource2)&#32;||&#32;\</emphasis>
+207 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource3)&#32;||&#32;\</emphasis>
+208 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource4)&#32;||&#32;\</emphasis>
+209 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource5)&#32;||&#32;\</emphasis>
+210 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource6)&#32;||&#32;\</emphasis>
+211 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource7)&#32;||&#32;\</emphasis>
+212 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource8)&#32;||&#32;\</emphasis>
+213 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource9)&#32;||&#32;\</emphasis>
+214 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource10)&#32;||&#32;\</emphasis>
+215 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource11)&#32;||&#32;\</emphasis>
+216 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource12)&#32;||&#32;\</emphasis>
+217 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource13)&#32;||&#32;\</emphasis>
+218 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource14)&#32;||&#32;\</emphasis>
+219 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((PINSOURCE)&#32;==&#32;GPIO_PinSource15))</emphasis>
+230 <emphasis role="preprocessor">#define&#32;GPIO_AF_RTC_50Hz&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x00)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;RTC_50Hz&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+231 <emphasis role="preprocessor">#define&#32;GPIO_AF_MCO&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x00)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;MCO&#32;(MCO1&#32;and&#32;MCO2)&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+232 <emphasis role="preprocessor">#define&#32;GPIO_AF_TAMPER&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x00)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TAMPER&#32;(TAMPER_1&#32;and&#32;TAMPER_2)&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+233 <emphasis role="preprocessor">#define&#32;GPIO_AF_SWJ&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x00)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;SWJ&#32;(SWD&#32;and&#32;JTAG)&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+234 <emphasis role="preprocessor">#define&#32;GPIO_AF_TRACE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x00)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TRACE&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+235 
+239 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x01)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM1&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+240 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x01)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM2&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+241 
+245 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x02)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM3&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+246 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x02)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM4&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+247 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM5&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x02)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM5&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+248 
+252 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM8&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x03)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM8&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+253 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM9&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x03)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM9&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+254 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM10&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x03)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM10&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+255 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM11&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x03)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM11&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+256 
+260 <emphasis role="preprocessor">#define&#32;GPIO_AF_I2C1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x04)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;I2C1&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+261 <emphasis role="preprocessor">#define&#32;GPIO_AF_I2C2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x04)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;I2C2&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+262 <emphasis role="preprocessor">#define&#32;GPIO_AF_I2C3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x04)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;I2C3&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+263 
+267 <emphasis role="preprocessor">#define&#32;GPIO_AF_SPI1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x05)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;SPI1&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+268 <emphasis role="preprocessor">#define&#32;GPIO_AF_SPI2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x05)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;SPI2/I2S2&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+269 
+273 <emphasis role="preprocessor">#define&#32;GPIO_AF_SPI3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x06)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;SPI3/I2S3&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+274 
+278 <emphasis role="preprocessor">#define&#32;GPIO_AF_USART1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x07)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;USART1&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+279 <emphasis role="preprocessor">#define&#32;GPIO_AF_USART2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x07)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;USART2&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+280 <emphasis role="preprocessor">#define&#32;GPIO_AF_USART3&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x07)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;USART3&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+281 <emphasis role="preprocessor">#define&#32;GPIO_AF_I2S3ext&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x07)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;I2S3ext&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+282 
+286 <emphasis role="preprocessor">#define&#32;GPIO_AF_UART4&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x08)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;UART4&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+287 <emphasis role="preprocessor">#define&#32;GPIO_AF_UART5&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x08)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;UART5&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+288 <emphasis role="preprocessor">#define&#32;GPIO_AF_USART6&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x08)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;USART6&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+289 
+293 <emphasis role="preprocessor">#define&#32;GPIO_AF_CAN1&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x09)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;CAN1&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+294 <emphasis role="preprocessor">#define&#32;GPIO_AF_CAN2&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x09)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;CAN2&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+295 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM12&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x09)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM12&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+296 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM13&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x09)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM13&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+297 <emphasis role="preprocessor">#define&#32;GPIO_AF_TIM14&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x09)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;TIM14&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+298 
+302 <emphasis role="preprocessor">#define&#32;GPIO_AF_OTG_FS&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0xA)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;OTG_FS&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+303 <emphasis role="preprocessor">#define&#32;GPIO_AF_OTG_HS&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0xA)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;OTG_HS&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+304 
+308 <emphasis role="preprocessor">#define&#32;GPIO_AF_ETH&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x0B)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;ETHERNET&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+309 
+313 <emphasis role="preprocessor">#define&#32;GPIO_AF_FSMC&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0xC)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;FSMC&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+314 <emphasis role="preprocessor">#define&#32;GPIO_AF_OTG_HS_FS&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0xC)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;OTG&#32;HS&#32;configured&#32;in&#32;FS,&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+315 <emphasis role="preprocessor">#define&#32;GPIO_AF_SDIO&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0xC)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;SDIO&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+316 
+320 <emphasis role="preprocessor">#define&#32;GPIO_AF_DCMI&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x0D)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;DCMI&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+321 
+325 <emphasis role="preprocessor">#define&#32;GPIO_AF_EVENTOUT&#32;&#32;&#32;&#32;&#32;&#32;((uint8_t)0x0F)&#32;&#32;</emphasis><emphasis role="comment">/*&#32;EVENTOUT&#32;Alternate&#32;Function&#32;mapping&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+326 
+327 <emphasis role="preprocessor">#define&#32;IS_GPIO_AF(AF)&#32;&#32;&#32;(((AF)&#32;==&#32;GPIO_AF_RTC_50Hz)&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_TIM14)&#32;&#32;||&#32;\</emphasis>
+328 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_MCO)&#32;&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_TAMPER)&#32;||&#32;\</emphasis>
+329 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_SWJ)&#32;&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_TRACE)&#32;&#32;||&#32;\</emphasis>
+330 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_TIM1)&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_TIM2)&#32;&#32;&#32;||&#32;\</emphasis>
+331 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_TIM3)&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_TIM4)&#32;&#32;&#32;||&#32;\</emphasis>
+332 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_TIM5)&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_TIM8)&#32;&#32;&#32;||&#32;\</emphasis>
+333 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_I2C1)&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_I2C2)&#32;&#32;&#32;||&#32;\</emphasis>
+334 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_I2C3)&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_SPI1)&#32;&#32;&#32;||&#32;\</emphasis>
+335 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_SPI2)&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_TIM13)&#32;&#32;||&#32;\</emphasis>
+336 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_SPI3)&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_TIM14)&#32;&#32;||&#32;\</emphasis>
+337 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_USART1)&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_USART2)&#32;||&#32;\</emphasis>
+338 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_USART3)&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_UART4)&#32;&#32;||&#32;\</emphasis>
+339 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_UART5)&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_USART6)&#32;||&#32;\</emphasis>
+340 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_CAN1)&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_CAN2)&#32;&#32;&#32;||&#32;\</emphasis>
+341 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_OTG_FS)&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_OTG_HS)&#32;||&#32;\</emphasis>
+342 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_ETH)&#32;&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_FSMC)&#32;&#32;&#32;||&#32;\</emphasis>
+343 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_OTG_HS_FS)&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_SDIO)&#32;&#32;&#32;||&#32;\</emphasis>
+344 <emphasis role="preprocessor">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((AF)&#32;==&#32;GPIO_AF_DCMI)&#32;&#32;&#32;&#32;&#32;&#32;||&#32;((AF)&#32;==&#32;GPIO_AF_EVENTOUT))</emphasis>
+353 <emphasis role="preprocessor">#define&#32;GPIO_Mode_AIN&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_Mode_AN</emphasis>
+354 
+355 <emphasis role="preprocessor">#define&#32;GPIO_AF_OTG1_FS&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_AF_OTG_FS</emphasis>
+356 <emphasis role="preprocessor">#define&#32;GPIO_AF_OTG2_HS&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_AF_OTG_HS</emphasis>
+357 <emphasis role="preprocessor">#define&#32;GPIO_AF_OTG2_FS&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GPIO_AF_OTG_HS_FS</emphasis>
+358 
+367 <emphasis role="comment">/*&#32;Exported&#32;macro&#32;------------------------------------------------------------*/</emphasis>
+368 <emphasis role="comment">/*&#32;Exported&#32;functions&#32;--------------------------------------------------------*/</emphasis>&#32;
+369 
+370 <emphasis role="comment">/*&#32;&#32;Function&#32;used&#32;to&#32;set&#32;the&#32;GPIO&#32;configuration&#32;to&#32;the&#32;default&#32;reset&#32;state&#32;****/</emphasis>
+371 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___g_p_i_o_1gaa60bdf3182c44b5fa818f237042f52ee">GPIO_DeInit</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx);
+372 
+373 <emphasis role="comment">/*&#32;Initialization&#32;and&#32;Configuration&#32;functions&#32;*********************************/</emphasis>
+374 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___g_p_i_o_1ga71abf9404261370d03cca449b88d3a65">GPIO_Init</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx,&#32;<link linkend="_struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link>*&#32;GPIO_InitStruct);
+375 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___g_p_i_o_1gab28de41278e7f8c63d0851e2733b10df">GPIO_StructInit</link>(<link linkend="_struct_g_p_i_o___init_type_def">GPIO_InitTypeDef</link>*&#32;GPIO_InitStruct);
+376 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___g_p_i_o_1gad2f2e615928c69fd0d8c641a7cedaafc">GPIO_PinLockConfig</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx,&#32;uint16_t&#32;GPIO_Pin);
+377 
+378 <emphasis role="comment">/*&#32;GPIO&#32;Read&#32;and&#32;Write&#32;functions&#32;**********************************************/</emphasis>
+379 uint8_t&#32;<link linkend="_group___g_p_i_o_1ga98772ef6b639b3fa06c8ae5ba28d3aaa">GPIO_ReadInputDataBit</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx,&#32;uint16_t&#32;GPIO_Pin);
+380 uint16_t&#32;<link linkend="_group___g_p_i_o_1ga139a33adc8409288e9f193bbebb5a0f7">GPIO_ReadInputData</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx);
+381 uint8_t&#32;<link linkend="_group___g_p_i_o_1ga138270f8695b105b7c6ed405792919c1">GPIO_ReadOutputDataBit</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx,&#32;uint16_t&#32;GPIO_Pin);
+382 uint16_t&#32;<link linkend="_group___g_p_i_o_1gaf8938a34280b7dc3e39872a7c17bb323">GPIO_ReadOutputData</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx);
+383 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___g_p_i_o_1ga9e1352eed7c6620e18af2d86f6b6ff8e">GPIO_SetBits</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx,&#32;uint16_t&#32;GPIO_Pin);
+384 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___g_p_i_o_1ga6fcd35b207a66608dd2c9d7de9247dc8">GPIO_ResetBits</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx,&#32;uint16_t&#32;GPIO_Pin);
+385 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___g_p_i_o_1ga8f7b237fd744d9f7456fbe0da47a9b80">GPIO_WriteBit</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx,&#32;uint16_t&#32;GPIO_Pin,&#32;<link linkend="_group___g_p_i_o_1ga176130b21c0e719121470a6042d4cf19">BitAction</link>&#32;BitVal);
+386 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___g_p_i_o_1gaa925f19c8547a00c7a0c269a84873bf9">GPIO_Write</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx,&#32;uint16_t&#32;PortVal);
+387 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___g_p_i_o_1gac1b837c66258872740d5f89f23549ab1">GPIO_ToggleBits</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx,&#32;uint16_t&#32;GPIO_Pin);
+388 
+389 <emphasis role="comment">/*&#32;GPIO&#32;Alternate&#32;functions&#32;configuration&#32;function&#32;****************************/</emphasis>
+390 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___g_p_i_o_1ga0a77617a322562ae84f8d72486032c5d">GPIO_PinAFConfig</link>(<link linkend="_struct_g_p_i_o___type_def">GPIO_TypeDef</link>*&#32;GPIOx,&#32;uint16_t&#32;GPIO_PinSource,&#32;uint8_t&#32;GPIO_AF);
+391 
+392 <emphasis role="preprocessor">#ifdef&#32;__cplusplus</emphasis>
+393 }
+394 <emphasis role="preprocessor">#endif</emphasis>
+395 
+396 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*__STM32F4xx_GPIO_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+397 
+406 <emphasis role="comment">/*******************&#32;(C)&#32;COPYRIGHT&#32;2011&#32;STMicroelectronics&#32;*****END&#32;OF&#32;FILE****/</emphasis>
+</programlisting></section>

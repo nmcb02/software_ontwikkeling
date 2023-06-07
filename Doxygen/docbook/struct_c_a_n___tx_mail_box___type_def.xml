@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_c_a_n___tx_mail_box___type_def" xml:lang="en-US">
+<title>CAN_TxMailBox_TypeDef Struct Reference</title>
+<indexterm><primary>CAN_TxMailBox_TypeDef</primary></indexterm>
+<para>
+
+<para>Controller Area Network TxMailBox. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f4xx.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_c_a_n___tx_mail_box___type_def_1a6921aa1c578a7d17c6e0eb33a73b6630">TIR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_c_a_n___tx_mail_box___type_def_1aed87bed042dd9523ce086119a3bab0ea">TDTR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_c_a_n___tx_mail_box___type_def_1aded1359e1a32512910bff534d57ade68">TDLR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_c_a_n___tx_mail_box___type_def_1a90f7c1cf22683459c632d6040366eddf">TDHR</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Controller Area Network TxMailBox. </para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_c_a_n___tx_mail_box___type_def_1a90f7c1cf22683459c632d6040366eddf"/><section>
+    <title>TDHR</title>
+<indexterm><primary>TDHR</primary><secondary>CAN_TxMailBox_TypeDef</secondary></indexterm>
+<indexterm><primary>CAN_TxMailBox_TypeDef</primary><secondary>TDHR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t TDHR</computeroutput></para>
+<para>CAN mailbox data high register </para>
+</section>
+<anchor xml:id="_struct_c_a_n___tx_mail_box___type_def_1aded1359e1a32512910bff534d57ade68"/><section>
+    <title>TDLR</title>
+<indexterm><primary>TDLR</primary><secondary>CAN_TxMailBox_TypeDef</secondary></indexterm>
+<indexterm><primary>CAN_TxMailBox_TypeDef</primary><secondary>TDLR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t TDLR</computeroutput></para>
+<para>CAN mailbox data low register </para>
+</section>
+<anchor xml:id="_struct_c_a_n___tx_mail_box___type_def_1aed87bed042dd9523ce086119a3bab0ea"/><section>
+    <title>TDTR</title>
+<indexterm><primary>TDTR</primary><secondary>CAN_TxMailBox_TypeDef</secondary></indexterm>
+<indexterm><primary>CAN_TxMailBox_TypeDef</primary><secondary>TDTR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t TDTR</computeroutput></para>
+<para>CAN mailbox data length control and time stamp register </para>
+</section>
+<anchor xml:id="_struct_c_a_n___tx_mail_box___type_def_1a6921aa1c578a7d17c6e0eb33a73b6630"/><section>
+    <title>TIR</title>
+<indexterm><primary>TIR</primary><secondary>CAN_TxMailBox_TypeDef</secondary></indexterm>
+<indexterm><primary>CAN_TxMailBox_TypeDef</primary><secondary>TIR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t TIR</computeroutput></para>
+<para>CAN TX mailbox identifier register </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_stm32f4xx_8h">stm32f4xx.h</link></section>
+</section>

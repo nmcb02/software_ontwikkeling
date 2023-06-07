@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_f_s_m_c___bank1___type_def" xml:lang="en-US">
+<title>FSMC_Bank1_TypeDef Struct Reference</title>
+<indexterm><primary>FSMC_Bank1_TypeDef</primary></indexterm>
+<para>
+
+<para>Flexible Static Memory Controller. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f4xx.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_f_s_m_c___bank1___type_def_1a80a6708b507f6eecbc10424fdb088b79">BTCR</link> [8]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Flexible Static Memory Controller. </para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_f_s_m_c___bank1___type_def_1a80a6708b507f6eecbc10424fdb088b79"/><section>
+    <title>BTCR</title>
+<indexterm><primary>BTCR</primary><secondary>FSMC_Bank1_TypeDef</secondary></indexterm>
+<indexterm><primary>FSMC_Bank1_TypeDef</primary><secondary>BTCR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t BTCR[8]</computeroutput></para>
+<para>NOR/PSRAM chip-select control register(BCR) and chip-select timing register(BTR), Address offset: 0x00-1C </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_stm32f4xx_8h">stm32f4xx.h</link></section>
+</section>

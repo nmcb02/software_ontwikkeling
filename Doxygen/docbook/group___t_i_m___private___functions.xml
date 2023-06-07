@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___private___functions" xml:lang="en-US">
+<title>TIM_Private_Functions</title>
+<indexterm><primary>TIM_Private_Functions</primary></indexterm>
+<simplesect>
+    <title>Modules    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___t_i_m___group1">TimeBase management functions</link></para>
+
+<para>TimeBase management functions. </para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___group2">Output Compare management functions</link></para>
+
+<para>Output Compare management functions. </para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___group3">Input Capture management functions</link></para>
+
+<para>Input Capture management functions. </para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___group4">Advanced-control timers (TIM1 and TIM8) specific features</link></para>
+
+<para>Advanced-control timers (TIM1 and TIM8) specific features. </para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___group5">Interrupts DMA and flags management functions</link></para>
+
+<para>Interrupts, DMA and flags management functions. </para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___group6">Clocks management functions</link></para>
+
+<para>Clocks management functions. </para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___group7">Synchronization management functions</link></para>
+
+<para>Synchronization management functions. </para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___group8">Specific interface management functions</link></para>
+
+<para>Specific interface management functions. </para>
+</listitem>
+            <listitem><para><link linkend="_group___t_i_m___group9">Specific remapping management function</link></para>
+
+<para>Specific remapping management function. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+</section>

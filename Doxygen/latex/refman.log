@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.11)  19 APR 2023 14:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.11)  7 JUN 2023 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**refman.tex
+**refman
 (./refman.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30>
@@ -762,7 +762,7 @@ File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count338
 \l__pdf_internal_box=\box122
 )
-(./refman.aux)
+No file refman.aux.
 \openout1 = `refman.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
@@ -783,7 +783,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
 LaTeX Font Info:    ... okay on input line 153.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 153.
 LaTeX Font Info:    ... okay on input line 153.
- (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count339
 \scratchdimen=\dimen268
@@ -841,13 +841,12 @@ e
 
 Package backref Info: ** backref set up for natbib ** on input line 153.
 Package hyperref Info: Link coloring ON on input line 153.
-(./refman.out) (./refman.out)
 \@outlinefile=\write5
 \openout5 = `refman.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\Etoc@tf=\read4
+No file refman.toc.
 Package hyperref Info: Option `pageanchor' set `false' on input line 161.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 161.
 
@@ -855,13 +854,31 @@ Package hyperref Info: Option `unicode' set `true' on input line 161.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 166.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 166.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 166
+.
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 166
+.
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 16
+6.
+
+(c:/texlive/2023/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 168.
  [1
 
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/
-texmf-dist/fonts/enc/dvips/base/8r.enc}]
-[2
+texmf-dist/fonts/enc/dvips/base/8r.enc}] [2
 
 ]
 \tf@toc=\write6
@@ -869,24 +886,1337 @@ texmf-dist/fonts/enc/dvips/base/8r.enc}]
 
 Package hyperref Info: Option `pageanchor' set `true' on input line 177.
 
-No file refman.ind.
-(./refman.aux)
-Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
-Here is how much of TeX's memory you used:
- 17735 strings out of 476017
- 285630 string characters out of 5793766
- 1851660 words of memory out of 5000000
- 37920 multiletter control sequences out of 15000+600000
- 520672 words of font info for 39 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 101i,5n,117p,326b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (2 pages, 7914 bytes).
-PDF statistics:
- 21 PDF objects out of 1000 (max. 8388607)
- 14 compressed objects within 1 object stream
- 1 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 179.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 179.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 18.66588pt on input line 179.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 179.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 179.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 22.39185pt on input line 179.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 6.29996pt on input line 179.
+(./index.tex
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 5
+.
+ (c:/texlive/2023/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 5.
+)
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 181.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 181.
+ [1
 
+
+]
+[2
+
+]
+Chapter 2.
+(./modules.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___m_i_s_r_a___exceptions' on page 3
+ undefined on input line 3.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s__core__definitions' on page 3 undef
+ined on input line 4.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s__core__register' on page 3 undefine
+d on input line 6.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___c_o_r_e' on page 3 undefined on i
+nput line 8.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___n_v_i_c' on page 3 undefined on i
+nput line 10.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___s_c_b' on page 3 undefined on inp
+ut line 12.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___s_cn_s_c_b' on page 3 undefined o
+n input line 14.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___sys_tick' on page 3 undefined on 
+input line 15.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___i_t_m' on page 3 undefined on inp
+ut line 16.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core_debug' on page 3 undefined o
+n input line 17.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___function_interface' on pag
+e 3 undefined on input line 18.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___n_v_i_c_functions' on page
+ 3 undefined on input line 19.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___sys_tick_functions' on pag
+e 3 undefined on input line 20.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s__core___debug_functions' on page 3 
+undefined on input line 21.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___reg_acc_functions' on page
+ 3 undefined on input line 22.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___n_v_i_c_functions' on page
+ 3 undefined on input line 23.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___sys_tick_functions' on pag
+e 3 undefined on input line 24.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s__core___debug_functions' on page 3 
+undefined on input line 25.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___c_o_r_e' on page 3 undefined on i
+nput line 30.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___n_v_i_c' on page 3 undefined on i
+nput line 32.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___s_c_b' on page 3 undefined on inp
+ut line 34.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___s_cn_s_c_b' on page 3 undefined o
+n input line 36.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___sys_tick' on page 3 undefined on 
+input line 38.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___i_t_m' on page 3 undefined on inp
+ut line 39.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core_debug' on page 3 undefined o
+n input line 40.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___function_interface' on pag
+e 3 undefined on input line 41.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___n_v_i_c_functions' on page
+ 3 undefined on input line 42.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___sys_tick_functions' on pag
+e 3 undefined on input line 43.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s__core___debug_functions' on page 3 
+undefined on input line 44.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___reg_acc_functions' on page
+ 3 undefined on input line 45.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___n_v_i_c_functions' on page
+ 3 undefined on input line 46.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___sys_tick_functions' on pag
+e 3 undefined on input line 47.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s__core___debug_functions' on page 3 
+undefined on input line 48.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___s_i_m_d__intrinsics' on page 3 un
+defined on input line 54.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s___core___instruction_interface' on 
+page 3 undefined on input line 55.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___std_periph___driver' on page 3
+ undefined on input line 56.
+
+
+LaTeX Warning: Reference `group___m_i_s_c' on page 3 undefined on input line 58
+.
+
+
+LaTeX Warning: Reference `group___m_i_s_c___exported___constants' on page 3 und
+efined on input line 60.
+
+
+LaTeX Warning: Reference `group___m_i_s_c___vector___table___base' on page 3 un
+defined on input line 62.
+
+[3]
+
+LaTeX Warning: Reference `group___m_i_s_c___system___low___power' on page 4 und
+efined on input line 63.
+
+
+LaTeX Warning: Reference `group___m_i_s_c___preemption___priority___group' on p
+age 4 undefined on input line 64.
+
+
+LaTeX Warning: Reference `group___m_i_s_c___sys_tick__clock__source' on page 4 
+undefined on input line 65.
+
+
+LaTeX Warning: Reference `group___m_i_s_c___private___functions' on page 4 unde
+fined on input line 67.
+
+
+LaTeX Warning: Reference `group___d_m_a' on page 4 undefined on input line 69.
+
+
+LaTeX Warning: Reference `group___d_m_a___exported___constants' on page 4 undef
+ined on input line 71.
+
+
+LaTeX Warning: Reference `group___d_m_a__channel' on page 4 undefined on input 
+line 73.
+
+
+LaTeX Warning: Reference `group___d_m_a__data__transfer__direction' on page 4 u
+ndefined on input line 74.
+
+
+LaTeX Warning: Reference `group___d_m_a__data__buffer__size' on page 4 undefine
+d on input line 75.
+
+
+LaTeX Warning: Reference `group___d_m_a__peripheral__incremented__mode' on page
+ 4 undefined on input line 76.
+
+
+LaTeX Warning: Reference `group___d_m_a__memory__incremented__mode' on page 4 u
+ndefined on input line 77.
+
+
+LaTeX Warning: Reference `group___d_m_a__peripheral__data__size' on page 4 unde
+fined on input line 78.
+
+
+LaTeX Warning: Reference `group___d_m_a__memory__data__size' on page 4 undefine
+d on input line 79.
+
+
+LaTeX Warning: Reference `group___d_m_a__circular__normal__mode' on page 4 unde
+fined on input line 80.
+
+
+LaTeX Warning: Reference `group___d_m_a__priority__level' on page 4 undefined o
+n input line 81.
+
+
+LaTeX Warning: Reference `group___d_m_a__fifo__direct__mode' on page 4 undefine
+d on input line 82.
+
+
+LaTeX Warning: Reference `group___d_m_a__fifo__threshold__level' on page 4 unde
+fined on input line 83.
+
+
+LaTeX Warning: Reference `group___d_m_a__memory__burst' on page 4 undefined on 
+input line 84.
+
+
+LaTeX Warning: Reference `group___d_m_a__peripheral__burst' on page 4 undefined
+ on input line 85.
+
+
+LaTeX Warning: Reference `group___d_m_a__fifo__status__level' on page 4 undefin
+ed on input line 86.
+
+
+LaTeX Warning: Reference `group___d_m_a__flags__definition' on page 4 undefined
+ on input line 87.
+
+
+LaTeX Warning: Reference `group___d_m_a__interrupt__enable__definitions' on pag
+e 4 undefined on input line 88.
+
+
+LaTeX Warning: Reference `group___d_m_a__interrupts__definitions' on page 4 und
+efined on input line 89.
+
+
+LaTeX Warning: Reference `group___d_m_a__peripheral__increment__offset' on page
+ 4 undefined on input line 90.
+
+
+LaTeX Warning: Reference `group___d_m_a__flow__controller__definitions' on page
+ 4 undefined on input line 91.
+
+
+LaTeX Warning: Reference `group___d_m_a__memory__targets__definitions' on page 
+4 undefined on input line 92.
+
+
+LaTeX Warning: Reference `group___d_m_a___private___functions' on page 4 undefi
+ned on input line 94.
+
+
+LaTeX Warning: Reference `group___d_m_a___group1' on page 4 undefined on input 
+line 96.
+
+
+LaTeX Warning: Reference `group___d_m_a___group2' on page 4 undefined on input 
+line 97.
+
+
+LaTeX Warning: Reference `group___d_m_a___group3' on page 4 undefined on input 
+line 98.
+
+
+LaTeX Warning: Reference `group___d_m_a___group4' on page 4 undefined on input 
+line 99.
+
+
+LaTeX Warning: Reference `group___g_p_i_o' on page 4 undefined on input line 10
+2.
+
+
+LaTeX Warning: Reference `group___g_p_i_o___exported___constants' on page 4 und
+efined on input line 104.
+
+
+LaTeX Warning: Reference `group___g_p_i_o__pins__define' on page 4 undefined on
+ input line 106.
+
+
+LaTeX Warning: Reference `group___g_p_i_o___pin__sources' on page 4 undefined o
+n input line 107.
+
+
+LaTeX Warning: Reference `group___g_p_i_o___alternat__function__selection__defi
+ne' on page 4 undefined on input line 108.
+
+
+LaTeX Warning: Reference `group___g_p_i_o___legacy' on page 4 undefined on inpu
+t line 109.
+
+
+LaTeX Warning: Reference `group___g_p_i_o___private___functions' on page 4 unde
+fined on input line 111.
+
+
+LaTeX Warning: Reference `group___g_p_i_o___group1' on page 4 undefined on inpu
+t line 113.
+
+
+LaTeX Warning: Reference `group___g_p_i_o___group2' on page 4 undefined on inpu
+t line 114.
+
+
+LaTeX Warning: Reference `group___g_p_i_o___group3' on page 4 undefined on inpu
+t line 115.
+
+
+LaTeX Warning: Reference `group___r_c_c' on page 4 undefined on input line 118.
+
+
+
+LaTeX Warning: Reference `group___r_c_c___exported___constants' on page 4 undef
+ined on input line 120.
+
+
+LaTeX Warning: Reference `group___r_c_c___h_s_e__configuration' on page 4 undef
+ined on input line 122.
+
+
+LaTeX Warning: Reference `group___r_c_c___p_l_l___clock___source' on page 4 und
+efined on input line 123.
+
+
+LaTeX Warning: Reference `group___r_c_c___system___clock___source' on page 4 un
+defined on input line 124.
+
+
+LaTeX Warning: Reference `group___r_c_c___a_h_b___clock___source' on page 4 und
+efined on input line 125.
+
+
+LaTeX Warning: Reference `group___r_c_c___a_p_b1___a_p_b2___clock___source' on 
+page 4 undefined on input line 126.
+
+
+LaTeX Warning: Reference `group___r_c_c___interrupt___source' on page 4 undefin
+ed on input line 127.
+
+
+LaTeX Warning: Reference `group___r_c_c___l_s_e___configuration' on page 4 unde
+fined on input line 128.
+
+
+LaTeX Warning: Reference `group___r_c_c___r_t_c___clock___source' on page 4 und
+efined on input line 129.
+
+
+LaTeX Warning: Reference `group___r_c_c___i2_s___clock___source' on page 4 unde
+fined on input line 130.
+
+
+LaTeX Warning: Reference `group___r_c_c___a_h_b1___peripherals' on page 4 undef
+ined on input line 131.
+
+
+LaTeX Warning: Reference `group___r_c_c___a_h_b2___peripherals' on page 4 undef
+ined on input line 132.
+
+[4]
+
+LaTeX Warning: Reference `group___r_c_c___a_h_b3___peripherals' on page 5 undef
+ined on input line 133.
+
+
+LaTeX Warning: Reference `group___r_c_c___a_p_b1___peripherals' on page 5 undef
+ined on input line 134.
+
+
+LaTeX Warning: Reference `group___r_c_c___a_p_b2___peripherals' on page 5 undef
+ined on input line 135.
+
+
+LaTeX Warning: Reference `group___r_c_c___m_c_o1___clock___source___prescaler' 
+on page 5 undefined on input line 136.
+
+
+LaTeX Warning: Reference `group___r_c_c___m_c_o2___clock___source___prescaler' 
+on page 5 undefined on input line 137.
+
+
+LaTeX Warning: Reference `group___r_c_c___flag' on page 5 undefined on input li
+ne 138.
+
+
+LaTeX Warning: Reference `group___r_c_c___private___functions' on page 5 undefi
+ned on input line 140.
+
+
+LaTeX Warning: Reference `group___r_c_c___group1' on page 5 undefined on input 
+line 142.
+
+
+LaTeX Warning: Reference `group___r_c_c___group2' on page 5 undefined on input 
+line 143.
+
+
+LaTeX Warning: Reference `group___r_c_c___group3' on page 5 undefined on input 
+line 144.
+
+
+LaTeX Warning: Reference `group___r_c_c___group4' on page 5 undefined on input 
+line 145.
+
+
+LaTeX Warning: Reference `group___t_i_m' on page 5 undefined on input line 148.
+
+
+
+LaTeX Warning: Reference `group___t_i_m___exported__constants' on page 5 undefi
+ned on input line 150.
+
+
+LaTeX Warning: Reference `group___t_i_m___output___compare__and___p_w_m__modes'
+ on page 5 undefined on input line 152.
+
+
+LaTeX Warning: Reference `group___t_i_m___one___pulse___mode' on page 5 undefin
+ed on input line 153.
+
+
+LaTeX Warning: Reference `group___t_i_m___channel' on page 5 undefined on input
+ line 154.
+
+
+LaTeX Warning: Reference `group___t_i_m___clock___division___c_k_d' on page 5 u
+ndefined on input line 155.
+
+
+LaTeX Warning: Reference `group___t_i_m___counter___mode' on page 5 undefined o
+n input line 156.
+
+
+LaTeX Warning: Reference `group___t_i_m___output___compare___polarity' on page 
+5 undefined on input line 157.
+
+
+LaTeX Warning: Reference `group___t_i_m___output___compare___n___polarity' on p
+age 5 undefined on input line 158.
+
+
+LaTeX Warning: Reference `group___t_i_m___output___compare___state' on page 5 u
+ndefined on input line 159.
+
+
+LaTeX Warning: Reference `group___t_i_m___output___compare___n___state' on page
+ 5 undefined on input line 160.
+
+
+LaTeX Warning: Reference `group___t_i_m___capture___compare___state' on page 5 
+undefined on input line 161.
+
+
+LaTeX Warning: Reference `group___t_i_m___capture___compare___n___state' on pag
+e 5 undefined on input line 162.
+
+
+LaTeX Warning: Reference `group___t_i_m___break___input__enable__disable' on pa
+ge 5 undefined on input line 163.
+
+
+LaTeX Warning: Reference `group___t_i_m___break___polarity' on page 5 undefined
+ on input line 164.
+
+
+LaTeX Warning: Reference `group___t_i_m___a_o_e___bit___set___reset' on page 5 
+undefined on input line 165.
+
+
+LaTeX Warning: Reference `group___t_i_m___lock__level' on page 5 undefined on i
+nput line 166.
+
+
+LaTeX Warning: Reference `group___t_i_m___o_s_s_i___off___state___selection__fo
+r___idle__mode__state' on page 5 undefined on input line 167.
+
+
+LaTeX Warning: Reference `group___t_i_m___o_s_s_r___off___state___selection__fo
+r___run__mode__state' on page 5 undefined on input line 168.
+
+
+LaTeX Warning: Reference `group___t_i_m___output___compare___idle___state' on p
+age 5 undefined on input line 169.
+
+
+LaTeX Warning: Reference `group___t_i_m___output___compare___n___idle___state' 
+on page 5 undefined on input line 170.
+
+
+LaTeX Warning: Reference `group___t_i_m___input___capture___polarity' on page 5
+ undefined on input line 171.
+
+
+LaTeX Warning: Reference `group___t_i_m___input___capture___selection' on page 
+5 undefined on input line 172.
+
+
+LaTeX Warning: Reference `group___t_i_m___input___capture___prescaler' on page 
+5 undefined on input line 173.
+
+
+LaTeX Warning: Reference `group___t_i_m__interrupt__sources' on page 5 undefine
+d on input line 174.
+
+
+LaTeX Warning: Reference `group___t_i_m___d_m_a___base__address' on page 5 unde
+fined on input line 175.
+
+
+LaTeX Warning: Reference `group___t_i_m___d_m_a___burst___length' on page 5 und
+efined on input line 176.
+
+
+LaTeX Warning: Reference `group___t_i_m___d_m_a__sources' on page 5 undefined o
+n input line 177.
+
+
+LaTeX Warning: Reference `group___t_i_m___external___trigger___prescaler' on pa
+ge 5 undefined on input line 178.
+
+
+LaTeX Warning: Reference `group___t_i_m___internal___trigger___selection' on pa
+ge 5 undefined on input line 179.
+
+
+LaTeX Warning: Reference `group___t_i_m___t_ix___external___clock___source' on 
+page 5 undefined on input line 180.
+
+
+LaTeX Warning: Reference `group___t_i_m___external___trigger___polarity' on pag
+e 5 undefined on input line 181.
+
+
+LaTeX Warning: Reference `group___t_i_m___prescaler___reload___mode' on page 5 
+undefined on input line 182.
+
+
+LaTeX Warning: Reference `group___t_i_m___forced___action' on page 5 undefined 
+on input line 183.
+
+
+LaTeX Warning: Reference `group___t_i_m___encoder___mode' on page 5 undefined o
+n input line 184.
+
+
+LaTeX Warning: Reference `group___t_i_m___event___source' on page 5 undefined o
+n input line 185.
+
+
+LaTeX Warning: Reference `group___t_i_m___update___source' on page 5 undefined 
+on input line 186.
+
+
+LaTeX Warning: Reference `group___t_i_m___output___compare___preload___state' o
+n page 5 undefined on input line 187.
+
+
+LaTeX Warning: Reference `group___t_i_m___output___compare___fast___state' on p
+age 5 undefined on input line 188.
+
+
+LaTeX Warning: Reference `group___t_i_m___output___compare___clear___state' on 
+page 5 undefined on input line 189.
+
+
+LaTeX Warning: Reference `group___t_i_m___trigger___output___source' on page 5 
+undefined on input line 190.
+
+
+LaTeX Warning: Reference `group___t_i_m___slave___mode' on page 5 undefined on 
+input line 191.
+
+
+LaTeX Warning: Reference `group___t_i_m___master___slave___mode' on page 5 unde
+fined on input line 192.
+
+
+LaTeX Warning: Reference `group___t_i_m___remap' on page 5 undefined on input l
+ine 193.
+
+
+LaTeX Warning: Reference `group___t_i_m___flags' on page 5 undefined on input l
+ine 194.
+
+
+LaTeX Warning: Reference `group___t_i_m___input___capture___filer___value' on p
+age 5 undefined on input line 195.
+
+[5]
+
+LaTeX Warning: Reference `group___t_i_m___external___trigger___filter' on page 
+6 undefined on input line 196.
+
+
+LaTeX Warning: Reference `group___t_i_m___legacy' on page 6 undefined on input 
+line 197.
+
+
+LaTeX Warning: Reference `group___t_i_m___private___functions' on page 6 undefi
+ned on input line 199.
+
+
+LaTeX Warning: Reference `group___t_i_m___group1' on page 6 undefined on input 
+line 201.
+
+
+LaTeX Warning: Reference `group___t_i_m___group2' on page 6 undefined on input 
+line 202.
+
+
+LaTeX Warning: Reference `group___t_i_m___group3' on page 6 undefined on input 
+line 203.
+
+
+LaTeX Warning: Reference `group___t_i_m___group4' on page 6 undefined on input 
+line 204.
+
+
+LaTeX Warning: Reference `group___t_i_m___group5' on page 6 undefined on input 
+line 205.
+
+
+LaTeX Warning: Reference `group___t_i_m___group6' on page 6 undefined on input 
+line 206.
+
+
+LaTeX Warning: Reference `group___t_i_m___group7' on page 6 undefined on input 
+line 207.
+
+
+LaTeX Warning: Reference `group___t_i_m___group8' on page 6 undefined on input 
+line 208.
+
+
+LaTeX Warning: Reference `group___t_i_m___group9' on page 6 undefined on input 
+line 209.
+
+
+LaTeX Warning: Reference `group___c_m_s_i_s' on page 6 undefined on input line 
+213.
+
+
+LaTeX Warning: Reference `group__stm32f4xx' on page 6 undefined on input line 2
+15.
+
+
+LaTeX Warning: Reference `group___library__configuration__section' on page 6 un
+defined on input line 217.
+
+
+LaTeX Warning: Reference `group___configuration__section__for___c_m_s_i_s' on p
+age 6 undefined on input line 218.
+
+
+LaTeX Warning: Reference `group___exported__types' on page 6 undefined on input
+ line 219.
+
+
+LaTeX Warning: Reference `group___peripheral__registers__structures' on page 6 
+undefined on input line 220.
+
+
+LaTeX Warning: Reference `group___peripheral__memory__map' on page 6 undefined 
+on input line 221.
+
+
+LaTeX Warning: Reference `group___peripheral__declaration' on page 6 undefined 
+on input line 222.
+
+
+LaTeX Warning: Reference `group___exported__constants' on page 6 undefined on i
+nput line 223.
+
+
+LaTeX Warning: Reference `group___peripheral___registers___bits___definition' o
+n page 6 undefined on input line 225.
+
+
+LaTeX Warning: Reference `group___exported__macro' on page 6 undefined on input
+ line 227.
+
+
+LaTeX Warning: Reference `group__stm32f4xx__system' on page 6 undefined on inpu
+t line 229.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___includes' on page 6 u
+ndefined on input line 231.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___exported__types' on p
+age 6 undefined on input line 232.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___exported___constants'
+ on page 6 undefined on input line 233.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___exported___macros' on
+ page 6 undefined on input line 234.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___exported___functions'
+ on page 6 undefined on input line 235.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___private___includes' o
+n page 6 undefined on input line 236.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___private___types_defin
+itions' on page 6 undefined on input line 237.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___private___defines' on
+ page 6 undefined on input line 238.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___private___macros' on 
+page 6 undefined on input line 239.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___private___variables' 
+on page 6 undefined on input line 240.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___private___function_pr
+ototypes' on page 6 undefined on input line 241.
+
+
+LaTeX Warning: Reference `group___s_t_m32_f4xx___system___private___functions' 
+on page 6 undefined on input line 242.
+
+) [6]
+Chapter 3.
+(./annotated.tex
+
+LaTeX Warning: Reference `struct_a_d_c___common___type_def' on page 7 undefined
+ on input line 3.
+
+
+LaTeX Warning: Reference `struct_a_d_c___type_def' on page 7 undefined on input
+ line 5.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ []  
+ []
+
+
+LaTeX Warning: Reference `union_a_p_s_r___type' on page 7 undefined on input li
+ne 6.
+
+
+LaTeX Warning: Reference `struct_c_a_n___f_i_f_o_mail_box___type_def' on page 7
+ undefined on input line 7.
+
+
+LaTeX Warning: Reference `struct_c_a_n___filter_register___type_def' on page 7 
+undefined on input line 8.
+
+
+LaTeX Warning: Reference `struct_c_a_n___tx_mail_box___type_def' on page 7 unde
+fined on input line 9.
+
+
+LaTeX Warning: Reference `struct_c_a_n___type_def' on page 7 undefined on input
+ line 10.
+
+
+LaTeX Warning: Reference `union_c_o_n_t_r_o_l___type' on page 7 undefined on in
+put line 11.
+
+
+LaTeX Warning: Reference `struct_core_debug___type' on page 7 undefined on inpu
+t line 12.
+
+
+LaTeX Warning: Reference `struct_c_r_c___type_def' on page 7 undefined on input
+ line 13.
+
+
+LaTeX Warning: Reference `struct_c_r_y_p___type_def' on page 7 undefined on inp
+ut line 14.
+
+
+LaTeX Warning: Reference `struct_d_a_c___type_def' on page 7 undefined on input
+ line 15.
+
+
+LaTeX Warning: Reference `struct_d_b_g_m_c_u___type_def' on page 7 undefined on
+ input line 16.
+
+
+LaTeX Warning: Reference `struct_d_c_m_i___type_def' on page 7 undefined on inp
+ut line 17.
+
+
+LaTeX Warning: Reference `struct_d_m_a___init_type_def' on page 7 undefined on 
+input line 18.
+
+
+LaTeX Warning: Reference `struct_d_m_a___stream___type_def' on page 7 undefined
+ on input line 19.
+
+
+LaTeX Warning: Reference `struct_d_m_a___type_def' on page 7 undefined on input
+ line 20.
+
+
+LaTeX Warning: Reference `struct_e_t_h___type_def' on page 7 undefined on input
+ line 21.
+
+
+LaTeX Warning: Reference `struct_e_x_t_i___type_def' on page 7 undefined on inp
+ut line 22.
+
+
+LaTeX Warning: Reference `struct_f_l_a_s_h___type_def' on page 7 undefined on i
+nput line 23.
+
+[7
+
+]
+
+LaTeX Warning: Reference `struct_f_s_m_c___bank1___type_def' on page 8 undefine
+d on input line 24.
+
+
+LaTeX Warning: Reference `struct_f_s_m_c___bank1_e___type_def' on page 8 undefi
+ned on input line 25.
+
+
+LaTeX Warning: Reference `struct_f_s_m_c___bank2___type_def' on page 8 undefine
+d on input line 26.
+
+
+LaTeX Warning: Reference `struct_f_s_m_c___bank3___type_def' on page 8 undefine
+d on input line 27.
+
+
+LaTeX Warning: Reference `struct_f_s_m_c___bank4___type_def' on page 8 undefine
+d on input line 28.
+
+
+LaTeX Warning: Reference `struct_g_p_i_o___init_type_def' on page 8 undefined o
+n input line 30.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+ []  
+ []
+
+
+LaTeX Warning: Reference `struct_g_p_i_o___type_def' on page 8 undefined on inp
+ut line 31.
+
+
+LaTeX Warning: Reference `struct_h_a_s_h___type_def' on page 8 undefined on inp
+ut line 32.
+
+
+LaTeX Warning: Reference `struct_i2_c___type_def' on page 8 undefined on input 
+line 33.
+
+
+LaTeX Warning: Reference `union_i_p_s_r___type' on page 8 undefined on input li
+ne 34.
+
+
+LaTeX Warning: Reference `struct_i_t_m___type' on page 8 undefined on input lin
+e 35.
+
+
+LaTeX Warning: Reference `struct_i_w_d_g___type_def' on page 8 undefined on inp
+ut line 36.
+
+
+LaTeX Warning: Reference `struct_n_v_i_c___init_type_def' on page 8 undefined o
+n input line 38.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+ []  
+ []
+
+
+LaTeX Warning: Reference `struct_n_v_i_c___type' on page 8 undefined on input l
+ine 39.
+
+
+LaTeX Warning: Reference `struct_p_a_r_s_e___s_t_o_r_a_g_e' on page 8 undefined
+ on input line 40.
+
+
+LaTeX Warning: Reference `struct_p_w_r___type_def' on page 8 undefined on input
+ line 41.
+
+
+LaTeX Warning: Reference `struct_r_c_c___clocks_type_def' on page 8 undefined o
+n input line 42.
+
+
+LaTeX Warning: Reference `struct_r_c_c___type_def' on page 8 undefined on input
+ line 43.
+
+
+LaTeX Warning: Reference `struct_r_n_g___type_def' on page 8 undefined on input
+ line 44.
+
+
+LaTeX Warning: Reference `struct_r_t_c___type_def' on page 8 undefined on input
+ line 45.
+
+
+LaTeX Warning: Reference `struct_s_c_b___type' on page 8 undefined on input lin
+e 46.
+
+
+LaTeX Warning: Reference `struct_s_cn_s_c_b___type' on page 8 undefined on inpu
+t line 47.
+
+
+LaTeX Warning: Reference `struct_s_d_i_o___type_def' on page 8 undefined on inp
+ut line 48.
+
+
+LaTeX Warning: Reference `struct_s_p_i___type_def' on page 8 undefined on input
+ line 49.
+
+
+LaTeX Warning: Reference `struct_s_y_s_c_f_g___type_def' on page 8 undefined on
+ input line 50.
+
+
+LaTeX Warning: Reference `struct_sys_tick___type' on page 8 undefined on input 
+line 51.
+
+
+LaTeX Warning: Reference `struct_t_i_m___b_d_t_r_init_type_def' on page 8 undef
+ined on input line 52.
+
+
+LaTeX Warning: Reference `struct_t_i_m___i_c_init_type_def' on page 8 undefined
+ on input line 54.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+ []  
+ []
+
+[8]
+
+LaTeX Warning: Reference `struct_t_i_m___o_c_init_type_def' on page 9 undefined
+ on input line 56.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+ []  
+ []
+
+
+LaTeX Warning: Reference `struct_t_i_m___time_base_init_type_def' on page 9 und
+efined on input line 58.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
+ []  
+ []
+
+
+LaTeX Warning: Reference `struct_t_i_m___type_def' on page 9 undefined on input
+ line 59.
+
+
+LaTeX Warning: Reference `struct_u_a_r_t___communication' on page 9 undefined o
+n input line 60.
+
+
+LaTeX Warning: Reference `struct_u_s_a_r_t___type_def' on page 9 undefined on i
+nput line 61.
+
+
+LaTeX Warning: Reference `struct_v_g_a__t' on page 9 undefined on input line 62
+.
+
+
+LaTeX Warning: Reference `struct_w_w_d_g___type_def' on page 9 undefined on inp
+ut line 63.
+
+
+LaTeX Warning: Reference `unionx_p_s_r___type' on page 9 undefined on input lin
+e 64.
+
+) [9] [10
+
+]
+Chapter 4.
+(./files.tex
+
+LaTeX Warning: Reference `_a_p_i__functions_8h' on page 11 undefined on input l
+ine 3.
+
+
+LaTeX Warning: Reference `bitmap__arrows_8h' on page 11 undefined on input line
+ 4.
+
+
+LaTeX Warning: Reference `bitmap__smileys_8h' on page 11 undefined on input lin
+e 5.
+
+
+LaTeX Warning: Reference `core__cm4_8h' on page 11 undefined on input line 6.
+
+
+LaTeX Warning: Reference `core__cm4__simd_8h' on page 11 undefined on input lin
+e 7.
+
+
+LaTeX Warning: Reference `core__cm_func_8h' on page 11 undefined on input line 
+8.
+
+
+LaTeX Warning: Reference `core__cm_instr_8h' on page 11 undefined on input line
+ 9.
+
+
+LaTeX Warning: Reference `error_8h' on page 11 undefined on input line 10.
+
+
+LaTeX Warning: Reference `logic__layer_8h' on page 11 undefined on input line 1
+1.
+
+
+LaTeX Warning: Reference `main_8h_source' on page 11 undefined on input line 12
+.
+
+
+LaTeX Warning: Reference `misc_8h' on page 11 undefined on input line 13.
+
+
+LaTeX Warning: Reference `stm32__ub__vga__screen_8h_source' on page 11 undefine
+d on input line 14.
+
+
+LaTeX Warning: Reference `stm32f4xx_8h' on page 11 undefined on input line 15.
+
+
+LaTeX Warning: Reference `stm32f4xx__conf_8h_source' on page 11 undefined on in
+put line 16.
+
+
+LaTeX Warning: Reference `stm32f4xx__dma_8h' on page 11 undefined on input line
+ 17.
+
+
+LaTeX Warning: Reference `stm32f4xx__gpio_8h' on page 11 undefined on input lin
+e 18.
+
+
+LaTeX Warning: Reference `stm32f4xx__rcc_8h' on page 11 undefined on input line
+ 19.
+
+
+LaTeX Warning: Reference `stm32f4xx__tim_8h' on page 11 undefined on input line
+ 20.
+
+
+LaTeX Warning: Reference `system__stm32f4xx_8h' on page 11 undefined on input l
+ine 22.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+ []  
+ []
+
+
+LaTeX Warning: Reference `_u_a_r_t__communication_8h' on page 11 undefined on i
+nput line 23.
+
+[11]
+
+LaTeX Warning: Reference `_a_p_i__functions_8c' on page 12 undefined on input l
+ine 24.
+
+
+LaTeX Warning: Reference `logic__layer_8c' on page 12 undefined on input line 2
+5.
+
+
+LaTeX Warning: Reference `main_8c' on page 12 undefined on input line 26.
+
+
+LaTeX Warning: Reference `misc_8c' on page 12 undefined on input line 27.
+
+
+LaTeX Warning: Reference `stm32f4xx__dma_8c' on page 12 undefined on input line
+ 29.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+ []  
+ []
+
+
+LaTeX Warning: Reference `stm32f4xx__gpio_8c' on page 12 undefined on input lin
+e 31.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+ []  
+ []
+
+
+LaTeX Warning: Reference `stm32f4xx__rcc_8c' on page 12 undefined on input line
+ 32.
+
+
+LaTeX Warning: Reference `stm32f4xx__tim_8c' on page 12 undefined on input line
+ 33.
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 33--33
+ \T1/phv/m/n/10 This file pro-vides firmware func-tions to man-age the fol-low-
+ing func-tion-al-i-ties of the TIM 
+ []
+
+
+LaTeX Warning: Reference `system__stm32f4xx_8c' on page 12 undefined on input l
+ine 34.
+
+
+LaTeX Warning: Reference `_u_a_r_t__communication_8c' on page 12 undefined on i
+nput line 35.
+
+) [12]
+Chapter 5.
+(./group___c_m_s_i_s___m_i_s_r_a___exceptions.tex)
+(./group___c_m_s_i_s__core__definitions.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 3.
+
+Overfull \hbox (26.13861pt too wide) in paragraph at lines 17--19
+[]\T1/phv/m/n/10 #define [] (([] $\OML/cmm/m/it/10 <$$<$ \T1/phv/m/n/10 16) $\O
+MS/cmsy/m/n/10 j$ []\T1/phv/m/n/10 ) 
+ []
+
+[13
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 45.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 45
+.
+ (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [14]
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+) (./group___c_m_s_i_s__core__register.tex [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+) (./group___c_m_s_i_s___c_o_r_e.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 16.
+) (./group___c_m_s_i_s___n_v_i_c.tex
+[18]) (./group___c_m_s_i_s___s_c_b.tex [19] [20] [21] [22] [23] [24] [25]
+[26] [27] [28] [29] [30] [31] [32] [33] [34] [35])
+(./group___c_m_s_i_s___s_cn_s_c_b.tex [36] [37])
+(./group___c_m_s_i_s___sys_tick.tex [38] [39] [40])
+(./group___c_m_s_i_s___i_t_m.tex [41] [42] [43] [44])
+(./group___c_m_s_i_s___core_debug.tex [45] [46]
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_gab6e30a2b802d9021619dbb0be7f5d63d}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.156 ...ster_gab6e30a2b802d9021619dbb0be7f5d63d}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_ga680604dbcda9e9b31a1639fcffe5230b}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.163 ...ster_ga680604dbcda9e9b31a1639fcffe5230b}}
+                                                   [47] [48] [49] [50] [51]
+[52] [53]
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_gabae7cdf882def602cb787bb039ff6a43}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.494 ...ster_gabae7cdf882def602cb787bb039ff6a43}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_gadd76251e412a195ec0a8f47227a8359e}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.501 ...ster_gadd76251e412a195ec0a8f47227a8359e}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_gac8e97e8ce56ae9f57da1363a937f8a17}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.508 ...ster_gac8e97e8ce56ae9f57da1363a937f8a17}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_gaa0288691785a5f868238e0468b39523d}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.515 ...ster_gaa0288691785a5f868238e0468b39523d}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_gaaaf6477c2bde2f00f99e3c2fd1060b01}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.522 ...ster_gaaaf6477c2bde2f00f99e3c2fd1060b01}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.529 ...ster_gad55a7ddb8d4b2398b0c1cfec76c0d9fd}}
+                                                   [54]
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_ga9fe0cd2eef83a8adad94490d9ecca63f}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.536 ...ster_ga9fe0cd2eef83a8adad94490d9ecca63f}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_gacd96c53beeaff8f603fcda425eb295de}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.542 ...ster_gacd96c53beeaff8f603fcda425eb295de}}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{group___c_m_s
+_i_s__core__register_ga58effaac0b93006b756d33209e814646}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.549 ...ster_ga58effaac0b93006b756d33209e814646}}
+                                                  
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
+
+ []
+
+) (./group___c_m_s_i_s___core___function_interface.tex)
+(./group___c_m_s_i_s___core___n_v_i_c_functions.tex [55])
+(./group___c_m_s_i_s___core___sys_tick_functions.tex)
+(./group___c_m_s_i_s__core___debug_functions.tex [56] [57]
+
+! LaTeX Error: Undefined tab position.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...       

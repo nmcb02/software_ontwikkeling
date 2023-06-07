@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_t_i_m___type_def" xml:lang="en-US">
+<title>TIM_TypeDef Struct Reference</title>
+<indexterm><primary>TIM_TypeDef</primary></indexterm>
+<para>
+
+<para>TIM. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f4xx.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a61400ce239355b62aa25c95fcc18a5e1">CR1</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1a149feba01f9c4a49570c6d88619f504f">RESERVED0</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a2a3e81bd118d1bc52d24a0b0772e6a0c">CR2</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1a8249a3955aace28d92109b391311eb30">RESERVED1</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a02758713abfe580460dd5bcd8762702a">SMCR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1a5573848497a716a9947fd87487709feb">RESERVED2</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a1481b34cc41018c17e4ab592a1c8cb55">DIER</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1a6c3b31022e6f59b800e9f5cc2a89d54c">RESERVED3</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a44962ea5442d203bf4954035d1bfeb9d">SR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1aa0223808025f5bf9c056185038c9d545">RESERVED4</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a980df1a5752e36604de4d71ce14fbfa3">EGR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1abd36010ac282682d1f3c641b183b1b6f">RESERVED5</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a90d89aec51d8012b8a565ef48333b24b">CCMR1</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1aab502dde158ab7da8e7823d1f8a06edb">RESERVED6</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a977b3cf310388b5ad02440d64d03810a">CCMR2</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1ab1820c97e368d349f5f4121f015d9fab">RESERVED7</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1ab1da3e84848ed66e0577c87c199bfb6d">CCER</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1afc22764fbf9ee7ce28174d65d0260f18">RESERVED8</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_t_i_m___type_def_1a6095a27d764d06750fc0d642e08f8b2a">CNT</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1aba5df4ecbb3ecb97b966b188c3681600">PSC</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1ad8b1fadb520f7a200ee0046e110edc79">RESERVED9</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_t_i_m___type_def_1af17f19bb4aeea3cc14fa73dfa7772cb8">ARR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1aa0663aab6ed640b7594c8c6d32f6c1cd">RCR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1ad68efe7a323ac2fcb823a26c0c51445b">RESERVED10</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_t_i_m___type_def_1adab1e24ef769bbcb3e3769feae192ffb">CCR1</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_t_i_m___type_def_1ab90aa584f07eeeac364a67f5e05faa93">CCR2</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_t_i_m___type_def_1a27a478cc47a3dff478555ccb985b06a2">CCR3</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_t_i_m___type_def_1a85fdb75569bd7ea26fa48544786535be">CCR4</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a112c0403ac38905a70cf5aaa9c8cc38a">BDTR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1a11e504ee49142f46dcc67740ae9235e5">RESERVED11</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a0afd527a4ec64faf878f9957096102bf">DCR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1a2f133f27cf624e76a2ac1092ab5789f7">RESERVED12</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a30c2d8aa9c76dfba0b9a378b64700bda">DMAR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1a85b970173fe49d3959c0c7f7528dacf0">RESERVED13</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t <link linkend="_struct_t_i_m___type_def_1a47766f433b160258ec05dbb6498fd271">OR</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_struct_t_i_m___type_def_1a1841fa0366924d522d6ac880fb14d766">RESERVED14</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>TIM. </para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_t_i_m___type_def_1af17f19bb4aeea3cc14fa73dfa7772cb8"/><section>
+    <title>ARR</title>
+<indexterm><primary>ARR</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>ARR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t ARR</computeroutput></para>
+<para>TIM auto-reload register, Address offset: 0x2C </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a112c0403ac38905a70cf5aaa9c8cc38a"/><section>
+    <title>BDTR</title>
+<indexterm><primary>BDTR</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>BDTR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t BDTR</computeroutput></para>
+<para>TIM break and dead-time register, Address offset: 0x44 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1ab1da3e84848ed66e0577c87c199bfb6d"/><section>
+    <title>CCER</title>
+<indexterm><primary>CCER</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>CCER</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t CCER</computeroutput></para>
+<para>TIM capture/compare enable register, Address offset: 0x20 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a90d89aec51d8012b8a565ef48333b24b"/><section>
+    <title>CCMR1</title>
+<indexterm><primary>CCMR1</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>CCMR1</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t CCMR1</computeroutput></para>
+<para>TIM capture/compare mode register 1, Address offset: 0x18 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a977b3cf310388b5ad02440d64d03810a"/><section>
+    <title>CCMR2</title>
+<indexterm><primary>CCMR2</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>CCMR2</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t CCMR2</computeroutput></para>
+<para>TIM capture/compare mode register 2, Address offset: 0x1C </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1adab1e24ef769bbcb3e3769feae192ffb"/><section>
+    <title>CCR1</title>
+<indexterm><primary>CCR1</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>CCR1</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t CCR1</computeroutput></para>
+<para>TIM capture/compare register 1, Address offset: 0x34 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1ab90aa584f07eeeac364a67f5e05faa93"/><section>
+    <title>CCR2</title>
+<indexterm><primary>CCR2</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>CCR2</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t CCR2</computeroutput></para>
+<para>TIM capture/compare register 2, Address offset: 0x38 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a27a478cc47a3dff478555ccb985b06a2"/><section>
+    <title>CCR3</title>
+<indexterm><primary>CCR3</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>CCR3</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t CCR3</computeroutput></para>
+<para>TIM capture/compare register 3, Address offset: 0x3C </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a85fdb75569bd7ea26fa48544786535be"/><section>
+    <title>CCR4</title>
+<indexterm><primary>CCR4</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>CCR4</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t CCR4</computeroutput></para>
+<para>TIM capture/compare register 4, Address offset: 0x40 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a6095a27d764d06750fc0d642e08f8b2a"/><section>
+    <title>CNT</title>
+<indexterm><primary>CNT</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>CNT</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t CNT</computeroutput></para>
+<para>TIM counter register, Address offset: 0x24 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a61400ce239355b62aa25c95fcc18a5e1"/><section>
+    <title>CR1</title>
+<indexterm><primary>CR1</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>CR1</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t CR1</computeroutput></para>
+<para>TIM control register 1, Address offset: 0x00 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a2a3e81bd118d1bc52d24a0b0772e6a0c"/><section>
+    <title>CR2</title>
+<indexterm><primary>CR2</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>CR2</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t CR2</computeroutput></para>
+<para>TIM control register 2, Address offset: 0x04 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a0afd527a4ec64faf878f9957096102bf"/><section>
+    <title>DCR</title>
+<indexterm><primary>DCR</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>DCR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t DCR</computeroutput></para>
+<para>TIM DMA control register, Address offset: 0x48 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a1481b34cc41018c17e4ab592a1c8cb55"/><section>
+    <title>DIER</title>
+<indexterm><primary>DIER</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>DIER</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t DIER</computeroutput></para>
+<para>TIM DMA/interrupt enable register, Address offset: 0x0C </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a30c2d8aa9c76dfba0b9a378b64700bda"/><section>
+    <title>DMAR</title>
+<indexterm><primary>DMAR</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>DMAR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t DMAR</computeroutput></para>
+<para>TIM DMA address for full transfer, Address offset: 0x4C </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a980df1a5752e36604de4d71ce14fbfa3"/><section>
+    <title>EGR</title>
+<indexterm><primary>EGR</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>EGR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t EGR</computeroutput></para>
+<para>TIM event generation register, Address offset: 0x14 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a47766f433b160258ec05dbb6498fd271"/><section>
+    <title>OR</title>
+<indexterm><primary>OR</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>OR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t OR</computeroutput></para>
+<para>TIM option register, Address offset: 0x50 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1aba5df4ecbb3ecb97b966b188c3681600"/><section>
+    <title>PSC</title>
+<indexterm><primary>PSC</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>PSC</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t PSC</computeroutput></para>
+<para>TIM prescaler, Address offset: 0x28 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1aa0663aab6ed640b7594c8c6d32f6c1cd"/><section>
+    <title>RCR</title>
+<indexterm><primary>RCR</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RCR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t RCR</computeroutput></para>
+<para>TIM repetition counter register, Address offset: 0x30 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a149feba01f9c4a49570c6d88619f504f"/><section>
+    <title>RESERVED0</title>
+<indexterm><primary>RESERVED0</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED0</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED0</computeroutput></para>
+<para>Reserved, 0x02 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a8249a3955aace28d92109b391311eb30"/><section>
+    <title>RESERVED1</title>
+<indexterm><primary>RESERVED1</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED1</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED1</computeroutput></para>
+<para>Reserved, 0x06 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1ad68efe7a323ac2fcb823a26c0c51445b"/><section>
+    <title>RESERVED10</title>
+<indexterm><primary>RESERVED10</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED10</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED10</computeroutput></para>
+<para>Reserved, 0x32 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a11e504ee49142f46dcc67740ae9235e5"/><section>
+    <title>RESERVED11</title>
+<indexterm><primary>RESERVED11</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED11</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED11</computeroutput></para>
+<para>Reserved, 0x46 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a2f133f27cf624e76a2ac1092ab5789f7"/><section>
+    <title>RESERVED12</title>
+<indexterm><primary>RESERVED12</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED12</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED12</computeroutput></para>
+<para>Reserved, 0x4A <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a85b970173fe49d3959c0c7f7528dacf0"/><section>
+    <title>RESERVED13</title>
+<indexterm><primary>RESERVED13</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED13</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED13</computeroutput></para>
+<para>Reserved, 0x4E <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a1841fa0366924d522d6ac880fb14d766"/><section>
+    <title>RESERVED14</title>
+<indexterm><primary>RESERVED14</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED14</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED14</computeroutput></para>
+<para>Reserved, 0x52 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a5573848497a716a9947fd87487709feb"/><section>
+    <title>RESERVED2</title>
+<indexterm><primary>RESERVED2</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED2</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED2</computeroutput></para>
+<para>Reserved, 0x0A <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a6c3b31022e6f59b800e9f5cc2a89d54c"/><section>
+    <title>RESERVED3</title>
+<indexterm><primary>RESERVED3</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED3</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED3</computeroutput></para>
+<para>Reserved, 0x0E <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1aa0223808025f5bf9c056185038c9d545"/><section>
+    <title>RESERVED4</title>
+<indexterm><primary>RESERVED4</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED4</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED4</computeroutput></para>
+<para>Reserved, 0x12 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1abd36010ac282682d1f3c641b183b1b6f"/><section>
+    <title>RESERVED5</title>
+<indexterm><primary>RESERVED5</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED5</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED5</computeroutput></para>
+<para>Reserved, 0x16 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1aab502dde158ab7da8e7823d1f8a06edb"/><section>
+    <title>RESERVED6</title>
+<indexterm><primary>RESERVED6</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED6</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED6</computeroutput></para>
+<para>Reserved, 0x1A <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1ab1820c97e368d349f5f4121f015d9fab"/><section>
+    <title>RESERVED7</title>
+<indexterm><primary>RESERVED7</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED7</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED7</computeroutput></para>
+<para>Reserved, 0x1E <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1afc22764fbf9ee7ce28174d65d0260f18"/><section>
+    <title>RESERVED8</title>
+<indexterm><primary>RESERVED8</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED8</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED8</computeroutput></para>
+<para>Reserved, 0x22 <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1ad8b1fadb520f7a200ee0046e110edc79"/><section>
+    <title>RESERVED9</title>
+<indexterm><primary>RESERVED9</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>RESERVED9</secondary></indexterm>
+<para><computeroutput>uint16_t RESERVED9</computeroutput></para>
+<para>Reserved, 0x2A <?linebreak?> </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a02758713abfe580460dd5bcd8762702a"/><section>
+    <title>SMCR</title>
+<indexterm><primary>SMCR</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>SMCR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t SMCR</computeroutput></para>
+<para>TIM slave mode control register, Address offset: 0x08 </para>
+</section>
+<anchor xml:id="_struct_t_i_m___type_def_1a44962ea5442d203bf4954035d1bfeb9d"/><section>
+    <title>SR</title>
+<indexterm><primary>SR</primary><secondary>TIM_TypeDef</secondary></indexterm>
+<indexterm><primary>TIM_TypeDef</primary><secondary>SR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint16_t SR</computeroutput></para>
+<para>TIM status register, Address offset: 0x10 </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_stm32f4xx_8h">stm32f4xx.h</link></section>
+</section>

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8c" xml:lang="en-US">
+<title>CUBE_IDE/VGA/Core/Src/main.c File Reference</title>
+<indexterm><primary>CUBE_IDE/VGA/Core/Src/main.c</primary></indexterm>
+<para>
+
+<para>The file that gets executed and is used for operating a screen via VGA with external functions. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;math.h&gt;<?linebreak?>#include &quot;main.h&quot;<?linebreak?>#include &quot;stm32_ub_vga_screen.h&quot;<?linebreak?>#include &quot;UART_communication.h&quot;<?linebreak?>#include &quot;API_functions.h&quot;<?linebreak?>#include &quot;logic_layer.h&quot;<?linebreak?>#include &quot;error.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_main_8c_1a840291bc02cba5474a4cb46a9b9566fe">main</link> (void)</para>
+
+<para>Program start. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_main_8c_1a325819a8e492ac69542e8b31705af6e9"/>uint8_t <emphasis role="strong">data</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8c_1a518bfca7e9ae4815b363998b49fa6ae2"/>char <emphasis role="strong">save</emphasis> [100]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8c_1a20136d75a5906cd4b0b8556a2e93cabb"/>char <emphasis role="strong">save2</emphasis> [100]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8c_1a71f63e243e2aa66c2950ac476ccfda92"/>uint8_t <emphasis role="strong">arr</emphasis> [100]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8c_1af27e3188294c2df66d975b74a09c001d"/>uint8_t <emphasis role="strong">i</emphasis> =0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8c_1a6150e0515f7202e2fb518f7206ed97dc"/>int <emphasis role="strong">x</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8c_1aac1217779551b743f5645c17740178e3"/>unsigned char <emphasis role="strong">j</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8c_1aa0ccb5ee6d882ee3605ff47745c6467b"/>int <emphasis role="strong">val</emphasis> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The file that gets executed and is used for operating a screen via VGA with external functions. </para>
+
+<para><emphasis role="bold">Extra infromation:</emphasis><orderedlist>
+<listitem>
+<para>CPU : STM32F4</para>
+</listitem><listitem>
+<para>IDE : CooCox CoIDE 1.7.x</para>
+</listitem><listitem>
+<para>Module : CMSIS_BOOT, M4_CMSIS_CORE</para>
+</listitem><listitem>
+<para>Function : VGA_core DMA LIB 320x240, 8bit color</para>
+</listitem></orderedlist>
+</para>
+
+<para><formalpara><title>Authors</title>
+
+<para>UB, J.F van der Bent, Skip Wijtman </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>3-5-2023 </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>1.0 (Updates with every SWD branch) </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_main_8c_1a840291bc02cba5474a4cb46a9b9566fe"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>main.c</secondary></indexterm>
+<indexterm><primary>main.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (void )</computeroutput></para><para>
+
+<para>Program start. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Nothing</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>integer val </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

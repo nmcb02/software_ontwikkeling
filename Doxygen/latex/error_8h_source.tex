@@ -1,0 +1,20 @@
+\hypertarget{error_8h_source}{}\doxysection{error.\+h}
+\label{error_8h_source}\index{CUBE\_IDE/VGA/Core/Inc/error.h@{CUBE\_IDE/VGA/Core/Inc/error.h}}
+\mbox{\hyperlink{error_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************/}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ INC\_ERROR\_H\_}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ INC\_ERROR\_H\_}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{enum}\ ERROR}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ NO\_ERR\ =\ 0,\ \ \ \ \ \textcolor{comment}{//\ All\ errors\ listed}}
+\DoxyCodeLine{00018\ \ \ \ \ COMMAND\_ERR,\ \ \ \ \textcolor{comment}{//\ Command\ errors\ such\ as\ 'lijn'\ and\ 'rechthoek'}}
+\DoxyCodeLine{00019\ \ \ \ \ DATA\_ERR,\ \ \ \ \ \ \ \textcolor{comment}{//\ Data\ error\ means\ something\ in\ the\ data\ is\ wrong,\ such\ as\ characters\ which\ are\ not\ usable:\ '/',\ '[',\ '('\ or\ '@'\ are\ some\ examples}}
+\DoxyCodeLine{00020\ \ \ \ \ OOB\_ERR,\ \ \ \ \ \ \ \ \textcolor{comment}{//\ OOB,\ aka\ 'out\ of\ bounds',\ is\ an\ error\ which\ is\ given\ when\ pixels\ are\ outside\ the\ maximum\ ranges}}
+\DoxyCodeLine{00021\ \ \ \ \ COLOR\_ERR\ \ \ \ \ \ \ \textcolor{comment}{//\ Color\ error\ means\ a\ color\ which\ is\ not\ usable,\ was\ submitted}}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_ERROR\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

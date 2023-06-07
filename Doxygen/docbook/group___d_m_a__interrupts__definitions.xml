@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___d_m_a__interrupts__definitions" xml:lang="en-US">
+<title>DMA_interrupts_definitions</title>
+<indexterm><primary>DMA_interrupts_definitions</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga5202cf7ab467fe1a61c725d1f98f0689"/>#define <emphasis role="strong">DMA_IT_FEIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x90000001)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga8427aa66491c87a653f94f812b31cb17"/>#define <emphasis role="strong">DMA_IT_DMEIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10001004)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga7f47bb08f22556f9a655adbce3d6982a"/>#define <emphasis role="strong">DMA_IT_TEIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10002008)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gaabb2f6093a51f4f25ac67a21125a8bc2"/>#define <emphasis role="strong">DMA_IT_HTIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10004010)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga9de4a37c4fb35a2d3566d8060a8145be"/>#define <emphasis role="strong">DMA_IT_TCIF0</emphasis>&#160;&#160;&#160;((uint32_t)0x10008020)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gaa93c3fc1826e8bf9063ab64734277ca3"/>#define <emphasis role="strong">DMA_IT_FEIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x90000040)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gabdbf66e3cbe14fe1f45c42635127e927"/>#define <emphasis role="strong">DMA_IT_DMEIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10001100)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gaeacbd5c206cc6026d3c03f8182b16aeb"/>#define <emphasis role="strong">DMA_IT_TEIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10002200)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga22e9fbbe3bd5539bf4c087c9ba2735da"/>#define <emphasis role="strong">DMA_IT_HTIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10004400)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gae4eb128c7b47473cf984c4d91878d879"/>#define <emphasis role="strong">DMA_IT_TCIF1</emphasis>&#160;&#160;&#160;((uint32_t)0x10008800)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gaeae384e9af7db044cf93e7f270eddd7c"/>#define <emphasis role="strong">DMA_IT_FEIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x90010000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga56f547c35fcac83518aec320f0e38000"/>#define <emphasis role="strong">DMA_IT_DMEIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10041000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga8faa8c4705525ad1cd90290c5a04c589"/>#define <emphasis role="strong">DMA_IT_TEIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10082000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga759d12e1158b37391b31a79f3a54339c"/>#define <emphasis role="strong">DMA_IT_HTIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10104000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga04ed284cd063df3e1e72a189bc6d9d86"/>#define <emphasis role="strong">DMA_IT_TCIF2</emphasis>&#160;&#160;&#160;((uint32_t)0x10208000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga93483a72ed43feb6e5f4392bb2ac9851"/>#define <emphasis role="strong">DMA_IT_FEIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x90400000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga8b3786da4bdd693eb198b7a3a51faf12"/>#define <emphasis role="strong">DMA_IT_DMEIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x11001000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga2d9d67487f27667a88f98f28d83fb8ee"/>#define <emphasis role="strong">DMA_IT_TEIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x12002000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gaba176f6d831b4d30fdeddcb2f301f329"/>#define <emphasis role="strong">DMA_IT_HTIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x14004000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gafc40a792a31cfc0d2fbc937e0796533d"/>#define <emphasis role="strong">DMA_IT_TCIF3</emphasis>&#160;&#160;&#160;((uint32_t)0x18008000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga8921cc2ba7936c50aee13913cfaedddf"/>#define <emphasis role="strong">DMA_IT_FEIF4</emphasis>&#160;&#160;&#160;((uint32_t)0xA0000001)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gab4456201506a52115a5b7938484bcec1"/>#define <emphasis role="strong">DMA_IT_DMEIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20001004)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga6b91d27a13175cc8e08ac8d58c8bdf19"/>#define <emphasis role="strong">DMA_IT_TEIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20002008)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gafda7db2d283c4a71dcad96dc4972799d"/>#define <emphasis role="strong">DMA_IT_HTIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20004010)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga36a29ac345571fad0b1c98f36c59d4c5"/>#define <emphasis role="strong">DMA_IT_TCIF4</emphasis>&#160;&#160;&#160;((uint32_t)0x20008020)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga8b63b126eedeeed93051abfe943c7a4a"/>#define <emphasis role="strong">DMA_IT_FEIF5</emphasis>&#160;&#160;&#160;((uint32_t)0xA0000040)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga03c884977c9eac6b98c33707df72f1de"/>#define <emphasis role="strong">DMA_IT_DMEIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20001100)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga954167a7b1f01653ca891a1e2f5fc2ef"/>#define <emphasis role="strong">DMA_IT_TEIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20002200)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gab67a2a189e63786b23e37febcd9aaad1"/>#define <emphasis role="strong">DMA_IT_HTIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20004400)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gaf4a7f8f3d5914858c59b12fc36e9a176"/>#define <emphasis role="strong">DMA_IT_TCIF5</emphasis>&#160;&#160;&#160;((uint32_t)0x20008800)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gad023ccedd5283ace18de6d0bcac06e0a"/>#define <emphasis role="strong">DMA_IT_FEIF6</emphasis>&#160;&#160;&#160;((uint32_t)0xA0010000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga154421000068d646b9403303aeae09e8"/>#define <emphasis role="strong">DMA_IT_DMEIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20041000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gab1c3b881dd5493dee96b49f4ddbb7204"/>#define <emphasis role="strong">DMA_IT_TEIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20082000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gae43cd288bb0b6f1cbb313dc5690f174f"/>#define <emphasis role="strong">DMA_IT_HTIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20104000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga895e7dfd7ddf4879181e475eb322f1b4"/>#define <emphasis role="strong">DMA_IT_TCIF6</emphasis>&#160;&#160;&#160;((uint32_t)0x20208000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga742d0f7f8437ab5fa4f1ad0c7fb0112b"/>#define <emphasis role="strong">DMA_IT_FEIF7</emphasis>&#160;&#160;&#160;((uint32_t)0xA0400000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gaed099553b36827c2978208d288f9a848"/>#define <emphasis role="strong">DMA_IT_DMEIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x21001000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga4d25902b63630db383fd3983581fb8ee"/>#define <emphasis role="strong">DMA_IT_TEIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x22002000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1gae95460193a9f02e03a6aaf01ecb9a501"/>#define <emphasis role="strong">DMA_IT_HTIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x24004000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___d_m_a__interrupts__definitions_1ga2761f6621db0231ddc8294a8eb1c8e42"/>#define <emphasis role="strong">DMA_IT_TCIF7</emphasis>&#160;&#160;&#160;((uint32_t)0x28008000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__interrupts__definitions_1ga390481b083355ed774b04f70a42f0dfb">IS_DMA_CLEAR_IT</link>(IT)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___d_m_a__interrupts__definitions_1gaaafa1bd74bc5e78e276c731faa8eed22">IS_DMA_GET_IT</link>(IT)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___d_m_a__interrupts__definitions_1ga390481b083355ed774b04f70a42f0dfb"/><section>
+    <title>IS_DMA_CLEAR_IT</title>
+<indexterm><primary>IS_DMA_CLEAR_IT</primary><secondary>DMA_interrupts_definitions</secondary></indexterm>
+<indexterm><primary>DMA_interrupts_definitions</primary><secondary>IS_DMA_CLEAR_IT</secondary></indexterm>
+<para><computeroutput>#define IS_DMA_CLEAR_IT( IT)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((((IT)&#32;&amp;&#32;0x30000000)&#32;!=&#32;0x30000000)&#32;&amp;&amp;&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((IT)&#32;&amp;&#32;0x30000000)&#32;!=&#32;0)&#32;&amp;&amp;&#32;((IT)&#32;!=&#32;0x00)&#32;&amp;&amp;&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((IT)&#32;&amp;&#32;0x40820082)&#32;==&#32;0x00))
+</programlisting></section>
+<anchor xml:id="_group___d_m_a__interrupts__definitions_1gaaafa1bd74bc5e78e276c731faa8eed22"/><section>
+    <title>IS_DMA_GET_IT</title>
+<indexterm><primary>IS_DMA_GET_IT</primary><secondary>DMA_interrupts_definitions</secondary></indexterm>
+<indexterm><primary>DMA_interrupts_definitions</primary><secondary>IS_DMA_GET_IT</secondary></indexterm>
+<para><computeroutput>#define IS_DMA_GET_IT( IT)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((IT)&#32;==&#32;DMA_IT_TCIF0)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_HTIF0)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_TEIF0)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_DMEIF0)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_FEIF0)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_TCIF1)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_HTIF1)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_TEIF1)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_DMEIF1)||&#32;((IT)&#32;==&#32;DMA_IT_FEIF1)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_TCIF2)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_HTIF2)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_TEIF2)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_DMEIF2)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_FEIF2)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_TCIF3)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_HTIF3)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_TEIF3)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_DMEIF3)||&#32;((IT)&#32;==&#32;DMA_IT_FEIF3)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_TCIF4)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_HTIF4)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_TEIF4)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_DMEIF4)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_FEIF4)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_TCIF5)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_HTIF5)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_TEIF5)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_DMEIF5)||&#32;((IT)&#32;==&#32;DMA_IT_FEIF5)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_TCIF6)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_HTIF6)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_TEIF6)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_DMEIF6)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_FEIF6)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_TCIF7)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_HTIF7)&#32;||&#32;((IT)&#32;==&#32;DMA_IT_TEIF7)&#32;&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((IT)&#32;==&#32;DMA_IT_DMEIF7)||&#32;((IT)&#32;==&#32;DMA_IT_FEIF7))
+</programlisting></section>
+</section>
+</section>

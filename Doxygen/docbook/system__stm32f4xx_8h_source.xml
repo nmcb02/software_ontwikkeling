@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_system__stm32f4xx_8h_source" xml:lang="en-US">
+<title>system_stm32f4xx.h</title>
+<indexterm><primary>CUBE_IDE/VGA/Core/Inc/system_stm32f4xx.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+33 <emphasis role="preprocessor">#ifndef&#32;__SYSTEM_STM32F4XX_H</emphasis>
+34 <emphasis role="preprocessor">#define&#32;__SYSTEM_STM32F4XX_H</emphasis>
+35 
+36 <emphasis role="preprocessor">#ifdef&#32;__cplusplus</emphasis>
+37 &#32;<emphasis role="keyword">extern</emphasis>&#32;<emphasis role="stringliteral">&quot;C&quot;</emphasis>&#32;{
+38 <emphasis role="preprocessor">#endif&#32;</emphasis>
+39 
+53 <emphasis role="keyword">extern</emphasis>&#32;uint32_t&#32;<link linkend="_group___s_t_m32_f4xx___system___exported__types_1gaa3cd3e43291e81e795d642b79b6088e6">SystemCoreClock</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+80 <emphasis role="keyword">extern</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___s_t_m32_f4xx___system___exported___functions_1ga93f514700ccf00d08dbdcff7f1224eb2">SystemInit</link>(<emphasis role="keywordtype">void</emphasis>);
+81 <emphasis role="keyword">extern</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___s_t_m32_f4xx___system___exported___functions_1gae0c36a9591fe6e9c45ecb21a794f0f0f">SystemCoreClockUpdate</link>(<emphasis role="keywordtype">void</emphasis>);
+86 <emphasis role="preprocessor">#ifdef&#32;__cplusplus</emphasis>
+87 }
+88 <emphasis role="preprocessor">#endif</emphasis>
+89 
+90 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*__SYSTEM_STM32F4XX_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+91 
+99 <emphasis role="comment">/*******************&#32;(C)&#32;COPYRIGHT&#32;2011&#32;STMicroelectronics&#32;*****END&#32;OF&#32;FILE****/</emphasis>
+</programlisting></section>

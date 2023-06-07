@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___r_c_c___group4" xml:lang="en-US">
+<title>Interrupts and flags management functions</title>
+<indexterm><primary>Interrupts and flags management functions</primary></indexterm>
+<para>
+
+<para>Interrupts and flags management functions. </para>
+ 
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_group___r_c_c___group4_1gaa953aa226e9ce45300d535941e4dfe2f">RCC_ITConfig</link> (uint8_t RCC_IT, FunctionalState NewState)</para>
+
+<para>Enables or disables the specified RCC interrupts. </para>
+</listitem>
+            <listitem><para>FlagStatus <link linkend="_group___r_c_c___group4_1ga2897bdc52f272031c44fb1f72205d295">RCC_GetFlagStatus</link> (uint8_t RCC_FLAG)</para>
+
+<para>Checks whether the specified RCC flag is set or not. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___r_c_c___group4_1ga53f909dbb15a54124419084ebda97d72">RCC_ClearFlag</link> (void)</para>
+
+<para>Clears the RCC reset flags. The reset flags are: RCC_FLAG_PINRST, RCC_FLAG_PORRST, RCC_FLAG_SFTRST, RCC_FLAG_IWDGRST, RCC_FLAG_WWDGRST, RCC_FLAG_LPWRRST. </para>
+</listitem>
+            <listitem><para>ITStatus <link linkend="_group___r_c_c___group4_1ga6126c99f398ee4be410ad76ae3aee18f">RCC_GetITStatus</link> (uint8_t RCC_IT)</para>
+
+<para>Checks whether the specified RCC interrupt has occurred or not. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___r_c_c___group4_1ga529842d165910f8f87e26115da36089b">RCC_ClearITPendingBit</link> (uint8_t RCC_IT)</para>
+
+<para>Clears the RCC&apos;s interrupt pending bits. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Interrupts and flags management functions. </para>
+
+<para><literallayout><computeroutput> ===============================================================================
+                   Interrupts and flags management functions
+ ===============================================================================  </computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_group___r_c_c___group4_1ga53f909dbb15a54124419084ebda97d72"/><section>
+    <title>RCC_ClearFlag()</title>
+<indexterm><primary>RCC_ClearFlag</primary><secondary>Interrupts and flags management functions</secondary></indexterm>
+<indexterm><primary>Interrupts and flags management functions</primary><secondary>RCC_ClearFlag</secondary></indexterm>
+<para><computeroutput>void RCC_ClearFlag (void )</computeroutput></para><para>
+
+<para>Clears the RCC reset flags. The reset flags are: RCC_FLAG_PINRST, RCC_FLAG_PORRST, RCC_FLAG_SFTRST, RCC_FLAG_IWDGRST, RCC_FLAG_WWDGRST, RCC_FLAG_LPWRRST. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Return values</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_group___r_c_c___group4_1ga529842d165910f8f87e26115da36089b"/><section>
+    <title>RCC_ClearITPendingBit()</title>
+<indexterm><primary>RCC_ClearITPendingBit</primary><secondary>Interrupts and flags management functions</secondary></indexterm>
+<indexterm><primary>Interrupts and flags management functions</primary><secondary>RCC_ClearITPendingBit</secondary></indexterm>
+<para><computeroutput>void RCC_ClearITPendingBit (uint8_t RCC_IT)</computeroutput></para><para>
+
+<para>Clears the RCC&apos;s interrupt pending bits. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>RCC_IT</entry><entry>
+<para>specifies the interrupt pending bit to clear. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_IT_LSIRDY: LSI ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_LSERDY: LSE ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_HSIRDY: HSI ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_HSERDY: HSE ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_PLLRDY: main PLL ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_PLLI2SRDY: PLLI2S ready interrupt <?linebreak?> </para>
+</listitem>
+<listitem>
+<para>RCC_IT_CSS: Clock Security System interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Return values</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_group___r_c_c___group4_1ga2897bdc52f272031c44fb1f72205d295"/><section>
+    <title>RCC_GetFlagStatus()</title>
+<indexterm><primary>RCC_GetFlagStatus</primary><secondary>Interrupts and flags management functions</secondary></indexterm>
+<indexterm><primary>Interrupts and flags management functions</primary><secondary>RCC_GetFlagStatus</secondary></indexterm>
+<para><computeroutput>FlagStatus RCC_GetFlagStatus (uint8_t RCC_FLAG)</computeroutput></para><para>
+
+<para>Checks whether the specified RCC flag is set or not. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>RCC_FLAG</entry><entry>
+<para>specifies the flag to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RCC_FLAG_HSIRDY: HSI oscillator clock ready </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_HSERDY: HSE oscillator clock ready </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_PLLRDY: main PLL clock ready </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_PLLI2SRDY: PLLI2S clock ready </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_LSERDY: LSE oscillator clock ready </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_LSIRDY: LSI oscillator clock ready </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_BORRST: POR/PDR or BOR reset </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_PINRST: Pin reset </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_PORRST: POR/PDR reset </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_SFTRST: Software reset </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_IWDGRST: Independent Watchdog reset </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_WWDGRST: Window Watchdog reset </para>
+</listitem>
+<listitem>
+<para>RCC_FLAG_LPWRRST: Low Power reset </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Return values</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>The</entry><entry>
+<para>new state of RCC_FLAG (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_group___r_c_c___group4_1ga6126c99f398ee4be410ad76ae3aee18f"/><section>
+    <title>RCC_GetITStatus()</title>
+<indexterm><primary>RCC_GetITStatus</primary><secondary>Interrupts and flags management functions</secondary></indexterm>
+<indexterm><primary>Interrupts and flags management functions</primary><secondary>RCC_GetITStatus</secondary></indexterm>
+<para><computeroutput>ITStatus RCC_GetITStatus (uint8_t RCC_IT)</computeroutput></para><para>
+
+<para>Checks whether the specified RCC interrupt has occurred or not. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>RCC_IT</entry><entry>
+<para>specifies the RCC interrupt source to check. This parameter can be one of the following values: <itemizedlist>
+<listitem>
+<para>RCC_IT_LSIRDY: LSI ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_LSERDY: LSE ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_HSIRDY: HSI ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_HSERDY: HSE ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_PLLRDY: main PLL ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_PLLI2SRDY: PLLI2S ready interrupt <?linebreak?> </para>
+</listitem>
+<listitem>
+<para>RCC_IT_CSS: Clock Security System interrupt </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Return values</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>The</entry><entry>
+<para>new state of RCC_IT (SET or RESET). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_group___r_c_c___group4_1gaa953aa226e9ce45300d535941e4dfe2f"/><section>
+    <title>RCC_ITConfig()</title>
+<indexterm><primary>RCC_ITConfig</primary><secondary>Interrupts and flags management functions</secondary></indexterm>
+<indexterm><primary>Interrupts and flags management functions</primary><secondary>RCC_ITConfig</secondary></indexterm>
+<para><computeroutput>void RCC_ITConfig (uint8_t RCC_IT, FunctionalState NewState)</computeroutput></para><para>
+
+<para>Enables or disables the specified RCC interrupts. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>RCC_IT</entry><entry>
+<para>specifies the RCC interrupt sources to be enabled or disabled. This parameter can be any combination of the following values: <itemizedlist>
+<listitem>
+<para>RCC_IT_LSIRDY: LSI ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_LSERDY: LSE ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_HSIRDY: HSI ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_HSERDY: HSE ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_PLLRDY: main PLL ready interrupt </para>
+</listitem>
+<listitem>
+<para>RCC_IT_PLLI2SRDY: PLLI2S ready interrupt <?linebreak?> </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                            <row>
+<entry>NewState</entry><entry>
+<para>new state of the specified RCC interrupts. This parameter can be: ENABLE or DISABLE. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Return values</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_c_a_n___f_i_f_o_mail_box___type_def" xml:lang="en-US">
+<title>CAN_FIFOMailBox_TypeDef Struct Reference</title>
+<indexterm><primary>CAN_FIFOMailBox_TypeDef</primary></indexterm>
+<para>
+
+<para>Controller Area Network FIFOMailBox. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;stm32f4xx.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_c_a_n___f_i_f_o_mail_box___type_def_1a0acc8eb90b17bef5b9e03c7ddaacfb0b">RIR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_c_a_n___f_i_f_o_mail_box___type_def_1a9563d8a88d0db403b8357331bea83a2e">RDTR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_c_a_n___f_i_f_o_mail_box___type_def_1ae1c569688eedd49219cd505b9c22121b">RDLR</link></para>
+</listitem>
+            <listitem><para><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t <link linkend="_struct_c_a_n___f_i_f_o_mail_box___type_def_1a7f11f42ba9d3bc5cd4a4f5ea0214608e">RDHR</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Controller Area Network FIFOMailBox. </para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_c_a_n___f_i_f_o_mail_box___type_def_1a7f11f42ba9d3bc5cd4a4f5ea0214608e"/><section>
+    <title>RDHR</title>
+<indexterm><primary>RDHR</primary><secondary>CAN_FIFOMailBox_TypeDef</secondary></indexterm>
+<indexterm><primary>CAN_FIFOMailBox_TypeDef</primary><secondary>RDHR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t RDHR</computeroutput></para>
+<para>CAN receive FIFO mailbox data high register </para>
+</section>
+<anchor xml:id="_struct_c_a_n___f_i_f_o_mail_box___type_def_1ae1c569688eedd49219cd505b9c22121b"/><section>
+    <title>RDLR</title>
+<indexterm><primary>RDLR</primary><secondary>CAN_FIFOMailBox_TypeDef</secondary></indexterm>
+<indexterm><primary>CAN_FIFOMailBox_TypeDef</primary><secondary>RDLR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t RDLR</computeroutput></para>
+<para>CAN receive FIFO mailbox data low register </para>
+</section>
+<anchor xml:id="_struct_c_a_n___f_i_f_o_mail_box___type_def_1a9563d8a88d0db403b8357331bea83a2e"/><section>
+    <title>RDTR</title>
+<indexterm><primary>RDTR</primary><secondary>CAN_FIFOMailBox_TypeDef</secondary></indexterm>
+<indexterm><primary>CAN_FIFOMailBox_TypeDef</primary><secondary>RDTR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t RDTR</computeroutput></para>
+<para>CAN receive FIFO mailbox data length control and time stamp register </para>
+</section>
+<anchor xml:id="_struct_c_a_n___f_i_f_o_mail_box___type_def_1a0acc8eb90b17bef5b9e03c7ddaacfb0b"/><section>
+    <title>RIR</title>
+<indexterm><primary>RIR</primary><secondary>CAN_FIFOMailBox_TypeDef</secondary></indexterm>
+<indexterm><primary>CAN_FIFOMailBox_TypeDef</primary><secondary>RIR</secondary></indexterm>
+<para><computeroutput><link linkend="_group___c_m_s_i_s__core__definitions_1gaec43007d9998a0a0e01faede4133d6be">__IO</link> uint32_t RIR</computeroutput></para>
+<para>CAN receive FIFO mailbox identifier register </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_stm32f4xx_8h">stm32f4xx.h</link></section>
+</section>

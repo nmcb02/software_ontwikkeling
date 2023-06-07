@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___a_o_e___bit___set___reset" xml:lang="en-US">
+<title>TIM_AOE_Bit_Set_Reset</title>
+<indexterm><primary>TIM_AOE_Bit_Set_Reset</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___t_i_m___a_o_e___bit___set___reset_1gaa416873d01fe62fe8d3f9c8bb7853fa1"/>#define <emphasis role="strong">TIM_AutomaticOutput_Enable</emphasis>&#160;&#160;&#160;((uint16_t)0x4000)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___a_o_e___bit___set___reset_1ga0f80ba4fbadd434bc82ca63e904ace41"/>#define <emphasis role="strong">TIM_AutomaticOutput_Disable</emphasis>&#160;&#160;&#160;((uint16_t)0x0000)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___a_o_e___bit___set___reset_1gaabce6b8865d80929bf69c6c3c7780846">IS_TIM_AUTOMATIC_OUTPUT_STATE</link>(STATE)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___t_i_m___a_o_e___bit___set___reset_1gaabce6b8865d80929bf69c6c3c7780846"/><section>
+    <title>IS_TIM_AUTOMATIC_OUTPUT_STATE</title>
+<indexterm><primary>IS_TIM_AUTOMATIC_OUTPUT_STATE</primary><secondary>TIM_AOE_Bit_Set_Reset</secondary></indexterm>
+<indexterm><primary>TIM_AOE_Bit_Set_Reset</primary><secondary>IS_TIM_AUTOMATIC_OUTPUT_STATE</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_AUTOMATIC_OUTPUT_STATE( STATE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((STATE)&#32;==&#32;TIM_AutomaticOutput_Enable)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((STATE)&#32;==&#32;TIM_AutomaticOutput_Disable))
+</programlisting></section>
+</section>
+</section>

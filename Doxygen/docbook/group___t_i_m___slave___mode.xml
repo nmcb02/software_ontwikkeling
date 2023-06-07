@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___slave___mode" xml:lang="en-US">
+<title>TIM_Slave_Mode</title>
+<indexterm><primary>TIM_Slave_Mode</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___t_i_m___slave___mode_1gaac1cec731f1a5e680a038c4f472f74af"/>#define <emphasis role="strong">TIM_SlaveMode_Reset</emphasis>&#160;&#160;&#160;((uint16_t)0x0004)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___slave___mode_1ga1f36c870b926f70b32f274bbc0bc39a5"/>#define <emphasis role="strong">TIM_SlaveMode_Gated</emphasis>&#160;&#160;&#160;((uint16_t)0x0005)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___slave___mode_1ga9e7726c04ee1bafec97226f08adf5677"/>#define <emphasis role="strong">TIM_SlaveMode_Trigger</emphasis>&#160;&#160;&#160;((uint16_t)0x0006)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___t_i_m___slave___mode_1ga34427a693157ab177fead9871185bd35"/>#define <emphasis role="strong">TIM_SlaveMode_External1</emphasis>&#160;&#160;&#160;((uint16_t)0x0007)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___slave___mode_1ga7f0e666bc968c56df7f1f6c2465c89fb">IS_TIM_SLAVE_MODE</link>(MODE)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___t_i_m___slave___mode_1ga7f0e666bc968c56df7f1f6c2465c89fb"/><section>
+    <title>IS_TIM_SLAVE_MODE</title>
+<indexterm><primary>IS_TIM_SLAVE_MODE</primary><secondary>TIM_Slave_Mode</secondary></indexterm>
+<indexterm><primary>TIM_Slave_Mode</primary><secondary>IS_TIM_SLAVE_MODE</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_SLAVE_MODE( MODE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((MODE)&#32;==&#32;TIM_SlaveMode_Reset)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((MODE)&#32;==&#32;TIM_SlaveMode_Gated)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((MODE)&#32;==&#32;TIM_SlaveMode_Trigger)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((MODE)&#32;==&#32;TIM_SlaveMode_External1))
+</programlisting></section>
+</section>
+</section>

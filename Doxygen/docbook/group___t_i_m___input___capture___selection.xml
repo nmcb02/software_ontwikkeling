@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___t_i_m___input___capture___selection" xml:lang="en-US">
+<title>TIM_Input_Capture_Selection</title>
+<indexterm><primary>TIM_Input_Capture_Selection</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_group___t_i_m___input___capture___selection_1ga3d38876044457b7faefe951d367ac8c3">TIM_ICSelection_DirectTI</link>&#160;&#160;&#160;((uint16_t)0x0001)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___input___capture___selection_1ga2289b684133ac0b81ddfcd860d01b144">TIM_ICSelection_IndirectTI</link>&#160;&#160;&#160;((uint16_t)0x0002)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___input___capture___selection_1ga2cd464e97ffd6ea3208ec65672f9a373">TIM_ICSelection_TRC</link>&#160;&#160;&#160;((uint16_t)0x0003)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___t_i_m___input___capture___selection_1ga623d8592109f4702829ae7fc3806bcb8">IS_TIM_IC_SELECTION</link>(SELECTION)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___t_i_m___input___capture___selection_1ga623d8592109f4702829ae7fc3806bcb8"/><section>
+    <title>IS_TIM_IC_SELECTION</title>
+<indexterm><primary>IS_TIM_IC_SELECTION</primary><secondary>TIM_Input_Capture_Selection</secondary></indexterm>
+<indexterm><primary>TIM_Input_Capture_Selection</primary><secondary>IS_TIM_IC_SELECTION</secondary></indexterm>
+<para><computeroutput>#define IS_TIM_IC_SELECTION( SELECTION)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((SELECTION)&#32;==&#32;<link linkend="_group___t_i_m___input___capture___selection_1ga3d38876044457b7faefe951d367ac8c3">TIM_ICSelection_DirectTI</link>)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;<link linkend="_group___t_i_m___input___capture___selection_1ga2289b684133ac0b81ddfcd860d01b144">TIM_ICSelection_IndirectTI</link>)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SELECTION)&#32;==&#32;<link linkend="_group___t_i_m___input___capture___selection_1ga2cd464e97ffd6ea3208ec65672f9a373">TIM_ICSelection_TRC</link>))
+</programlisting></section>
+<anchor xml:id="_group___t_i_m___input___capture___selection_1ga3d38876044457b7faefe951d367ac8c3"/><section>
+    <title>TIM_ICSelection_DirectTI</title>
+<indexterm><primary>TIM_ICSelection_DirectTI</primary><secondary>TIM_Input_Capture_Selection</secondary></indexterm>
+<indexterm><primary>TIM_Input_Capture_Selection</primary><secondary>TIM_ICSelection_DirectTI</secondary></indexterm>
+<para><computeroutput>#define TIM_ICSelection_DirectTI&#160;&#160;&#160;((uint16_t)0x0001)</computeroutput></para>
+<para>TIM Input 1, 2, 3 or 4 is selected to be connected to IC1, IC2, IC3 or IC4, respectively </para>
+</section>
+<anchor xml:id="_group___t_i_m___input___capture___selection_1ga2289b684133ac0b81ddfcd860d01b144"/><section>
+    <title>TIM_ICSelection_IndirectTI</title>
+<indexterm><primary>TIM_ICSelection_IndirectTI</primary><secondary>TIM_Input_Capture_Selection</secondary></indexterm>
+<indexterm><primary>TIM_Input_Capture_Selection</primary><secondary>TIM_ICSelection_IndirectTI</secondary></indexterm>
+<para><computeroutput>#define TIM_ICSelection_IndirectTI&#160;&#160;&#160;((uint16_t)0x0002)</computeroutput></para>
+<para>TIM Input 1, 2, 3 or 4 is selected to be connected to IC2, IC1, IC4 or IC3, respectively. </para>
+</section>
+<anchor xml:id="_group___t_i_m___input___capture___selection_1ga2cd464e97ffd6ea3208ec65672f9a373"/><section>
+    <title>TIM_ICSelection_TRC</title>
+<indexterm><primary>TIM_ICSelection_TRC</primary><secondary>TIM_Input_Capture_Selection</secondary></indexterm>
+<indexterm><primary>TIM_Input_Capture_Selection</primary><secondary>TIM_ICSelection_TRC</secondary></indexterm>
+<para><computeroutput>#define TIM_ICSelection_TRC&#160;&#160;&#160;((uint16_t)0x0003)</computeroutput></para>
+<para>TIM Input 1, 2, 3 or 4 is selected to be connected to TRC. </para>
+</section>
+</section>
+</section>

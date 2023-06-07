@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_error_8h" xml:lang="en-US">
+<title>CUBE_IDE/VGA/Core/Inc/error.h File Reference</title>
+<indexterm><primary>CUBE_IDE/VGA/Core/Inc/error.h</primary></indexterm>
+<para>
+
+<para>This file contains the error ENUMs for the global error handling. </para>
+ 
+</para>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_error_8h_1a9eaada089c4de774cfc8b7aea4b9379a"/>enum <emphasis role="strong">ERROR</emphasis> { <?linebreak?><emphasis role="strong">NO_ERR</emphasis> = 0
+, <emphasis role="strong">COMMAND_ERR</emphasis>
+, <emphasis role="strong">DATA_ERR</emphasis>
+, <emphasis role="strong">OOB_ERR</emphasis>
+, <?linebreak?><emphasis role="strong">COLOR_ERR</emphasis>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This file contains the error ENUMs for the global error handling. </para>
+
+<para><formalpara><title>Authors</title>
+
+<para>Skip Wijtman </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>6-6-2023 </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>1.0 </para>
+</formalpara>
+</para>
+</section>
+</section>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['systemcoreclockupdate_0',['SystemCoreClockUpdate',['../group___s_t_m32_f4xx___system___exported___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f',1,'SystemCoreClockUpdate(void):&#160;system_stm32f4xx.c'],['../group___s_t_m32_f4xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f',1,'SystemCoreClockUpdate(void):&#160;system_stm32f4xx.c']]],
-  ['systeminit_1',['SystemInit',['../group___s_t_m32_f4xx___system___exported___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2',1,'SystemInit(void):&#160;system_stm32f4xx.c'],['../group___s_t_m32_f4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2',1,'SystemInit(void):&#160;system_stm32f4xx.c']]],
-  ['systick_5fclksourceconfig_2',['SysTick_CLKSourceConfig',['../group___m_i_s_c.html#ga2777d255bb06ad62bb6372a9db1ff385',1,'SysTick_CLKSourceConfig(uint32_t SysTick_CLKSource):&#160;misc.c'],['../group___m_i_s_c___private___functions.html#ga2777d255bb06ad62bb6372a9db1ff385',1,'SysTick_CLKSourceConfig(uint32_t SysTick_CLKSource):&#160;misc.c']]]
+  ['parse_5fcmd_0',['parse_cmd',['../logic__layer_8h.html#a8defaa134a23a988d2749fc0171427d2',1,'parse_cmd(UART data):&#160;logic_layer.c'],['../logic__layer_8c.html#a8defaa134a23a988d2749fc0171427d2',1,'parse_cmd(UART data):&#160;logic_layer.c']]],
+  ['parse_5fdata_1',['parse_data',['../logic__layer_8h.html#a57c29aee18fbaa7bc92e6d1273fb2136',1,'parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_checker, int let_checker, int num_counter):&#160;logic_layer.c'],['../logic__layer_8c.html#a57c29aee18fbaa7bc92e6d1273fb2136',1,'parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_checker, int let_checker, int num_counter):&#160;logic_layer.c']]]
 ];

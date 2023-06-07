@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___m_i_s_c___sys_tick__clock__source" xml:lang="en-US">
+<title>MISC_SysTick_clock_source</title>
+<indexterm><primary>MISC_SysTick_clock_source</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___m_i_s_c___sys_tick__clock__source_1ga545c387ce43db90f15faad5f354f890d"/>#define <emphasis role="strong">SysTick_CLKSource_HCLK_Div8</emphasis>&#160;&#160;&#160;((uint32_t)0xFFFFFFFB)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___m_i_s_c___sys_tick__clock__source_1ga8a885ce2632ad4c35e229bb7c6e60191"/>#define <emphasis role="strong">SysTick_CLKSource_HCLK</emphasis>&#160;&#160;&#160;((uint32_t)0x00000004)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___m_i_s_c___sys_tick__clock__source_1ga22d6291f6aed29442cf4cd9098fa0784">IS_SYSTICK_CLK_SOURCE</link>(SOURCE)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___m_i_s_c___sys_tick__clock__source_1ga22d6291f6aed29442cf4cd9098fa0784"/><section>
+    <title>IS_SYSTICK_CLK_SOURCE</title>
+<indexterm><primary>IS_SYSTICK_CLK_SOURCE</primary><secondary>MISC_SysTick_clock_source</secondary></indexterm>
+<indexterm><primary>MISC_SysTick_clock_source</primary><secondary>IS_SYSTICK_CLK_SOURCE</secondary></indexterm>
+<para><computeroutput>#define IS_SYSTICK_CLK_SOURCE( SOURCE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((SOURCE)&#32;==&#32;SysTick_CLKSource_HCLK)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((SOURCE)&#32;==&#32;SysTick_CLKSource_HCLK_Div8))
+</programlisting></section>
+</section>
+</section>

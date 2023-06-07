@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__a_p_i__functions_8c" xml:lang="en-US">
+<title>CUBE_IDE/VGA/Core/Src/API_functions.c File Reference</title>
+<indexterm><primary>CUBE_IDE/VGA/Core/Src/API_functions.c</primary></indexterm>
+<para>
+
+<para>All API functions are created in this file. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;API_functions.h&quot;<?linebreak?>#include &quot;bitmap_arrows.h&quot;<?linebreak?>#include &quot;bitmap_smileys.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="__a_p_i__functions_8c_1a5762291bd9ba0b7c55877a82192975c9">API_draw_line</link> (int x_1, int y_1, int x_2, int y_2, int color, int weight)</para>
+
+<para>This function gives the user the ability to draw lines on a VGA screen. </para>
+</listitem>
+            <listitem><para>int <link linkend="__a_p_i__functions_8c_1ac5d34bcb0d84db1190d4b876a3f65944">API_clearscreen</link> (int color)</para>
+
+<para>This function gives the user the ability to clear the screen to a certain color. </para>
+</listitem>
+            <listitem><para>int <link linkend="__a_p_i__functions_8c_1a873d84dd7c5f171783799bcd36ac7688">API_draw_rectangle</link> (int x_1, int y_1, int width, int height, int color, int filled)</para>
+
+<para>This function gives the user the ability to draw a rectangle on a VGA screen. </para>
+</listitem>
+            <listitem><para>int <link linkend="__a_p_i__functions_8c_1a6ba0c9aa23537bf68521fd5d1ac4124c">API_draw_bitmap</link> (int bm_nr, int x_lup, int y_lup)</para>
+
+<para>This function gives the user the ability to put a bitmap on the VGA screen. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>All API functions are created in this file. </para>
+
+<para><formalpara><title>Authors</title>
+
+<para>Naomi Born </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>17-05-2023 </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>1.0 </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__a_p_i__functions_8c_1ac5d34bcb0d84db1190d4b876a3f65944"/><section>
+    <title>API_clearscreen()</title>
+<indexterm><primary>API_clearscreen</primary><secondary>API_functions.c</secondary></indexterm>
+<indexterm><primary>API_functions.c</primary><secondary>API_clearscreen</secondary></indexterm>
+<para><computeroutput>int API_clearscreen (int color)</computeroutput></para><para>
+
+<para>This function gives the user the ability to clear the screen to a certain color. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>color</entry><entry>
+<para>Color of the screen</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Error code if error occurs </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__a_p_i__functions_8c_1a6ba0c9aa23537bf68521fd5d1ac4124c"/><section>
+    <title>API_draw_bitmap()</title>
+<indexterm><primary>API_draw_bitmap</primary><secondary>API_functions.c</secondary></indexterm>
+<indexterm><primary>API_functions.c</primary><secondary>API_draw_bitmap</secondary></indexterm>
+<para><computeroutput>int API_draw_bitmap (int bm_nr, int x_lup, int y_lup)</computeroutput></para><para>
+
+<para>This function gives the user the ability to put a bitmap on the VGA screen. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x_lup</entry><entry>
+<para>X coordinate of x left up </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y_lup</entry><entry>
+<para>Y coordinate of y left up </para>
+</entry>
+                            </row>
+                            <row>
+<entry>bm_nr</entry><entry>
+<para>Number of the bitmap from 1 to 10</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Error code if error or no error occurs </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__a_p_i__functions_8c_1a5762291bd9ba0b7c55877a82192975c9"/><section>
+    <title>API_draw_line()</title>
+<indexterm><primary>API_draw_line</primary><secondary>API_functions.c</secondary></indexterm>
+<indexterm><primary>API_functions.c</primary><secondary>API_draw_line</secondary></indexterm>
+<para><computeroutput>int API_draw_line (int x_1, int y_1, int x_2, int y_2, int color, int weight)</computeroutput></para><para>
+
+<para>This function gives the user the ability to draw lines on a VGA screen. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x_1</entry><entry>
+<para>Starting point coördinate of x </para>
+</entry>
+                            </row>
+                            <row>
+<entry>x_2</entry><entry>
+<para>Ending point coördinate of x </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y_1</entry><entry>
+<para>Starting point coördinate of y </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y_2</entry><entry>
+<para>Ending point coördinate of y </para>
+</entry>
+                            </row>
+                            <row>
+<entry>color</entry><entry>
+<para>Color of the line </para>
+</entry>
+                            </row>
+                            <row>
+<entry>weight</entry><entry>
+<para>Width of the line</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Error code if error or no error occurs </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="__a_p_i__functions_8c_1a873d84dd7c5f171783799bcd36ac7688"/><section>
+    <title>API_draw_rectangle()</title>
+<indexterm><primary>API_draw_rectangle</primary><secondary>API_functions.c</secondary></indexterm>
+<indexterm><primary>API_functions.c</primary><secondary>API_draw_rectangle</secondary></indexterm>
+<para><computeroutput>int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int filled)</computeroutput></para><para>
+
+<para>This function gives the user the ability to draw a rectangle on a VGA screen. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x_1</entry><entry>
+<para>Starting point coördinate of x (upper left) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y_1</entry><entry>
+<para>Starting point coördinate of y (upper left) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>width</entry><entry>
+<para>Width of the rectangle max. 320 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>height</entry><entry>
+<para>Height of the rectangle max. 240 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>color</entry><entry>
+<para>Color of the rectangle/borders </para>
+</entry>
+                            </row>
+                            <row>
+<entry>filled</entry><entry>
+<para>1 is filled rectangle 0 is just borders</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Error code if error occurs </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

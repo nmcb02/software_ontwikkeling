@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_p_a_r_s_e___s_t_o_r_a_g_e" xml:lang="en-US">
+<title>PARSE_STORAGE Struct Reference</title>
+<indexterm><primary>PARSE_STORAGE</primary></indexterm>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_struct_p_a_r_s_e___s_t_o_r_a_g_e_1ab6a971e53283072177bd4ce7ac93ea64"/>int <emphasis role="strong">number_store</emphasis> [3]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_p_a_r_s_e___s_t_o_r_a_g_e_1a0fd02fb9277ffcb35a75066ffe95e8c7"/>int <emphasis role="strong">color</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_p_a_r_s_e___s_t_o_r_a_g_e_1af5c648b4e123d8b93c55561b6d423f2c"/>int <emphasis role="strong">loop_iterator</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_p_a_r_s_e___s_t_o_r_a_g_e_1a84cf2fe70446647d232bdf36da15c826"/>int <emphasis role="strong">var_store</emphasis> [6]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_struct_p_a_r_s_e___s_t_o_r_a_g_e_1a18c05079c393f6c94543830ac5360604"/>int <emphasis role="strong">err_code</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+CUBE_IDE/VGA/Core/Inc/<link linkend="_logic__layer_8h">logic_layer.h</link></section>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___r_c_c___l_s_e___configuration" xml:lang="en-US">
+<title>RCC_LSE_Configuration</title>
+<indexterm><primary>RCC_LSE_Configuration</primary></indexterm>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___r_c_c___l_s_e___configuration_1ga6645c27708d0cad1a4ab61d2abb24c77"/>#define <emphasis role="strong">RCC_LSE_OFF</emphasis>&#160;&#160;&#160;((uint8_t)0x00)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___l_s_e___configuration_1gac981ea636c2f215e4473901e0912f55a"/>#define <emphasis role="strong">RCC_LSE_ON</emphasis>&#160;&#160;&#160;((uint8_t)0x01)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___r_c_c___l_s_e___configuration_1gac911af00bffa1bd1b1676f582a8a88e1"/>#define <emphasis role="strong">RCC_LSE_Bypass</emphasis>&#160;&#160;&#160;((uint8_t)0x04)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_group___r_c_c___l_s_e___configuration_1ga95d2678bf8f46e932e7cba75619a4d2c">IS_RCC_LSE</link>(LSE)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_group___r_c_c___l_s_e___configuration_1ga95d2678bf8f46e932e7cba75619a4d2c"/><section>
+    <title>IS_RCC_LSE</title>
+<indexterm><primary>IS_RCC_LSE</primary><secondary>RCC_LSE_Configuration</secondary></indexterm>
+<indexterm><primary>RCC_LSE_Configuration</primary><secondary>IS_RCC_LSE</secondary></indexterm>
+<para><computeroutput>#define IS_RCC_LSE( LSE)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(((LSE)&#32;==&#32;RCC_LSE_OFF)&#32;||&#32;((LSE)&#32;==&#32;RCC_LSE_ON)&#32;||&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;((LSE)&#32;==&#32;RCC_LSE_Bypass))
+</programlisting></section>
+</section>
+</section>
