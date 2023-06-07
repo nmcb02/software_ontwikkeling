@@ -254,6 +254,7 @@ int number_converter(char ASCII)
  *
  * @param	data is a struct variable with the received script
  * @param 	i is the variable for the loop iterator
+ * @param 	parsing is a struct variable that stores all needed data for functions
  *
  * @return	parsing is a struct variable with data info 
  * 			which are retrieved from the script

@@ -112,7 +112,9 @@ Function that reads received script text and when possible converts this to the 
 \begin{DoxyParams}{Parameters}
 {\em data} & is a struct variable with the received script \\
 \hline
-{\em i} & is the variable for the loop iterator\\
+{\em i} & is the variable for the loop iterator \\
+\hline
+{\em parsing} & is a struct variable that stores all needed data for functions\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -201,15 +203,15 @@ This function is used for parsing data and converts ASCII to decimals.
 \hline
 {\em data} & is a struct variable with the received script \\
 \hline
-{\em LEN} & \\
+{\em LEN} & is the length of the command + the comma to skip these is the parser \\
 \hline
-{\em var\+\_\+counter} & \\
+{\em var\+\_\+counter} & is an index of an array to store the data in from the script \\
 \hline
-{\em num\+\_\+checker} & \\
+{\em num\+\_\+checker} & is a variable to confirm a ASCII number is found and ensures that no junk color values are stored in the data array \\
 \hline
-{\em let\+\_\+checker} & \\
+{\em let\+\_\+checker} & is a variable to confirm a letter is found and ensures that no junk number values are stored in the data array \\
 \hline
-{\em num\+\_\+counter} & \\
+{\em num\+\_\+counter} & is a variable which counts the amount of ASCII numbers between two commas\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

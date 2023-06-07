@@ -210,7 +210,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>is a struct variable with the received script </td></tr>
-    <tr><td class="paramname">i</td><td>is the variable for the loop iterator</td></tr>
+    <tr><td class="paramname">i</td><td>is the variable for the loop iterator </td></tr>
+    <tr><td class="paramname">parsing</td><td>is a struct variable that stores all needed data for functions</td></tr>
   </table>
   </dd>
 </dl>
@@ -379,11 +380,11 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">parsing</td><td>is a struct variable that stores all needed data for functions </td></tr>
     <tr><td class="paramname">data</td><td>is a struct variable with the received script </td></tr>
-    <tr><td class="paramname">LEN</td><td></td></tr>
-    <tr><td class="paramname">var_counter</td><td></td></tr>
-    <tr><td class="paramname">num_checker</td><td></td></tr>
-    <tr><td class="paramname">let_checker</td><td></td></tr>
-    <tr><td class="paramname">num_counter</td><td></td></tr>
+    <tr><td class="paramname">LEN</td><td>is the length of the command + the comma to skip these is the parser </td></tr>
+    <tr><td class="paramname">var_counter</td><td>is an index of an array to store the data in from the script </td></tr>
+    <tr><td class="paramname">num_checker</td><td>is a variable to confirm a ASCII number is found and ensures that no junk color values are stored in the data array </td></tr>
+    <tr><td class="paramname">let_checker</td><td>is a variable to confirm a letter is found and ensures that no junk number values are stored in the data array </td></tr>
+    <tr><td class="paramname">num_counter</td><td>is a variable which counts the amount of ASCII numbers between two commas</td></tr>
   </table>
   </dd>
 </dl>
