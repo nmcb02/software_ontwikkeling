@@ -125,7 +125,7 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
  *
  * @return  Error code if error occurs
 *******************************************************/
-int API_clearscreen (int color)
+int API_clearscreen(int color)
 {
 	UB_VGA_FillScreen(color);
 
@@ -144,7 +144,7 @@ int API_clearscreen (int color)
  *
  * @return  Error code if error occurs
 *******************************************************/
-int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int filled)
+int API_draw_rectangle(int x_1, int y_1, int width, int height, int color, int filled)
 {
 	int x_2, y_2;
 
@@ -199,7 +199,7 @@ int API_draw_rectangle (int x_1, int y_1, int width, int height, int color, int 
  *
  * @return  Error code if error or no error occurs
 *******************************************************/
-int API_draw_bitmap (int bm_nr, int x_lup, int y_lup)
+int API_draw_bitmap(int bm_nr, int x_lup, int y_lup)
 {
 	int index_x = 0;
 	int bitmap[BITMAP_SIZE];

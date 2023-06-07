@@ -57,8 +57,9 @@ enum ERROR
 #define TRUE 				1
 #define FALSE				0
 
-//external vars
+#define ERROR_OFF 			5
 
+//external vars
 
 //prototype user functions
 int parse_cmd(UART data);
