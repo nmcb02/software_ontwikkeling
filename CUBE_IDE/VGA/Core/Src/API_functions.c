@@ -31,10 +31,10 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 	if ((0 > x_1) || (x_1 > VGA_DISPLAY_X) || (0 > x_2) || (x_2 > VGA_DISPLAY_X))
 		return OOB_ERR; // ERROR:	Invalid value
 
-	else if ((0 > y_1)||(y_1 > VGA_DISPLAY_Y)||(0 > y_2)||(y_2 > VGA_DISPLAY_Y))
+	else if ((0 > y_1) || (y_1 > VGA_DISPLAY_Y) || (0 > y_2) || (y_2 > VGA_DISPLAY_Y))
 		return OOB_ERR; // ERROR:	Invalid value
 
-	else if ((0 > weight)||(weight > VGA_DISPLAY_X)||(0 > weight)||(weight > VGA_DISPLAY_Y))
+	else if ((0 > weight) || (weight > VGA_DISPLAY_X) || (0 > weight) || (weight > VGA_DISPLAY_Y))
 		return OOB_ERR; // ERROR:	Invalid value
 
 	else
@@ -148,10 +148,10 @@ int API_draw_rectangle(int x_1, int y_1, int width, int height, int color, int f
 {
 	int x_2, y_2;
 
-	if ((0 > x_1)||(x_1 > VGA_DISPLAY_X)||(0 > width)||(width > VGA_DISPLAY_X))
+	if ((0 > x_1) || (x_1 > VGA_DISPLAY_X) || (0 > width) || (width > VGA_DISPLAY_X))
 		return OOB_ERR; // ERROR:	Invalid value
 
-	else if ((0 > y_1)||(y_1 > VGA_DISPLAY_Y)||(0 > height)||(height > VGA_DISPLAY_Y))
+	else if ((0 > y_1) || (y_1 > VGA_DISPLAY_Y) || (0 > height) || (height > VGA_DISPLAY_Y))
 		return OOB_ERR; // ERROR:	Invalid value
 
 	else
@@ -159,14 +159,14 @@ int API_draw_rectangle(int x_1, int y_1, int width, int height, int color, int f
 		x_2 = x_1 + width;
 		y_2 = y_1 + height;
 
-	if (filled)	//Drawing a filled rectangle
-	{
-		for (int y = y_1; y <= y_2; y++)
+		if (filled)	//Drawing a filled rectangle
 		{
-			for (int x = x_1; x <= x_2; x++)
-				UB_VGA_SetPixel(x, y, color);
+			for (int y = y_1; y <= y_2; y++)
+			{
+				for (int x = x_1; x <= x_2; x++)
+					UB_VGA_SetPixel(x, y, color);
+			}
 		}
-	}
 
 		else if (!filled)
 		{
@@ -206,40 +206,39 @@ int API_draw_bitmap(int bm_nr, int x_lup, int y_lup)
 
 	switch(bm_nr)	// Switch case to decide which bitmap needs to be shown
 	{
-		case 1:
+		case BM_ARROW_UP:
 			memcpy(bitmap, arrow_up, sizeof bitmap);
 			break;
-		case 2:
+		case BM_ARROW_down:
 			memcpy(bitmap, arrow_down, sizeof bitmap);
 			break;
-		case 3:
+		case BM_ARROW_left:
 			memcpy(bitmap, arrow_left, sizeof bitmap);
 			break;
-		case 4:
+		case BM_ARROW_right:
 			memcpy(bitmap, arrow_right, sizeof bitmap);
 			break;
-		case 5:
+		case BM_SMILEY_ANGERY:
 			memcpy(bitmap, smiley_angry, sizeof bitmap);
 			break;
-		case 6:
+		case BM_SMILEY_ANGERY_COL:
 			memcpy(bitmap, smiley_angry_col, sizeof bitmap);
 			break;
-		case 7:
+		case BM_SMILEY_HAPPY:
 			memcpy(bitmap, smiley_happy, sizeof bitmap);
 			break;
-		case 8:
+		case BM_SMILEY_HAPPY_COL:
 			memcpy(bitmap, smiley_happy_col, sizeof bitmap);
 			break;
-		case 9:
+		case BM_SMILEY_SAD:
 			memcpy(bitmap, smiley_sad, sizeof bitmap);
 			break;
-		case 10:
+		case BM_SMILEY_SAD_COL:
 			memcpy(bitmap, smiley_sad_col, sizeof bitmap);
 			break;
 		default:
 			return BITMAP_ERR; //ERROR: no existing bitmap number given
 	}
-
 
 	for (int y = y_lup; y < y_lup + BITMAP_HEIGHT; y++)		// For loop to get the y-coordinate
 	{
@@ -248,20 +247,20 @@ int API_draw_bitmap(int bm_nr, int x_lup, int y_lup)
 			index_x++;
 			if (index_x == BITMAP_SIZE)	// If index is equal to the array size quit the loop
 				break;
-			// If statements for various colors from the bitmaps
-			else if (bitmap[index_x] == 0)
-				UB_VGA_SetPixel(x, y, VGA_COL_BLACK);
-			else if (bitmap[index_x] == 23)
-				UB_VGA_SetPixel(x, y, VGA_COL_BLUE);
-			else if (bitmap[index_x] == 252)
-				UB_VGA_SetPixel(x, y, VGA_COL_YELLOW);
-			else if (bitmap[index_x] == 224)
-				UB_VGA_SetPixel(x, y, VGA_COL_RED);
-			else if (bitmap[index_x] == 247)
-				UB_VGA_SetPixel(x, y, VGA_COL_PINK);
-			else if (bitmap[index_x] == 255)
-				UB_VGA_SetPixel(x, y, VGA_COL_WHITE);
 
+			// If statements for various colors from the bitmaps
+			else if (bitmap[index_x] == BLACK)
+				UB_VGA_SetPixel(x, y, VGA_COL_BLACK);
+			else if (bitmap[index_x] == BLUE)
+				UB_VGA_SetPixel(x, y, VGA_COL_BLUE);
+			else if (bitmap[index_x] == YELLOW)
+				UB_VGA_SetPixel(x, y, VGA_COL_YELLOW);
+			else if (bitmap[index_x] == RED)
+				UB_VGA_SetPixel(x, y, VGA_COL_RED);
+			else if (bitmap[index_x] == PINK)
+				UB_VGA_SetPixel(x, y, VGA_COL_PINK);
+			else if (bitmap[index_x] == WHITE)
+				UB_VGA_SetPixel(x, y, VGA_COL_WHITE);
 		}
 	}
 	return NO_ERR;

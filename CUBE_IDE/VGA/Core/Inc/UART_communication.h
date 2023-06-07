@@ -27,7 +27,6 @@
 
 //external vars
 
-
 //struct definition
 typedef struct UART_Communication
 {
