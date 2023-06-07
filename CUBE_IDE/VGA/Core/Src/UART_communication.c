@@ -9,7 +9,7 @@
  *
  * @authors	Skip Wijtman
  * @date	3-5-2023
- * @version	1.1
+ * @version	1.3
 *********************************************************/
 
 //#include "user-header"
@@ -36,8 +36,8 @@ void UART2_config(void)
 	RCC->AHB1ENR |= (1<<0);		// Enables the GPIOA clock
 
 	// 2. Configure pins for UART
-	GPIOA->MODER |=(2<<4);		// ALT function for pin PA2 enabled
-	GPIOA->MODER |=(2<<6);		// ALT function for pin PA3 enabled
+	GPIOA->MODER |= (2<<4);		// ALT function for pin PA2 enabled
+	GPIOA->MODER |= (2<<6);		// ALT function for pin PA3 enabled
 	GPIOA->OSPEEDR |= (3<<4);	// Setting pin PA2 on 'high speed' function
 	GPIOA->OSPEEDR |= (3<<6);	// Setting pin PA3 on 'high speed' function
 	GPIOA->AFR[0] |= (7<<8); 	// AFR[0] is for the enabling pins 0 to 7 and [1] is for pins 8 to 15. Here the pin PA2 is enabled as UART2 ALT function
@@ -63,10 +63,6 @@ void UART2_config(void)
 	// 6. Enabling Tx and Rx
 	USART2->CR1 |= (1<<3);		// Enables Tx for UART
 	USART2->CR1 |= (1<<2);		// Enables Rx for UART
-
-	// TESTING //
-	// 7. Enable receive interrupt
-	USART2->CR1 |= (1<<5);
 }
 
 /*****************************************************//**
@@ -134,7 +130,7 @@ UART UART_receiver(void)
 	uint8_t temp=0;
 	uint8_t i = 0;
 
-	for(unsigned char j = 0; j<STORAGE; j++)		// Empties the array
+	for(unsigned char j = 0; j < STORAGE; j++)		// Empties the array
 		data.receive[j] = 0;
 
 	while(1)
@@ -190,6 +186,11 @@ void UART_errorHandling(int err)
 			UART_sendString("COLOR ERROR: er is een kleur opgegeven welke niet herkent wordt.\n"
 							"De beschikbare kleuren zijn: zwart, blauw, lichtblauw, groen, lichtgroen, cyaan, \n"
 							"lichtcyaan, rood, lichtrood, magenta, lichtmagenta, bruin, geel, grijs, wit en roze.\n\n");
+			break;
+
+		case BITMAP_ERR:
+			UART_sendString("BITMAP ERROR: er is een ongeldigde bitmap nummer ingevuld.\n"
+							"Mogelijke bitmap nummers zijn: 1, 2, 3, 4, 5, 6, 7, 8, 9 en 10\n\n");
 			break;
 
 		default:

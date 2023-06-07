@@ -6,7 +6,7 @@
  *
  * @authors Skip Wijtman
  * @date    24-5-2023
- * @version 1.2
+ * @version 1.3
 *********************************************************/
 #ifndef INC_LOGIC_LAYER_H_
 #define INC_LOGIC_LAYER_H_
@@ -50,7 +50,7 @@ typedef struct PARSE_STORAGE
 #define TRUE 				1
 #define FALSE				0
 
-#define ERROR_OFF 			5
+#define ERROR_OFF 			6		// Error offset for returning values in the 'parse_cmd' function
 
 //external vars
 

@@ -10,9 +10,9 @@
  * 		   	-# Module   : CMSIS_BOOT, M4_CMSIS_CORE
  * 		   	-# Function : VGA_core DMA LIB 320x240, 8bit color
  *
- * @authors UB, J.F van der Bent, Skip Wijtman
+ * @authors UB, J.F van der Bent, Skip Wijtman, Naomi Born
  * @date 	3-5-2023
- * @version 1.0 (Updates with every SWD branch)
+ * @version 1.4 (Updates with every SWD branch)
 *********************************************************/
 
 //#include <library-header>
@@ -54,30 +54,26 @@ int main(void)
 	UART2_config();			// Init UART
 	UB_VGA_Screen_Init(); 	// Init VGA-Screen
 
-
 	UB_VGA_FillScreen(VGA_COL_WHITE);	// Start with a white screen
 
   while(1)		// Infinite loop
   {
-	  UART test;
+	  UART data;					// Creates struct var for receiving data via UART
 	  int err = NO_ERR;
 
-	  test = UART_receiver();
+	  data = UART_receiver();
 
-
-	  if(test.receive[0] != 0)		// When data received, parse
+	  if (data.receive[0] != 0)		// When data received, parse
 	  {
-		  val = parse_cmd(test);
-		  err = draw_options(val, test);
+		  val = parse_cmd(data);
+		  err = draw_options(val, data);
 	  }
 
 	  else
 		  val = NO_DATA;
 
-	  if(err != NO_ERR)
-	  {
+	  if (err != NO_ERR)
 		  UART_errorHandling(err);
-	  }
   }
 }
 

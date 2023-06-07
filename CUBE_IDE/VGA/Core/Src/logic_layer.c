@@ -5,7 +5,7 @@
  *
  * @authors Skip Wijtman
  * @date    24-5-2023
- * @version 1.2
+ * @version 1.4
 *********************************************************/
 
 //#include "user-header"
@@ -17,12 +17,12 @@
 //global vars
 char cmd[MAX_CMD_LEN] = {0};
 
-char compare_cmd[4][MAX_CMD_LEN] = {	{"lijn"},
+char compare_cmd[4][MAX_CMD_LEN] = {	{"lijn"},		// Compare array with all the available commands
 										{"rechthoek"},
 										{"clearscherm"},
 										{"bitmap"}};
 
-char compare_col[16][MAX_COL_LEN] = {	{"zwart"},
+char compare_col[16][MAX_COL_LEN] = {	{"zwart"},		// Compare array with all the available colors
 										{"blauw"},
 										{"lichtblauw"},
 										{"groen"},
@@ -49,7 +49,7 @@ char compare_col[16][MAX_COL_LEN] = {	{"zwart"},
 *******************************************************/
 int parse_cmd(UART data)
 {
-	for(uint8_t i = 0; i<MAX_CMD_LEN; i++)           // Loop to isolate the command
+	for(uint8_t i = 0; i < MAX_CMD_LEN; i++)           // Loop to isolate the command
 	{
 		if(data.receive[i] == ',')          // Stop the loop when a comma is found, command is isloated
 		{
@@ -63,7 +63,7 @@ int parse_cmd(UART data)
     char found = NO_DATA;
     int counter = 0;
 
-	for(int i = 0; i<5; i++)           		 // Loop to scearch for which command is given ///try: i<(sizeof(compare_cmd)/sizeof(compare[0])) 
+	for(int i = 0; i < (sizeof(compare_cmd)/sizeof(compare_cmd[0])); i++)           		 // Loop to search for which command is given, it loops to compare all four commands
 	{
 		counter++;
         if(strcmp(cmd, compare_cmd[i]) == 0)    // When a command is found, remember which iteration. Also no error
@@ -72,7 +72,7 @@ int parse_cmd(UART data)
         	break;
         }
 
-        else if (counter == 4)								// When no command is found, error
+        else if (counter == (sizeof(compare_cmd)/sizeof(compare_cmd[0])))			// When none of the four commands is found, error
         	return COMMAND_ERR;
 	}
 
@@ -119,7 +119,7 @@ int draw_options(char cmd, UART data)
 
 	switch(cmd)				// Chooses the corresponding function with the found command
 	{						// In the case the data is parsed and used, also searches for errors and stop the function execution when one is found
-		case 5:
+		case 6:
 			parsing = parse_data(parsing, data, LINE_LEN, var_counter, num_checker, let_checker, num_counter);
 
 				if(parsing.err_code != NO_ERR)
@@ -128,7 +128,7 @@ int draw_options(char cmd, UART data)
 			error_return = API_draw_line(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
 			return error_return;
 
-		case 6:
+		case 7:
 			parsing = parse_data(parsing, data, RECTANGLE_LEN, var_counter, num_checker, let_checker, num_counter);
 
 			if(parsing.err_code != NO_ERR)
@@ -137,7 +137,7 @@ int draw_options(char cmd, UART data)
 			error_return = API_draw_rectangle(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
 			return error_return;
 
-		case 7:
+		case 8:
 			parsing = parse_data(parsing, data, CLEAR_LEN, var_counter, num_checker, let_checker, num_counter);
 
 			if(parsing.err_code != NO_ERR)
@@ -146,7 +146,7 @@ int draw_options(char cmd, UART data)
 			error_return = API_clearscreen(parsing.var_store[0]);
 			return error_return;
 
-		case 8:
+		case 9:
 			parsing = parse_data(parsing, data, BITMAP_LEN, var_counter, num_checker, let_checker, num_counter);
 
 			if(parsing.err_code != NO_ERR)
@@ -178,7 +178,7 @@ int draw_options(char cmd, UART data)
 *******************************************************/
 PARSE parse_data(PARSE parsing, UART data, int LEN, int var_counter, int num_checker, int let_checker, int num_counter)
 {
-	for(int i = LEN; i<STORAGE; i++)		// Start the loop after the command, to convert the rest of the script
+	for(int i = LEN; i < STORAGE; i++)		// Start the loop after the command, to convert the rest of the script
 	{
 		if(data.receive[i] >= LB_ASCII_NUMBERS && data.receive[i] <= UB_ASCII_NUMBERS)		// When a number in ASCII values is found convert this to decimals
 		{
@@ -262,11 +262,11 @@ int number_converter(char ASCII)
 PARSE color_assign(UART data, int i, PARSE parsing)
 {
 	char color[MAX_COL_LEN];
-	for(int j = 0; j<MAX_COL_LEN; j++)		// Empties the array
+	for(int j = 0; j < MAX_COL_LEN; j++)		// Empties the array
 		color[j] = 0;
 
 	int j = 0;
-	for(i=i; i<(i+MAX_COL_LEN); i++)           // Loop to isolate the color
+	for(i = i; i < (i+MAX_COL_LEN); i++)           // Loop to isolate the color
 	{
 		if(data.receive[i] == ',' || data.receive[i] == '\n')          // Stop the loop when a comma is found, color is isloated
 		{
@@ -280,7 +280,7 @@ PARSE color_assign(UART data, int i, PARSE parsing)
 
 	parsing.loop_iterator = i-1;					  // Storing i, the iterator is now set right before the comma so that the loop in the parser can continue properly
 
-	for(j = 0; j<(sizeof(compare_col)/sizeof(compare_col[0])); j++)		// Loop to find the color, iterator tracks which color
+	for(j = 0; j < (sizeof(compare_col)/sizeof(compare_col[0])); j++)		// Loop to find the color, iterator tracks which color
 	{
 		if(strcmp(color, compare_col[j]) == 0)		// When correct color is found
 		{
@@ -359,7 +359,7 @@ PARSE color_assign(UART data, int i, PARSE parsing)
 			break;
 
 		default:
-			parsing.err_code = COLOR_ERR;	//???
+			parsing.err_code = COLOR_ERR;
 			break;
 	}
 

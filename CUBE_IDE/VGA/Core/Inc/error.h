@@ -6,7 +6,7 @@
  *
  * @authors Skip Wijtman
  * @date    6-6-2023
- * @version 1.0
+ * @version 1.1
 *********************************************************/
 
 #ifndef INC_ERROR_H_
@@ -18,7 +18,8 @@ enum ERROR
 	COMMAND_ERR,	// Command errors such as 'lijn' and 'rechthoek'
 	DATA_ERR,		// Data error means something in the data is wrong, such as characters which are not usable: '/', '[', '(' or '@' are some examples
 	OOB_ERR,		// OOB, aka 'out of bounds', is an error which is given when pixels are outside the maximum ranges
-	COLOR_ERR		// Color error means a color which is not usable, was submitted
+	COLOR_ERR,		// Color error means a color which is not usable, was submitted
+	BITMAP_ERR		// This means an invalid bitmap number is chosen
 };
 
 #endif /* INC_ERROR_H_ */
