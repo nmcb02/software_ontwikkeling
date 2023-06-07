@@ -86,7 +86,7 @@ $(function() {
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;stm32_ub_vga_screen.h&quot;</code><br />
-<code>#include &quot;logic_layer.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="logic__layer_8h_source.html">logic_layer.h</a>&quot;</code><br />
 </div>
 <p><a href="_a_p_i__functions_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -188,7 +188,9 @@ Functions</h2></td></tr>
 <p>This function gives the user the ability to put a bitmap on the VGA screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x_lup</td><td>X coordinate of x left up y_lup Y coordinate of y left up bm_nr Number of the bitmap</td></tr>
+    <tr><td class="paramname">x_lup</td><td>X coordinate of x left up </td></tr>
+    <tr><td class="paramname">y_lup</td><td>Y coordinate of y left up </td></tr>
+    <tr><td class="paramname">bm_nr</td><td>Number of the bitmap from 1 to 10</td></tr>
   </table>
   </dd>
 </dl>
@@ -315,8 +317,8 @@ Functions</h2></td></tr>
 <p>This function gives the user the ability to draw a rectangle on a VGA screen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x_1</td><td>Starting point coördinate of x </td></tr>
-    <tr><td class="paramname">y_1</td><td>Starting point coördinate of y </td></tr>
+    <tr><td class="paramname">x_1</td><td>Starting point coördinate of x (upper left) </td></tr>
+    <tr><td class="paramname">y_1</td><td>Starting point coördinate of y (upper left) </td></tr>
     <tr><td class="paramname">width</td><td>Width of the rectangle max. 320 </td></tr>
     <tr><td class="paramname">height</td><td>Height of the rectangle max. 240 </td></tr>
     <tr><td class="paramname">color</td><td>Color of the rectangle/borders </td></tr>

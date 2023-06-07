@@ -1,0 +1,219 @@
+\hypertarget{logic__layer_8h}{}\doxysection{CUBE\+\_\+\+IDE/\+VGA/\+Core/\+Inc/logic\+\_\+layer.h File Reference}
+\label{logic__layer_8h}\index{CUBE\_IDE/VGA/Core/Inc/logic\_layer.h@{CUBE\_IDE/VGA/Core/Inc/logic\_layer.h}}
+
+
+This file contains the functions which are used in the source file \textquotesingle{}\mbox{\hyperlink{logic__layer_8c}{logic\+\_\+layer.\+c}}\textquotesingle{}.  
+
+
+{\ttfamily \#include \char`\"{}UART\+\_\+communication.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32\+\_\+ub\+\_\+vga\+\_\+screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}API\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}error.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE\+\_\+\+STORAGE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a1eb73c104b484cf18752169509cebfe2}\label{logic__layer_8h_a1eb73c104b484cf18752169509cebfe2}} 
+\#define {\bfseries MAX\+\_\+\+CMD\+\_\+\+LEN}~12
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a2eff7ee13b6df8517cb6efa07d5ec8fa}\label{logic__layer_8h_a2eff7ee13b6df8517cb6efa07d5ec8fa}} 
+\#define {\bfseries MAX\+\_\+\+COL\+\_\+\+LEN}~13
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a45db13d622cb21897aa934e5ad411c83}\label{logic__layer_8h_a45db13d622cb21897aa934e5ad411c83}} 
+\#define {\bfseries LINE\+\_\+\+LEN}~5
+\item 
+\mbox{\Hypertarget{logic__layer_8h_ad7d05f1373777892fc07f4f8597cb43d}\label{logic__layer_8h_ad7d05f1373777892fc07f4f8597cb43d}} 
+\#define {\bfseries RECTANGLE\+\_\+\+LEN}~10
+\item 
+\mbox{\Hypertarget{logic__layer_8h_aaea5ee2b130fb8ccc4b618256b9ca893}\label{logic__layer_8h_aaea5ee2b130fb8ccc4b618256b9ca893}} 
+\#define {\bfseries CLEAR\+\_\+\+LEN}~12
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a59caef8210fc2914e7f13d3812a27b0d}\label{logic__layer_8h_a59caef8210fc2914e7f13d3812a27b0d}} 
+\#define {\bfseries TEXT\+\_\+\+LEN}~6
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a29023bd18e246bb3570978890e1e1d5d}\label{logic__layer_8h_a29023bd18e246bb3570978890e1e1d5d}} 
+\#define {\bfseries BITMAP\+\_\+\+LEN}~7
+\item 
+\mbox{\Hypertarget{logic__layer_8h_aba25e817ee9c0083759288ffcefafe43}\label{logic__layer_8h_aba25e817ee9c0083759288ffcefafe43}} 
+\#define {\bfseries LB\+\_\+\+ASCII\+\_\+\+NUMBERS}~48
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a021157b7758974b8ece0bed2f7558a24}\label{logic__layer_8h_a021157b7758974b8ece0bed2f7558a24}} 
+\#define {\bfseries UB\+\_\+\+ASCII\+\_\+\+NUMBERS}~57
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a90784bc1be7629b9236d968144136c7b}\label{logic__layer_8h_a90784bc1be7629b9236d968144136c7b}} 
+\#define {\bfseries LB\+\_\+\+ASCII\+\_\+\+LETTERS}~97
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a63fe9b07f42bdc550301e25d11255421}\label{logic__layer_8h_a63fe9b07f42bdc550301e25d11255421}} 
+\#define {\bfseries UB\+\_\+\+ASCII\+\_\+\+LETTERS}~122
+\item 
+\mbox{\Hypertarget{logic__layer_8h_aa8cecfc5c5c054d2875c03e77b7be15d}\label{logic__layer_8h_aa8cecfc5c5c054d2875c03e77b7be15d}} 
+\#define {\bfseries TRUE}~1
+\item 
+\mbox{\Hypertarget{logic__layer_8h_aa93f0eb578d23995850d61f7d61c55c1}\label{logic__layer_8h_aa93f0eb578d23995850d61f7d61c55c1}} 
+\#define {\bfseries FALSE}~0
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a1b5f638add6510a6df83ef3b3941b238}\label{logic__layer_8h_a1b5f638add6510a6df83ef3b3941b238}} 
+\#define {\bfseries ERROR\+\_\+\+OFF}~5
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a1eded75f6d534cbf8ef3d774e8110cde}\label{logic__layer_8h_a1eded75f6d534cbf8ef3d774e8110cde}} 
+typedef struct \mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE\+\_\+\+STORAGE}} {\bfseries PARSE}
+\item 
+\mbox{\Hypertarget{logic__layer_8h_a15c01057fb2bcfae12d3c346561c390a}\label{logic__layer_8h_a15c01057fb2bcfae12d3c346561c390a}} 
+typedef struct \mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE\+\_\+\+STORAGE}} $\ast$ {\bfseries PPARSE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{logic__layer_8h_a8defaa134a23a988d2749fc0171427d2}{parse\+\_\+cmd}} (\mbox{\hyperlink{struct_u_a_r_t___communication}{UART}} data)
+\begin{DoxyCompactList}\small\item\em Function that parses the command of the received script. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{logic__layer_8h_a243278ee7910d29b226c9e84b21dbeaa}{draw\+\_\+options}} (char cmd, \mbox{\hyperlink{struct_u_a_r_t___communication}{UART}} data)
+\begin{DoxyCompactList}\small\item\em Function that determines with the command which function should be used, Here the script also get parsed further and decodes ASCII to useful data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{logic__layer_8h_afb5290ca19b5ae1c82c875bcfc3487ff}{number\+\_\+converter}} (char ASCII)
+\begin{DoxyCompactList}\small\item\em Function that converts ASCII numbers to decimals. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE}} \mbox{\hyperlink{logic__layer_8h_ae92a6df3661987925f02f126ee04ffc8}{color\+\_\+assign}} (\mbox{\hyperlink{struct_u_a_r_t___communication}{UART}} data, int i, \mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE}} parsing)
+\begin{DoxyCompactList}\small\item\em Function that reads received script text and when possible converts this to the correspondiong color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE}} \mbox{\hyperlink{logic__layer_8h_a57c29aee18fbaa7bc92e6d1273fb2136}{parse\+\_\+data}} (\mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE}} parsing, \mbox{\hyperlink{struct_u_a_r_t___communication}{UART}} data, int LEN, int var\+\_\+counter, int num\+\_\+checker, int let\+\_\+checker, int num\+\_\+counter)
+\begin{DoxyCompactList}\small\item\em This function is used for parsing data and converts ASCII to decimals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the functions which are used in the source file \textquotesingle{}\mbox{\hyperlink{logic__layer_8c}{logic\+\_\+layer.\+c}}\textquotesingle{}. 
+
+\begin{DoxyAuthor}{Authors}
+Skip Wijtman 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/5-\/2023 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+2 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{logic__layer_8h_ae92a6df3661987925f02f126ee04ffc8}\label{logic__layer_8h_ae92a6df3661987925f02f126ee04ffc8}} 
+\index{logic\_layer.h@{logic\_layer.h}!color\_assign@{color\_assign}}
+\index{color\_assign@{color\_assign}!logic\_layer.h@{logic\_layer.h}}
+\doxysubsubsection{\texorpdfstring{color\_assign()}{color\_assign()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE}} color\+\_\+assign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___communication}{UART}}}]{data,  }\item[{int}]{i,  }\item[{\mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE}}}]{parsing }\end{DoxyParamCaption})}
+
+
+
+Function that reads received script text and when possible converts this to the correspondiong color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & is a struct variable with the received script \\
+\hline
+{\em i} & is the variable for the loop iterator \\
+\hline
+{\em parsing} & is a struct variable that stores all needed data for functions\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parsing is a struct variable with data info which are retrieved from the script 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logic__layer_8h_a243278ee7910d29b226c9e84b21dbeaa}\label{logic__layer_8h_a243278ee7910d29b226c9e84b21dbeaa}} 
+\index{logic\_layer.h@{logic\_layer.h}!draw\_options@{draw\_options}}
+\index{draw\_options@{draw\_options}!logic\_layer.h@{logic\_layer.h}}
+\doxysubsubsection{\texorpdfstring{draw\_options()}{draw\_options()}}
+{\footnotesize\ttfamily int draw\+\_\+options (\begin{DoxyParamCaption}\item[{char}]{cmd,  }\item[{\mbox{\hyperlink{struct_u_a_r_t___communication}{UART}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Function that determines with the command which function should be used, Here the script also get parsed further and decodes ASCII to useful data. 
+
+Here a switch-\/case is used to determine the received command, Cases 0 to 4 are numbered as followed\+:
+
+
+\begin{DoxyEnumerate}
+\item lijn
+\item rechthoek
+\item clearscherm
+\item tekst
+\item bitmap
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & is a interger of the found command \\
+\hline
+{\em data} & is a struct variable with the received script\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logic__layer_8h_afb5290ca19b5ae1c82c875bcfc3487ff}\label{logic__layer_8h_afb5290ca19b5ae1c82c875bcfc3487ff}} 
+\index{logic\_layer.h@{logic\_layer.h}!number\_converter@{number\_converter}}
+\index{number\_converter@{number\_converter}!logic\_layer.h@{logic\_layer.h}}
+\doxysubsubsection{\texorpdfstring{number\_converter()}{number\_converter()}}
+{\footnotesize\ttfamily int number\+\_\+converter (\begin{DoxyParamCaption}\item[{char}]{ASCII }\end{DoxyParamCaption})}
+
+
+
+Function that converts ASCII numbers to decimals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ASCII} & is character of a ASCII number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+decimal number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logic__layer_8h_a8defaa134a23a988d2749fc0171427d2}\label{logic__layer_8h_a8defaa134a23a988d2749fc0171427d2}} 
+\index{logic\_layer.h@{logic\_layer.h}!parse\_cmd@{parse\_cmd}}
+\index{parse\_cmd@{parse\_cmd}!logic\_layer.h@{logic\_layer.h}}
+\doxysubsubsection{\texorpdfstring{parse\_cmd()}{parse\_cmd()}}
+{\footnotesize\ttfamily int parse\+\_\+cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_a_r_t___communication}{UART}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Function that parses the command of the received script. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & is a struct variable with the received script\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code or the current index of found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logic__layer_8h_a57c29aee18fbaa7bc92e6d1273fb2136}\label{logic__layer_8h_a57c29aee18fbaa7bc92e6d1273fb2136}} 
+\index{logic\_layer.h@{logic\_layer.h}!parse\_data@{parse\_data}}
+\index{parse\_data@{parse\_data}!logic\_layer.h@{logic\_layer.h}}
+\doxysubsubsection{\texorpdfstring{parse\_data()}{parse\_data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE}} parse\+\_\+data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_p_a_r_s_e___s_t_o_r_a_g_e}{PARSE}}}]{parsing,  }\item[{\mbox{\hyperlink{struct_u_a_r_t___communication}{UART}}}]{data,  }\item[{int}]{LEN,  }\item[{int}]{var\+\_\+counter,  }\item[{int}]{num\+\_\+checker,  }\item[{int}]{let\+\_\+checker,  }\item[{int}]{num\+\_\+counter }\end{DoxyParamCaption})}
+
+
+
+This function is used for parsing data and converts ASCII to decimals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsing} & is a struct variable that stores all needed data for functions \\
+\hline
+{\em data} & is a struct variable with the received script \\
+\hline
+{\em LEN} & is the length of the command + the comma to skip these is the parser \\
+\hline
+{\em var\+\_\+counter} & is an index of an array to store the data in from the script \\
+\hline
+{\em num\+\_\+checker} & is a variable to confirm a ASCII number is found and ensures that no junk color values are stored in the data array \\
+\hline
+{\em let\+\_\+checker} & is a variable to confirm a letter is found and ensures that no junk number values are stored in the data array \\
+\hline
+{\em num\+\_\+counter} & is a variable which counts the amount of ASCII numbers between two commas\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error code 
+\end{DoxyReturn}

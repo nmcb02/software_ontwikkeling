@@ -12,7 +12,7 @@
  *
  * @authors UB, J.F van der Bent, Skip Wijtman, Naomi Born
  * @date 	3-5-2023
- * @version 1.0 (Updates with every SWD branch)
+ * @version 1.4 (Updates with every SWD branch)
 *********************************************************/
 
 //#include <library-header>
