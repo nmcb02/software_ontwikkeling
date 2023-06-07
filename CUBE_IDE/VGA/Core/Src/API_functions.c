@@ -28,7 +28,7 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 {
 	int dx, dy, sdx, sdy, dxabs, dyabs, x, y, px, py;
 
-	if ((0 > x_1)||(x_1 > VGA_DISPLAY_X)||(0 > x_2)|| (x_2 > VGA_DISPLAY_X))
+	if ((0 > x_1) || (x_1 > VGA_DISPLAY_X) || (0 > x_2) || (x_2 > VGA_DISPLAY_X))
 		return 1; // ERROR:	Invalid value
 
 	else if ((0 > y_1)||(y_1 > VGA_DISPLAY_Y)||(0 > y_2)||(y_2 > VGA_DISPLAY_Y))

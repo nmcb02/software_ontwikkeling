@@ -165,24 +165,24 @@ void UART_errorHandling(int err)
 	{
 		case COMMAND_ERR:
 			UART_sendString("COMMAND ERROR: er is een commando gegeven wat niet herkent wordt.\n"
-							"Ondersteunde commando's zijn: 'lijn', 'rechthoek', 'clearscherm' en 'bitmap'.");
+							"Ondersteunde commando's zijn: 'lijn', 'rechthoek', 'clearscherm' en 'bitmap'.\n\n");
 			break;
 
 		case DATA_ERR:
 			UART_sendString("DATA ERROR: er is iets onbekends in de data reeks in gevuld.\n"
 							"De data wat herkent wordt zijn cijfers en letters, als er iets anders is ingevuld, zoals een '/'\n"
-							"dan wordt dit niet herkent.");
+							"dan wordt dit niet herkent.\n\n");
 			break;
 
 		case OOB_ERR:
-			UART_sendString("OUT OF BOUNDS ERROR: er is een coördinaat gegeven wat zich buiten het scherm bevind.\n"
-							"De beschikbare coördinaten voor de X-as zijn 0 t/m 319, voor de Y-as 0 t/m 239.");
+			UART_sendString("OUT OF BOUNDS ERROR: er is een co-ordinaat gegeven wat zich buiten het scherm bevind.\n"
+							"De beschikbare co-ordinaten voor de X-as zijn 0 t/m 319, voor de Y-as 0 t/m 239.\n\n");
 			break;
 
 		case COLOR_ERR:
 			UART_sendString("COLOR ERROR: er is een kleur opgegeven welke niet herkent wordt.\n"
 							"De beschikbare kleuren zijn: zwart, blauw, lichtblauw, groen, lichtgroen, cyaan, \n"
-							"lichtcyaan, rood, lichtrood, magenta, lichtmagenta, bruin, geel, grijs, wit en roze.");
+							"lichtcyaan, rood, lichtrood, magenta, lichtmagenta, bruin, geel, grijs, wit en roze.\n\n");
 			break;
 
 		default:
