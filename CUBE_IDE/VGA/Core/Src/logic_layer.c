@@ -1,5 +1,5 @@
 /*******************************************************//**
- * @file    Template_doxygen.c
+ * @file    logic_layer.c
  *
  * @brief   Here commands will be processed and executed
  *

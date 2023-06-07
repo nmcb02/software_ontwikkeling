@@ -1,7 +1,7 @@
 var searchData=
 [
   ['api_5fclearscreen_0',['API_clearscreen',['../_a_p_i__functions_8h.html#ac5d34bcb0d84db1190d4b876a3f65944',1,'API_clearscreen(int color):&#160;API_functions.c'],['../_a_p_i__functions_8c.html#ac5d34bcb0d84db1190d4b876a3f65944',1,'API_clearscreen(int color):&#160;API_functions.c']]],
-  ['api_5fdraw_5fbitmap_1',['API_draw_bitmap',['../_a_p_i__functions_8h.html#a95a8bac444de7ea445532a9996b8a3a8',1,'API_draw_bitmap(int x_lup, int y_lup, int nr):&#160;API_functions.c'],['../_a_p_i__functions_8c.html#a196d22f276d5b3398e9c43dea9ccd259',1,'API_draw_bitmap(int x_lup, int y_lup, int bm_nr):&#160;API_functions.c']]],
+  ['api_5fdraw_5fbitmap_1',['API_draw_bitmap',['../_a_p_i__functions_8h.html#a6ba0c9aa23537bf68521fd5d1ac4124c',1,'API_draw_bitmap(int bm_nr, int x_lup, int y_lup):&#160;API_functions.c'],['../_a_p_i__functions_8c.html#a6ba0c9aa23537bf68521fd5d1ac4124c',1,'API_draw_bitmap(int bm_nr, int x_lup, int y_lup):&#160;API_functions.c']]],
   ['api_5fdraw_5fline_2',['API_draw_line',['../_a_p_i__functions_8h.html#a5762291bd9ba0b7c55877a82192975c9',1,'API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight):&#160;API_functions.c'],['../_a_p_i__functions_8c.html#a5762291bd9ba0b7c55877a82192975c9',1,'API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight):&#160;API_functions.c']]],
   ['api_5fdraw_5frectangle_3',['API_draw_rectangle',['../_a_p_i__functions_8h.html#a0587bfc121fd81d7f77001ded7166d4f',1,'API_draw_rectangle(int x, int y, int width, int height, int color, int filled):&#160;API_functions.c'],['../_a_p_i__functions_8c.html#a873d84dd7c5f171783799bcd36ac7688',1,'API_draw_rectangle(int x_1, int y_1, int width, int height, int color, int filled):&#160;API_functions.c']]]
 ];

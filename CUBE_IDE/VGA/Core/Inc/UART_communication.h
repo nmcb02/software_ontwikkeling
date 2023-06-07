@@ -17,7 +17,8 @@
 #include <string.h>
 
 //#include other "user-header"
-
+#include "main.h"
+#include "error.h"
 
 //#define-statements
 #define WAIT_FOR_DATA 	4000000
@@ -41,5 +42,6 @@ void UART_sendChar(uint8_t c);
 void UART_sendString(char *string);
 uint8_t UART_getChar(void);
 UART UART_receiver(void);
+void UART_errorHandling(int err);
 
 #endif /* INC_UART_COMMUNICATION_H_ */
