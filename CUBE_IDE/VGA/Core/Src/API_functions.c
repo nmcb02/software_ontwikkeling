@@ -5,7 +5,7 @@
  *
  * @authors Naomi Born
  * @date    17-05-2023
- * @version 1.0
+ * @version 1.1
 *********************************************************/
 //#include other "user-header"
 #include "API_functions.h"
@@ -29,13 +29,13 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 	int dx, dy, sdx, sdy, dxabs, dyabs, x, y, px, py;
 
 	if ((0 > x_1) || (x_1 > VGA_DISPLAY_X) || (0 > x_2) || (x_2 > VGA_DISPLAY_X))
-		return 1; // ERROR:	Invalid value
+		return OOB_ERR; // ERROR:	Invalid value
 
 	else if ((0 > y_1)||(y_1 > VGA_DISPLAY_Y)||(0 > y_2)||(y_2 > VGA_DISPLAY_Y))
-		return 1; // ERROR:	Invalid value
+		return OOB_ERR; // ERROR:	Invalid value
 
 	else if ((0 > weight)||(weight > VGA_DISPLAY_X)||(0 > weight)||(weight > VGA_DISPLAY_Y))
-		return 1; // ERROR:	Invalid value
+		return OOB_ERR; // ERROR:	Invalid value
 
 	else
 	{
@@ -114,7 +114,7 @@ int API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight)
 				py = y_1;
 			}
 		}
-		return 0;
+		return NO_ERR;
 	}
 }
 
@@ -129,7 +129,7 @@ int API_clearscreen(int color)
 {
 	UB_VGA_FillScreen(color);
 
-	return 0;
+	return NO_ERR;
 }
 
 /*****************************************************//**
@@ -149,10 +149,10 @@ int API_draw_rectangle(int x_1, int y_1, int width, int height, int color, int f
 	int x_2, y_2;
 
 	if ((0 > x_1)||(x_1 > VGA_DISPLAY_X)||(0 > width)||(width > VGA_DISPLAY_X))
-		return 1; // ERROR:	Invalid value
+		return OOB_ERR; // ERROR:	Invalid value
 
 	else if ((0 > y_1)||(y_1 > VGA_DISPLAY_Y)||(0 > height)||(height > VGA_DISPLAY_Y))
-		return 1; // ERROR:	Invalid value
+		return OOB_ERR; // ERROR:	Invalid value
 
 	else
 	{
@@ -184,9 +184,9 @@ int API_draw_rectangle(int x_1, int y_1, int width, int height, int color, int f
 		}
 
 		else
-			return 1; // ERROR:	Invalid value
+			return DATA_ERR; // ERROR:	Invalid value
 
-		return 0;
+		return NO_ERR;
 	}
 }
 
@@ -237,7 +237,7 @@ int API_draw_bitmap(int bm_nr, int x_lup, int y_lup)
 			memcpy(bitmap, smiley_sad_col, sizeof bitmap);
 			break;
 		default:
-			return 1; //ERROR: no existing bitmap number given
+			return BITMAP_ERR; //ERROR: no existing bitmap number given
 	}
 
 
@@ -264,5 +264,5 @@ int API_draw_bitmap(int bm_nr, int x_lup, int y_lup)
 
 		}
 	}
-	return 0;
+	return NO_ERR;
 }

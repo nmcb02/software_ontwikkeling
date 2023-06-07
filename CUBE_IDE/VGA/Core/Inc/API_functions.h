@@ -5,7 +5,7 @@
  *
  * @authors Naomi Born
  * @date    17-05-2023
- * @version 1.0
+ * @version 1.1
 *********************************************************/
 #ifndef INC_API_FUNCTIONS_H_
 #define INC_API_FUNCTIONS_H_
@@ -18,6 +18,7 @@
 //#include other "user-header"
 #include "stm32_ub_vga_screen.h"
 #include "logic_layer.h"
+#include "error.h"
 
 //#define-statements
 #define sgn(x) ((x<0)?-1:((x>0)?1:0)) // macro to return the sign of a number

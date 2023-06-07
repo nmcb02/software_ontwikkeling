@@ -9,7 +9,7 @@
  *
  * @authors	Skip Wijtman
  * @date	3-5-2023
- * @version	1.1
+ * @version	1.3
 *********************************************************/
 
 //#include "user-header"
@@ -63,10 +63,6 @@ void UART2_config(void)
 	// 6. Enabling Tx and Rx
 	USART2->CR1 |= (1<<3);		// Enables Tx for UART
 	USART2->CR1 |= (1<<2);		// Enables Rx for UART
-
-	// TESTING //
-	// 7. Enable receive interrupt
-	USART2->CR1 |= (1<<5);
 }
 
 /*****************************************************//**
@@ -183,6 +179,11 @@ void UART_errorHandling(int err)
 			UART_sendString("COLOR ERROR: er is een kleur opgegeven welke niet herkent wordt.\n"
 							"De beschikbare kleuren zijn: zwart, blauw, lichtblauw, groen, lichtgroen, cyaan, \n"
 							"lichtcyaan, rood, lichtrood, magenta, lichtmagenta, bruin, geel, grijs, wit en roze.\n\n");
+			break;
+
+		case BITMAP_ERR:
+			UART_sendString("BITMAP ERROR: er is een ongeldigde bitmap nummer ingevuld.\n"
+							"Mogelijke bitmap nummers zijn: 1, 2, 3, 4, 5, 6, 7, 8, 9 en 10\n\n");
 			break;
 
 		default:

@@ -6,7 +6,7 @@
  *
  * @authors: Skip Wijtman
  * @date: 3-5-2023
- * @version: 1.1
+ * @version: 1.2
 *********************************************************/
 
 #ifndef INC_UART_COMMUNICATION_H_
@@ -33,7 +33,7 @@ typedef struct UART_Communication
 {
 	uint8_t receive[STORAGE];
 	uint8_t buffer[STORAGE];
-	int 	err_code;
+
 }UART, *PUART;
 
 //user functies

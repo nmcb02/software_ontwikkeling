@@ -5,7 +5,7 @@
  *
  * @authors Skip Wijtman
  * @date    24-5-2023
- * @version 1.2
+ * @version 1.4
 *********************************************************/
 
 //#include "user-header"
@@ -17,12 +17,12 @@
 //global vars
 char cmd[MAX_CMD_LEN] = {0};
 
-char compare_cmd[4][MAX_CMD_LEN] = {	{"lijn"},
+char compare_cmd[4][MAX_CMD_LEN] = {	{"lijn"},		// Compare array with all the available commands
 										{"rechthoek"},
 										{"clearscherm"},
 										{"bitmap"}};
 
-char compare_col[16][MAX_COL_LEN] = {	{"zwart"},
+char compare_col[16][MAX_COL_LEN] = {	{"zwart"},		// Compare array with all the available colors
 										{"blauw"},
 										{"lichtblauw"},
 										{"groen"},
@@ -119,7 +119,7 @@ int draw_options(char cmd, UART data)
 
 	switch(cmd)				// Chooses the corresponding function with the found command
 	{						// In the case the data is parsed and used, also searches for errors and stop the function execution when one is found
-		case 5:
+		case 6:
 			parsing = parse_data(parsing, data, LINE_LEN, var_counter, num_checker, let_checker, num_counter);
 
 				if(parsing.err_code != NO_ERR)
@@ -128,7 +128,7 @@ int draw_options(char cmd, UART data)
 			error_return = API_draw_line(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
 			return error_return;
 
-		case 6:
+		case 7:
 			parsing = parse_data(parsing, data, RECTANGLE_LEN, var_counter, num_checker, let_checker, num_counter);
 
 			if(parsing.err_code != NO_ERR)
@@ -137,7 +137,7 @@ int draw_options(char cmd, UART data)
 			error_return = API_draw_rectangle(parsing.var_store[0], parsing.var_store[1], parsing.var_store[2], parsing.var_store[3], parsing.var_store[4], parsing.var_store[5]);
 			return error_return;
 
-		case 7:
+		case 8:
 			parsing = parse_data(parsing, data, CLEAR_LEN, var_counter, num_checker, let_checker, num_counter);
 
 			if(parsing.err_code != NO_ERR)
@@ -146,7 +146,7 @@ int draw_options(char cmd, UART data)
 			error_return = API_clearscreen(parsing.var_store[0]);
 			return error_return;
 
-		case 8:
+		case 9:
 			parsing = parse_data(parsing, data, BITMAP_LEN, var_counter, num_checker, let_checker, num_counter);
 
 			if(parsing.err_code != NO_ERR)
