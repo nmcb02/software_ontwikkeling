@@ -74,9 +74,9 @@ int main(void)
 	  else
 		  val = NO_DATA;
 
-	  if(err != 0)
+	  if(err != NO_ERR)
 	  {
-		  UART_sender(err);
+		  UART_errorHandling(err);
 	  }
   }
 }
